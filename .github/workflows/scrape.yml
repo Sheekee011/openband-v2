@@ -19,6 +19,9 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
+      - name: Preserve current data snapshot
+        run: cp data.json data.before.json
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -34,6 +37,44 @@ jobs:
           OPENBAND_PARSE_YEARS: "2024-2025"
           OPENBAND_MAX_PDF_ATTEMPTS: "80"
         run: python run_scraper.py
+
+      - name: Validate data did not regress
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          before = json.loads(Path('data.before.json').read_text(encoding='utf-8'))
+          after = json.loads(Path('data.json').read_text(encoding='utf-8'))
+
+          def parsed_count(data):
+              count = 0
+              for band in data.get('bands', []):
+                  for filing in band.get('filings', []):
+                      if 'remuneration' in filing.get('docType', '').lower() and filing.get('people'):
+                          count += 1
+              return count
+
+          before_bands = before.get('band_count') or len(before.get('bands', []))
+          after_bands = after.get('band_count') or len(after.get('bands', []))
+          before_parsed = parsed_count(before)
+          after_parsed = parsed_count(after)
+          after_errors = after.get('error_count', 0)
+
+          print(f'bands: {before_bands} -> {after_bands}')
+          print(f'parsed filings: {before_parsed} -> {after_parsed}')
+          print(f'errors: {after_errors}')
+
+          if after_bands < max(60, before_bands - 2):
+              raise SystemExit('Refusing to commit: band count dropped too far')
+          if after_errors > 5:
+              raise SystemExit('Refusing to commit: too many scraper errors')
+          if before_parsed >= 10 and after_parsed < max(10, before_parsed - 5):
+              raise SystemExit('Refusing to commit: parsed filing count regressed too far')
+          PY
+
+      - name: Remove validation snapshot
+        run: rm -f data.before.json
 
       - name: Commit updated data
         uses: stefanzweifel/git-auto-commit-action@v5
