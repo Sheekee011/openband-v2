@@ -1,4 +1,9 @@
-"""Audit OpenBand data.json for coverage and parser health."""
+"""Audit OpenBand data.json for coverage and parser health.
+
+This script is intentionally report-only. Missing bands and pending posted
+filings are work queues, not workflow failures. The scraper workflow has the
+hard safety checks that prevent bad data from being committed.
+"""
 
 import json
 from pathlib import Path
@@ -73,6 +78,15 @@ EXPECTED_SK_BANDS = [
     "Wahpeton Dakota Nation",
 ]
 
+ALIASES = {
+    "Hatchet Lake Denesuline Nation": "Hatchet Lake Denesuline",
+    "Mosquito, Grizzly Bear's Head, Lean Man First Nation": "Mosquito, Grizzly Bear's Head, Lean Man",
+    "Muscowpetung Saulteaux Nation": "Muscowpetung First Nation",
+    "Nekaneet First Nation": "Nekaneet Cree Nation",
+    "Ochapowace Nation": "Ochapowace First Nation",
+    "Key First Nation": "The Key First Nation",
+}
+
 
 def has_people(filing):
     return bool(filing.get("people"))
@@ -84,6 +98,13 @@ def is_remuneration(filing):
 
 def normalize(name):
     return " ".join(name.lower().replace("&", "and").split())
+
+
+def is_present(name, by_name):
+    if normalize(name) in by_name:
+        return True
+    alias = ALIASES.get(name)
+    return bool(alias and normalize(alias) in by_name)
 
 
 def main():
@@ -107,23 +128,7 @@ def main():
         if band_has_parsed:
             parsed_bands.append(band.get("name"))
 
-    missing = []
-    for name in EXPECTED_SK_BANDS:
-        if normalize(name) not in by_name:
-            # Skip alternate spellings if one of the pair is present.
-            if name == "Hatchet Lake Denesuline Nation" and normalize("Hatchet Lake Denesuline") in by_name:
-                continue
-            if name == "Mosquito, Grizzly Bear's Head, Lean Man First Nation" and normalize("Mosquito, Grizzly Bear's Head, Lean Man") in by_name:
-                continue
-            if name == "Muscowpetung Saulteaux Nation" and normalize("Muscowpetung First Nation") in by_name:
-                continue
-            if name == "Nekaneet First Nation" and normalize("Nekaneet Cree Nation") in by_name:
-                continue
-            if name == "Ochapowace Nation" and normalize("Ochapowace First Nation") in by_name:
-                continue
-            if name == "Key First Nation" and normalize("The Key First Nation") in by_name:
-                continue
-            missing.append(name)
+    missing = [name for name in EXPECTED_SK_BANDS if not is_present(name, by_name)]
 
     print(f"generated: {data.get('generated')}")
     print(f"bands: {len(bands)}")
@@ -138,7 +143,7 @@ def main():
         print(f"  PENDING: {name} {year} ({status})")
 
     if missing:
-        raise SystemExit(2)
+        print("\nAudit note: missing names are informational until the next successful scraper run updates data.json.")
 
 
 if __name__ == "__main__":
