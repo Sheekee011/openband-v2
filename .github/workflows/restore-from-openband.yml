@@ -1,0 +1,46 @@
+name: Restore working site from openband
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out openband-v2
+        uses: actions/checkout@v4
+
+      - name: Copy working files from old repo
+        run: |
+          set -euo pipefail
+          BASE="https://raw.githubusercontent.com/Sheekee011/openband/main"
+          curl -fsSL "$BASE/index.html" -o index.html
+          curl -fsSL "$BASE/data.json" -o data.json
+          curl -fsSL "$BASE/scraper.py" -o scraper.py
+          curl -fsSL "$BASE/run_scraper.py" -o run_scraper.py
+          curl -fsSL "$BASE/requirements.txt" -o requirements.txt
+          touch .nojekyll
+
+      - name: Confirm restored data
+        run: |
+          python - <<'PY'
+          import json
+          with open('data.json', encoding='utf-8') as f:
+              data = json.load(f)
+          print('bands:', data.get('band_count'))
+          print('errors:', data.get('error_count'))
+          print('generated:', data.get('generated'))
+          if data.get('band_count', 0) < 60:
+              raise SystemExit('Restored data does not look like the good 68-band file')
+          PY
+
+      - name: Commit restored files
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Restore working OpenBand site and data"
+          file_pattern: index.html data.json scraper.py run_scraper.py requirements.txt .nojekyll
