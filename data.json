@@ -1,6 +1,6 @@
 {
-  "generated": "2026-05-24T20:16:07Z",
-  "band_count": 68,
+  "generated": "2026-05-24T20:33:32Z",
+  "band_count": 69,
   "error_count": 0,
   "bands": [
     {
@@ -353,7 +353,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:14:09Z"
+      "scraped": "2026-05-24T20:31:34Z"
     },
     {
       "id": 361,
@@ -603,7 +603,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:14:10Z"
+      "scraped": "2026-05-24T20:31:36Z"
     },
     {
       "id": 366,
@@ -853,7 +853,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:14:11Z"
+      "scraped": "2026-05-24T20:31:37Z"
     },
     {
       "id": 389,
@@ -1103,7 +1103,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:14:12Z"
+      "scraped": "2026-05-24T20:31:38Z"
     },
     {
       "id": 391,
@@ -1510,7 +1510,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:14:14Z"
+      "scraped": "2026-05-24T20:31:40Z"
     },
     {
       "id": 362,
@@ -1829,7 +1829,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:14:16Z"
+      "scraped": "2026-05-24T20:31:42Z"
     },
     {
       "id": 367,
@@ -2079,7 +2079,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:14:17Z"
+      "scraped": "2026-05-24T20:31:43Z"
     },
     {
       "id": 377,
@@ -2398,7 +2398,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:14:19Z"
+      "scraped": "2026-05-24T20:31:45Z"
     },
     {
       "id": 379,
@@ -2651,7 +2651,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:14:22Z"
+      "scraped": "2026-05-24T20:31:47Z"
     },
     {
       "id": 341,
@@ -2901,7 +2901,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:14:23Z"
+      "scraped": "2026-05-24T20:31:48Z"
     },
     {
       "id": 396,
@@ -3231,7 +3231,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:14:25Z"
+      "scraped": "2026-05-24T20:31:50Z"
     },
     {
       "id": 374,
@@ -3559,7 +3559,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:14:27Z"
+      "scraped": "2026-05-24T20:31:52Z"
     },
     {
       "id": 371,
@@ -3878,7 +3878,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:14:28Z"
+      "scraped": "2026-05-24T20:31:54Z"
     },
     {
       "id": 363,
@@ -4128,7 +4128,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:14:30Z"
+      "scraped": "2026-05-24T20:31:55Z"
     },
     {
       "id": 344,
@@ -4378,7 +4378,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:14:31Z"
+      "scraped": "2026-05-24T20:31:56Z"
     },
     {
       "id": 383,
@@ -4628,7 +4628,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:14:32Z"
+      "scraped": "2026-05-24T20:31:58Z"
     },
     {
       "id": 384,
@@ -4878,7 +4878,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:14:33Z"
+      "scraped": "2026-05-24T20:31:59Z"
     },
     {
       "id": 405,
@@ -5128,7 +5128,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:14:35Z"
+      "scraped": "2026-05-24T20:32:00Z"
     },
     {
       "id": 355,
@@ -5378,7 +5378,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:14:36Z"
+      "scraped": "2026-05-24T20:32:01Z"
     },
     {
       "id": 409,
@@ -5686,7 +5686,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:14:38Z"
+      "scraped": "2026-05-24T20:32:03Z"
     },
     {
       "id": 345,
@@ -5939,7 +5939,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:14:40Z"
+      "scraped": "2026-05-24T20:32:05Z"
     },
     {
       "id": 356,
@@ -6189,7 +6189,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:14:41Z"
+      "scraped": "2026-05-24T20:32:06Z"
     },
     {
       "id": 346,
@@ -6539,7 +6539,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:14:43Z"
+      "scraped": "2026-05-24T20:32:08Z"
     },
     {
       "id": 364,
@@ -6789,7 +6789,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:14:44Z"
+      "scraped": "2026-05-24T20:32:09Z"
     },
     {
       "id": 357,
@@ -7039,7 +7039,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:14:45Z"
+      "scraped": "2026-05-24T20:32:11Z"
     },
     {
       "id": 348,
@@ -7380,7 +7380,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:14:47Z"
+      "scraped": "2026-05-24T20:32:13Z"
     },
     {
       "id": 368,
@@ -7630,7 +7630,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:14:49Z"
+      "scraped": "2026-05-24T20:32:14Z"
     },
     {
       "id": 349,
@@ -7880,7 +7880,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:14:50Z"
+      "scraped": "2026-05-24T20:32:15Z"
     },
     {
       "id": 358,
@@ -8130,7 +8130,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:14:51Z"
+      "scraped": "2026-05-24T20:32:16Z"
     },
     {
       "id": 402,
@@ -8493,7 +8493,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:14:53Z"
+      "scraped": "2026-05-24T20:32:18Z"
     },
     {
       "id": 365,
@@ -8812,7 +8812,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:14:55Z"
+      "scraped": "2026-05-24T20:32:21Z"
     },
     {
       "id": 372,
@@ -9062,7 +9062,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:14:57Z"
+      "scraped": "2026-05-24T20:32:22Z"
     },
     {
       "id": 388,
@@ -9315,7 +9315,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:14:59Z"
+      "scraped": "2026-05-24T20:32:24Z"
     },
     {
       "id": 376,
@@ -9565,7 +9565,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:15:00Z"
+      "scraped": "2026-05-24T20:32:25Z"
     },
     {
       "id": 406,
@@ -9972,7 +9972,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:15:02Z"
+      "scraped": "2026-05-24T20:32:27Z"
     },
     {
       "id": 369,
@@ -10226,7 +10226,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:15:10Z"
+      "scraped": "2026-05-24T20:32:36Z"
     },
     {
       "id": 398,
@@ -10545,7 +10545,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:15:13Z"
+      "scraped": "2026-05-24T20:32:38Z"
     },
     {
       "id": 394,
@@ -10795,7 +10795,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:15:14Z"
+      "scraped": "2026-05-24T20:32:39Z"
     },
     {
       "id": 401,
@@ -11045,7 +11045,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:15:15Z"
+      "scraped": "2026-05-24T20:32:41Z"
     },
     {
       "id": 350,
@@ -11295,7 +11295,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:15:16Z"
+      "scraped": "2026-05-24T20:32:42Z"
     },
     {
       "id": 400,
@@ -11545,7 +11545,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:15:17Z"
+      "scraped": "2026-05-24T20:32:43Z"
     },
     {
       "id": 390,
@@ -11798,7 +11798,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:15:20Z"
+      "scraped": "2026-05-24T20:32:45Z"
     },
     {
       "id": 395,
@@ -12139,7 +12139,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:15:22Z"
+      "scraped": "2026-05-24T20:32:47Z"
     },
     {
       "id": 352,
@@ -12392,7 +12392,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:15:24Z"
+      "scraped": "2026-05-24T20:32:49Z"
     },
     {
       "id": 353,
@@ -12642,7 +12642,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:15:25Z"
+      "scraped": "2026-05-24T20:32:50Z"
     },
     {
       "id": 340,
@@ -12892,7 +12892,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:15:26Z"
+      "scraped": "2026-05-24T20:32:51Z"
     },
     {
       "id": 397,
@@ -13142,7 +13142,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:15:27Z"
+      "scraped": "2026-05-24T20:32:53Z"
     },
     {
       "id": 354,
@@ -13494,7 +13494,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:15:29Z"
+      "scraped": "2026-05-24T20:32:55Z"
     },
     {
       "id": 342,
@@ -13912,7 +13912,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:15:32Z"
+      "scraped": "2026-05-24T20:32:57Z"
     },
     {
       "id": 343,
@@ -14165,7 +14165,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:15:34Z"
+      "scraped": "2026-05-24T20:32:59Z"
     },
     {
       "id": 381,
@@ -14418,7 +14418,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:15:36Z"
+      "scraped": "2026-05-24T20:33:01Z"
     },
     {
       "id": 375,
@@ -14668,7 +14668,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:15:37Z"
+      "scraped": "2026-05-24T20:33:02Z"
     },
     {
       "id": 392,
@@ -14918,7 +14918,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:15:38Z"
+      "scraped": "2026-05-24T20:33:03Z"
     },
     {
       "id": 380,
@@ -15168,7 +15168,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:15:40Z"
+      "scraped": "2026-05-24T20:33:05Z"
     },
     {
       "id": 408,
@@ -15418,7 +15418,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:15:41Z"
+      "scraped": "2026-05-24T20:33:06Z"
     },
     {
       "id": 382,
@@ -15668,7 +15668,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:15:42Z"
+      "scraped": "2026-05-24T20:33:07Z"
     },
     {
       "id": 373,
@@ -15918,7 +15918,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:15:43Z"
+      "scraped": "2026-05-24T20:33:08Z"
     },
     {
       "id": 385,
@@ -16303,7 +16303,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:15:45Z"
+      "scraped": "2026-05-24T20:33:10Z"
     },
     {
       "id": 347,
@@ -16622,7 +16622,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:15:47Z"
+      "scraped": "2026-05-24T20:33:12Z"
     },
     {
       "id": 386,
@@ -16875,7 +16875,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:15:49Z"
+      "scraped": "2026-05-24T20:33:14Z"
     },
     {
       "id": 387,
@@ -17183,7 +17183,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:15:51Z"
+      "scraped": "2026-05-24T20:33:16Z"
     },
     {
       "id": 360,
@@ -17436,7 +17436,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:15:53Z"
+      "scraped": "2026-05-24T20:33:18Z"
     },
     {
       "id": 404,
@@ -17832,7 +17832,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:15:55Z"
+      "scraped": "2026-05-24T20:33:20Z"
     },
     {
       "id": 403,
@@ -18140,7 +18140,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:15:57Z"
+      "scraped": "2026-05-24T20:33:22Z"
     },
     {
       "id": 359,
@@ -18393,7 +18393,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:15:59Z"
+      "scraped": "2026-05-24T20:33:24Z"
     },
     {
       "id": 351,
@@ -18646,7 +18646,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:16:02Z"
+      "scraped": "2026-05-24T20:33:26Z"
     },
     {
       "id": 370,
@@ -19086,7 +19086,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:16:04Z"
+      "scraped": "2026-05-24T20:33:28Z"
     },
     {
       "id": 393,
@@ -19438,7 +19438,257 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-24T20:16:06Z"
+      "scraped": "2026-05-24T20:33:30Z"
+    },
+    {
+      "id": 407,
+      "name": "Cree Nation of Chitek Lake",
+      "province": "SK",
+      "treaty": "Treaty 6",
+      "filings": [
+        {
+          "year": "2013-2014",
+          "docType": "Audited consolidated financial statements",
+          "date": "2014-08-25",
+          "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=407&FY=2013-2014&DOC=Audited consolidated financial statements&lang=eng",
+          "posted": true,
+          "people": [],
+          "parse_status": "not_applicable",
+          "warnings": []
+        },
+        {
+          "year": "2013-2014",
+          "docType": "Schedule of Remuneration and Expenses",
+          "date": "2014-08-26",
+          "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=407&FY=2013-2014&DOC=Schedule of Remuneration and Expenses&lang=eng",
+          "posted": true,
+          "people": [],
+          "parse_status": "not_applicable",
+          "warnings": []
+        },
+        {
+          "year": "2014-2015",
+          "docType": "Audited consolidated financial statements",
+          "date": "2015-08-07",
+          "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=407&FY=2014-2015&DOC=Audited consolidated financial statements&lang=eng",
+          "posted": true,
+          "people": [],
+          "parse_status": "not_applicable",
+          "warnings": []
+        },
+        {
+          "year": "2014-2015",
+          "docType": "Schedule of Remuneration and Expenses",
+          "date": "2015-08-07",
+          "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=407&FY=2014-2015&DOC=Schedule of Remuneration and Expenses&lang=eng",
+          "posted": true,
+          "people": [],
+          "parse_status": "not_applicable",
+          "warnings": []
+        },
+        {
+          "year": "2015-2016",
+          "docType": "Audited consolidated financial statements",
+          "date": "2016-08-05",
+          "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=407&FY=2015-2016&DOC=Audited consolidated financial statements&lang=eng",
+          "posted": true,
+          "people": [],
+          "parse_status": "not_applicable",
+          "warnings": []
+        },
+        {
+          "year": "2015-2016",
+          "docType": "Schedule of Remuneration and Expenses",
+          "date": "2016-08-05",
+          "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=407&FY=2015-2016&DOC=Schedule of Remuneration and Expenses&lang=eng",
+          "posted": true,
+          "people": [],
+          "parse_status": "not_applicable",
+          "warnings": []
+        },
+        {
+          "year": "2016-2017",
+          "docType": "Audited consolidated financial statements",
+          "date": "2017-12-14",
+          "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=407&FY=2016-2017&DOC=Audited consolidated financial statements&lang=eng",
+          "posted": true,
+          "people": [],
+          "parse_status": "not_applicable",
+          "warnings": []
+        },
+        {
+          "year": "2016-2017",
+          "docType": "Schedule of Remuneration and Expenses",
+          "date": "2017-12-14",
+          "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=407&FY=2016-2017&DOC=Schedule of Remuneration and Expenses&lang=eng",
+          "posted": true,
+          "people": [],
+          "parse_status": "not_applicable",
+          "warnings": []
+        },
+        {
+          "year": "2017-2018",
+          "docType": "Audited consolidated financial statements",
+          "date": "2019-03-21",
+          "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=407&FY=2017-2018&DOC=Audited consolidated financial statements&lang=eng",
+          "posted": true,
+          "people": [],
+          "parse_status": "not_applicable",
+          "warnings": []
+        },
+        {
+          "year": "2017-2018",
+          "docType": "Schedule of Remuneration and Expenses",
+          "date": "2019-03-21",
+          "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=407&FY=2017-2018&DOC=Schedule of Remuneration and Expenses&lang=eng",
+          "posted": true,
+          "people": [],
+          "parse_status": "not_applicable",
+          "warnings": []
+        },
+        {
+          "year": "2018-2019",
+          "docType": "Audited consolidated financial statements",
+          "date": "2020-04-29",
+          "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=407&FY=2018-2019&DOC=Audited consolidated financial statements&lang=eng",
+          "posted": true,
+          "people": [],
+          "parse_status": "not_applicable",
+          "warnings": []
+        },
+        {
+          "year": "2018-2019",
+          "docType": "Schedule of Remuneration and Expenses",
+          "date": "2020-04-28",
+          "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=407&FY=2018-2019&DOC=Schedule of Remuneration and Expenses&lang=eng",
+          "posted": true,
+          "people": [],
+          "parse_status": "not_applicable",
+          "warnings": []
+        },
+        {
+          "year": "2019-2020",
+          "docType": "Audited consolidated financial statements",
+          "date": "2024-06-11",
+          "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=407&FY=2019-2020&DOC=Audited consolidated financial statements&lang=eng",
+          "posted": true,
+          "people": [],
+          "parse_status": "not_applicable",
+          "warnings": []
+        },
+        {
+          "year": "2019-2020",
+          "docType": "Schedule of Remuneration and Expenses",
+          "date": "2024-06-11",
+          "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=407&FY=2019-2020&DOC=Schedule of Remuneration and Expenses&lang=eng",
+          "posted": true,
+          "people": [],
+          "parse_status": "not_applicable",
+          "warnings": []
+        },
+        {
+          "year": "2020-2021",
+          "docType": "Audited consolidated financial statements",
+          "date": "2025-06-06",
+          "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=407&FY=2020-2021&DOC=Audited consolidated financial statements&lang=eng",
+          "posted": true,
+          "people": [],
+          "parse_status": "not_applicable",
+          "warnings": []
+        },
+        {
+          "year": "2020-2021",
+          "docType": "Schedule of Remuneration and Expenses",
+          "date": "2025-06-06",
+          "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=407&FY=2020-2021&DOC=Schedule of Remuneration and Expenses&lang=eng",
+          "posted": true,
+          "people": [],
+          "parse_status": "not_applicable",
+          "warnings": []
+        },
+        {
+          "year": "2021-2022",
+          "docType": "Audited consolidated financial statements",
+          "date": "2025-11-24",
+          "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=407&FY=2021-2022&DOC=Audited consolidated financial statements&lang=eng",
+          "posted": true,
+          "people": [],
+          "parse_status": "not_applicable",
+          "warnings": []
+        },
+        {
+          "year": "2021-2022",
+          "docType": "Schedule of Remuneration and Expenses",
+          "date": "2025-11-24",
+          "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=407&FY=2021-2022&DOC=Schedule of Remuneration and Expenses&lang=eng",
+          "posted": true,
+          "people": [],
+          "parse_status": "not_applicable",
+          "warnings": []
+        },
+        {
+          "year": "2022-2023",
+          "docType": "Audited consolidated financial statements",
+          "date": "2026-05-20",
+          "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=407&FY=2022-2023&DOC=Audited consolidated financial statements&lang=eng",
+          "posted": true,
+          "people": [],
+          "parse_status": "not_applicable",
+          "warnings": []
+        },
+        {
+          "year": "2022-2023",
+          "docType": "Schedule of Remuneration and Expenses",
+          "date": "2026-05-20",
+          "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=407&FY=2022-2023&DOC=Schedule of Remuneration and Expenses&lang=eng",
+          "posted": true,
+          "people": [],
+          "parse_status": "not_applicable",
+          "warnings": []
+        },
+        {
+          "year": "2023-2024",
+          "docType": "Audited consolidated financial statements",
+          "date": "Not yet posted",
+          "href": null,
+          "posted": false,
+          "people": [],
+          "parse_status": "not_applicable",
+          "warnings": []
+        },
+        {
+          "year": "2023-2024",
+          "docType": "Schedule of Remuneration and Expenses",
+          "date": "Not yet posted",
+          "href": null,
+          "posted": false,
+          "people": [],
+          "parse_status": "not_applicable",
+          "warnings": []
+        },
+        {
+          "year": "2024-2025",
+          "docType": "Audited consolidated financial statements",
+          "date": "Not yet posted",
+          "href": null,
+          "posted": false,
+          "people": [],
+          "parse_status": "not_applicable",
+          "warnings": []
+        },
+        {
+          "year": "2024-2025",
+          "docType": "Schedule of Remuneration and Expenses",
+          "date": "Not yet posted",
+          "href": null,
+          "posted": false,
+          "people": [],
+          "parse_status": "not_applicable",
+          "warnings": []
+        }
+      ],
+      "status": "ok",
+      "scraped": "2026-05-24T20:33:31Z"
     }
   ]
 }
