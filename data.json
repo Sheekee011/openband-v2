@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-23T08:19:35Z",
+  "generated": "2026-05-24T20:16:07Z",
   "band_count": 68,
   "error_count": 0,
   "bands": [
@@ -353,7 +353,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:15:32Z"
+      "scraped": "2026-05-24T20:14:09Z"
     },
     {
       "id": 361,
@@ -603,7 +603,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:15:34Z"
+      "scraped": "2026-05-24T20:14:10Z"
     },
     {
       "id": 366,
@@ -853,7 +853,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:15:35Z"
+      "scraped": "2026-05-24T20:14:11Z"
     },
     {
       "id": 389,
@@ -1103,7 +1103,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:15:36Z"
+      "scraped": "2026-05-24T20:14:12Z"
     },
     {
       "id": 391,
@@ -1510,7 +1510,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:15:39Z"
+      "scraped": "2026-05-24T20:14:14Z"
     },
     {
       "id": 362,
@@ -1829,7 +1829,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:15:41Z"
+      "scraped": "2026-05-24T20:14:16Z"
     },
     {
       "id": 367,
@@ -2079,7 +2079,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:15:42Z"
+      "scraped": "2026-05-24T20:14:17Z"
     },
     {
       "id": 377,
@@ -2398,7 +2398,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:15:45Z"
+      "scraped": "2026-05-24T20:14:19Z"
     },
     {
       "id": 379,
@@ -2643,15 +2643,15 @@
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=379&FY=2024-2025&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
           "people": [],
-          "parse_status": "error_openai",
+          "parse_status": "skipped_openai_no_key",
           "warnings": [
             "No remuneration rows detected from PDF table or text extraction",
-            "OpenAI parse failed: HTTP Error 429: Too Many Requests"
+            "OPENAI_API_KEY not set"
           ]
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:15:58Z"
+      "scraped": "2026-05-24T20:14:22Z"
     },
     {
       "id": 341,
@@ -2901,7 +2901,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:15:59Z"
+      "scraped": "2026-05-24T20:14:23Z"
     },
     {
       "id": 396,
@@ -3231,7 +3231,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:16:02Z"
+      "scraped": "2026-05-24T20:14:25Z"
     },
     {
       "id": 374,
@@ -3559,7 +3559,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:16:04Z"
+      "scraped": "2026-05-24T20:14:27Z"
     },
     {
       "id": 371,
@@ -3878,7 +3878,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:16:06Z"
+      "scraped": "2026-05-24T20:14:28Z"
     },
     {
       "id": 363,
@@ -4128,7 +4128,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:16:07Z"
+      "scraped": "2026-05-24T20:14:30Z"
     },
     {
       "id": 344,
@@ -4378,7 +4378,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:16:09Z"
+      "scraped": "2026-05-24T20:14:31Z"
     },
     {
       "id": 383,
@@ -4628,7 +4628,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:16:10Z"
+      "scraped": "2026-05-24T20:14:32Z"
     },
     {
       "id": 384,
@@ -4878,7 +4878,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:16:11Z"
+      "scraped": "2026-05-24T20:14:33Z"
     },
     {
       "id": 405,
@@ -5128,7 +5128,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:16:12Z"
+      "scraped": "2026-05-24T20:14:35Z"
     },
     {
       "id": 355,
@@ -5378,7 +5378,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:16:14Z"
+      "scraped": "2026-05-24T20:14:36Z"
     },
     {
       "id": 409,
@@ -5686,7 +5686,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:16:16Z"
+      "scraped": "2026-05-24T20:14:38Z"
     },
     {
       "id": 345,
@@ -5931,15 +5931,15 @@
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=345&FY=2024-2025&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
           "people": [],
-          "parse_status": "error_openai",
+          "parse_status": "skipped_openai_no_key",
           "warnings": [
             "No remuneration rows detected from PDF table or text extraction",
-            "OpenAI parse failed: HTTP Error 429: Too Many Requests"
+            "OPENAI_API_KEY not set"
           ]
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:16:27Z"
+      "scraped": "2026-05-24T20:14:40Z"
     },
     {
       "id": 356,
@@ -6189,7 +6189,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:16:28Z"
+      "scraped": "2026-05-24T20:14:41Z"
     },
     {
       "id": 346,
@@ -6539,7 +6539,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:16:30Z"
+      "scraped": "2026-05-24T20:14:43Z"
     },
     {
       "id": 364,
@@ -6789,7 +6789,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:16:32Z"
+      "scraped": "2026-05-24T20:14:44Z"
     },
     {
       "id": 357,
@@ -7039,7 +7039,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:16:33Z"
+      "scraped": "2026-05-24T20:14:45Z"
     },
     {
       "id": 348,
@@ -7380,7 +7380,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:16:35Z"
+      "scraped": "2026-05-24T20:14:47Z"
     },
     {
       "id": 368,
@@ -7630,7 +7630,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:16:37Z"
+      "scraped": "2026-05-24T20:14:49Z"
     },
     {
       "id": 349,
@@ -7880,7 +7880,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:16:38Z"
+      "scraped": "2026-05-24T20:14:50Z"
     },
     {
       "id": 358,
@@ -8130,7 +8130,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:16:39Z"
+      "scraped": "2026-05-24T20:14:51Z"
     },
     {
       "id": 402,
@@ -8493,7 +8493,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:16:41Z"
+      "scraped": "2026-05-24T20:14:53Z"
     },
     {
       "id": 365,
@@ -8812,7 +8812,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:16:44Z"
+      "scraped": "2026-05-24T20:14:55Z"
     },
     {
       "id": 372,
@@ -9062,7 +9062,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:16:45Z"
+      "scraped": "2026-05-24T20:14:57Z"
     },
     {
       "id": 388,
@@ -9307,15 +9307,15 @@
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=388&FY=2024-2025&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
           "people": [],
-          "parse_status": "error_openai",
+          "parse_status": "skipped_openai_no_key",
           "warnings": [
             "No remuneration rows detected from PDF table or text extraction",
-            "OpenAI parse failed: HTTP Error 429: Too Many Requests"
+            "OPENAI_API_KEY not set"
           ]
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:16:55Z"
+      "scraped": "2026-05-24T20:14:59Z"
     },
     {
       "id": 376,
@@ -9565,7 +9565,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:16:56Z"
+      "scraped": "2026-05-24T20:15:00Z"
     },
     {
       "id": 406,
@@ -9972,7 +9972,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:16:58Z"
+      "scraped": "2026-05-24T20:15:02Z"
     },
     {
       "id": 369,
@@ -10217,16 +10217,16 @@
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=369&FY=2024-2025&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
           "people": [],
-          "parse_status": "error_openai",
+          "parse_status": "skipped_openai_no_key",
           "warnings": [
             "Discarded table extraction because rows looked project-heavy",
             "No remuneration rows detected from PDF table or text extraction",
-            "OpenAI parse failed: HTTP Error 429: Too Many Requests"
+            "OPENAI_API_KEY not set"
           ]
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:17:19Z"
+      "scraped": "2026-05-24T20:15:10Z"
     },
     {
       "id": 398,
@@ -10545,7 +10545,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:17:21Z"
+      "scraped": "2026-05-24T20:15:13Z"
     },
     {
       "id": 394,
@@ -10795,7 +10795,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:17:23Z"
+      "scraped": "2026-05-24T20:15:14Z"
     },
     {
       "id": 401,
@@ -11045,7 +11045,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:17:24Z"
+      "scraped": "2026-05-24T20:15:15Z"
     },
     {
       "id": 350,
@@ -11295,7 +11295,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:17:25Z"
+      "scraped": "2026-05-24T20:15:16Z"
     },
     {
       "id": 400,
@@ -11545,7 +11545,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:17:27Z"
+      "scraped": "2026-05-24T20:15:17Z"
     },
     {
       "id": 390,
@@ -11790,15 +11790,15 @@
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=390&FY=2024-2025&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
           "people": [],
-          "parse_status": "error_openai",
+          "parse_status": "skipped_openai_no_key",
           "warnings": [
             "No remuneration rows detected from PDF table or text extraction",
-            "OpenAI parse failed: HTTP Error 429: Too Many Requests"
+            "OPENAI_API_KEY not set"
           ]
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:17:38Z"
+      "scraped": "2026-05-24T20:15:20Z"
     },
     {
       "id": 395,
@@ -12139,7 +12139,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:17:41Z"
+      "scraped": "2026-05-24T20:15:22Z"
     },
     {
       "id": 352,
@@ -12384,15 +12384,15 @@
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=352&FY=2024-2025&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
           "people": [],
-          "parse_status": "error_openai",
+          "parse_status": "skipped_openai_no_key",
           "warnings": [
             "No remuneration rows detected from PDF table or text extraction",
-            "OpenAI parse failed: HTTP Error 429: Too Many Requests"
+            "OPENAI_API_KEY not set"
           ]
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:17:53Z"
+      "scraped": "2026-05-24T20:15:24Z"
     },
     {
       "id": 353,
@@ -12642,7 +12642,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:17:54Z"
+      "scraped": "2026-05-24T20:15:25Z"
     },
     {
       "id": 340,
@@ -12892,7 +12892,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:17:55Z"
+      "scraped": "2026-05-24T20:15:26Z"
     },
     {
       "id": 397,
@@ -13142,7 +13142,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:17:57Z"
+      "scraped": "2026-05-24T20:15:27Z"
     },
     {
       "id": 354,
@@ -13494,7 +13494,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:17:59Z"
+      "scraped": "2026-05-24T20:15:29Z"
     },
     {
       "id": 342,
@@ -13912,7 +13912,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:18:02Z"
+      "scraped": "2026-05-24T20:15:32Z"
     },
     {
       "id": 343,
@@ -14157,15 +14157,15 @@
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=343&FY=2024-2025&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
           "people": [],
-          "parse_status": "error_openai",
+          "parse_status": "skipped_openai_no_key",
           "warnings": [
             "No remuneration rows detected from PDF table or text extraction",
-            "OpenAI parse failed: HTTP Error 429: Too Many Requests"
+            "OPENAI_API_KEY not set"
           ]
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:18:13Z"
+      "scraped": "2026-05-24T20:15:34Z"
     },
     {
       "id": 381,
@@ -14410,15 +14410,15 @@
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=381&FY=2024-2025&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
           "people": [],
-          "parse_status": "error_openai",
+          "parse_status": "skipped_openai_no_key",
           "warnings": [
             "No remuneration rows detected from PDF table or text extraction",
-            "OpenAI parse failed: HTTP Error 429: Too Many Requests"
+            "OPENAI_API_KEY not set"
           ]
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:18:24Z"
+      "scraped": "2026-05-24T20:15:36Z"
     },
     {
       "id": 375,
@@ -14668,7 +14668,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:18:25Z"
+      "scraped": "2026-05-24T20:15:37Z"
     },
     {
       "id": 392,
@@ -14918,7 +14918,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:18:27Z"
+      "scraped": "2026-05-24T20:15:38Z"
     },
     {
       "id": 380,
@@ -15168,7 +15168,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:18:28Z"
+      "scraped": "2026-05-24T20:15:40Z"
     },
     {
       "id": 408,
@@ -15418,7 +15418,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:18:29Z"
+      "scraped": "2026-05-24T20:15:41Z"
     },
     {
       "id": 382,
@@ -15668,7 +15668,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:18:31Z"
+      "scraped": "2026-05-24T20:15:42Z"
     },
     {
       "id": 373,
@@ -15918,7 +15918,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:18:32Z"
+      "scraped": "2026-05-24T20:15:43Z"
     },
     {
       "id": 385,
@@ -16303,7 +16303,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:18:34Z"
+      "scraped": "2026-05-24T20:15:45Z"
     },
     {
       "id": 347,
@@ -16622,7 +16622,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:18:36Z"
+      "scraped": "2026-05-24T20:15:47Z"
     },
     {
       "id": 386,
@@ -16867,15 +16867,15 @@
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=386&FY=2024-2025&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
           "people": [],
-          "parse_status": "error_openai",
+          "parse_status": "skipped_openai_no_key",
           "warnings": [
             "No remuneration rows detected from PDF table or text extraction",
-            "OpenAI parse failed: HTTP Error 429: Too Many Requests"
+            "OPENAI_API_KEY not set"
           ]
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:18:48Z"
+      "scraped": "2026-05-24T20:15:49Z"
     },
     {
       "id": 387,
@@ -17183,7 +17183,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:18:50Z"
+      "scraped": "2026-05-24T20:15:51Z"
     },
     {
       "id": 360,
@@ -17428,15 +17428,15 @@
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=360&FY=2024-2025&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
           "people": [],
-          "parse_status": "error_openai",
+          "parse_status": "skipped_openai_no_key",
           "warnings": [
             "No remuneration rows detected from PDF table or text extraction",
-            "OpenAI parse failed: HTTP Error 429: Too Many Requests"
+            "OPENAI_API_KEY not set"
           ]
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:19:02Z"
+      "scraped": "2026-05-24T20:15:53Z"
     },
     {
       "id": 404,
@@ -17832,7 +17832,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:19:04Z"
+      "scraped": "2026-05-24T20:15:55Z"
     },
     {
       "id": 403,
@@ -18140,7 +18140,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:19:06Z"
+      "scraped": "2026-05-24T20:15:57Z"
     },
     {
       "id": 359,
@@ -18385,15 +18385,15 @@
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=359&FY=2024-2025&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
           "people": [],
-          "parse_status": "error_openai",
+          "parse_status": "skipped_openai_no_key",
           "warnings": [
             "No remuneration rows detected from PDF table or text extraction",
-            "OpenAI parse failed: HTTP Error 429: Too Many Requests"
+            "OPENAI_API_KEY not set"
           ]
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:19:19Z"
+      "scraped": "2026-05-24T20:15:59Z"
     },
     {
       "id": 351,
@@ -18638,15 +18638,15 @@
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=351&FY=2024-2025&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
           "people": [],
-          "parse_status": "error_openai",
+          "parse_status": "skipped_openai_no_key",
           "warnings": [
             "No remuneration rows detected from PDF table or text extraction",
-            "OpenAI parse failed: HTTP Error 429: Too Many Requests"
+            "OPENAI_API_KEY not set"
           ]
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:19:29Z"
+      "scraped": "2026-05-24T20:16:02Z"
     },
     {
       "id": 370,
@@ -19086,7 +19086,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:19:32Z"
+      "scraped": "2026-05-24T20:16:04Z"
     },
     {
       "id": 393,
@@ -19438,7 +19438,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-23T08:19:34Z"
+      "scraped": "2026-05-24T20:16:06Z"
     }
   ]
 }
