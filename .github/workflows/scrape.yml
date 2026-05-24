@@ -36,7 +36,7 @@ jobs:
           OPENAI_MODEL: gpt-4.1-mini
           OPENBAND_PARSE_YEARS: "2024-2025"
           OPENBAND_MAX_PDF_ATTEMPTS: "80"
-        run: python run_scraper.py
+        run: python run_scraper_v2.py
 
       - name: Validate data did not regress
         run: |
