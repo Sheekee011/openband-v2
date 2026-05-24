@@ -6,6 +6,7 @@ hard safety checks that prevent bad data from being committed.
 """
 
 import json
+from collections import Counter
 from pathlib import Path
 
 EXPECTED_SK_BANDS = [
@@ -115,16 +116,22 @@ def main():
     parsed_bands = []
     parsed_filings = 0
     pending_posted = []
+    pending_by_year = Counter()
+    parsed_by_year = Counter()
+
     for band in bands:
         band_has_parsed = False
         for filing in band.get("filings", []):
             if not is_remuneration(filing):
                 continue
+            year = filing.get("year") or "unknown"
             if has_people(filing):
                 parsed_filings += 1
+                parsed_by_year[year] += 1
                 band_has_parsed = True
             elif filing.get("posted"):
-                pending_posted.append((band.get("name"), filing.get("year"), filing.get("parse_status")))
+                pending_posted.append((band.get("name"), year, filing.get("parse_status")))
+                pending_by_year[year] += 1
         if band_has_parsed:
             parsed_bands.append(band.get("name"))
 
@@ -135,10 +142,18 @@ def main():
     print(f"error_count: {data.get('error_count')}")
     print(f"bands with parsed remuneration: {len(parsed_bands)}")
     print(f"parsed remuneration filings: {parsed_filings}")
-    print(f"expected SK names missing: {len(missing)}")
+    print(f"posted remuneration filings still pending: {len(pending_posted)}")
+
+    print("\npending by fiscal year:")
+    for year, count in sorted(pending_by_year.items(), reverse=True):
+        parsed = parsed_by_year.get(year, 0)
+        print(f"  {year}: {count} pending, {parsed} parsed")
+
+    print(f"\nexpected SK names missing: {len(missing)}")
     for name in missing:
         print(f"  MISSING: {name}")
-    print(f"posted remuneration filings still pending: {len(pending_posted)}")
+
+    print("\nfirst pending examples:")
     for name, year, status in pending_posted[:40]:
         print(f"  PENDING: {name} {year} ({status})")
 
