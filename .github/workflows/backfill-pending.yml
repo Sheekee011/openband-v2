@@ -1,0 +1,106 @@
+name: Backfill pending remuneration data
+
+on:
+  workflow_dispatch:
+    inputs:
+      years:
+        description: "Comma-separated fiscal years to parse"
+        required: true
+        default: "2024-2025,2023-2024,2022-2023"
+      max_pdf_attempts:
+        description: "Maximum PDFs to try in this run"
+        required: true
+        default: "180"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: openband-v2-scraper
+  cancel-in-progress: true
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Preserve current data snapshot
+        run: cp data.json data.before.json
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run backfill scraper
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: gpt-4.1-mini
+          OPENBAND_PARSE_YEARS: ${{ inputs.years }}
+          OPENBAND_MAX_PDF_ATTEMPTS: ${{ inputs.max_pdf_attempts }}
+          OPENBAND_REQUEST_DELAY: "0.5"
+        run: python run_scraper_v2.py
+
+      - name: Preserve previous parsed rows
+        run: python tools/merge_previous_data.py data.before.json data.json
+
+      - name: Validate backfill improved or preserved data
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          before = json.loads(Path('data.before.json').read_text(encoding='utf-8'))
+          after = json.loads(Path('data.json').read_text(encoding='utf-8'))
+
+          def counts(data):
+              parsed = 0
+              pending = 0
+              for band in data.get('bands', []):
+                  for filing in band.get('filings', []):
+                      if 'remuneration' not in filing.get('docType', '').lower():
+                          continue
+                      if filing.get('people'):
+                          parsed += 1
+                      elif filing.get('posted'):
+                          pending += 1
+              return parsed, pending
+
+          before_parsed, before_pending = counts(before)
+          after_parsed, after_pending = counts(after)
+          after_bands = after.get('band_count') or len(after.get('bands', []))
+          after_errors = after.get('error_count', 0)
+
+          print(f'parsed filings: {before_parsed} -> {after_parsed}')
+          print(f'posted pending: {before_pending} -> {after_pending}')
+          print(f'bands: {after_bands}')
+          print(f'errors: {after_errors}')
+
+          if after_bands < 60:
+              raise SystemExit('Refusing to commit: too few bands in data.json')
+          if after_errors > 5:
+              raise SystemExit('Refusing to commit: too many scraper errors')
+          if after_parsed < before_parsed:
+              raise SystemExit('Refusing to commit: parsed filing count regressed')
+          if after_pending > before_pending:
+              raise SystemExit('Refusing to commit: pending filing count increased')
+          PY
+
+      - name: Audit current data
+        run: python tools/audit_data.py
+
+      - name: Remove validation snapshot
+        run: rm -f data.before.json
+
+      - name: Commit backfilled data
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Backfill FNFTA remuneration data"
+          file_pattern: data.json
