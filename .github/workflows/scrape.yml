@@ -38,6 +38,9 @@ jobs:
           OPENBAND_MAX_PDF_ATTEMPTS: "80"
         run: python run_scraper_v2.py
 
+      - name: Preserve previous parsed rows
+        run: python tools/merge_previous_data.py data.before.json data.json
+
       - name: Validate data did not regress
         run: |
           python - <<'PY'
@@ -69,9 +72,12 @@ jobs:
               raise SystemExit('Refusing to commit: band count dropped too far')
           if after_errors > 5:
               raise SystemExit('Refusing to commit: too many scraper errors')
-          if before_parsed >= 10 and after_parsed < max(10, before_parsed - 5):
-              raise SystemExit('Refusing to commit: parsed filing count regressed too far')
+          if before_parsed >= 10 and after_parsed < before_parsed:
+              raise SystemExit('Refusing to commit: parsed filing count regressed')
           PY
+
+      - name: Audit current data
+        run: python tools/audit_data.py
 
       - name: Remove validation snapshot
         run: rm -f data.before.json
