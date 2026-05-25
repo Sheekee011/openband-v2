@@ -100,7 +100,7 @@ jobs:
           PY
 
       - name: Audit current data
-        run: python tools/audit_data.py
+        run: python tools/audit_data.py | tee audit-results.txt
 
       - name: Remove validation snapshot
         run: rm -f data.before.json
@@ -109,4 +109,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Backfill FNFTA remuneration data"
-          file_pattern: data.json
+          file_pattern: data.json audit-results.txt
