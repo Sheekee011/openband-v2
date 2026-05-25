@@ -10,6 +10,10 @@ on:
   push:
     paths:
       - .github/workflows/retry-pending.yml
+      - run_scraper.py
+      - run_scraper_v2.py
+      - tools/merge_previous_data.py
+      - tools/sanitize_data.py
 
 permissions:
   contents: write
