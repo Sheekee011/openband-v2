@@ -54,6 +54,8 @@ def _build_direct_pdf_urls_with_current_year(band_id):
         "2017-2018",
         "2016-2017",
         "2015-2016",
+        "2014-2015",
+        "2013-2014",
     ]
     doc_types = [
         "Audited consolidated financial statements",
