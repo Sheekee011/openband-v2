@@ -1,27 +1,30 @@
 generated: 2026-05-25T11:09:33Z
 bands: 69
 error_count: 0
-bands with parsed remuneration: 60
-parsed remuneration filings: 372
-posted remuneration filings still pending: 338
+bands with parsed remuneration: 59
+parsed remuneration filings: 356
+posted remuneration filings still pending: 354
 
 pending by fiscal year:
   2024-2025: 12 pending, 24 parsed
   2023-2024: 14 pending, 32 parsed
   2022-2023: 16 pending, 36 parsed
   2021-2022: 15 pending, 42 parsed
-  2020-2021: 22 pending, 38 parsed
-  2019-2020: 24 pending, 39 parsed
-  2018-2019: 29 pending, 35 parsed
-  2017-2018: 28 pending, 38 parsed
+  2020-2021: 23 pending, 37 parsed
+  2019-2020: 26 pending, 37 parsed
+  2018-2019: 30 pending, 34 parsed
+  2017-2018: 31 pending, 35 parsed
   2016-2017: 35 pending, 31 parsed
-  2015-2016: 37 pending, 30 parsed
-  2014-2015: 51 pending, 16 parsed
-  2013-2014: 55 pending, 11 parsed
+  2015-2016: 41 pending, 26 parsed
+  2014-2015: 54 pending, 13 parsed
+  2013-2014: 57 pending, 9 parsed
 
-expected SK names missing: 2
-  MISSING: English River First Nation
-  MISSING: Sakimay First Nation
+pending by parse status:
+  not_applicable: 195
+  skipped_openai_no_key: 143
+  sanitized_no_valid_rows: 16
+
+expected SK names missing: 0
 
 first pending examples:
   PENDING: Carry the Kettle Nakoda Nation 2013-2014 (skipped_openai_no_key)
@@ -37,6 +40,7 @@ first pending examples:
   PENDING: Cote First Nation 2020-2021 (not_applicable)
   PENDING: George Gordon First Nation 2013-2014 (skipped_openai_no_key)
   PENDING: George Gordon First Nation 2014-2015 (skipped_openai_no_key)
+  PENDING: George Gordon First Nation 2015-2016 (sanitized_no_valid_rows)
   PENDING: George Gordon First Nation 2016-2017 (not_applicable)
   PENDING: George Gordon First Nation 2017-2018 (not_applicable)
   PENDING: Kahkewistahaw First Nation 2013-2014 (skipped_openai_no_key)
@@ -63,6 +67,3 @@ first pending examples:
   PENDING: Little Black Bear First Nation 2018-2019 (not_applicable)
   PENDING: Little Black Bear First Nation 2019-2020 (not_applicable)
   PENDING: Little Black Bear First Nation 2020-2021 (not_applicable)
-  PENDING: Little Black Bear First Nation 2021-2022 (not_applicable)
-
-Audit note: missing names are informational until the next successful scraper run updates data.json.
