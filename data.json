@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-25T11:09:33Z",
+  "generated": "2026-05-25T11:44:18Z",
   "band_count": 69,
   "error_count": 0,
   "bands": [
@@ -500,9 +500,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 2",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 2"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -603,9 +603,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 1",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 1"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -739,10 +739,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 1",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 1"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -865,10 +865,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 7",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 7"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -998,7 +998,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:06:29Z"
+      "scraped": "2026-05-25T11:41:13Z"
     },
     {
       "id": 361,
@@ -1637,8 +1637,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 2"
+            "Sanitized parsed rows: removed 0, fixed totals 2",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -1761,8 +1761,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 9"
+            "Sanitized parsed rows: removed 0, fixed totals 9",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -1885,8 +1885,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 4"
+            "Sanitized parsed rows: removed 0, fixed totals 4",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -2042,9 +2042,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 9",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 9"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -2167,9 +2167,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 9",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 9"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -2292,9 +2292,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 9",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 9"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -2428,10 +2428,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 10",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 10"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -2598,10 +2598,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 13",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 13"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -2626,7 +2626,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:06:33Z"
+      "scraped": "2026-05-25T11:41:17Z"
     },
     {
       "id": 366,
@@ -2896,7 +2896,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:06:37Z"
+      "scraped": "2026-05-25T11:41:21Z"
     },
     {
       "id": 389,
@@ -3463,8 +3463,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 6"
+            "Sanitized parsed rows: removed 0, fixed totals 6",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -3554,9 +3554,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 6",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 6"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -3635,9 +3635,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 5",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 5"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -3716,9 +3716,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -3783,7 +3783,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:06:40Z"
+      "scraped": "2026-05-25T11:41:25Z"
     },
     {
       "id": 391,
@@ -3998,8 +3998,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 7"
+            "Sanitized parsed rows: removed 1, fixed totals 7",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -4100,9 +4100,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 7",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 7"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -4258,9 +4258,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 10",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 10"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -4372,9 +4372,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 8",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 8"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -4486,10 +4486,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 8",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 8"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -4601,10 +4601,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 8",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 8"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -4771,15 +4771,15 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 13",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 13"
+            "Preserved from previous data.json snapshot"
           ]
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:06:43Z"
+      "scraped": "2026-05-25T11:41:28Z"
     },
     {
       "id": 362,
@@ -4932,8 +4932,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 5"
+            "Sanitized parsed rows: removed 1, fixed totals 5",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -5045,8 +5045,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 8"
+            "Sanitized parsed rows: removed 1, fixed totals 8",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -5125,8 +5125,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 5"
+            "Sanitized parsed rows: removed 1, fixed totals 5",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -5205,9 +5205,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 5",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 5"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -5286,9 +5286,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 5",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 5"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -5367,9 +5367,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 5",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 5"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -5448,10 +5448,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 5",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 5"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -5530,10 +5530,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 5",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 5"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -5612,15 +5612,15 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 5",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 5"
+            "Preserved from previous data.json snapshot"
           ]
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:06:45Z"
+      "scraped": "2026-05-25T11:41:30Z"
     },
     {
       "id": 367,
@@ -5879,7 +5879,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:06:49Z"
+      "scraped": "2026-05-25T11:41:34Z"
     },
     {
       "id": 377,
@@ -6561,9 +6561,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 5",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 5"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -6642,10 +6642,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 5",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 5"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -6755,15 +6755,15 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 5",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 5"
+            "Preserved from previous data.json snapshot"
           ]
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:06:51Z"
+      "scraped": "2026-05-25T11:41:36Z"
     },
     {
       "id": 379,
@@ -7022,7 +7022,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:06:55Z"
+      "scraped": "2026-05-25T11:41:39Z"
     },
     {
       "id": 341,
@@ -7313,7 +7313,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:06:57Z"
+      "scraped": "2026-05-25T11:41:41Z"
     },
     {
       "id": 396,
@@ -8033,15 +8033,15 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 6",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 6"
+            "Preserved from previous data.json snapshot"
           ]
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:06:59Z"
+      "scraped": "2026-05-25T11:41:43Z"
     },
     {
       "id": 374,
@@ -8155,12 +8155,8 @@
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=374&FY=2017-2018&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
           "people": [],
-          "parse_status": "sanitized_no_valid_rows",
-          "warnings": [
-            "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
-          ]
+          "parse_status": "not_applicable",
+          "warnings": []
         },
         {
           "year": "2018-2019",
@@ -8199,13 +8195,8 @@
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=374&FY=2019-2020&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
           "people": [],
-          "parse_status": "sanitized_no_valid_rows",
-          "warnings": [
-            "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
-          ]
+          "parse_status": "not_applicable",
+          "warnings": []
         },
         {
           "year": "2020-2021",
@@ -8359,10 +8350,10 @@
           ],
           "parse_status": "ok_pdfplumber",
           "warnings": [
+            "Sanitized parsed rows: removed 0, fixed totals 6",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 6"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -8451,10 +8442,10 @@
           ],
           "parse_status": "ok_pdfplumber",
           "warnings": [
+            "Sanitized parsed rows: removed 1, fixed totals 6",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 6"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -8543,15 +8534,15 @@
           ],
           "parse_status": "ok_pdfplumber",
           "warnings": [
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:07:01Z"
+      "scraped": "2026-05-25T11:41:46Z"
     },
     {
       "id": 371,
@@ -8735,8 +8726,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 4"
+            "Sanitized parsed rows: removed 1, fixed totals 4",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -8756,11 +8747,8 @@
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=371&FY=2018-2019&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
           "people": [],
-          "parse_status": "sanitized_no_valid_rows",
-          "warnings": [
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
-          ]
+          "parse_status": "not_applicable",
+          "warnings": []
         },
         {
           "year": "2019-2020",
@@ -8878,9 +8866,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -8959,10 +8947,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -9041,10 +9029,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -9123,15 +9111,15 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:07:03Z"
+      "scraped": "2026-05-25T11:41:48Z"
     },
     {
       "id": 363,
@@ -9381,7 +9369,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:07:04Z"
+      "scraped": "2026-05-25T11:41:48Z"
     },
     {
       "id": 344,
@@ -9637,7 +9625,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:07:06Z"
+      "scraped": "2026-05-25T11:41:50Z"
     },
     {
       "id": 383,
@@ -10032,7 +10020,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:07:09Z"
+      "scraped": "2026-05-25T11:41:53Z"
     },
     {
       "id": 384,
@@ -10347,7 +10335,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:07:12Z"
+      "scraped": "2026-05-25T11:41:56Z"
     },
     {
       "id": 405,
@@ -11078,9 +11066,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -11181,9 +11169,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -11268,7 +11256,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:07:15Z"
+      "scraped": "2026-05-25T11:41:59Z"
     },
     {
       "id": 355,
@@ -12038,7 +12026,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:07:17Z"
+      "scraped": "2026-05-25T11:42:01Z"
     },
     {
       "id": 409,
@@ -13024,7 +13012,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:07:21Z"
+      "scraped": "2026-05-25T11:42:06Z"
     },
     {
       "id": 345,
@@ -13266,8 +13254,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 4"
+            "Sanitized parsed rows: removed 1, fixed totals 4",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -13346,8 +13334,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 2"
+            "Sanitized parsed rows: removed 1, fixed totals 2",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -13426,8 +13414,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Sanitized parsed rows: removed 1, fixed totals 0",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -13506,9 +13494,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -13609,9 +13597,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 3",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 3"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -13690,9 +13678,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 4",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 4"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -13771,10 +13759,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 4",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 4"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -13853,10 +13841,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 3",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 3"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -13881,7 +13869,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:07:23Z"
+      "scraped": "2026-05-25T11:42:08Z"
     },
     {
       "id": 356,
@@ -14035,12 +14023,8 @@
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=356&FY=2019-2020&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
           "people": [],
-          "parse_status": "sanitized_no_valid_rows",
-          "warnings": [
-            "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
-          ]
+          "parse_status": "not_applicable",
+          "warnings": []
         },
         {
           "year": "2020-2021",
@@ -14059,12 +14043,8 @@
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=356&FY=2020-2021&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
           "people": [],
-          "parse_status": "sanitized_no_valid_rows",
-          "warnings": [
-            "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
-          ]
+          "parse_status": "not_applicable",
+          "warnings": []
         },
         {
           "year": "2021-2022",
@@ -14153,9 +14133,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 6",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 6"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -14256,10 +14236,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 1",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 1"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -14365,7 +14345,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:07:26Z"
+      "scraped": "2026-05-25T11:42:10Z"
     },
     {
       "id": 346,
@@ -15471,7 +15451,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:07:28Z"
+      "scraped": "2026-05-25T11:42:13Z"
     },
     {
       "id": 364,
@@ -16387,7 +16367,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:07:32Z"
+      "scraped": "2026-05-25T11:42:16Z"
     },
     {
       "id": 357,
@@ -16638,8 +16618,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 6"
+            "Sanitized parsed rows: removed 0, fixed totals 6",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -16953,9 +16933,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 4",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 4"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -17056,10 +17036,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 5",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 5"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -17165,7 +17145,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:07:34Z"
+      "scraped": "2026-05-25T11:42:19Z"
     },
     {
       "id": 348,
@@ -17493,8 +17473,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Sanitized parsed rows: removed 1, fixed totals 0",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -17595,8 +17575,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Sanitized parsed rows: removed 1, fixed totals 0",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -17741,9 +17721,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -17844,9 +17824,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -17969,9 +17949,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -18072,10 +18052,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -18198,10 +18178,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -18302,15 +18282,15 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:07:36Z"
+      "scraped": "2026-05-25T11:42:21Z"
     },
     {
       "id": 368,
@@ -18874,8 +18854,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 4"
+            "Sanitized parsed rows: removed 0, fixed totals 4",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -18965,9 +18945,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 6",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 6"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -19057,9 +19037,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 6",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 6"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -19138,9 +19118,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 5",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 5"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -19205,7 +19185,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:07:40Z"
+      "scraped": "2026-05-25T11:42:24Z"
     },
     {
       "id": 349,
@@ -19868,7 +19848,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:07:40Z"
+      "scraped": "2026-05-25T11:42:25Z"
     },
     {
       "id": 358,
@@ -20199,8 +20179,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 4"
+            "Sanitized parsed rows: removed 1, fixed totals 4",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -20365,7 +20345,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:07:43Z"
+      "scraped": "2026-05-25T11:42:28Z"
     },
     {
       "id": 402,
@@ -20953,9 +20933,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 3",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 3"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -21056,9 +21036,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 2",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 2"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -21181,10 +21161,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 6",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 6"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -21285,10 +21265,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 7",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 7"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -21422,15 +21402,15 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 8",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 8"
+            "Preserved from previous data.json snapshot"
           ]
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:07:46Z"
+      "scraped": "2026-05-25T11:42:31Z"
     },
     {
       "id": 365,
@@ -21938,8 +21918,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 7"
+            "Sanitized parsed rows: removed 0, fixed totals 7",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -22095,8 +22075,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 6"
+            "Sanitized parsed rows: removed 0, fixed totals 6",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -22197,8 +22177,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 7"
+            "Sanitized parsed rows: removed 0, fixed totals 7",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -22310,9 +22290,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 7",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 7"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -22413,9 +22393,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 7",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 7"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -22549,9 +22529,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 7",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 7"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -22652,10 +22632,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 7",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 7"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -22800,10 +22780,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 7",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 7"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -22893,15 +22873,15 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 6",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 6"
+            "Preserved from previous data.json snapshot"
           ]
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:07:50Z"
+      "scraped": "2026-05-25T11:42:35Z"
     },
     {
       "id": 372,
@@ -23015,12 +22995,8 @@
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=372&FY=2017-2018&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
           "people": [],
-          "parse_status": "sanitized_no_valid_rows",
-          "warnings": [
-            "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
-          ]
+          "parse_status": "not_applicable",
+          "warnings": []
         },
         {
           "year": "2018-2019",
@@ -23164,7 +23140,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:07:53Z"
+      "scraped": "2026-05-25T11:42:38Z"
     },
     {
       "id": 388,
@@ -23423,7 +23399,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:07:57Z"
+      "scraped": "2026-05-25T11:42:41Z"
     },
     {
       "id": 376,
@@ -23682,7 +23658,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:08:00Z"
+      "scraped": "2026-05-25T11:42:45Z"
     },
     {
       "id": 406,
@@ -23998,8 +23974,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 18"
+            "Sanitized parsed rows: removed 1, fixed totals 18",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -24292,9 +24268,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 9",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 9"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -24450,10 +24426,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 7",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 7"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -24620,10 +24596,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 5",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 5"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -24790,15 +24766,15 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 6",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 6"
+            "Preserved from previous data.json snapshot"
           ]
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:08:02Z"
+      "scraped": "2026-05-25T11:42:47Z"
     },
     {
       "id": 369,
@@ -25128,8 +25104,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 2"
+            "Sanitized parsed rows: removed 1, fixed totals 2",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -25230,8 +25206,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Sanitized parsed rows: removed 1, fixed totals 0",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -25332,8 +25308,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Sanitized parsed rows: removed 1, fixed totals 0",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -25434,9 +25410,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -25537,9 +25513,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -25640,9 +25616,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -25732,10 +25708,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -25836,10 +25812,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -25864,7 +25840,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:08:05Z"
+      "scraped": "2026-05-25T11:42:49Z"
     },
     {
       "id": 398,
@@ -26827,15 +26803,15 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 1",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 1"
+            "Preserved from previous data.json snapshot"
           ]
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:08:07Z"
+      "scraped": "2026-05-25T11:42:52Z"
     },
     {
       "id": 394,
@@ -27482,7 +27458,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:08:09Z"
+      "scraped": "2026-05-25T11:42:54Z"
     },
     {
       "id": 401,
@@ -27823,7 +27799,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:08:11Z"
+      "scraped": "2026-05-25T11:42:56Z"
     },
     {
       "id": 350,
@@ -28029,8 +28005,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 2"
+            "Sanitized parsed rows: removed 0, fixed totals 2",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -28109,8 +28085,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 5"
+            "Sanitized parsed rows: removed 1, fixed totals 5",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -28189,9 +28165,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 5",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 5"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -28270,9 +28246,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 5",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 5"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -28362,9 +28338,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 5",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 5"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -28443,10 +28419,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 5",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 5"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -28525,10 +28501,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 5",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 5"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -28553,7 +28529,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:08:14Z"
+      "scraped": "2026-05-25T11:42:59Z"
     },
     {
       "id": 400,
@@ -29402,7 +29378,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:08:17Z"
+      "scraped": "2026-05-25T11:43:01Z"
     },
     {
       "id": 390,
@@ -29842,8 +29818,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 12"
+            "Sanitized parsed rows: removed 0, fixed totals 12",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -30008,7 +29984,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:08:20Z"
+      "scraped": "2026-05-25T11:43:05Z"
     },
     {
       "id": 395,
@@ -30440,9 +30416,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 1",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 1"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -30532,10 +30508,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 1",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 1"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -30614,10 +30590,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 1",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 1"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -30736,7 +30712,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:08:22Z"
+      "scraped": "2026-05-25T11:43:07Z"
     },
     {
       "id": 352,
@@ -30867,8 +30843,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 3"
+            "Sanitized parsed rows: removed 1, fixed totals 3",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -31103,7 +31079,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:08:25Z"
+      "scraped": "2026-05-25T11:43:10Z"
     },
     {
       "id": 353,
@@ -31212,8 +31188,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 1"
+            "Sanitized parsed rows: removed 1, fixed totals 1",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -31233,12 +31209,8 @@
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=353&FY=2017-2018&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
           "people": [],
-          "parse_status": "sanitized_no_valid_rows",
-          "warnings": [
-            "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
-          ]
+          "parse_status": "not_applicable",
+          "warnings": []
         },
         {
           "year": "2018-2019",
@@ -31272,8 +31244,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 1"
+            "Sanitized parsed rows: removed 1, fixed totals 1",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -31328,9 +31300,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 1",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 1"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -31365,9 +31337,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 1",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 1"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -31432,7 +31404,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:08:28Z"
+      "scraped": "2026-05-25T11:43:13Z"
     },
     {
       "id": 340,
@@ -31945,7 +31917,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:08:31Z"
+      "scraped": "2026-05-25T11:43:16Z"
     },
     {
       "id": 397,
@@ -32219,8 +32191,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 6"
+            "Sanitized parsed rows: removed 0, fixed totals 6",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -32354,9 +32326,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 8",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 8"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -32457,9 +32429,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 5",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 5"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -32582,9 +32554,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 9",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 9"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -32744,10 +32716,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 1",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 1"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -32772,7 +32744,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:08:33Z"
+      "scraped": "2026-05-25T11:43:18Z"
     },
     {
       "id": 354,
@@ -33047,8 +33019,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 3"
+            "Sanitized parsed rows: removed 0, fixed totals 3",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -33171,8 +33143,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 9"
+            "Sanitized parsed rows: removed 0, fixed totals 9",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -33284,8 +33256,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 8"
+            "Sanitized parsed rows: removed 0, fixed totals 8",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -33408,9 +33380,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 9",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 9"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -33555,9 +33527,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 11",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 11"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -34028,7 +34000,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:08:36Z"
+      "scraped": "2026-05-25T11:43:21Z"
     },
     {
       "id": 342,
@@ -34258,8 +34230,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 1"
+            "Sanitized parsed rows: removed 1, fixed totals 1",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -34382,8 +34354,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Sanitized parsed rows: removed 1, fixed totals 0",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -34506,8 +34478,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Sanitized parsed rows: removed 1, fixed totals 0",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -34630,9 +34602,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -34755,9 +34727,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -34924,9 +34896,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -35049,10 +35021,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -35175,10 +35147,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -35356,15 +35328,15 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:08:38Z"
+      "scraped": "2026-05-25T11:43:23Z"
     },
     {
       "id": 343,
@@ -35623,7 +35595,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:08:41Z"
+      "scraped": "2026-05-25T11:43:26Z"
     },
     {
       "id": 381,
@@ -35858,9 +35830,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 1",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 1"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -35965,7 +35937,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:08:45Z"
+      "scraped": "2026-05-25T11:43:30Z"
     },
     {
       "id": 375,
@@ -36212,9 +36184,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 5",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 5"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -36315,9 +36287,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 7",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 7"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -36407,9 +36379,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 6",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 6"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -36474,7 +36446,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:08:47Z"
+      "scraped": "2026-05-25T11:43:32Z"
     },
     {
       "id": 392,
@@ -36760,8 +36732,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 9"
+            "Sanitized parsed rows: removed 1, fixed totals 9",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -36884,8 +36856,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 9"
+            "Sanitized parsed rows: removed 1, fixed totals 9",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -37008,8 +36980,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Sanitized parsed rows: removed 1, fixed totals 0",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -37132,9 +37104,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -37257,9 +37229,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -37344,7 +37316,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:08:50Z"
+      "scraped": "2026-05-25T11:43:35Z"
     },
     {
       "id": 380,
@@ -37655,10 +37627,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 4",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 4"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -37753,7 +37725,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:08:54Z"
+      "scraped": "2026-05-25T11:43:39Z"
     },
     {
       "id": 408,
@@ -37984,8 +37956,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 6"
+            "Sanitized parsed rows: removed 1, fixed totals 6",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -38097,8 +38069,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 8"
+            "Sanitized parsed rows: removed 1, fixed totals 8",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -38188,8 +38160,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 6"
+            "Sanitized parsed rows: removed 1, fixed totals 6",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -38279,9 +38251,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 6",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 6"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -38371,9 +38343,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 6",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 6"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -38485,9 +38457,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -38566,10 +38538,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -38614,7 +38586,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:08:56Z"
+      "scraped": "2026-05-25T11:43:41Z"
     },
     {
       "id": 382,
@@ -38945,7 +38917,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:08:58Z"
+      "scraped": "2026-05-25T11:43:43Z"
     },
     {
       "id": 373,
@@ -39204,7 +39176,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:09:01Z"
+      "scraped": "2026-05-25T11:43:46Z"
     },
     {
       "id": 385,
@@ -39601,7 +39573,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:09:03Z"
+      "scraped": "2026-05-25T11:43:48Z"
     },
     {
       "id": 347,
@@ -40211,9 +40183,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 5",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 5"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -40394,9 +40366,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 6",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 6"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -40486,10 +40458,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 6",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 6"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -40671,15 +40643,15 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 6",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 6"
+            "Preserved from previous data.json snapshot"
           ]
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:09:07Z"
+      "scraped": "2026-05-25T11:43:51Z"
     },
     {
       "id": 386,
@@ -40987,8 +40959,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 12"
+            "Sanitized parsed rows: removed 1, fixed totals 12",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -41089,8 +41061,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Sanitized parsed rows: removed 1, fixed totals 0",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -41191,8 +41163,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Sanitized parsed rows: removed 1, fixed totals 0",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -41348,9 +41320,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -41451,9 +41423,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -41554,9 +41526,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -41690,10 +41662,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -41738,7 +41710,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:09:09Z"
+      "scraped": "2026-05-25T11:43:54Z"
     },
     {
       "id": 387,
@@ -41970,8 +41942,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 4"
+            "Sanitized parsed rows: removed 1, fixed totals 4",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -42028,8 +42000,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 3"
+            "Sanitized parsed rows: removed 1, fixed totals 3",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -42097,8 +42069,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 2"
+            "Sanitized parsed rows: removed 1, fixed totals 2",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -42166,9 +42138,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -42236,9 +42208,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -42306,9 +42278,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 4",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 4"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -42376,10 +42348,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -42447,10 +42419,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -42518,15 +42490,15 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:09:12Z"
+      "scraped": "2026-05-25T11:43:57Z"
     },
     {
       "id": 360,
@@ -42785,7 +42757,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:09:14Z"
+      "scraped": "2026-05-25T11:43:59Z"
     },
     {
       "id": 404,
@@ -43545,8 +43517,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Sanitized parsed rows: removed 1, fixed totals 0",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -43832,9 +43804,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -44001,9 +43973,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -44170,9 +44142,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -44339,10 +44311,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -44597,10 +44569,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -44756,15 +44728,15 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:09:17Z"
+      "scraped": "2026-05-25T11:44:02Z"
     },
     {
       "id": 403,
@@ -45358,7 +45330,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:09:19Z"
+      "scraped": "2026-05-25T11:44:04Z"
     },
     {
       "id": 359,
@@ -45567,9 +45539,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 1",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 1"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -45634,7 +45606,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:09:23Z"
+      "scraped": "2026-05-25T11:44:07Z"
     },
     {
       "id": 351,
@@ -46009,8 +45981,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 6"
+            "Sanitized parsed rows: removed 1, fixed totals 6",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -46175,7 +46147,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:09:25Z"
+      "scraped": "2026-05-25T11:44:10Z"
     },
     {
       "id": 370,
@@ -47294,9 +47266,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 2",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 2"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -47529,9 +47501,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 9",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 9"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -47720,10 +47692,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 14",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 14"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -47912,10 +47884,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 11",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 11"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -48133,7 +48105,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:09:29Z"
+      "scraped": "2026-05-25T11:44:13Z"
     },
     {
       "id": 393,
@@ -48430,8 +48402,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Sanitized parsed rows: removed 1, fixed totals 0",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -48554,8 +48526,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Sanitized parsed rows: removed 1, fixed totals 0",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -48755,8 +48727,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Sanitized parsed rows: removed 1, fixed totals 0",
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -48890,9 +48862,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -49015,9 +48987,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -49140,9 +49112,9 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -49287,10 +49259,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -49402,10 +49374,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -49517,15 +49489,15 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved from previous data.json snapshot",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 0"
+            "Preserved from previous data.json snapshot"
           ]
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:09:31Z"
+      "scraped": "2026-05-25T11:44:16Z"
     },
     {
       "id": 407,
@@ -49705,9 +49677,10 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 1, fixed totals 2",
+            "Sanitized parsed rows: removed 0, fixed totals 2",
             "Preserved from previous data.json snapshot",
-            "Preserved from previous data.json snapshot",
-            "Sanitized parsed rows: removed 1, fixed totals 2"
+            "Preserved from previous data.json snapshot"
           ]
         },
         {
@@ -50026,7 +49999,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-25T11:09:33Z"
+      "scraped": "2026-05-25T11:44:18Z"
     }
   ]
 }

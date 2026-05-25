@@ -1,4 +1,4 @@
-generated: 2026-05-25T11:09:33Z
+generated: 2026-05-25T11:44:18Z
 bands: 69
 error_count: 0
 bands with parsed remuneration: 59
@@ -20,9 +20,9 @@ pending by fiscal year:
   2013-2014: 57 pending, 9 parsed
 
 pending by parse status:
-  not_applicable: 195
+  not_applicable: 202
   skipped_openai_no_key: 143
-  sanitized_no_valid_rows: 16
+  sanitized_no_valid_rows: 9
 
 expected SK names missing: 0
 
