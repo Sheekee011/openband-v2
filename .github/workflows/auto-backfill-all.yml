@@ -2,9 +2,6 @@ name: Auto backfill all pending remuneration data
 
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - .github/workflows/auto-backfill-all.yml
 
 permissions:
   contents: write
@@ -118,6 +115,19 @@ jobs:
             rm -f data.before.json
             echo "::endgroup::"
           done
+
+      - name: Validate final data file
+        run: |
+          test -s data.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data = json.loads(Path('data.json').read_text(encoding='utf-8'))
+          bands = data.get('band_count') or len(data.get('bands', []))
+          if bands < 60:
+              raise SystemExit(f'Final data.json has too few bands: {bands}')
+          print(f'Final data.json bands: {bands}')
+          PY
 
       - name: Final audit
         run: python tools/audit_data.py | tee audit-results.txt
