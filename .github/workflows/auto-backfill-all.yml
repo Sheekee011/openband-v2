@@ -99,6 +99,7 @@ jobs:
           PY
           }
 
+          python tools/sanitize_data.py data.json
           echo "Initial counts: $(count_data)"
 
           for YEARS in \
@@ -108,8 +109,10 @@ jobs:
           do
             echo "::group::Backfill $YEARS"
             cp data.json data.before.json
+            python tools/sanitize_data.py data.before.json
             OPENBAND_PARSE_YEARS="$YEARS" python run_scraper_v2.py
             python tools/merge_previous_data.py data.before.json data.json
+            python tools/sanitize_data.py data.json
             validate_batch data.before.json
             python tools/audit_data.py | tee audit-results.txt
             rm -f data.before.json
@@ -119,6 +122,7 @@ jobs:
       - name: Validate final data file
         run: |
           test -s data.json
+          python tools/sanitize_data.py data.json
           python - <<'PY'
           import json
           from pathlib import Path
