@@ -1,4 +1,4 @@
-generated: 2026-05-25T11:44:18Z
+generated: 2026-05-25T12:00:49Z
 bands: 69
 error_count: 0
 bands with parsed remuneration: 59
@@ -20,9 +20,8 @@ pending by fiscal year:
   2013-2014: 57 pending, 9 parsed
 
 pending by parse status:
-  not_applicable: 202
-  skipped_openai_no_key: 143
-  sanitized_no_valid_rows: 9
+  skipped_openai_no_key: 338
+  sanitized_no_valid_rows: 16
 
 expected SK names missing: 0
 
@@ -30,40 +29,40 @@ first pending examples:
   PENDING: Carry the Kettle Nakoda Nation 2013-2014 (skipped_openai_no_key)
   PENDING: Carry the Kettle Nakoda Nation 2014-2015 (skipped_openai_no_key)
   PENDING: Carry the Kettle Nakoda Nation 2015-2016 (skipped_openai_no_key)
-  PENDING: Carry the Kettle Nakoda Nation 2018-2019 (not_applicable)
+  PENDING: Carry the Kettle Nakoda Nation 2018-2019 (skipped_openai_no_key)
   PENDING: Cote First Nation 2014-2015 (skipped_openai_no_key)
   PENDING: Cote First Nation 2015-2016 (skipped_openai_no_key)
-  PENDING: Cote First Nation 2016-2017 (not_applicable)
-  PENDING: Cote First Nation 2017-2018 (not_applicable)
-  PENDING: Cote First Nation 2018-2019 (not_applicable)
-  PENDING: Cote First Nation 2019-2020 (not_applicable)
-  PENDING: Cote First Nation 2020-2021 (not_applicable)
+  PENDING: Cote First Nation 2016-2017 (skipped_openai_no_key)
+  PENDING: Cote First Nation 2017-2018 (skipped_openai_no_key)
+  PENDING: Cote First Nation 2018-2019 (skipped_openai_no_key)
+  PENDING: Cote First Nation 2019-2020 (skipped_openai_no_key)
+  PENDING: Cote First Nation 2020-2021 (skipped_openai_no_key)
   PENDING: George Gordon First Nation 2013-2014 (skipped_openai_no_key)
   PENDING: George Gordon First Nation 2014-2015 (skipped_openai_no_key)
   PENDING: George Gordon First Nation 2015-2016 (sanitized_no_valid_rows)
-  PENDING: George Gordon First Nation 2016-2017 (not_applicable)
-  PENDING: George Gordon First Nation 2017-2018 (not_applicable)
+  PENDING: George Gordon First Nation 2016-2017 (skipped_openai_no_key)
+  PENDING: George Gordon First Nation 2017-2018 (skipped_openai_no_key)
   PENDING: Kahkewistahaw First Nation 2013-2014 (skipped_openai_no_key)
   PENDING: Kahkewistahaw First Nation 2014-2015 (skipped_openai_no_key)
   PENDING: Kahkewistahaw First Nation 2015-2016 (skipped_openai_no_key)
   PENDING: Keeseekoose First Nation 2013-2014 (skipped_openai_no_key)
   PENDING: Keeseekoose First Nation 2014-2015 (skipped_openai_no_key)
   PENDING: Keeseekoose First Nation 2015-2016 (skipped_openai_no_key)
-  PENDING: Keeseekoose First Nation 2016-2017 (not_applicable)
-  PENDING: Keeseekoose First Nation 2017-2018 (not_applicable)
-  PENDING: Keeseekoose First Nation 2018-2019 (not_applicable)
-  PENDING: Keeseekoose First Nation 2019-2020 (not_applicable)
-  PENDING: Keeseekoose First Nation 2020-2021 (not_applicable)
-  PENDING: Keeseekoose First Nation 2021-2022 (not_applicable)
+  PENDING: Keeseekoose First Nation 2016-2017 (skipped_openai_no_key)
+  PENDING: Keeseekoose First Nation 2017-2018 (skipped_openai_no_key)
+  PENDING: Keeseekoose First Nation 2018-2019 (skipped_openai_no_key)
+  PENDING: Keeseekoose First Nation 2019-2020 (skipped_openai_no_key)
+  PENDING: Keeseekoose First Nation 2020-2021 (skipped_openai_no_key)
+  PENDING: Keeseekoose First Nation 2021-2022 (skipped_openai_no_key)
   PENDING: Kinistin Saulteaux Nation 2013-2014 (skipped_openai_no_key)
   PENDING: Kinistin Saulteaux Nation 2014-2015 (skipped_openai_no_key)
   PENDING: Kinistin Saulteaux Nation 2015-2016 (skipped_openai_no_key)
-  PENDING: Kinistin Saulteaux Nation 2023-2024 (not_applicable)
+  PENDING: Kinistin Saulteaux Nation 2023-2024 (skipped_openai_no_key)
   PENDING: Little Black Bear First Nation 2013-2014 (skipped_openai_no_key)
   PENDING: Little Black Bear First Nation 2014-2015 (skipped_openai_no_key)
   PENDING: Little Black Bear First Nation 2015-2016 (skipped_openai_no_key)
-  PENDING: Little Black Bear First Nation 2016-2017 (not_applicable)
-  PENDING: Little Black Bear First Nation 2017-2018 (not_applicable)
-  PENDING: Little Black Bear First Nation 2018-2019 (not_applicable)
-  PENDING: Little Black Bear First Nation 2019-2020 (not_applicable)
-  PENDING: Little Black Bear First Nation 2020-2021 (not_applicable)
+  PENDING: Little Black Bear First Nation 2016-2017 (skipped_openai_no_key)
+  PENDING: Little Black Bear First Nation 2017-2018 (skipped_openai_no_key)
+  PENDING: Little Black Bear First Nation 2018-2019 (skipped_openai_no_key)
+  PENDING: Little Black Bear First Nation 2019-2020 (skipped_openai_no_key)
+  PENDING: Little Black Bear First Nation 2020-2021 (skipped_openai_no_key)
