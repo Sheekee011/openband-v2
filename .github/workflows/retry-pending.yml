@@ -1,0 +1,142 @@
+name: Retry pending remuneration parsing
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_pdf_attempts:
+        description: "Maximum PDFs to try per batch"
+        required: true
+        default: "260"
+  push:
+    paths:
+      - .github/workflows/retry-pending.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: openband-v2-scraper
+  cancel-in-progress: true
+
+jobs:
+  retry-pending:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Retry all pending year groups
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: gpt-4.1-mini
+          OPENBAND_MAX_PDF_ATTEMPTS: ${{ inputs.max_pdf_attempts || '260' }}
+          OPENBAND_REQUEST_DELAY: "0.25"
+        run: |
+          set -euo pipefail
+
+          count_data() {
+            python - <<'PY'
+          import json
+          from pathlib import Path
+          data = json.loads(Path('data.json').read_text(encoding='utf-8'))
+          parsed = 0
+          pending = 0
+          pending_status = {}
+          for band in data.get('bands', []):
+              for filing in band.get('filings', []):
+                  if 'remuneration' not in filing.get('docType', '').lower():
+                      continue
+                  if filing.get('people'):
+                      parsed += 1
+                  elif filing.get('posted'):
+                      pending += 1
+                      status = filing.get('parse_status') or 'unknown'
+                      pending_status[status] = pending_status.get(status, 0) + 1
+          print(f'parsed={parsed} pending={pending} statuses={pending_status}')
+          PY
+          }
+
+          validate_batch() {
+            local before_file="$1"
+            python - "$before_file" <<'PY'
+          import json
+          import sys
+          from pathlib import Path
+
+          before = json.loads(Path(sys.argv[1]).read_text(encoding='utf-8'))
+          after = json.loads(Path('data.json').read_text(encoding='utf-8'))
+
+          def counts(data):
+              parsed = 0
+              pending = 0
+              for band in data.get('bands', []):
+                  for filing in band.get('filings', []):
+                      if 'remuneration' not in filing.get('docType', '').lower():
+                          continue
+                      if filing.get('people'):
+                          parsed += 1
+                      elif filing.get('posted'):
+                          pending += 1
+              return parsed, pending
+
+          before_parsed, before_pending = counts(before)
+          after_parsed, after_pending = counts(after)
+          after_bands = after.get('band_count') or len(after.get('bands', []))
+          after_errors = after.get('error_count', 0)
+
+          print(f'parsed filings: {before_parsed} -> {after_parsed}')
+          print(f'posted pending: {before_pending} -> {after_pending}')
+          print(f'bands: {after_bands}')
+          print(f'errors: {after_errors}')
+
+          if after_bands < 60:
+              raise SystemExit('Refusing to continue: too few bands in data.json')
+          if after_errors > 5:
+              raise SystemExit('Refusing to continue: too many scraper errors')
+          if after_parsed < before_parsed:
+              raise SystemExit('Refusing to continue: parsed filing count regressed')
+          if after_pending > before_pending:
+              raise SystemExit('Refusing to continue: pending filing count increased')
+          PY
+          }
+
+          python tools/sanitize_data.py data.json
+          echo "Initial: $(count_data)"
+
+          for YEARS in \
+            "2024-2025,2023-2024,2022-2023" \
+            "2021-2022,2020-2021,2019-2020" \
+            "2018-2019,2017-2018,2016-2017" \
+            "2015-2016,2014-2015,2013-2014"
+          do
+            echo "::group::Retry $YEARS"
+            cp data.json data.before.json
+            python tools/sanitize_data.py data.before.json
+            OPENBAND_PARSE_YEARS="$YEARS" python run_scraper_v2.py
+            python tools/merge_previous_data.py data.before.json data.json
+            python tools/sanitize_data.py data.json
+            validate_batch data.before.json
+            python tools/audit_data.py | tee audit-results.txt
+            rm -f data.before.json
+            echo "Now: $(count_data)"
+            echo "::endgroup::"
+          done
+
+      - name: Final audit
+        run: python tools/audit_data.py | tee audit-results.txt
+
+      - name: Commit retry results
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Retry pending FNFTA remuneration parses"
+          file_pattern: data.json audit-results.txt
