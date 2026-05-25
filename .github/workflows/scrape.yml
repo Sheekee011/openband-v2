@@ -27,6 +27,9 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Sanitize previous snapshot
+        run: python tools/sanitize_data.py data.before.json
+
       - name: Install dependencies
         run: pip install -r requirements.txt
 
@@ -40,6 +43,9 @@ jobs:
 
       - name: Preserve previous parsed rows
         run: python tools/merge_previous_data.py data.before.json data.json
+
+      - name: Sanitize parsed rows
+        run: python tools/sanitize_data.py data.json
 
       - name: Validate data did not regress
         run: |
