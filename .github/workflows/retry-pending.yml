@@ -39,6 +39,17 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Confirm OpenAI key is available
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          if [ -z "${OPENAI_API_KEY:-}" ]; then
+            echo "OPENAI_API_KEY is missing from this repository's GitHub Actions secrets."
+            echo "Add it in Settings > Secrets and variables > Actions > Repository secrets."
+            exit 1
+          fi
+          echo "OPENAI_API_KEY is available to this workflow."
+
       - name: Retry all pending year groups
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
