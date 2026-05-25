@@ -1,0 +1,55 @@
+name: Sanitize OpenBand data
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - tools/sanitize_data.py
+      - .github/workflows/sanitize-data.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: openband-v2-sanitizer
+  cancel-in-progress: true
+
+jobs:
+  sanitize:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Sanitize parsed rows
+        run: python tools/sanitize_data.py data.json
+
+      - name: Validate sanitized data
+        run: |
+          test -s data.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          data = json.loads(Path('data.json').read_text(encoding='utf-8'))
+          bands = data.get('band_count') or len(data.get('bands', []))
+          if bands < 60:
+              raise SystemExit(f'Sanitized data.json has too few bands: {bands}')
+          print(f'Sanitized data.json bands: {bands}')
+          PY
+
+      - name: Audit current data
+        run: python tools/audit_data.py | tee audit-results.txt
+
+      - name: Commit sanitized data
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Sanitize FNFTA parsed data"
+          file_pattern: data.json audit-results.txt
