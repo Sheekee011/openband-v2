@@ -1,13 +1,16 @@
-"""Merge previously parsed rows back into a fresh scraper output.
+"""Merge previous scraper state back into a fresh scraper output.
 
 The scraper rebuilds data.json from ISC each run. When a run only targets a few
-fiscal years, older parsed rows can disappear unless we merge them back from the
-snapshot taken before the run. This keeps scraper runs incremental.
+fiscal years, older parsed rows and pending parse status can disappear unless we
+merge them back from the snapshot taken before the run. This keeps scraper runs
+incremental and keeps audit-results.txt honest.
 """
 
 import json
 import sys
 from pathlib import Path
+
+DEFAULT_STATUSES = {"", "not_applicable", None}
 
 
 def band_key(band):
@@ -28,23 +31,49 @@ def has_people(filing):
     return bool(filing.get("people"))
 
 
+def merge_warnings(previous_filing, current_filing, note):
+    warnings = []
+    for warning in previous_filing.get("warnings", []) + current_filing.get("warnings", []):
+        if warning and warning not in warnings:
+            warnings.append(warning)
+    if note not in warnings:
+        warnings.append(note)
+    return warnings
+
+
 def merge_band(previous_band, current_band):
     previous_filings = {filing_key(filing): filing for filing in previous_band.get("filings", [])}
-    restored = 0
+    restored_people = 0
+    restored_statuses = 0
 
     for filing in current_band.get("filings", []):
         previous_filing = previous_filings.get(filing_key(filing))
-        if not previous_filing:
-            continue
-        if has_people(filing) or not has_people(previous_filing):
+        if not previous_filing or has_people(filing):
             continue
 
-        filing["people"] = previous_filing.get("people", [])
-        filing["parse_status"] = previous_filing.get("parse_status", "preserved_previous_parse")
-        filing["warnings"] = previous_filing.get("warnings", []) + ["Preserved from previous data.json snapshot"]
-        restored += 1
+        if has_people(previous_filing):
+            filing["people"] = previous_filing.get("people", [])
+            filing["parse_status"] = previous_filing.get("parse_status", "preserved_previous_parse")
+            filing["warnings"] = merge_warnings(
+                previous_filing,
+                filing,
+                "Preserved parsed rows from previous data.json snapshot",
+            )
+            restored_people += 1
+            continue
 
-    return restored
+        previous_status = previous_filing.get("parse_status")
+        current_status = filing.get("parse_status")
+        if current_status in DEFAULT_STATUSES and previous_status not in DEFAULT_STATUSES:
+            filing["parse_status"] = previous_status
+            filing["warnings"] = merge_warnings(
+                previous_filing,
+                filing,
+                "Preserved pending parse status from previous data.json snapshot",
+            )
+            restored_statuses += 1
+
+    return restored_people, restored_statuses
 
 
 def main():
@@ -60,13 +89,16 @@ def main():
 
     previous_bands = {band_key(band): band for band in previous.get("bands", [])}
     current_keys = {band_key(band) for band in current.get("bands", [])}
-    restored = 0
+    restored_people = 0
+    restored_statuses = 0
     appended = 0
 
     for band in current.get("bands", []):
         previous_band = previous_bands.get(band_key(band))
         if previous_band:
-            restored += merge_band(previous_band, band)
+            people_count, status_count = merge_band(previous_band, band)
+            restored_people += people_count
+            restored_statuses += status_count
 
     for key, previous_band in previous_bands.items():
         if key not in current_keys:
@@ -76,7 +108,8 @@ def main():
     current["band_count"] = len(current.get("bands", []))
     after_path.write_text(json.dumps(current, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
-    print(f"restored parsed filings: {restored}")
+    print(f"restored parsed filings: {restored_people}")
+    print(f"restored pending parse statuses: {restored_statuses}")
     print(f"appended missing previous bands: {appended}")
 
 
