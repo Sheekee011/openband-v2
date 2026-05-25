@@ -31,7 +31,7 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: gpt-4.1-mini
-          OPENBAND_MAX_PDF_ATTEMPTS: "220"
+          OPENBAND_MAX_PDF_ATTEMPTS: "240"
           OPENBAND_REQUEST_DELAY: "0.25"
         run: |
           set -euo pipefail
@@ -103,6 +103,7 @@ jobs:
           echo "Initial counts: $(count_data)"
 
           for YEARS in \
+            "2024-2025,2023-2024,2022-2023" \
             "2021-2022,2020-2021,2019-2020" \
             "2018-2019,2017-2018,2016-2017" \
             "2015-2016,2014-2015,2013-2014"
