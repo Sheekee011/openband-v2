@@ -80,12 +80,14 @@ EXPECTED_SK_BANDS = [
 ]
 
 ALIASES = {
+    "English River First Nation": "English River Dene Nation",
     "Hatchet Lake Denesuline Nation": "Hatchet Lake Denesuline",
     "Mosquito, Grizzly Bear's Head, Lean Man First Nation": "Mosquito, Grizzly Bear's Head, Lean Man",
     "Muscowpetung Saulteaux Nation": "Muscowpetung First Nation",
     "Nekaneet First Nation": "Nekaneet Cree Nation",
     "Ochapowace Nation": "Ochapowace First Nation",
     "Key First Nation": "The Key First Nation",
+    "Sakimay First Nation": "Sakimay First Nations",
 }
 
 
@@ -118,6 +120,7 @@ def main():
     pending_posted = []
     pending_by_year = Counter()
     parsed_by_year = Counter()
+    pending_by_status = Counter()
 
     for band in bands:
         band_has_parsed = False
@@ -130,8 +133,10 @@ def main():
                 parsed_by_year[year] += 1
                 band_has_parsed = True
             elif filing.get("posted"):
-                pending_posted.append((band.get("name"), year, filing.get("parse_status")))
+                status = filing.get("parse_status") or "unknown"
+                pending_posted.append((band.get("name"), year, status))
                 pending_by_year[year] += 1
+                pending_by_status[status] += 1
         if band_has_parsed:
             parsed_bands.append(band.get("name"))
 
@@ -148,6 +153,10 @@ def main():
     for year, count in sorted(pending_by_year.items(), reverse=True):
         parsed = parsed_by_year.get(year, 0)
         print(f"  {year}: {count} pending, {parsed} parsed")
+
+    print("\npending by parse status:")
+    for status, count in pending_by_status.most_common():
+        print(f"  {status}: {count}")
 
     print(f"\nexpected SK names missing: {len(missing)}")
     for name in missing:
