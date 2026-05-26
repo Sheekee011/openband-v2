@@ -21,7 +21,7 @@ pending by fiscal year:
 
 pending by parse status:
   pending_ai_review: 338
-  sanitized_no_valid_rows: 16
+  pending_manual_review: 16
 
 expected SK names missing: 0
 
@@ -39,7 +39,7 @@ first pending examples:
   PENDING: Cote First Nation 2020-2021 (pending_ai_review)
   PENDING: George Gordon First Nation 2013-2014 (pending_ai_review)
   PENDING: George Gordon First Nation 2014-2015 (pending_ai_review)
-  PENDING: George Gordon First Nation 2015-2016 (sanitized_no_valid_rows)
+  PENDING: George Gordon First Nation 2015-2016 (pending_manual_review)
   PENDING: George Gordon First Nation 2016-2017 (pending_ai_review)
   PENDING: George Gordon First Nation 2017-2018 (pending_ai_review)
   PENDING: Kahkewistahaw First Nation 2013-2014 (pending_ai_review)

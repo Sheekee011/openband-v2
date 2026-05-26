@@ -3885,11 +3885,12 @@
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=391&FY=2015-2016&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
           "people": [],
-          "parse_status": "sanitized_no_valid_rows",
+          "parse_status": "pending_manual_review",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 1, fixed totals 0"
-          ]
+          ],
+          "technical_status": "rows_removed_by_sanitizer"
         },
         {
           "year": "2016-2017",
@@ -8357,12 +8358,13 @@
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=374&FY=2017-2018&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
           "people": [],
-          "parse_status": "sanitized_no_valid_rows",
+          "parse_status": "pending_manual_review",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved pending parse status from previous data.json snapshot"
-          ]
+          ],
+          "technical_status": "rows_removed_by_sanitizer"
         },
         {
           "year": "2018-2019",
@@ -8407,12 +8409,13 @@
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=374&FY=2019-2020&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
           "people": [],
-          "parse_status": "sanitized_no_valid_rows",
+          "parse_status": "pending_manual_review",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved pending parse status from previous data.json snapshot"
-          ]
+          ],
+          "technical_status": "rows_removed_by_sanitizer"
         },
         {
           "year": "2020-2021",
@@ -8974,11 +8977,12 @@
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=371&FY=2018-2019&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
           "people": [],
-          "parse_status": "sanitized_no_valid_rows",
+          "parse_status": "pending_manual_review",
           "warnings": [
             "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved pending parse status from previous data.json snapshot"
-          ]
+          ],
+          "technical_status": "rows_removed_by_sanitizer"
         },
         {
           "year": "2019-2020",
@@ -14342,11 +14346,12 @@
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=356&FY=2019-2020&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
           "people": [],
-          "parse_status": "sanitized_no_valid_rows",
+          "parse_status": "pending_manual_review",
           "warnings": [
             "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved pending parse status from previous data.json snapshot"
-          ]
+          ],
+          "technical_status": "rows_removed_by_sanitizer"
         },
         {
           "year": "2020-2021",
@@ -14365,11 +14370,12 @@
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=356&FY=2020-2021&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
           "people": [],
-          "parse_status": "sanitized_no_valid_rows",
+          "parse_status": "pending_manual_review",
           "warnings": [
             "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved pending parse status from previous data.json snapshot"
-          ]
+          ],
+          "technical_status": "rows_removed_by_sanitizer"
         },
         {
           "year": "2021-2022",
@@ -23275,11 +23281,12 @@
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=372&FY=2014-2015&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
           "people": [],
-          "parse_status": "sanitized_no_valid_rows",
+          "parse_status": "pending_manual_review",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 1, fixed totals 0"
-          ]
+          ],
+          "technical_status": "rows_removed_by_sanitizer"
         },
         {
           "year": "2015-2016",
@@ -23298,11 +23305,12 @@
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=372&FY=2015-2016&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
           "people": [],
-          "parse_status": "sanitized_no_valid_rows",
+          "parse_status": "pending_manual_review",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 1, fixed totals 0"
-          ]
+          ],
+          "technical_status": "rows_removed_by_sanitizer"
         },
         {
           "year": "2016-2017",
@@ -23347,12 +23355,13 @@
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=372&FY=2017-2018&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
           "people": [],
-          "parse_status": "sanitized_no_valid_rows",
+          "parse_status": "pending_manual_review",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved pending parse status from previous data.json snapshot"
-          ]
+          ],
+          "technical_status": "rows_removed_by_sanitizer"
         },
         {
           "year": "2018-2019",
@@ -31343,11 +31352,12 @@
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=352&FY=2013-2014&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
           "people": [],
-          "parse_status": "sanitized_no_valid_rows",
+          "parse_status": "pending_manual_review",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 1, fixed totals 0"
-          ]
+          ],
+          "technical_status": "rows_removed_by_sanitizer"
         },
         {
           "year": "2014-2015",
@@ -31366,11 +31376,12 @@
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=352&FY=2014-2015&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
           "people": [],
-          "parse_status": "sanitized_no_valid_rows",
+          "parse_status": "pending_manual_review",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 1, fixed totals 0"
-          ]
+          ],
+          "technical_status": "rows_removed_by_sanitizer"
         },
         {
           "year": "2015-2016",
@@ -31389,11 +31400,12 @@
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=352&FY=2015-2016&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
           "people": [],
-          "parse_status": "sanitized_no_valid_rows",
+          "parse_status": "pending_manual_review",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 1, fixed totals 0"
-          ]
+          ],
+          "technical_status": "rows_removed_by_sanitizer"
         },
         {
           "year": "2016-2017",
@@ -31752,11 +31764,12 @@
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=353&FY=2013-2014&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
           "people": [],
-          "parse_status": "sanitized_no_valid_rows",
+          "parse_status": "pending_manual_review",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 1, fixed totals 0"
-          ]
+          ],
+          "technical_status": "rows_removed_by_sanitizer"
         },
         {
           "year": "2014-2015",
@@ -31775,11 +31788,12 @@
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=353&FY=2014-2015&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
           "people": [],
-          "parse_status": "sanitized_no_valid_rows",
+          "parse_status": "pending_manual_review",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 1, fixed totals 0"
-          ]
+          ],
+          "technical_status": "rows_removed_by_sanitizer"
         },
         {
           "year": "2015-2016",
@@ -31798,11 +31812,12 @@
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=353&FY=2015-2016&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
           "people": [],
-          "parse_status": "sanitized_no_valid_rows",
+          "parse_status": "pending_manual_review",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 1, fixed totals 0"
-          ]
+          ],
+          "technical_status": "rows_removed_by_sanitizer"
         },
         {
           "year": "2016-2017",
@@ -31857,12 +31872,13 @@
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=353&FY=2017-2018&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
           "people": [],
-          "parse_status": "sanitized_no_valid_rows",
+          "parse_status": "pending_manual_review",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved pending parse status from previous data.json snapshot"
-          ]
+          ],
+          "technical_status": "rows_removed_by_sanitizer"
         },
         {
           "year": "2018-2019",
