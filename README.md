@@ -29,6 +29,14 @@ OpenBand's current work is focused on reliability, not monetization.
 
 See [`docs/phase-1-trust-roadmap.md`](docs/phase-1-trust-roadmap.md) for the working roadmap.
 
+## Phase 2 Direction
+
+After Phase 1 has a reliable dataset, OpenBand can become the analysis layer on top of public FNFTA records.
+
+Phase 2 ideas include population comparisons, compensation trends, historical changes, automated neutral summaries, searchable categories, spending heatmaps, stronger export tools, and alerts when filings change.
+
+See [`docs/phase-2-analysis-roadmap.md`](docs/phase-2-analysis-roadmap.md) for the analysis roadmap.
+
 ## Public Website Features
 
 - Search Saskatchewan First Nations by name.
