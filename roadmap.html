@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>OpenBand Roadmap</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f4f2ed;--surface:#fff;--surface2:#eceae4;--border:rgba(0,0,0,.08);--border2:rgba(0,0,0,.16);--text:#18170f;--muted:#5a5850;--soft:#9e9b90;--green:#1b4d2e;--green2:#246638;--greenL:#e6f0e9;--amber:#8a4d00;--amberL:#fdf0e0;--blue:#1a3558;--blueL:#e5eaf3;--r:14px}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);font-size:15px;line-height:1.6}
+nav{background:var(--green);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;min-height:58px;position:sticky;top:0;z-index:100;gap:1rem}.logo{font-family:Syne,sans-serif;font-size:19px;font-weight:800;color:#fff;text-decoration:none}.logo em{color:#7fcf9a;font-style:normal}.nav-r{display:flex;gap:.25rem;align-items:center}.nav-r a{color:rgba(255,255,255,.74);text-decoration:none;font-size:13px;padding:7px 12px;border-radius:8px;white-space:nowrap}.nav-r a:hover{background:rgba(255,255,255,.12);color:#fff}
+.hero{background:var(--green);padding:3.4rem 2rem 4.4rem;text-align:center;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 20% 80%,rgba(255,255,255,.04),transparent 60%),radial-gradient(ellipse 40% 60% at 80% 20%,rgba(255,255,255,.03),transparent 60%)}.hc{position:relative;z-index:1;max-width:780px;margin:0 auto}.eyebrow{color:rgba(255,255,255,.55);font-size:12px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;margin-bottom:1.2rem}.hero h1{font-family:Syne,sans-serif;font-size:clamp(2rem,5vw,3rem);font-weight:800;color:#fff;line-height:1.12;margin-bottom:.9rem}.hero h1 em{color:#7fcf9a;font-style:normal}.hero p{color:rgba(255,255,255,.7);font-size:16px;max-width:620px;margin:0 auto}
+.main{max-width:1120px;margin:0 auto;padding:2.5rem 2rem 4rem}h2,h3{font-family:Syne,sans-serif}.intro{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:1.35rem 1.5rem;margin-bottom:1.5rem}.intro h2{font-size:19px;margin-bottom:.35rem}.intro p{color:var(--muted);font-size:14px;max-width:780px}.phase-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-bottom:1.5rem}.phase{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:1.35rem}.phase-tag{display:inline-flex;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;border-radius:999px;padding:3px 10px;margin-bottom:.8rem}.phase-tag.green{background:var(--greenL);color:var(--green)}.phase-tag.blue{background:var(--blueL);color:var(--blue)}.phase h2{font-size:20px;margin-bottom:.45rem}.phase p{color:var(--muted);font-size:14px;margin-bottom:1rem}.phase ul,.feature ul{padding-left:1.1rem;color:var(--muted);font-size:13.5px}.phase li,.feature li{margin:.35rem 0}.feature-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:1rem}.feature{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:1.15rem}.feature h3{font-size:15px;margin-bottom:.45rem}.feature p{font-size:13px;color:var(--muted)}.note{background:var(--amberL);border:1px solid rgba(138,77,0,.16);border-left:3px solid var(--amber);border-radius:0 12px 12px 0;padding:1rem 1.2rem;font-size:13.5px;color:#62410f;margin-top:1.5rem}.actions{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1.25rem}.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--green);color:#fff;text-decoration:none;border-radius:9px;padding:9px 14px;font-size:13px;font-weight:700}.btn.secondary{background:var(--surface);color:var(--green);border:1px solid rgba(27,77,46,.22)}footer{background:var(--text);color:rgba(255,255,255,.45);padding:2.5rem 2rem;text-align:center;font-size:13px}.fl{font-family:Syne,sans-serif;font-size:18px;font-weight:800;color:#fff}.fl em{color:#7fcf9a;font-style:normal}footer a{color:#7fcf9a;text-decoration:none}
+@media(max-width:880px){.phase-grid,.feature-grid{grid-template-columns:1fr 1fr}}@media(max-width:680px){nav{padding:.5rem 1rem;flex-wrap:wrap}.nav-r{width:100%;overflow:auto}.main{padding:2rem 1rem 3rem}.phase-grid,.feature-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav><a class="logo" href="index.html">Open<em>Band</em></a><div class="nav-r"><a href="index.html">Search</a><a href="index.html#status">Data status</a><a href="index.html#methodology">Methodology</a><a href="https://www.sac-isc.gc.ca/eng/1322056355024/1565374106591" target="_blank" rel="noopener">About FNFTA</a></div></nav>
+<section class="hero"><div class="hc"><div class="eyebrow">OpenBand Roadmap</div><h1>Trust first. <em>Analysis next.</em></h1><p>OpenBand is being built as public records infrastructure: searchable FNFTA filings today, deeper comparison and research tools once the data is strong enough.</p></div></section>
+<main class="main">
+<section class="intro"><h2>What This Means</h2><p>The first milestone is becoming the cleanest Saskatchewan FNFTA remuneration dataset online. After that, OpenBand can grow into an analysis layer for population comparisons, trends, summaries, exports, heatmaps, and alerts.</p></section>
+<section class="phase-grid">
+  <div class="phase"><span class="phase-tag green">Phase 1</span><h2>Build Trust</h2><p>Make the public records easy to find, compare, and verify.</p><ul><li>Parse all Saskatchewan bands with posted remuneration filings.</li><li>Reduce pending filings without sacrificing accuracy.</li><li>Keep every row linked to the source ISC PDF.</li><li>Show audit status publicly.</li><li>Label parsed, pending, not posted, and review-needed filings clearly.</li></ul></div>
+  <div class="phase"><span class="phase-tag blue">Phase 2</span><h2>Build Analysis</h2><p>Turn reliable records into tools for researchers, journalists, policy analysts, and communities.</p><ul><li>Compare bands by population and fiscal year.</li><li>Show compensation trends and historical changes.</li><li>Create neutral automated summaries.</li><li>Add searchable categories and stronger exports.</li><li>Build alerts for new filings and major changes.</li></ul></div>
+</section>
+<section class="intro"><h2>Phase 2 Feature Set</h2><p>These tools should only launch once the dataset is reliable enough that the analysis does not mislead people.</p></section>
+<section class="feature-grid">
+  <div class="feature"><h3>Population Comparison</h3><p>Compare remuneration against sourced population data, with clear labels for population date and source.</p></div>
+  <div class="feature"><h3>Trends</h3><p>Show year-by-year changes for total paid, remuneration, expenses, travel, and council size.</p></div>
+  <div class="feature"><h3>Summaries</h3><p>Generate plain-language filing summaries that stay neutral and link back to source records.</p></div>
+  <div class="feature"><h3>Search Categories</h3><p>Filter by fiscal year, treaty area, population range, payment range, status, and extraction method.</p></div>
+  <div class="feature"><h3>Heatmaps</h3><p>Use visual maps and grids to find patterns in compensation, pending filings, and future spending categories.</p></div>
+  <div class="feature"><h3>Exports</h3><p>Provide full CSV and JSON exports with source URLs, parse status, extraction method, and generated date.</p></div>
+  <div class="feature"><h3>Alerts</h3><p>Notify users when filings are posted, pending data is parsed, or major year-over-year changes appear.</p></div>
+  <div class="feature"><h3>Historical Profiles</h3><p>Build a timeline for each First Nation showing parsed years, pending years, and changes over time.</p></div>
+</section>
+<div class="note"><strong>Trust rule:</strong> OpenBand should not imply wrongdoing from high numbers alone. The goal is to make public records easier to access, verify, and understand.</div>
+<div class="actions"><a class="btn" href="index.html">Search OpenBand</a><a class="btn secondary" href="docs/phase-1-trust-roadmap.md">Phase 1 Roadmap</a><a class="btn secondary" href="docs/phase-2-analysis-roadmap.md">Phase 2 Roadmap</a></div>
+</main>
+<footer><div class="fl">Open<em>Band</em></div><p>Public records infrastructure for First Nations Financial Transparency Act filings.</p><p>Data sourced from <a href="https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/SearchFF.aspx?lang=eng" target="_blank" rel="noopener">Indigenous Services Canada</a>.</p></footer>
+</body>
+</html>
