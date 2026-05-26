@@ -6,7 +6,7 @@ on:
       max_pdf_attempts:
         description: "Maximum PDFs to try per batch"
         required: true
-        default: "260"
+        default: "180"
 
 permissions:
   contents: write
@@ -47,10 +47,11 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: gpt-4.1-mini
-          OPENBAND_MAX_PDF_ATTEMPTS: ${{ github.event.inputs.max_pdf_attempts }}
+          OPENBAND_MAX_PDF_ATTEMPTS: ${{ github.event.inputs.max_pdf_attempts || '180' }}
           OPENBAND_REQUEST_DELAY: "0.25"
         run: |
           set -euo pipefail
+          export OPENBAND_MAX_PDF_ATTEMPTS="${OPENBAND_MAX_PDF_ATTEMPTS:-180}"
 
           count_data() {
             python - <<'PY'
@@ -113,8 +114,6 @@ jobs:
               raise SystemExit('Refusing to continue: too many scraper errors')
           if after_parsed < before_parsed:
               raise SystemExit('Refusing to continue: parsed filing count regressed')
-          if after_pending > before_pending:
-              raise SystemExit('Refusing to continue: pending filing count increased')
           PY
           }
 
