@@ -1,12 +1,35 @@
 # OpenBand
 
-Static FNFTA remuneration tracker for Saskatchewan First Nations.
+OpenBand is public records infrastructure for First Nations Financial Transparency Act filings.
 
-OpenBand is built as a public-interest research tool: searchable, source-linked,
-and careful about the difference between parsed data, pending filings, and rows
-that still need manual review.
+The immediate goal is simple: make Saskatchewan FNFTA Chief and Council remuneration data searchable, accurate, source-linked, accessible, and reliable enough that community members, journalists, researchers, and policy analysts can use it as a trusted starting point.
 
-## Public website features
+OpenBand is not trying to monetize attention right now. Phase 1 is trust: become the cleanest FNFTA dataset online.
+
+## What OpenBand Is
+
+- **Transparency infrastructure**: a stable public index for records that already exist but are hard to search.
+- **Public records modernization**: PDFs and filing pages are turned into structured, searchable data.
+- **Searchable governance data**: people can search by First Nation, fiscal year, role, and remuneration fields.
+- **Research tooling**: every row stays connected to the original ISC filing so figures can be verified.
+- **Community accessibility**: the site is designed to make public filings easier to inspect on ordinary devices.
+
+## Phase 1 Priorities
+
+OpenBand's current work is focused on reliability, not monetization.
+
+- Parse every Saskatchewan First Nation with posted FNFTA remuneration filings.
+- Reduce the posted-but-pending filing count as far as possible.
+- Preserve historical filings year by year.
+- Keep every parsed row linked to the source ISC PDF.
+- Clearly label parsed, pending, not posted, and review-needed filings.
+- Keep `audit-results.txt` visible so the dataset's health is public.
+- Improve mobile usability, search speed, and table readability.
+- Treat uncertain extraction as pending review instead of pretending it is perfect.
+
+See [`docs/phase-1-trust-roadmap.md`](docs/phase-1-trust-roadmap.md) for the working roadmap.
+
+## Public Website Features
 
 - Search Saskatchewan First Nations by name.
 - View Chief and Council remuneration rows by fiscal year.
@@ -16,7 +39,7 @@ that still need manual review.
 - See current data status from `audit-results.txt` directly on the homepage.
 - See whether a filing is parsed, pending, not posted, or needs extraction review.
 
-## What is in this repo
+## What Is In This Repo
 
 - `index.html` - the public website
 - `data.json` - generated filing and remuneration data used by the website
@@ -45,8 +68,8 @@ Use Settings -> Pages -> Deploy from branch -> `main` / `/root`.
 
 Add `OPENAI_API_KEY` under Settings -> Secrets and variables -> Actions before running parser workflows.
 
-## Verification standard
+## Verification Standard
 
-OpenBand should be used as a transparent index and research lead. Automated
-extractions are labelled and linked back to source PDFs. For publication, verify
-exact figures against the original ISC filing linked from the result page.
+OpenBand should be used as a transparent index and research lead. Automated extractions are labelled and linked back to source PDFs. For publication, verify exact figures against the original ISC filing linked from the result page.
+
+The standard is not "trust the scraper." The standard is "make public records easier to find, compare, and verify."
