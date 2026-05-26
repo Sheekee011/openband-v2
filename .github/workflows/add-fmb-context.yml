@@ -1,0 +1,65 @@
+name: Add FMB certification context
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/add-fmb-context.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-site:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Add FMB certification section
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          index = Path('index.html')
+          text = index.read_text(encoding='utf-8')
+
+          nav_old = '<a href="#methodology">Methodology</a><a href="https://www.sac-isc.gc.ca/eng/1322056355024/1565374106591" target="_blank" rel="noopener">About FNFTA</a>'
+          nav_new = '<a href="#methodology">Methodology</a><a href="#fmb">FMB certification</a><a href="https://www.sac-isc.gc.ca/eng/1322056355024/1565374106591" target="_blank" rel="noopener">About FNFTA</a>'
+          if nav_old in text and nav_new not in text:
+              text = text.replace(nav_old, nav_new, 1)
+
+          css_anchor = ".method-card h3{font-size:14px;margin-bottom:6px}.method-card p{font-size:12.5px;color:var(--muted);line-height:1.55}"
+          css_add = css_anchor + ".fmb-panel{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:1.35rem 1.5rem;margin:1.25rem 0 2rem}.fmb-head{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-bottom:1rem}.fmb-head h2{font-size:19px;margin-bottom:.35rem}.fmb-head p{color:var(--muted);font-size:13.5px;max-width:760px}.fmb-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:1rem}.fmb-card{background:var(--surface2);border-radius:12px;padding:1rem}.fmb-card h3{font-size:14px;margin-bottom:.45rem}.fmb-card p,.fmb-card li{font-size:12.5px;color:var(--muted);line-height:1.55}.fmb-card ul{padding-left:1rem}.fmb-card li{margin:.25rem 0}.fmb-mini{display:grid;grid-template-columns:repeat(3,1fr);gap:.65rem;margin-top:.75rem}.fmb-pill{background:#fff;border:1px solid var(--border);border-radius:10px;padding:.75rem}.fmb-pill strong{display:block;font-size:12px;margin-bottom:.25rem}.fmb-pill span{display:block;font-size:12px;color:var(--muted);line-height:1.45}.fmb-sources{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.9rem}.fmb-sources a{color:var(--green);background:var(--greenL);border:1px solid rgba(27,77,46,.18);border-radius:999px;padding:5px 10px;font-size:12px;font-weight:700;text-decoration:none}"
+          if css_anchor in text and ".fmb-panel" not in text:
+              text = text.replace(css_anchor, css_add, 1)
+
+          media_old = "@media(max-width:880px){.status-band{grid-template-columns:1fr}.method{grid-template-columns:repeat(2,1fr)}}"
+          media_new = "@media(max-width:880px){.status-band,.fmb-grid{grid-template-columns:1fr}.method{grid-template-columns:repeat(2,1fr)}.fmb-mini{grid-template-columns:1fr}}"
+          if media_old in text:
+              text = text.replace(media_old, media_new, 1)
+
+          fmb_section = '''<section class="fmb-panel" id="fmb"><div class="fmb-head"><div><h2>FMB Certification</h2><p>FMB certification is a financial governance signal from the First Nations Financial Management Board. It can show that a First Nation has approved financial rules, stronger reporting practices, and tested internal controls, but it does not replace checking the original FNFTA filing.</p></div></div><div class="fmb-grid"><div class="fmb-card"><h3>What the certificates mean</h3><ul><li><strong>Financial Performance Certificate:</strong> an independent financial health snapshot based on audited financial statements. FMB says it can support access to FNFA borrowing.</li><li><strong>Financial Management System Certificate:</strong> the larger systems certificate. It means the Nation has brought its Financial Administration Law to life and can show the law is being followed.</li><li><strong>Important limit:</strong> certification does not mean a Nation is rich, perfect, scandal-proof, or automatically transparent on every public filing.</li></ul></div><div class="fmb-card"><h3>Why OpenBand shows this context</h3><p>FMB status helps readers understand financial governance context beside FNFTA remuneration records. It can point to stronger policies, controls, budgeting, reporting, lender confidence, and possible access to lower-cost FNFA capital.</p><div class="fmb-mini"><div class="fmb-pill"><strong>Capital access</strong><span>Can support borrowing pathways through FNFA.</span></div><div class="fmb-pill"><strong>Governance signal</strong><span>Shows tested finance and administration practices.</span></div><div class="fmb-pill"><strong>Verification still needed</strong><span>Always check the linked ISC filing for exact FNFTA figures.</span></div></div></div></div><div class="fmb-card" style="margin-top:1rem"><h3>Saskatchewan examples to watch</h3><p>Known Saskatchewan FMS examples include Mistawasis Nehiyawak, Muskeg Lake Cree Nation, Gambler First Nation, Ahtahkakoop Cree Nation, and Pheasant Rump Nakota First Nation. OpenBand treats this as context, not a scorecard.</p><div class="fmb-sources"><a href="https://fnfmb.com/en/services/certify-first-nations/financial-performance-certification" target="_blank" rel="noopener">FMB: FP Certificate</a><a href="https://fnfmb.com/en/services/certify-first-nations/financial-management-system-certification" target="_blank" rel="noopener">FMB: FMS Certificate</a><a href="https://fnfmb.com/en/news/media-releases" target="_blank" rel="noopener">FMB media releases</a></div></div></section>'''
+
+          anchor = '<div id="results">'
+          if 'id="fmb"' not in text and anchor in text:
+              text = text.replace(anchor, fmb_section + '\n' + anchor, 1)
+
+          workflow = Path('.github/workflows/add-fmb-context.yml')
+          if workflow.exists():
+              workflow.unlink()
+
+          index.write_text(text, encoding='utf-8')
+          PY
+      - name: Commit FMB context
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html .github/workflows/add-fmb-context.yml
+          if git diff --cached --quiet; then
+            echo "No changes needed."
+            exit 0
+          fi
+          git commit -m "Add FMB certification context to site"
+          git push
