@@ -25,9 +25,19 @@ PUBLIC_STATUS_MAP = {
     "no_pdf_url": "source_unavailable",
     "no_rows": "pending_review",
     "not_applicable": "not_required",
+    "sanitized_no_valid_rows": "pending_manual_review",
     "skipped_openai_no_key": "pending_ai_setup",
     "skipped_pdfplumber": "pending_review",
     "skipped_run_limit": "pending_retry",
+}
+
+TECHNICAL_STATUS_MAP = {
+    "error": "parser_failed",
+    "error_openai": "openai_extraction_failed",
+    "error_openai_empty": "openai_empty_response",
+    "error_pdf_download": "pdf_download_failed",
+    "sanitized_no_valid_rows": "rows_removed_by_sanitizer",
+    "skipped_openai_no_key": "openai_key_missing",
 }
 
 BAD_NAME_RE = re.compile(
@@ -133,20 +143,24 @@ def add_warning(filing, note):
         warnings.append(note)
 
 
+def set_technical_status(filing, status):
+    if status in (None, "", "not_applicable", "not_required", "not_posted"):
+        return
+    filing["technical_status"] = TECHNICAL_STATUS_MAP.get(status, status)
+
+
 def normalize_filing_status(filing):
     status = filing.get("parse_status")
 
     if not is_remuneration(filing):
         if status != "not_required":
-            if status not in (None, "", "not_applicable", "not_required"):
-                filing.setdefault("technical_status", status)
+            set_technical_status(filing, status)
             filing["parse_status"] = "not_required"
         return
 
     if not filing.get("posted"):
         if status != "not_posted":
-            if status not in (None, "", "not_applicable", "not_posted"):
-                filing.setdefault("technical_status", status)
+            set_technical_status(filing, status)
             filing["parse_status"] = "not_posted"
         return
 
@@ -156,10 +170,10 @@ def normalize_filing_status(filing):
 
     public_status = PUBLIC_STATUS_MAP.get(status)
     if public_status and public_status != status:
-        filing.setdefault("technical_status", status)
+        set_technical_status(filing, status)
         filing["parse_status"] = public_status
         if status == "error_openai":
-            add_warning(filing, "OpenAI-assisted extraction needs review; see technical_status for the original parser result")
+            add_warning(filing, "OpenAI-assisted extraction needs review")
 
 
 def sanitize_person(person):
@@ -245,7 +259,7 @@ def sanitize_filing(filing):
         add_warning(filing, f"Sanitized parsed rows: removed {removed}, fixed totals {fixed}")
 
     if people and not cleaned_people:
-        filing.setdefault("technical_status", filing.get("parse_status"))
+        set_technical_status(filing, filing.get("parse_status"))
         filing["parse_status"] = "pending_manual_review"
 
     normalize_filing_status(filing)
