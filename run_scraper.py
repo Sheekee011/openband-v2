@@ -6,9 +6,12 @@ text still contains the Chief and Council rows. This launcher parses those rows
 before falling back to OpenAI.
 """
 
+import base64
 import io
+import json
 import os
 import re
+import urllib.error
 import urllib.parse
 import urllib.request
 
@@ -16,9 +19,6 @@ _real_urlopen = urllib.request.urlopen
 
 
 def _patched_urlopen(request, *args, **kwargs):
-    if isinstance(request, urllib.request.Request) and request.full_url == "https://api.openai.com/v1/responses":
-        if request.data:
-            request.data = request.data.replace(b'"max_tokens": 1000', b'"max_output_tokens": 1000')
     return _real_urlopen(request, *args, **kwargs)
 
 
@@ -27,6 +27,121 @@ urllib.request.urlopen = _patched_urlopen
 import scraper  # noqa: E402
 
 scraper.urllib.request.urlopen = _patched_urlopen
+
+
+def _json_from_model_text(text):
+    text = (text or "").strip()
+    if not text:
+        return None
+    if text.startswith("```"):
+        text = re.sub(r"^```(?:json)?\s*", "", text, flags=re.I).strip()
+        text = re.sub(r"\s*```$", "", text).strip()
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        match = re.search(r"\{.*\}", text, flags=re.S)
+        if not match:
+            return None
+        return json.loads(match.group(0))
+
+
+def _extract_with_openai_vision_fixed(pdf_bytes):
+    api_key = os.getenv("OPENAI_API_KEY")
+    if not api_key:
+        return {
+            "parse_status": "skipped_openai_no_key",
+            "warnings": ["OPENAI_API_KEY not set"],
+            "people": [],
+        }
+
+    prompt = (
+        "Extract only the Chief and Council remuneration schedule from this PDF. "
+        "Ignore audited financial statement project tables, notes, signatures, and totals-only rows. "
+        "Return only JSON with this exact shape: "
+        '{"people":[{"name":str,"role":str,"months":number|null,'
+        '"remuneration":number|null,"travel":number|null,"expenses":number|null,'
+        '"creditCard":number|null,"otherPayments":number|null,"total":number|null}]}. '
+        'If no Chief and Council remuneration table is present, return {"people":[]}.'
+    )
+    payload = {
+        "model": os.getenv("OPENAI_MODEL", "gpt-4.1-mini"),
+        "max_output_tokens": 1600,
+        "input": [
+            {
+                "role": "user",
+                "content": [
+                    {"type": "input_text", "text": prompt},
+                    {
+                        "type": "input_file",
+                        "filename": "filing.pdf",
+                        # Responses API expects raw base64 for file_data, not a data URL.
+                        "file_data": base64.b64encode(pdf_bytes).decode("ascii"),
+                    },
+                ],
+            }
+        ],
+    }
+
+    req = urllib.request.Request(
+        "https://api.openai.com/v1/responses",
+        data=json.dumps(payload).encode("utf-8"),
+        headers={
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json",
+        },
+        method="POST",
+    )
+
+    try:
+        with urllib.request.urlopen(req, timeout=120) as resp:
+            raw = json.loads(resp.read().decode("utf-8"))
+
+        text = scraper.response_output_text(raw)
+        data = _json_from_model_text(text)
+        if not data:
+            return {
+                "parse_status": "error_openai_empty",
+                "warnings": ["OpenAI returned no parseable JSON"],
+                "people": [],
+            }
+
+        rows = data.get("people", []) if isinstance(data, dict) else []
+        people = []
+        for row in rows:
+            people.append(
+                {
+                    "name": str(row.get("name", "")).strip(),
+                    "role": str(row.get("role", "")).strip() or "Council",
+                    "months": scraper.parse_money(row.get("months")),
+                    "remuneration": scraper.parse_money(row.get("remuneration")),
+                    "travel": scraper.parse_money(row.get("travel")),
+                    "expenses": scraper.parse_money(row.get("expenses")),
+                    "creditCard": scraper.parse_money(row.get("creditCard")),
+                    "otherPayments": scraper.parse_money(row.get("otherPayments")),
+                    "total": scraper.parse_money(row.get("total")),
+                }
+            )
+        return {
+            "parse_status": "ok_openai",
+            "warnings": [],
+            "people": [p for p in people if p["name"]],
+        }
+    except urllib.error.HTTPError as exc:
+        body = exc.read().decode("utf-8", errors="replace")[:1200]
+        return {
+            "parse_status": "error_openai_http",
+            "warnings": [f"OpenAI HTTP {exc.code}: {body}"],
+            "people": [],
+        }
+    except Exception as exc:
+        return {
+            "parse_status": "error_openai_exception",
+            "warnings": [f"OpenAI parse failed: {type(exc).__name__}: {exc}"],
+            "people": [],
+        }
+
+
+scraper.extract_with_openai_vision = _extract_with_openai_vision_fixed
 
 # Extra Saskatchewan First Nations flagged during OpenBand coverage review.
 # IDs are ISC First Nation Profile band numbers used by the FNFTA filing pages.
@@ -86,7 +201,7 @@ _ALLOWED_YEARS = {
     for y in os.getenv("OPENBAND_PARSE_YEARS", "2024-2025,2023-2024,2022-2023").split(",")
     if y.strip()
 }
-_MAX_PDF_ATTEMPTS = int(os.getenv("OPENBAND_MAX_PDF_ATTEMPTS", "180"))
+_MAX_PDF_ATTEMPTS = int(os.getenv("OPENBAND_MAX_PDF_ATTEMPTS", "180") or "180")
 _attempts = {"count": 0}
 _original_should_parse_people = scraper.should_parse_people
 
