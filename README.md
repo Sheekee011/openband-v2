@@ -1,43 +1,10 @@
 # OpenBand
 
-OpenBand is public records infrastructure for First Nations Financial Transparency Act filings.
+OpenBand makes First Nations Financial Transparency Act filings easier to search, inspect, export, and verify.
 
-The immediate goal is simple: make Saskatchewan FNFTA Chief and Council remuneration data searchable, accurate, source-linked, accessible, and reliable enough that community members, journalists, researchers, and policy analysts can use it as a trusted starting point.
+The public website focuses on Saskatchewan FNFTA Chief and Council remuneration filings. Every displayed result should stay connected to the original Indigenous Services Canada source filing so readers can verify the figures themselves.
 
-OpenBand is not trying to monetize attention right now. Phase 1 is trust: become the cleanest FNFTA dataset online.
-
-## What OpenBand Is
-
-- **Transparency infrastructure**: a stable public index for records that already exist but are hard to search.
-- **Public records modernization**: PDFs and filing pages are turned into structured, searchable data.
-- **Searchable governance data**: people can search by First Nation, fiscal year, role, and remuneration fields.
-- **Research tooling**: every row stays connected to the original ISC filing so figures can be verified.
-- **Community accessibility**: the site is designed to make public filings easier to inspect on ordinary devices.
-
-## Phase 1 Priorities
-
-OpenBand's current work is focused on reliability, not monetization.
-
-- Parse every Saskatchewan First Nation with posted FNFTA remuneration filings.
-- Reduce the posted-but-pending filing count as far as possible.
-- Preserve historical filings year by year.
-- Keep every parsed row linked to the source ISC PDF.
-- Clearly label parsed, pending, not posted, and review-needed filings.
-- Keep `audit-results.txt` visible so the dataset's health is public.
-- Improve mobile usability, search speed, and table readability.
-- Treat uncertain extraction as pending review instead of pretending it is perfect.
-
-See [`docs/phase-1-trust-roadmap.md`](docs/phase-1-trust-roadmap.md) for the working roadmap.
-
-## Phase 2 Direction
-
-After Phase 1 has a reliable dataset, OpenBand can become the analysis layer on top of public FNFTA records.
-
-Phase 2 ideas include population comparisons, compensation trends, historical changes, automated neutral summaries, searchable categories, spending heatmaps, stronger export tools, and alerts when filings change.
-
-See [`docs/phase-2-analysis-roadmap.md`](docs/phase-2-analysis-roadmap.md) for the analysis roadmap.
-
-## Public Website Features
+## Website Features
 
 - Search Saskatchewan First Nations by name.
 - View Chief and Council remuneration rows by fiscal year.
