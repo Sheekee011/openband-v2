@@ -28,7 +28,7 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Sanitize parsed rows
+      - name: Sanitize parsed rows and statuses
         run: python tools/sanitize_data.py data.json
 
       - name: Validate sanitized data
