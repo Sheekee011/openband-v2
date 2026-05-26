@@ -1,14 +1,14 @@
-generated: 2026-05-25T13:20:49Z
+generated: 2026-05-26T05:04:31Z
 bands: 69
 error_count: 0
 bands with parsed remuneration: 59
 parsed remuneration filings: 356
-posted remuneration filings still pending: 354
+posted remuneration filings still pending: 355
 
 pending by fiscal year:
   2024-2025: 12 pending, 24 parsed
   2023-2024: 14 pending, 32 parsed
-  2022-2023: 16 pending, 36 parsed
+  2022-2023: 17 pending, 36 parsed
   2021-2022: 15 pending, 42 parsed
   2020-2021: 23 pending, 37 parsed
   2019-2020: 26 pending, 37 parsed
@@ -20,7 +20,8 @@ pending by fiscal year:
   2013-2014: 57 pending, 9 parsed
 
 pending by parse status:
-  pending_ai_review: 338
+  pending_ai_review: 316
+  pending_retry: 23
   pending_manual_review: 16
 
 expected SK names missing: 0
@@ -54,6 +55,7 @@ first pending examples:
   PENDING: Keeseekoose First Nation 2019-2020 (pending_ai_review)
   PENDING: Keeseekoose First Nation 2020-2021 (pending_ai_review)
   PENDING: Keeseekoose First Nation 2021-2022 (pending_ai_review)
+  PENDING: Keeseekoose First Nation 2022-2023 (pending_ai_review)
   PENDING: Kinistin Saulteaux Nation 2013-2014 (pending_ai_review)
   PENDING: Kinistin Saulteaux Nation 2014-2015 (pending_ai_review)
   PENDING: Kinistin Saulteaux Nation 2015-2016 (pending_ai_review)
@@ -65,4 +67,3 @@ first pending examples:
   PENDING: Little Black Bear First Nation 2017-2018 (pending_ai_review)
   PENDING: Little Black Bear First Nation 2018-2019 (pending_ai_review)
   PENDING: Little Black Bear First Nation 2019-2020 (pending_ai_review)
-  PENDING: Little Black Bear First Nation 2020-2021 (pending_ai_review)
