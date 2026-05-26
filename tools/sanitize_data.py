@@ -3,7 +3,8 @@
 The scraper has to handle many PDF layouts. Some layouts expose page headings,
 dates, or project/accounting rows as text that can look like a person row. This
 script is a conservative cleanup pass: it removes obvious non-person rows,
-normalizes fields, deduplicates rows, and recalculates broken totals.
+normalizes fields, deduplicates rows, recalculates broken totals, and converts
+internal parser statuses into public-friendly data statuses.
 """
 
 import json
@@ -13,6 +14,21 @@ from pathlib import Path
 
 PAYMENT_KEYS = ("remuneration", "travel", "expenses", "creditCard", "otherPayments")
 ALL_MONEY_KEYS = PAYMENT_KEYS + ("total",)
+
+PUBLIC_STATUS_MAP = {
+    "": "pending_review",
+    None: "pending_review",
+    "error": "pending_review",
+    "error_openai": "pending_ai_review",
+    "error_openai_empty": "pending_ai_review",
+    "error_pdf_download": "source_download_failed",
+    "no_pdf_url": "source_unavailable",
+    "no_rows": "pending_review",
+    "not_applicable": "not_required",
+    "skipped_openai_no_key": "pending_ai_setup",
+    "skipped_pdfplumber": "pending_review",
+    "skipped_run_limit": "pending_retry",
+}
 
 BAD_NAME_RE = re.compile(
     r"\b("
@@ -34,6 +50,10 @@ WHITESPACE_RE = re.compile(r"\s+")
 
 def clean_text(value):
     return WHITESPACE_RE.sub(" ", str(value or "").replace("\u00a0", " ")).strip()
+
+
+def is_remuneration(filing):
+    return "remuneration" in clean_text(filing.get("docType")).lower()
 
 
 def clean_name(value):
@@ -107,6 +127,41 @@ def total_from_components(person):
     return sum(person.get(key) or 0 for key in PAYMENT_KEYS)
 
 
+def add_warning(filing, note):
+    warnings = filing.setdefault("warnings", [])
+    if note not in warnings:
+        warnings.append(note)
+
+
+def normalize_filing_status(filing):
+    status = filing.get("parse_status")
+
+    if not is_remuneration(filing):
+        if status != "not_required":
+            if status not in (None, "", "not_applicable", "not_required"):
+                filing.setdefault("technical_status", status)
+            filing["parse_status"] = "not_required"
+        return
+
+    if not filing.get("posted"):
+        if status != "not_posted":
+            if status not in (None, "", "not_applicable", "not_posted"):
+                filing.setdefault("technical_status", status)
+            filing["parse_status"] = "not_posted"
+        return
+
+    people = filing.get("people") or []
+    if people and str(status or "").startswith("ok_"):
+        return
+
+    public_status = PUBLIC_STATUS_MAP.get(status)
+    if public_status and public_status != status:
+        filing.setdefault("technical_status", status)
+        filing["parse_status"] = public_status
+        if status == "error_openai":
+            add_warning(filing, "OpenAI-assisted extraction needs review; see technical_status for the original parser result")
+
+
 def sanitize_person(person):
     if not isinstance(person, dict):
         return None, "not_object"
@@ -164,6 +219,8 @@ def dedupe_people(people):
 
 
 def sanitize_filing(filing):
+    normalize_filing_status(filing)
+
     people = filing.get("people") or []
     if not people:
         return 0, 0, 0
@@ -185,14 +242,13 @@ def sanitize_filing(filing):
 
     if removed or fixed or len(cleaned_people) != len(people):
         filing["people"] = cleaned_people
-        warnings = filing.setdefault("warnings", [])
-        note = f"Sanitized parsed rows: removed {removed}, fixed totals {fixed}"
-        if note not in warnings:
-            warnings.append(note)
+        add_warning(filing, f"Sanitized parsed rows: removed {removed}, fixed totals {fixed}")
 
     if people and not cleaned_people:
-        filing["parse_status"] = "sanitized_no_valid_rows"
+        filing.setdefault("technical_status", filing.get("parse_status"))
+        filing["parse_status"] = "pending_manual_review"
 
+    normalize_filing_status(filing)
     return len(people), removed, fixed
 
 
