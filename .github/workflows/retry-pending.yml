@@ -46,7 +46,8 @@ jobs:
       - name: Retry all pending year groups
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_MODEL: gpt-4.1-mini
+          # Use the stronger PDF reader for the backlog. Most remaining filings are hard PDF layouts.
+          OPENAI_MODEL: gpt-4.1
           OPENBAND_MAX_PDF_ATTEMPTS: ${{ github.event.inputs.max_pdf_attempts || '180' }}
           OPENBAND_REQUEST_DELAY: "0.25"
         run: |
