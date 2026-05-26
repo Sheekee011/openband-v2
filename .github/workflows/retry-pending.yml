@@ -7,13 +7,6 @@ on:
         description: "Maximum PDFs to try per batch"
         required: true
         default: "260"
-  push:
-    paths:
-      - .github/workflows/retry-pending.yml
-      - run_scraper.py
-      - run_scraper_v2.py
-      - tools/merge_previous_data.py
-      - tools/sanitize_data.py
 
 permissions:
   contents: write
@@ -54,7 +47,7 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: gpt-4.1-mini
-          OPENBAND_MAX_PDF_ATTEMPTS: ${{ inputs.max_pdf_attempts || '260' }}
+          OPENBAND_MAX_PDF_ATTEMPTS: ${{ github.event.inputs.max_pdf_attempts }}
           OPENBAND_REQUEST_DELAY: "0.25"
         run: |
           set -euo pipefail
