@@ -81,12 +81,7 @@ def _extract_with_openai_vision_fixed(pdf_bytes, pdf_url=None):
                 "role": "user",
                 "content": [
                     {"type": "input_text", "text": prompt},
-                    {
-                        "type": "input_file",
-                        "filename": "filing.pdf",
-                        # Responses API expects raw base64 for file_data, not a data URL.
-                        "file_data": base64.b64encode(pdf_bytes).decode("ascii"),
-                    },
+                    _openai_file_part(pdf_bytes, pdf_url),
                 ],
             }
         ],
