@@ -1,4 +1,4 @@
-generated: 2026-05-26T05:56:06Z
+generated: 2026-05-27T00:31:00Z
 bands: 69
 error_count: 0
 bands with parsed remuneration: 59
@@ -27,10 +27,6 @@ pending by parse status:
 expected SK names missing: 0
 
 first pending examples:
-  PENDING: Carry the Kettle Nakoda Nation 2013-2014 (error_openai_http)
-  PENDING: Carry the Kettle Nakoda Nation 2014-2015 (error_openai_http)
-  PENDING: Carry the Kettle Nakoda Nation 2015-2016 (error_openai_http)
-  PENDING: Carry the Kettle Nakoda Nation 2018-2019 (error_openai_http)
   PENDING: Cote First Nation 2014-2015 (error_openai_http)
   PENDING: Cote First Nation 2015-2016 (error_openai_http)
   PENDING: Cote First Nation 2016-2017 (error_openai_http)
@@ -67,3 +63,7 @@ first pending examples:
   PENDING: Little Black Bear First Nation 2017-2018 (error_openai_http)
   PENDING: Little Black Bear First Nation 2018-2019 (error_openai_http)
   PENDING: Little Black Bear First Nation 2019-2020 (error_openai_http)
+  PENDING: Little Black Bear First Nation 2020-2021 (error_openai_http)
+  PENDING: Little Black Bear First Nation 2021-2022 (error_openai_http)
+  PENDING: Little Black Bear First Nation 2022-2023 (error_openai_http)
+  PENDING: Little Black Bear First Nation 2023-2024 (error_openai_http)

@@ -45,7 +45,17 @@ def _json_from_model_text(text):
         return json.loads(match.group(0))
 
 
-def _extract_with_openai_vision_fixed(pdf_bytes):
+def _openai_file_part(pdf_bytes, pdf_url=None):
+    if pdf_url:
+        return {"type": "input_file", "file_url": scraper.normalize_pdf_url(pdf_url)}
+    return {
+        "type": "input_file",
+        "filename": "filing.pdf",
+        "file_data": "data:application/pdf;base64," + base64.b64encode(pdf_bytes).decode("ascii"),
+    }
+
+
+def _extract_with_openai_vision_fixed(pdf_bytes, pdf_url=None):
     api_key = os.getenv("OPENAI_API_KEY")
     if not api_key:
         return {
@@ -387,7 +397,21 @@ def _extract_remuneration_rows_enhanced(pdf_url):
     else:
         warnings.append("pdfplumber unavailable")
 
-    ai_result = scraper.extract_with_openai_vision(pdf_bytes)
+    ai_result = scraper.extract_with_openai_vision(pdf_bytes, pdf_url)
+    if not ai_result.get("people") and ai_result.get("parse_status") == "error_openai_http":
+        inline_result = scraper.extract_with_openai_vision(pdf_bytes)
+        if inline_result.get("people"):
+            inline_result["warnings"] = [
+                "OpenAI file_url retry failed; parsed from inline PDF fallback"
+            ] + inline_result.get("warnings", [])
+            ai_result = inline_result
+        else:
+            inline_result["warnings"] = (
+                ai_result.get("warnings", [])
+                + ["OpenAI file_url retry failed; inline PDF retry also failed"]
+                + inline_result.get("warnings", [])
+            )
+            ai_result = inline_result
     if ai_result.get("people"):
         ai_result["warnings"] = warnings + ["Parsed via OpenAI fallback"] + ai_result.get("warnings", [])
         return ai_result
