@@ -1,0 +1,162 @@
+name: Corrected targeted pending parser
+
+on:
+  push:
+    paths:
+      - .github/workflows/target-pending-parse-3.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: openband-v2-targeted-parser
+  cancel-in-progress: true
+
+jobs:
+  target-pending:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Correct OpenAI PDF payload
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          path = Path("run_scraper.py")
+          text = path.read_text(encoding="utf-8")
+
+          if "def _openai_file_part" not in text:
+              text = text.replace(
+                  "def _extract_with_openai_vision_fixed(pdf_bytes):",
+                  "def _openai_file_part(pdf_bytes, pdf_url=None):\n"
+                  "    if pdf_url:\n"
+                  "        return {\"type\": \"input_file\", \"file_url\": scraper.normalize_pdf_url(pdf_url)}\n"
+                  "    return {\n"
+                  "        \"type\": \"input_file\",\n"
+                  "        \"filename\": \"filing.pdf\",\n"
+                  "        \"file_data\": \"data:application/pdf;base64,\" + base64.b64encode(pdf_bytes).decode(\"ascii\"),\n"
+                  "    }\n\n\n"
+                  "def _extract_with_openai_vision_fixed(pdf_bytes, pdf_url=None):",
+              )
+
+          text = text.replace(
+              "def _extract_with_openai_vision_fixed(pdf_bytes):",
+              "def _extract_with_openai_vision_fixed(pdf_bytes, pdf_url=None):",
+          )
+
+          pattern = re.compile(
+              r"\n\s*\{\n"
+              r"\s*\"type\": \"input_file\",\n"
+              r"\s*\"filename\": \"filing\.pdf\",\n"
+              r"\s*#.*\n"
+              r"\s*\"file_data\": base64\.b64encode\(pdf_bytes\)\.decode\(\"ascii\"\),\n"
+              r"\s*\},"
+          )
+          text, count = pattern.subn("\n                    _openai_file_part(pdf_bytes, pdf_url),", text, count=1)
+          if count != 1 and "_openai_file_part(pdf_bytes, pdf_url)," not in text:
+              raise SystemExit("Could not replace OpenAI input_file payload")
+
+          old_ai = "    ai_result = scraper.extract_with_openai_vision(pdf_bytes)\n"
+          if old_ai in text:
+              text = text.replace(old_ai, "    ai_result = scraper.extract_with_openai_vision(pdf_bytes, pdf_url)\n", 1)
+
+          if '"file_data": base64.b64encode' in text:
+              raise SystemExit("Old raw-base64 payload is still present")
+          if "data:application/pdf;base64," not in text:
+              raise SystemExit("Correct inline PDF data URL fallback is missing")
+          if "_openai_file_part(pdf_bytes, pdf_url)," not in text:
+              raise SystemExit("file_url helper is not wired into the payload")
+
+          path.write_text(text, encoding="utf-8")
+          PY
+
+      - name: Confirm OpenAI key is available
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          if [ -z "${OPENAI_API_KEY:-}" ]; then
+            echo "OPENAI_API_KEY is missing from this repository's GitHub Actions secrets."
+            exit 1
+          fi
+          echo "OPENAI_API_KEY is available."
+
+      - name: Retry targeted pending bands
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: gpt-4.1
+          OPENBAND_REQUEST_DELAY: "0.25"
+        run: |
+          set -euo pipefail
+          cp data.json data.before.json
+          python tools/sanitize_data.py data.before.json
+
+          OPENBAND_PARSE_YEARS="2024-2025,2023-2024,2022-2023,2021-2022,2020-2021,2019-2020,2018-2019,2017-2018,2016-2017,2015-2016,2014-2015,2013-2014" \
+          OPENBAND_MAX_PDF_ATTEMPTS="120" \
+          python - <<'PY'
+          import os
+          import run_scraper_v2
+
+          targets = {
+              "Keeseekoose First Nation",
+              "Canoe Lake Cree First Nation",
+              "Kahkewistahaw First Nation",
+              "Cote First Nation",
+              "George Gordon First Nation",
+              "Kinistin Saulteaux Nation",
+              "Little Black Bear First Nation",
+          }
+
+          rs = run_scraper_v2.run_scraper
+          selected = [band for band in rs.scraper.BANDS if band.get("name") in targets]
+          if not selected:
+              raise SystemExit("No target bands found")
+
+          rs.scraper.BANDS[:] = selected
+          rs._ALLOWED_YEARS.clear()
+          rs._ALLOWED_YEARS.update(
+              year.strip()
+              for year in os.environ["OPENBAND_PARSE_YEARS"].split(",")
+              if year.strip()
+          )
+          rs._MAX_PDF_ATTEMPTS = int(os.environ.get("OPENBAND_MAX_PDF_ATTEMPTS", "120"))
+          rs._attempts["count"] = 0
+
+          print("Targeted bands:", ", ".join(band["name"] for band in selected))
+          print("Targeted years:", ", ".join(sorted(rs._ALLOWED_YEARS)))
+          print("Max PDF attempts:", rs._MAX_PDF_ATTEMPTS)
+          rs.scraper.main()
+          PY
+
+          python tools/merge_previous_data.py data.before.json data.json
+          python tools/sanitize_data.py data.json
+          python tools/audit_data.py | tee audit-results.txt
+          rm -f data.before.json
+
+      - name: Remove one-time workflow
+        if: success()
+        run: rm -f .github/workflows/target-pending-parse-3.yml
+
+      - name: Commit targeted parse results
+        if: success()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add run_scraper.py data.json audit-results.txt .github/workflows/target-pending-parse-3.yml
+          git commit -m "Run corrected targeted FNFTA pending parser" || echo "No changes to commit"
+          git push
