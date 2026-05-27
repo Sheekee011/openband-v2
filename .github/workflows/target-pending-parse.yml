@@ -166,3 +166,5 @@ jobs:
           git add run_scraper.py data.json audit-results.txt .github/workflows/target-pending-parse.yml
           git commit -m "Improve targeted FNFTA pending parses" || echo "No changes to commit"
           git push
+
+# trigger: 2026-05-26 targeted retry
