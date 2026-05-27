@@ -62,22 +62,24 @@ jobs:
           text = text.replace(old_file_block, "                    _openai_file_part(pdf_bytes, pdf_url),")
 
           old_ai_call = "    ai_result = scraper.extract_with_openai_vision(pdf_bytes)\n"
-          new_ai_call = '''    ai_result = scraper.extract_with_openai_vision(pdf_bytes, pdf_url)
-    if not ai_result.get("people") and ai_result.get("parse_status") == "error_openai_http":
-        inline_result = scraper.extract_with_openai_vision(pdf_bytes)
-        if inline_result.get("people"):
-            inline_result["warnings"] = [
-                "OpenAI file_url retry failed; parsed from inline PDF fallback"
-            ] + inline_result.get("warnings", [])
-            ai_result = inline_result
-        else:
-            inline_result["warnings"] = (
-                ai_result.get("warnings", [])
-                + ["OpenAI file_url retry failed; inline PDF retry also failed"]
-                + inline_result.get("warnings", [])
-            )
-            ai_result = inline_result
-'''
+          new_ai_call = "\n".join([
+              "    ai_result = scraper.extract_with_openai_vision(pdf_bytes, pdf_url)",
+              "    if not ai_result.get(\"people\") and ai_result.get(\"parse_status\") == \"error_openai_http\":",
+              "        inline_result = scraper.extract_with_openai_vision(pdf_bytes)",
+              "        if inline_result.get(\"people\"):",
+              "            inline_result[\"warnings\"] = [",
+              "                \"OpenAI file_url retry failed; parsed from inline PDF fallback\"",
+              "            ] + inline_result.get(\"warnings\", [])",
+              "            ai_result = inline_result",
+              "        else:",
+              "            inline_result[\"warnings\"] = (",
+              "                ai_result.get(\"warnings\", [])",
+              "                + [\"OpenAI file_url retry failed; inline PDF retry also failed\"]",
+              "                + inline_result.get(\"warnings\", [])",
+              "            )",
+              "            ai_result = inline_result",
+              "",
+          ])
           if old_ai_call not in text:
               raise SystemExit("Expected OpenAI call was not found; refusing to patch")
           text = text.replace(old_ai_call, new_ai_call, 1)
@@ -167,4 +169,4 @@ jobs:
           git commit -m "Improve targeted FNFTA pending parses" || echo "No changes to commit"
           git push
 
-# trigger: 2026-05-26 targeted retry
+# trigger: 2026-05-26 syntax fix
