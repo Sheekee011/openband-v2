@@ -1,0 +1,50 @@
+name: Remove FMB certification context
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/remove-fmb-context.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Remove FMB section
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          path = Path('index.html')
+          text = path.read_text(encoding='utf-8')
+
+          text = text.replace('<a href="#fmb">FMB certification</a>', '')
+          text = re.sub(r'\.fmb-panel\{.*?\.fmb-sources a\{.*?\}', '', text, count=1)
+          text = text.replace('@media(max-width:880px){.status-band,.fmb-grid{grid-template-columns:1fr}.method{grid-template-columns:repeat(2,1fr)}.fmb-mini{grid-template-columns:1fr}}', '@media(max-width:880px){.status-band{grid-template-columns:1fr}.method{grid-template-columns:repeat(2,1fr)}}')
+          text = re.sub(r'<section class="fmb-panel" id="fmb">.*?</section>\n', '', text, count=1)
+
+          workflow = Path('.github/workflows/remove-fmb-context.yml')
+          if workflow.exists():
+              workflow.unlink()
+
+          path.write_text(text, encoding='utf-8')
+          PY
+      - name: Commit cleanup
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html .github/workflows/remove-fmb-context.yml
+          if git diff --cached --quiet; then
+            echo "No changes needed."
+            exit 0
+          fi
+          git commit -m "Remove FMB context from homepage"
+          git push
