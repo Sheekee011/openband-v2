@@ -1,0 +1,175 @@
+name: Fix site bugs once
+
+on:
+  push:
+    paths:
+      - ".github/workflows/fix-site-bugs.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fix-site-bugs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Remove duplicate Wood Mountain and patch UI bugs
+        run: |
+          python - <<'PY'
+          import json
+          import pathlib
+          import re
+          import subprocess
+
+          root = pathlib.Path('.')
+          report = []
+
+          def norm(value):
+              return re.sub(r'[^a-z0-9]+', ' ', str(value or '').lower()).strip()
+
+          def is_rem(filing):
+              return 'remuneration' in str(filing.get('docType', '')).lower()
+
+          def parsed_count(band):
+              return sum(
+                  1
+                  for filing in band.get('filings', [])
+                  if is_rem(filing) and filing.get('people')
+              )
+
+          data_path = root / 'data.json'
+          data = json.loads(data_path.read_text(encoding='utf-8'))
+          bands = list(data.get('bands', []))
+
+          before_count = len(bands)
+          wood = [band for band in bands if 'wood mountain' in norm(band.get('name'))]
+          if wood:
+              keep = sorted(
+                  wood,
+                  key=lambda band: (
+                      'lakota' in norm(band.get('name')),
+                      parsed_count(band),
+                      norm(band.get('name')) == 'wood mountain lakota first nation',
+                  ),
+                  reverse=True,
+              )[0]
+              removed = [band for band in wood if band is not keep]
+              bands = [
+                  band for band in bands
+                  if band is keep or 'wood mountain' not in norm(band.get('name'))
+              ]
+              report.append('Wood Mountain cleanup: kept %s; removed %s.' % (
+                  keep.get('name'),
+                  ', '.join(b.get('name', '(unnamed)') for b in removed) or 'none',
+              ))
+
+          # Remove exact duplicate band names, keeping the record with the most parsed remuneration years.
+          grouped = {}
+          for band in bands:
+              grouped.setdefault(norm(band.get('name')), []).append(band)
+          keep_ids = set()
+          for key, group in grouped.items():
+              if not key:
+                  continue
+              keep = sorted(group, key=parsed_count, reverse=True)[0]
+              keep_ids.add(id(keep))
+              if len(group) > 1:
+                  report.append('Duplicate exact name cleanup: kept %s; removed %s.' % (
+                      keep.get('name'),
+                      ', '.join(b.get('name', '(unnamed)') for b in group if b is not keep),
+                  ))
+          bands = [band for band in bands if id(band) in keep_ids]
+
+          data['bands'] = bands
+          data['band_count'] = len(bands)
+          data_path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          report.append('Band count: %s -> %s.' % (before_count, len(bands)))
+
+          html_path = root / 'index.html'
+          html = html_path.read_text(encoding='utf-8')
+
+          def replace_once(old, new, label):
+              global html
+              if old in html:
+                  html = html.replace(old, new, 1)
+                  report.append('Patched UI: ' + label)
+              elif new in html:
+                  report.append('UI already patched: ' + label)
+              else:
+                  report.append('UI patch skipped, pattern not found: ' + label)
+
+          if 'function escapeRegex(' not in html:
+              replace_once(
+                  "function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}\nfunction timeAgo",
+                  "function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}\nfunction escapeRegex(s){return String(s||'').replace(/[.*+?^${}()|[\\]\\\\]/g,'\\\\$&')}\nfunction timeAgo",
+                  'escape search text before highlighting autocomplete matches',
+              )
+
+          html = html.replace("new RegExp(q,'gi')", "new RegExp(escapeRegex(q),'gi')")
+
+          replace_once(
+              "function remFilings(band){return (band.filings||[]).filter(f=>/remuneration/i.test(f.docType||''))}",
+              "function remFilings(band){return (band.filings||[]).filter(f=>/remuneration/i.test(f.docType||''))}\nfunction filingScore(f){return (hasRows(f)?1000:0)+(f&&f.posted?100:0)+(f&&f.href?10:0)}\nfunction remFilingsByYear(band){const by={};remFilings(band).forEach(f=>{const y=String(f.year||'');if(!y)return;if(!by[y]||filingScore(f)>filingScore(by[y]))by[y]=f});return Object.values(by).sort((a,b)=>String(b.year).localeCompare(String(a.year)))}",
+              'dedupe fiscal-year filing options and prefer parsed rows',
+          )
+
+          replace_once(
+              "function bestYear(band){const fs=remFilings(band).sort((a,b)=>String(b.year).localeCompare(String(a.year)));const parsed=fs.find(hasRows);return parsed?parsed.year:(fs[0]&&fs[0].year)||null}",
+              "function bestYear(band){const fs=remFilingsByYear(band);const parsed=fs.find(hasRows);return parsed?parsed.year:(fs[0]&&fs[0].year)||null}",
+              'best year uses deduped filings',
+          )
+
+          replace_once(
+              "const fs=remFilings(band).sort((a,b)=>String(b.year).localeCompare(String(a.year)));yearSel.innerHTML='';fs.forEach(f=>{const o=document.createElement('option');o.value=f.year;const label=hasRows(f)?'parsed':f.posted?statusLabel(f):'not posted';o.textContent=`${f.year} (${label})`;yearSel.appendChild(o)});",
+              "const fs=remFilingsByYear(band);yearSel.innerHTML='';fs.forEach(f=>{const o=document.createElement('option');o.value=f.year;const label=hasRows(f)?'parsed':f.posted?statusLabel(f):'not posted';o.textContent=`${f.year} (${label})`;yearSel.appendChild(o)});",
+              'year menu hides duplicate years',
+          )
+
+          replace_once(
+              "function currentFiling(){const band=bandMap[curName];return band?remFilings(band).find(f=>f.year===curYear):null}",
+              "function currentFiling(){const band=bandMap[curName];return band?remFilingsByYear(band).find(f=>f.year===curYear):null}",
+              'current filing prefers parsed record when duplicates exist',
+          )
+
+          replace_once(
+              "const parsed=remFilings(band).filter(hasRows).sort((a,b)=>String(b.year).localeCompare(String(a.year)))[0];",
+              "const parsed=remFilingsByYear(band).filter(hasRows)[0];",
+              'pending message points to deduped newest parsed year',
+          )
+
+          replace_once(
+              "function renderT(){const rows=visibleRows();if(!rows.length)return;const ft=rows.reduce((s,p)=>s+rowTotal(p),0);",
+              "function renderT(){const rows=visibleRows();if(!rows.length){tb.innerHTML='<tr><td colspan=\"9\" style=\"text-align:center;color:var(--muted)\">No rows match this filter.</td></tr>';tfl.textContent='0 members shown';tft.textContent='Total: $0';return}const ft=rows.reduce((s,p)=>s+rowTotal(p),0);",
+              'empty role filters clear stale rows',
+          )
+
+          html_path.write_text(html, encoding='utf-8')
+
+          if (root / 'tools' / 'sanitize_data.py').exists():
+              subprocess.run(['python', 'tools/sanitize_data.py', 'data.json'], check=True)
+          if (root / 'tools' / 'audit_data.py').exists():
+              audit = subprocess.run(['python', 'tools/audit_data.py'], check=True, capture_output=True, text=True)
+              (root / 'audit-results.txt').write_text(audit.stdout, encoding='utf-8')
+
+          (root / 'site-bug-audit.txt').write_text('\n'.join(report) + '\n', encoding='utf-8')
+          print('\n'.join(report))
+          PY
+
+      - name: Commit cleanup
+        run: |
+          git config user.name "openband-bot"
+          git config user.email "openband-bot@users.noreply.github.com"
+          rm -f .github/workflows/fix-site-bugs.yml
+          git add data.json index.html audit-results.txt site-bug-audit.txt
+          git add -u .github/workflows/fix-site-bugs.yml
+          if git diff --cached --quiet; then
+            echo "No cleanup changes to commit"
+          else
+            git commit -m "Fix duplicate Wood Mountain and site edge cases"
+            git push
+          fi
