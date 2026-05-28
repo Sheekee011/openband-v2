@@ -1,0 +1,9 @@
+Wood Mountain cleanup: kept Wood Mountain Lakota First Nation; removed Wood Mountain First Nation.
+Band count: 70 -> 69.
+Patched UI: escape search text before highlighting autocomplete matches
+Patched UI: dedupe fiscal-year filing options and prefer parsed rows
+Patched UI: best year uses deduped filings
+Patched UI: year menu hides duplicate years
+Patched UI: current filing prefers parsed record when duplicates exist
+Patched UI: pending message points to deduped newest parsed year
+Patched UI: empty role filters clear stale rows

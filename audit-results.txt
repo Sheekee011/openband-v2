@@ -1,26 +1,26 @@
 generated: 2026-05-27T00:41:43Z
-bands: 70
+bands: 69
 error_count: 0
 bands with parsed remuneration: 68
 parsed remuneration filings: 386
-posted remuneration filings still pending: 328
+posted remuneration filings still pending: 316
 
 pending by fiscal year:
-  2024-2025: 9 pending, 28 parsed
-  2023-2024: 10 pending, 37 parsed
-  2022-2023: 12 pending, 42 parsed
-  2021-2022: 12 pending, 45 parsed
-  2020-2021: 21 pending, 39 parsed
-  2019-2020: 23 pending, 40 parsed
-  2018-2019: 29 pending, 35 parsed
-  2017-2018: 29 pending, 37 parsed
-  2016-2017: 34 pending, 32 parsed
-  2015-2016: 39 pending, 28 parsed
-  2014-2015: 53 pending, 14 parsed
-  2013-2014: 57 pending, 9 parsed
+  2024-2025: 8 pending, 28 parsed
+  2023-2024: 9 pending, 37 parsed
+  2022-2023: 11 pending, 42 parsed
+  2021-2022: 11 pending, 45 parsed
+  2020-2021: 20 pending, 39 parsed
+  2019-2020: 22 pending, 40 parsed
+  2018-2019: 28 pending, 35 parsed
+  2017-2018: 28 pending, 37 parsed
+  2016-2017: 33 pending, 32 parsed
+  2015-2016: 38 pending, 28 parsed
+  2014-2015: 52 pending, 14 parsed
+  2013-2014: 56 pending, 9 parsed
 
 pending by parse status:
-  error_openai_http: 291
+  error_openai_http: 279
   pending_retry: 23
   pending_manual_review: 14
 
