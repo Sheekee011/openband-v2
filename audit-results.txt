@@ -1,17 +1,17 @@
 generated: 2026-05-27T00:41:43Z
 bands: 69
 error_count: 0
-bands with parsed remuneration: 59
-parsed remuneration filings: 356
-posted remuneration filings still pending: 355
+bands with parsed remuneration: 60
+parsed remuneration filings: 359
+posted remuneration filings still pending: 352
 
 pending by fiscal year:
   2024-2025: 12 pending, 24 parsed
   2023-2024: 14 pending, 32 parsed
   2022-2023: 17 pending, 36 parsed
-  2021-2022: 15 pending, 42 parsed
-  2020-2021: 23 pending, 37 parsed
-  2019-2020: 26 pending, 37 parsed
+  2021-2022: 14 pending, 43 parsed
+  2020-2021: 22 pending, 38 parsed
+  2019-2020: 25 pending, 38 parsed
   2018-2019: 30 pending, 34 parsed
   2017-2018: 31 pending, 35 parsed
   2016-2017: 35 pending, 31 parsed
@@ -20,7 +20,7 @@ pending by fiscal year:
   2013-2014: 57 pending, 9 parsed
 
 pending by parse status:
-  error_openai_http: 316
+  error_openai_http: 313
   pending_retry: 23
   pending_manual_review: 16
 
@@ -48,9 +48,6 @@ first pending examples:
   PENDING: Keeseekoose First Nation 2016-2017 (error_openai_http)
   PENDING: Keeseekoose First Nation 2017-2018 (error_openai_http)
   PENDING: Keeseekoose First Nation 2018-2019 (error_openai_http)
-  PENDING: Keeseekoose First Nation 2019-2020 (error_openai_http)
-  PENDING: Keeseekoose First Nation 2020-2021 (error_openai_http)
-  PENDING: Keeseekoose First Nation 2021-2022 (error_openai_http)
   PENDING: Keeseekoose First Nation 2022-2023 (error_openai_http)
   PENDING: Kinistin Saulteaux Nation 2013-2014 (error_openai_http)
   PENDING: Kinistin Saulteaux Nation 2014-2015 (error_openai_http)
@@ -67,3 +64,6 @@ first pending examples:
   PENDING: Little Black Bear First Nation 2021-2022 (error_openai_http)
   PENDING: Little Black Bear First Nation 2022-2023 (error_openai_http)
   PENDING: Little Black Bear First Nation 2023-2024 (error_openai_http)
+  PENDING: Little Black Bear First Nation 2024-2025 (error_openai_http)
+  PENDING: Canoe Lake Cree First Nation 2013-2014 (error_openai_http)
+  PENDING: Canoe Lake Cree First Nation 2014-2015 (error_openai_http)

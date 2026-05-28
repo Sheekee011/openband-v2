@@ -2394,13 +2394,158 @@
           "date": "2024-11-07",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=367&FY=2019-2020&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "error_openai_http",
+          "people": [
+            {
+              "name": "Straightnose, Calvin",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 54079,
+              "travel": 9394,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 350,
+              "total": 63823
+            },
+            {
+              "name": "Keshane, Beverly R",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 30000,
+              "travel": 23068,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 1850,
+              "total": 54918
+            },
+            {
+              "name": "Keshane, Cuthbert",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 30000,
+              "travel": 20226,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 2079,
+              "total": 52305
+            },
+            {
+              "name": "Keshane, Gerald H",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 30000,
+              "travel": 15593,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 350,
+              "total": 45943
+            },
+            {
+              "name": "Keshane, Leonard",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 30000,
+              "travel": 19054,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 350,
+              "total": 49404
+            },
+            {
+              "name": "Keshane, Ralph",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 30000,
+              "travel": 18769,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 1430,
+              "total": 50199
+            },
+            {
+              "name": "Musqua, Alvin Sr",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 30000,
+              "travel": 15062,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 350,
+              "total": 45412
+            },
+            {
+              "name": "Musqua, Alvin T",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 30000,
+              "travel": 8538,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 350,
+              "total": 38888
+            },
+            {
+              "name": "Musqua, Kevin",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 30000,
+              "travel": 17659,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 350,
+              "total": 48009
+            },
+            {
+              "name": "Quewezance, Norman Jr",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 30000,
+              "travel": 5915,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 2175,
+              "total": 38090
+            },
+            {
+              "name": "Southwind, Jeremy",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 30000,
+              "travel": 13667,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 42350,
+              "total": 86017
+            },
+            {
+              "name": "Stevenson, Robert",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 30000,
+              "travel": 28204,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 7740,
+              "total": 65944
+            },
+            {
+              "name": "Whitehawk, Mark",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 30000,
+              "travel": 23422,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 350,
+              "total": 53772
+            }
+          ],
+          "parse_status": "manual_from_screenshot",
           "warnings": [
             "No remuneration rows detected from PDF table or text extraction",
             "OpenAI HTTP 429: {\n  \"error\": {\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"insufficient_quota\"\n  }\n}",
             "OpenAI file_url retry failed; inline PDF retry also failed",
-            "OpenAI HTTP 429: {\n  \"error\": {\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"insufficient_quota\"\n  }\n}"
+            "OpenAI HTTP 429: {\n  \"error\": {\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"insufficient_quota\"\n  }\n}",
+            "Manual transcription from user-provided PARSED.pdf screenshots; verify against ISC source PDF before publication"
           ]
         },
         {
@@ -2421,13 +2566,158 @@
           "date": "2025-01-22",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=367&FY=2020-2021&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "error_openai_http",
+          "people": [
+            {
+              "name": "Straightnose, Calvin",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 53224,
+              "travel": 3011,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 3200,
+              "total": 59435
+            },
+            {
+              "name": "Keshane, Beverly R",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 30000,
+              "travel": 2870,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 3600,
+              "total": 36470
+            },
+            {
+              "name": "Keshane, Cuthbert",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 30000,
+              "travel": 2293,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 8869,
+              "total": 41162
+            },
+            {
+              "name": "Keshane, Gerald H",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 30000,
+              "travel": 3786,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 6889,
+              "total": 40675
+            },
+            {
+              "name": "Keshane, Leonard",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 30000,
+              "travel": 3371,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 7096,
+              "total": 40467
+            },
+            {
+              "name": "Keshane, Ralph",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 30000,
+              "travel": 3546,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 7409,
+              "total": 40955
+            },
+            {
+              "name": "Musqua, Alvin Sr",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 30000,
+              "travel": 2122,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 7020,
+              "total": 39142
+            },
+            {
+              "name": "Musqua, Alvin T",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 30000,
+              "travel": 2588,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 5800,
+              "total": 38388
+            },
+            {
+              "name": "Musqua, Kevin",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 30000,
+              "travel": 6325,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 10229,
+              "total": 46554
+            },
+            {
+              "name": "Quewezance, Norman Jr",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 30000,
+              "travel": 1318,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 3550,
+              "total": 34868
+            },
+            {
+              "name": "Southwind, Jeremy",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 30000,
+              "travel": 3842,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 52970,
+              "total": 86812
+            },
+            {
+              "name": "Stevenson, Robert",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 30000,
+              "travel": 2586,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 30380,
+              "total": 62966
+            },
+            {
+              "name": "Whitehawk, Mark",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 30000,
+              "travel": 6979,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 17350,
+              "total": 54329
+            }
+          ],
+          "parse_status": "manual_from_screenshot",
           "warnings": [
             "No remuneration rows detected from PDF table or text extraction",
             "OpenAI HTTP 429: {\n  \"error\": {\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"insufficient_quota\"\n  }\n}",
             "OpenAI file_url retry failed; inline PDF retry also failed",
-            "OpenAI HTTP 429: {\n  \"error\": {\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"insufficient_quota\"\n  }\n}"
+            "OpenAI HTTP 429: {\n  \"error\": {\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"insufficient_quota\"\n  }\n}",
+            "Manual transcription from user-provided PARSED.pdf screenshots; verify against ISC source PDF before publication"
           ]
         },
         {
@@ -2448,13 +2738,235 @@
           "date": "2025-10-14",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=367&FY=2021-2022&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "error_openai_http",
+          "people": [
+            {
+              "name": "Kitchemonia, Lee",
+              "role": "Chief",
+              "months": 10,
+              "remuneration": 45066,
+              "travel": 57567,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 69300,
+              "total": 171933
+            },
+            {
+              "name": "Straightnose, Calvin",
+              "role": "Chief",
+              "months": 2,
+              "remuneration": 9013,
+              "travel": 30,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 0,
+              "total": 9043
+            },
+            {
+              "name": "Keshane, Beverly R",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 30000,
+              "travel": 21124,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 41250,
+              "total": 92374
+            },
+            {
+              "name": "Keshane, Cuthbert",
+              "role": "Councillor",
+              "months": 2,
+              "remuneration": 5000,
+              "travel": 0,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 1200,
+              "total": 6200
+            },
+            {
+              "name": "Keshane, Gerald H",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 30000,
+              "travel": 14712,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 19045,
+              "total": 63757
+            },
+            {
+              "name": "Keshane, Leonard",
+              "role": "Councillor",
+              "months": 2,
+              "remuneration": 5000,
+              "travel": 0,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 200,
+              "total": 5200
+            },
+            {
+              "name": "Keshane, Lorenz",
+              "role": "Councillor",
+              "months": 10,
+              "remuneration": 25000,
+              "travel": 20531,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 35302,
+              "total": 80833
+            },
+            {
+              "name": "Keshane, Ralph",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 30000,
+              "travel": 16652,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 29790,
+              "total": 76442
+            },
+            {
+              "name": "Kitchemonia, Glen",
+              "role": "Councillor",
+              "months": 10,
+              "remuneration": 25000,
+              "travel": 14101,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 17731,
+              "total": 56832
+            },
+            {
+              "name": "Musqua, Alvin Sr",
+              "role": "Councillor",
+              "months": 2,
+              "remuneration": 5000,
+              "travel": 0,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 1200,
+              "total": 6200
+            },
+            {
+              "name": "Musqua, Alvin T",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 30000,
+              "travel": 10499,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 13950,
+              "total": 54449
+            },
+            {
+              "name": "Musqua, Ambrose",
+              "role": "Councillor",
+              "months": 10,
+              "remuneration": 25000,
+              "travel": 12714,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 21958,
+              "total": 59672
+            },
+            {
+              "name": "Musqua, Kevin",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 30000,
+              "travel": 18816,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 15650,
+              "total": 64466
+            },
+            {
+              "name": "Musqua, Lyndon",
+              "role": "Councillor",
+              "months": 10,
+              "remuneration": 25000,
+              "travel": 18723,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 17870,
+              "total": 61593
+            },
+            {
+              "name": "Quewezance, Alvin",
+              "role": "Councillor",
+              "months": 10,
+              "remuneration": 25000,
+              "travel": 15120,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 15650,
+              "total": 55770
+            },
+            {
+              "name": "Quewezance, Norman Jr",
+              "role": "Councillor",
+              "months": 2,
+              "remuneration": 5000,
+              "travel": 0,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 0,
+              "total": 5000
+            },
+            {
+              "name": "Southwind, Jeremy",
+              "role": "Councillor",
+              "months": 2,
+              "remuneration": 5000,
+              "travel": 0,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 800,
+              "total": 5800
+            },
+            {
+              "name": "Stevenson, Calvin",
+              "role": "Councillor",
+              "months": 10,
+              "remuneration": 25000,
+              "travel": 12812,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 10600,
+              "total": 48412
+            },
+            {
+              "name": "Stevenson, Robert",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 30000,
+              "travel": 14985,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 11200,
+              "total": 56185
+            },
+            {
+              "name": "Whitehawk, Mark",
+              "role": "Councillor",
+              "months": 2,
+              "remuneration": 5000,
+              "travel": 0,
+              "expenses": 0,
+              "creditCard": 0,
+              "otherPayments": 1200,
+              "total": 6200
+            }
+          ],
+          "parse_status": "manual_from_screenshot",
           "warnings": [
             "No remuneration rows detected from PDF table or text extraction",
             "OpenAI HTTP 429: {\n  \"error\": {\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"insufficient_quota\"\n  }\n}",
             "OpenAI file_url retry failed; inline PDF retry also failed",
-            "OpenAI HTTP 429: {\n  \"error\": {\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"insufficient_quota\"\n  }\n}"
+            "OpenAI HTTP 429: {\n  \"error\": {\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"insufficient_quota\"\n  }\n}",
+            "Manual transcription from user-provided PARSED.pdf screenshots; verify against ISC source PDF before publication"
           ]
         },
         {

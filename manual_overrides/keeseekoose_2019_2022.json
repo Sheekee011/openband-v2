@@ -1,0 +1,427 @@
+{
+  "band": "Keeseekoose First Nation",
+  "source": "Manual transcription from user-provided PARSED.pdf screenshots",
+  "status": "manual_from_screenshot",
+  "filings": {
+    "2021-2022": [
+      [
+        "Kitchemonia, Lee",
+        "Chief",
+        10,
+        45066,
+        57567,
+        69300,
+        171933
+      ],
+      [
+        "Straightnose, Calvin",
+        "Chief",
+        2,
+        9013,
+        30,
+        0,
+        9043
+      ],
+      [
+        "Keshane, Beverly R",
+        "Councillor",
+        12,
+        30000,
+        21124,
+        41250,
+        92374
+      ],
+      [
+        "Keshane, Cuthbert",
+        "Councillor",
+        2,
+        5000,
+        0,
+        1200,
+        6200
+      ],
+      [
+        "Keshane, Gerald H",
+        "Councillor",
+        12,
+        30000,
+        14712,
+        19045,
+        63757
+      ],
+      [
+        "Keshane, Leonard",
+        "Councillor",
+        2,
+        5000,
+        0,
+        200,
+        5200
+      ],
+      [
+        "Keshane, Lorenz",
+        "Councillor",
+        10,
+        25000,
+        20531,
+        35302,
+        80833
+      ],
+      [
+        "Keshane, Ralph",
+        "Councillor",
+        12,
+        30000,
+        16652,
+        29790,
+        76442
+      ],
+      [
+        "Kitchemonia, Glen",
+        "Councillor",
+        10,
+        25000,
+        14101,
+        17731,
+        56832
+      ],
+      [
+        "Musqua, Alvin Sr",
+        "Councillor",
+        2,
+        5000,
+        0,
+        1200,
+        6200
+      ],
+      [
+        "Musqua, Alvin T",
+        "Councillor",
+        12,
+        30000,
+        10499,
+        13950,
+        54449
+      ],
+      [
+        "Musqua, Ambrose",
+        "Councillor",
+        10,
+        25000,
+        12714,
+        21958,
+        59672
+      ],
+      [
+        "Musqua, Kevin",
+        "Councillor",
+        12,
+        30000,
+        18816,
+        15650,
+        64466
+      ],
+      [
+        "Musqua, Lyndon",
+        "Councillor",
+        10,
+        25000,
+        18723,
+        17870,
+        61593
+      ],
+      [
+        "Quewezance, Alvin",
+        "Councillor",
+        10,
+        25000,
+        15120,
+        15650,
+        55770
+      ],
+      [
+        "Quewezance, Norman Jr",
+        "Councillor",
+        2,
+        5000,
+        0,
+        0,
+        5000
+      ],
+      [
+        "Southwind, Jeremy",
+        "Councillor",
+        2,
+        5000,
+        0,
+        800,
+        5800
+      ],
+      [
+        "Stevenson, Calvin",
+        "Councillor",
+        10,
+        25000,
+        12812,
+        10600,
+        48412
+      ],
+      [
+        "Stevenson, Robert",
+        "Councillor",
+        12,
+        30000,
+        14985,
+        11200,
+        56185
+      ],
+      [
+        "Whitehawk, Mark",
+        "Councillor",
+        2,
+        5000,
+        0,
+        1200,
+        6200
+      ]
+    ],
+    "2020-2021": [
+      [
+        "Straightnose, Calvin",
+        "Chief",
+        12,
+        53224,
+        3011,
+        3200,
+        59435
+      ],
+      [
+        "Keshane, Beverly R",
+        "Councillor",
+        12,
+        30000,
+        2870,
+        3600,
+        36470
+      ],
+      [
+        "Keshane, Cuthbert",
+        "Councillor",
+        12,
+        30000,
+        2293,
+        8869,
+        41162
+      ],
+      [
+        "Keshane, Gerald H",
+        "Councillor",
+        12,
+        30000,
+        3786,
+        6889,
+        40675
+      ],
+      [
+        "Keshane, Leonard",
+        "Councillor",
+        12,
+        30000,
+        3371,
+        7096,
+        40467
+      ],
+      [
+        "Keshane, Ralph",
+        "Councillor",
+        12,
+        30000,
+        3546,
+        7409,
+        40955
+      ],
+      [
+        "Musqua, Alvin Sr",
+        "Councillor",
+        12,
+        30000,
+        2122,
+        7020,
+        39142
+      ],
+      [
+        "Musqua, Alvin T",
+        "Councillor",
+        12,
+        30000,
+        2588,
+        5800,
+        38388
+      ],
+      [
+        "Musqua, Kevin",
+        "Councillor",
+        12,
+        30000,
+        6325,
+        10229,
+        46554
+      ],
+      [
+        "Quewezance, Norman Jr",
+        "Councillor",
+        12,
+        30000,
+        1318,
+        3550,
+        34868
+      ],
+      [
+        "Southwind, Jeremy",
+        "Councillor",
+        12,
+        30000,
+        3842,
+        52970,
+        86812
+      ],
+      [
+        "Stevenson, Robert",
+        "Councillor",
+        12,
+        30000,
+        2586,
+        30380,
+        62966
+      ],
+      [
+        "Whitehawk, Mark",
+        "Councillor",
+        12,
+        30000,
+        6979,
+        17350,
+        54329
+      ]
+    ],
+    "2019-2020": [
+      [
+        "Straightnose, Calvin",
+        "Chief",
+        12,
+        54079,
+        9394,
+        350,
+        63823
+      ],
+      [
+        "Keshane, Beverly R",
+        "Councillor",
+        12,
+        30000,
+        23068,
+        1850,
+        54918
+      ],
+      [
+        "Keshane, Cuthbert",
+        "Councillor",
+        12,
+        30000,
+        20226,
+        2079,
+        52305
+      ],
+      [
+        "Keshane, Gerald H",
+        "Councillor",
+        12,
+        30000,
+        15593,
+        350,
+        45943
+      ],
+      [
+        "Keshane, Leonard",
+        "Councillor",
+        12,
+        30000,
+        19054,
+        350,
+        49404
+      ],
+      [
+        "Keshane, Ralph",
+        "Councillor",
+        12,
+        30000,
+        18769,
+        1430,
+        50199
+      ],
+      [
+        "Musqua, Alvin Sr",
+        "Councillor",
+        12,
+        30000,
+        15062,
+        350,
+        45412
+      ],
+      [
+        "Musqua, Alvin T",
+        "Councillor",
+        12,
+        30000,
+        8538,
+        350,
+        38888
+      ],
+      [
+        "Musqua, Kevin",
+        "Councillor",
+        12,
+        30000,
+        17659,
+        350,
+        48009
+      ],
+      [
+        "Quewezance, Norman Jr",
+        "Councillor",
+        12,
+        30000,
+        5915,
+        2175,
+        38090
+      ],
+      [
+        "Southwind, Jeremy",
+        "Councillor",
+        12,
+        30000,
+        13667,
+        42350,
+        86017
+      ],
+      [
+        "Stevenson, Robert",
+        "Councillor",
+        12,
+        30000,
+        28204,
+        7740,
+        65944
+      ],
+      [
+        "Whitehawk, Mark",
+        "Councillor",
+        12,
+        30000,
+        23422,
+        350,
+        53772
+      ]
+    ]
+  }
+}
