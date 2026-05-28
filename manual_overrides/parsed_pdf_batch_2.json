@@ -1,0 +1,2410 @@
+{
+  "source": "Manual transcription from user-provided PARSED.pdf screenshots",
+  "status": "manual_from_screenshot",
+  "overrides": [
+    {
+      "band": "Little Black Bear First Nation",
+      "requestedBand": "Little Black Bear First Nation",
+      "filings": {
+        "2024-2025": [
+          {
+            "name": "Bellegarde, Clarence",
+            "role": "Chief",
+            "months": 12,
+            "remuneration": 90497,
+            "travel": 77472,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 40082,
+            "total": 208051
+          },
+          {
+            "name": "Bellegarde, Holly",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 49227,
+            "travel": 27348,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 78940,
+            "total": 155515
+          },
+          {
+            "name": "Bellegarde, Randall",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 49227,
+            "travel": 21757,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 30440,
+            "total": 101424
+          },
+          {
+            "name": "Bellegarde, Trent",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 49227,
+            "travel": 27996,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 30120,
+            "total": 107343
+          },
+          {
+            "name": "Bellegarde, Michael J.",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 49227,
+            "travel": 28248,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 56045,
+            "total": 133520
+          }
+        ],
+        "2023-2024": [
+          {
+            "name": "Bellegarde, Clarence",
+            "role": "Chief",
+            "months": 12,
+            "remuneration": 87862,
+            "travel": 46120,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 23939,
+            "total": 157921
+          },
+          {
+            "name": "Bellegarde, Holly",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 47793,
+            "travel": 13064,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 52397,
+            "total": 113254
+          },
+          {
+            "name": "Bellegarde, Randall",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 47793,
+            "travel": 10305,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 11700,
+            "total": 69798
+          },
+          {
+            "name": "Bellegarde, Trent",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 47793,
+            "travel": 11406,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 17218,
+            "total": 76417
+          },
+          {
+            "name": "Bellegarde, Michael J.",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 47793,
+            "travel": 12036,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 22400,
+            "total": 82229
+          }
+        ],
+        "2022-2023": [
+          {
+            "name": "Bellegarde, Clarence",
+            "role": "Chief",
+            "months": 12,
+            "remuneration": 84807,
+            "travel": 44092,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 34474,
+            "total": 163373
+          },
+          {
+            "name": "Bellegarde, Holly",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 46131,
+            "travel": 12209,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 47460,
+            "total": 105800
+          },
+          {
+            "name": "Bellegarde, Randall",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 46131,
+            "travel": 12464,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 13800,
+            "total": 72395
+          },
+          {
+            "name": "Bellegarde, Trent",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 46131,
+            "travel": 12804,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 15895,
+            "total": 74830
+          },
+          {
+            "name": "Bellegarde, Michael J.",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 46131,
+            "travel": 13448,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 18575,
+            "total": 78154
+          }
+        ]
+      }
+    },
+    {
+      "band": "Lucky Man Cree Nation",
+      "requestedBand": "Lucky Man Cree Nation",
+      "filings": {
+        "2019-2020": [
+          {
+            "name": "Okemow, Crystal",
+            "role": "Chief",
+            "months": 12,
+            "remuneration": 73750,
+            "travel": 0,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 73750
+          },
+          {
+            "name": "Buffalo, Joan",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 18900,
+            "travel": 2928,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 21828
+          },
+          {
+            "name": "Okemow, Joan",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 18900,
+            "travel": 1359,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 20259
+          },
+          {
+            "name": "Okemow, Monica",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 18900,
+            "travel": 1620,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 20520
+          },
+          {
+            "name": "Okemow, Terrence",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 18900,
+            "travel": 3337,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 22237
+          }
+        ],
+        "2018-2019": [
+          {
+            "name": "Okemow, Crystal",
+            "role": "Chief",
+            "months": 12,
+            "remuneration": 66254,
+            "travel": 2644,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 68898
+          },
+          {
+            "name": "Buffalo, Joan",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 17900,
+            "travel": 2591,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 20491
+          },
+          {
+            "name": "Okemow, Joan",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 17900,
+            "travel": 912,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 18812
+          },
+          {
+            "name": "Okemow, Monica",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 17900,
+            "travel": 1699,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 19599
+          },
+          {
+            "name": "Okemow, Terrence",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 17900,
+            "travel": 938,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 18838
+          }
+        ],
+        "2017-2018": [
+          {
+            "name": "Okemow, Crystal",
+            "role": "Chief",
+            "months": 12,
+            "remuneration": 70000,
+            "travel": 6140,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 76140
+          },
+          {
+            "name": "Buffalo, Joan",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 18900,
+            "travel": 2120,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 21020
+          },
+          {
+            "name": "Okemow, Joan",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 18900,
+            "travel": 1270,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 20170
+          },
+          {
+            "name": "Okemow, Monica",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 18900,
+            "travel": 1238,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 20138
+          },
+          {
+            "name": "Okemow, Terrence",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 18900,
+            "travel": 1683,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 20583
+          }
+        ]
+      }
+    },
+    {
+      "band": "Mosquito, Grizzly Bear's Head, Lean Man",
+      "requestedBand": "Mosquito, Grizzly Bear's Head, Lean Man",
+      "filings": {
+        "2024-2025": [
+          {
+            "name": "Aguilar-Antiman, Tanya",
+            "role": "Chief",
+            "months": 12,
+            "remuneration": 60000,
+            "travel": 91248,
+            "expenses": 6970,
+            "creditCard": 0,
+            "otherPayments": 66812,
+            "total": 225030
+          },
+          {
+            "name": "Pahsaknunk, Rusty",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 60000,
+            "travel": 68267,
+            "expenses": 5368,
+            "creditCard": 0,
+            "otherPayments": 80000,
+            "total": 214135
+          },
+          {
+            "name": "Sanders, Celest",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 60000,
+            "travel": 82679,
+            "expenses": 6200,
+            "creditCard": 0,
+            "otherPayments": 105607,
+            "total": 254486
+          },
+          {
+            "name": "Spyglass, Angus",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 60000,
+            "travel": 73268,
+            "expenses": 5435,
+            "creditCard": 0,
+            "otherPayments": 80800,
+            "total": 219503
+          },
+          {
+            "name": "Stone, Deborah",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 60000,
+            "travel": 51573,
+            "expenses": 5029,
+            "creditCard": 0,
+            "otherPayments": 70251,
+            "total": 186853
+          },
+          {
+            "name": "Wahobin, Sanderson",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 60000,
+            "travel": 60813,
+            "expenses": 5680,
+            "creditCard": 0,
+            "otherPayments": 76510,
+            "total": 203003
+          }
+        ],
+        "2023-2024": [
+          {
+            "name": "Aguilar-Antiman, Tanya",
+            "role": "Chief",
+            "months": 12,
+            "remuneration": 64000,
+            "travel": 108625,
+            "expenses": 13015,
+            "creditCard": 0,
+            "otherPayments": 66216,
+            "total": 251856
+          },
+          {
+            "name": "Bird, Tristan",
+            "role": "Councillor",
+            "months": 7,
+            "remuneration": 39769,
+            "travel": 26858,
+            "expenses": 5258,
+            "creditCard": 0,
+            "otherPayments": 42400,
+            "total": 114285
+          },
+          {
+            "name": "Pahsaknunk, Rusty",
+            "role": "Councillor",
+            "months": 5,
+            "remuneration": 24231,
+            "travel": 31685,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 30881,
+            "total": 86797
+          },
+          {
+            "name": "Sanders, Celest",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 64000,
+            "travel": 95655,
+            "expenses": 7608,
+            "creditCard": 0,
+            "otherPayments": 81361,
+            "total": 248624
+          },
+          {
+            "name": "Starchief, Bradley",
+            "role": "Councillor",
+            "months": 7,
+            "remuneration": 39769,
+            "travel": 72787,
+            "expenses": 8680,
+            "creditCard": 0,
+            "otherPayments": 31000,
+            "total": 152236
+          },
+          {
+            "name": "Stone, Deborah",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 64000,
+            "travel": 63491,
+            "expenses": 6655,
+            "creditCard": 0,
+            "otherPayments": 73914,
+            "total": 208060
+          },
+          {
+            "name": "Spyglass, Angus",
+            "role": "Councillor",
+            "months": 5,
+            "remuneration": 24231,
+            "travel": 33958,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 26981,
+            "total": 85170
+          },
+          {
+            "name": "Wahobin, Sanderson",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 61692,
+            "travel": 88594,
+            "expenses": 7393,
+            "creditCard": 0,
+            "otherPayments": 53162,
+            "total": 210841
+          }
+        ],
+        "2022-2023": [
+          {
+            "name": "Aguilar-Antiman, Tanya",
+            "role": "Chief",
+            "months": 12,
+            "remuneration": 60000,
+            "travel": 83916,
+            "expenses": 11631,
+            "creditCard": 0,
+            "otherPayments": 61073,
+            "total": 216620
+          },
+          {
+            "name": "Bird, Tristan",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 60000,
+            "travel": 56781,
+            "expenses": 10580,
+            "creditCard": 0,
+            "otherPayments": 41692,
+            "total": 169053
+          },
+          {
+            "name": "Sanders, Celest",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 60000,
+            "travel": 64748,
+            "expenses": 9576,
+            "creditCard": 0,
+            "otherPayments": 52303,
+            "total": 186627
+          },
+          {
+            "name": "Starchief, Bradley",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 60000,
+            "travel": 75976,
+            "expenses": 9001,
+            "creditCard": 0,
+            "otherPayments": 50007,
+            "total": 194984
+          },
+          {
+            "name": "Stone, Deborah",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 60000,
+            "travel": 36541,
+            "expenses": 10414,
+            "creditCard": 0,
+            "otherPayments": 57193,
+            "total": 164148
+          },
+          {
+            "name": "Wahobin, Sanderson",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 60000,
+            "travel": 53536,
+            "expenses": 10202,
+            "creditCard": 0,
+            "otherPayments": 48925,
+            "total": 172663
+          }
+        ]
+      }
+    },
+    {
+      "band": "Lac La Ronge Indian Band",
+      "requestedBand": "Lac La Ronge Indian Band",
+      "filings": {
+        "2022-2023": [
+          {
+            "name": "Cook-Searson, Tammy",
+            "role": "Chief",
+            "months": 12,
+            "remuneration": 132093,
+            "travel": 50494,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 182587
+          },
+          {
+            "name": "Roberts, Sam",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 92597,
+            "travel": 38494,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 131091
+          },
+          {
+            "name": "Sanderson, Dennis",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 93257,
+            "travel": 42658,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 135915
+          },
+          {
+            "name": "Ratt, Ann",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 95641,
+            "travel": 44129,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 139770
+          },
+          {
+            "name": "Bird, Michael",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 93630,
+            "travel": 46291,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 139921
+          },
+          {
+            "name": "Ross, Norman",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 90287,
+            "travel": 53506,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 143793
+          },
+          {
+            "name": "Bernatchez, Devin",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 95641,
+            "travel": 46188,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 141829
+          },
+          {
+            "name": "Charles, Jimmy",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 92496,
+            "travel": 59949,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 152445
+          },
+          {
+            "name": "Charles, Linda",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 92496,
+            "travel": 54406,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 146902
+          },
+          {
+            "name": "Roberts, John",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 91416,
+            "travel": 55103,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 146519
+          },
+          {
+            "name": "McKenzie, Gerald",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 89729,
+            "travel": 42078,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 131807
+          },
+          {
+            "name": "Mirasty, Keith",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 88224,
+            "travel": 52875,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 141099
+          },
+          {
+            "name": "Halkett, John Boy",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 88224,
+            "travel": 37840,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 126064
+          }
+        ],
+        "2021-2022": [
+          {
+            "name": "Cook-Searson, Tammy",
+            "role": "Chief",
+            "months": 12,
+            "remuneration": 109106,
+            "travel": 56720,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 165826
+          },
+          {
+            "name": "Roberts, Sam",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 79431,
+            "travel": 56495,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 135926
+          },
+          {
+            "name": "Sanderson, Dennis",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 79431,
+            "travel": 53739,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 133170
+          },
+          {
+            "name": "Ratt, Ann",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 77031,
+            "travel": 51839,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 128870
+          },
+          {
+            "name": "Bird, Michael",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 75831,
+            "travel": 53252,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 129083
+          },
+          {
+            "name": "Ross, Norman",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 76831,
+            "travel": 58000,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 134831
+          },
+          {
+            "name": "Bernatchez, Devin",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 76331,
+            "travel": 54564,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 130895
+          },
+          {
+            "name": "Charles, Jimmy",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 76730,
+            "travel": 53573,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 130303
+          },
+          {
+            "name": "Charles, Linda",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 76730,
+            "travel": 61242,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 137972
+          },
+          {
+            "name": "Roberts, John",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 75650,
+            "travel": 69379,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 145029
+          },
+          {
+            "name": "McKenzie, Gerald",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 73498,
+            "travel": 43338,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 116836
+          },
+          {
+            "name": "Mirasty, Keith",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 73230,
+            "travel": 59026,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 132256
+          },
+          {
+            "name": "Halkett, John Boy",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 73230,
+            "travel": 54031,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 127261
+          }
+        ]
+      }
+    },
+    {
+      "band": "One Arrow First Nation",
+      "requestedBand": "One Arrow First Nation",
+      "filings": {
+        "2021-2022": [
+          {
+            "name": "Tricia Sutherland",
+            "role": "Chief",
+            "months": 12,
+            "remuneration": 82004,
+            "travel": 54843,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 17200,
+            "total": 154047
+          },
+          {
+            "name": "Fabian Paul",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 53040,
+            "travel": 52447,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 10000,
+            "total": 115487
+          },
+          {
+            "name": "Dwayne Paul",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 53040,
+            "travel": 43933,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 10000,
+            "total": 106973
+          },
+          {
+            "name": "Peter Sutherland",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 53040,
+            "travel": 34774,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 10000,
+            "total": 97814
+          },
+          {
+            "name": "Delvis Matchap",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 53040,
+            "travel": 32818,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 10000,
+            "total": 95858
+          },
+          {
+            "name": "Melvin Baldhead",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 53040,
+            "travel": 29252,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 10000,
+            "total": 92292
+          },
+          {
+            "name": "Kelvin Paintednose",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 53040,
+            "travel": 29105,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 10000,
+            "total": 92145
+          },
+          {
+            "name": "Melvin Paul",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 53040,
+            "travel": 26615,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 10000,
+            "total": 89655
+          },
+          {
+            "name": "Miles Thomas",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 53040,
+            "travel": 21378,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 10000,
+            "total": 84418
+          }
+        ],
+        "2020-2021": [
+          {
+            "name": "Tricia Sutherland",
+            "role": "Chief",
+            "months": 12,
+            "remuneration": 82004,
+            "travel": 35078,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 14400,
+            "total": 131482
+          },
+          {
+            "name": "Fabian Paul",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 53040,
+            "travel": 35766,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 9680,
+            "total": 98486
+          },
+          {
+            "name": "Delvis Matchap",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 53040,
+            "travel": 25845,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 9680,
+            "total": 88565
+          },
+          {
+            "name": "Peter Sutherland",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 53040,
+            "travel": 25385,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 9680,
+            "total": 88105
+          },
+          {
+            "name": "Dwayne Paul",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 53040,
+            "travel": 23702,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 9680,
+            "total": 86422
+          },
+          {
+            "name": "Melvin Baldhead",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 53040,
+            "travel": 22459,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 9680,
+            "total": 85179
+          },
+          {
+            "name": "Melvin Paul",
+            "role": "Councillor",
+            "months": 10,
+            "remuneration": 42840,
+            "travel": 22588,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 9680,
+            "total": 75108
+          },
+          {
+            "name": "Kelvin Paintednose",
+            "role": "Councillor",
+            "months": 10,
+            "remuneration": 42840,
+            "travel": 19753,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 9680,
+            "total": 72273
+          },
+          {
+            "name": "Miles Thomas",
+            "role": "Councillor",
+            "months": 10,
+            "remuneration": 42840,
+            "travel": 18617,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 9680,
+            "total": 71137
+          },
+          {
+            "name": "Dale Baldhead",
+            "role": "Councillor",
+            "months": 2,
+            "remuneration": 11220,
+            "travel": 3502,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 14722
+          },
+          {
+            "name": "Allan Matchap",
+            "role": "Councillor",
+            "months": 2,
+            "remuneration": 11220,
+            "travel": 3053,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 14273
+          },
+          {
+            "name": "Janine Baldhead",
+            "role": "Councillor",
+            "months": 2,
+            "remuneration": 10200,
+            "travel": 3175,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 13375
+          }
+        ],
+        "2019-2020": [
+          {
+            "name": "Tricia Sutherland",
+            "role": "Chief",
+            "months": 12,
+            "remuneration": 82004,
+            "travel": 42095,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 14300,
+            "total": 138399
+          },
+          {
+            "name": "Peter Sutherland",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 50994,
+            "travel": 44513,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 7080,
+            "total": 102587
+          },
+          {
+            "name": "Fabian Paul",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 50994,
+            "travel": 40253,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 7080,
+            "total": 98327
+          },
+          {
+            "name": "Delvis Matchap",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 50994,
+            "travel": 38582,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 7080,
+            "total": 96656
+          },
+          {
+            "name": "Dwayne Paul",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 50994,
+            "travel": 32466,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 7080,
+            "total": 90540
+          },
+          {
+            "name": "Allan Matchap",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 50994,
+            "travel": 32452,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 7080,
+            "total": 90526
+          },
+          {
+            "name": "Dale Baldhead",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 50994,
+            "travel": 30904,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 7080,
+            "total": 88978
+          },
+          {
+            "name": "Melvin Baldhead",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 50994,
+            "travel": 30097,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 7080,
+            "total": 88171
+          },
+          {
+            "name": "Janine Baldhead",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 50994,
+            "travel": 28921,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 7080,
+            "total": 86995
+          }
+        ]
+      }
+    },
+    {
+      "band": "Onion Lake Cree Nation",
+      "requestedBand": "Onion Lake Cree Nation",
+      "filings": {
+        "2015-2016": [
+          {
+            "name": "Wallace Fox",
+            "role": "Chief",
+            "months": 12,
+            "remuneration": 150692,
+            "travel": 0,
+            "expenses": 43330,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 194022
+          },
+          {
+            "name": "Doreen Masson",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 97672,
+            "travel": 0,
+            "expenses": 30333,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 128005
+          },
+          {
+            "name": "Walter Pahtayken",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 92425,
+            "travel": 0,
+            "expenses": 29316,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 121741
+          },
+          {
+            "name": "Leon Whitstone",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 92231,
+            "travel": 0,
+            "expenses": 35395,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 127626
+          },
+          {
+            "name": "Joe Dillon",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 91966,
+            "travel": 0,
+            "expenses": 27132,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 119098
+          },
+          {
+            "name": "Florence Blois",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 86940,
+            "travel": 0,
+            "expenses": 32017,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 118957
+          },
+          {
+            "name": "Hubert Pahtayken",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 85541,
+            "travel": 0,
+            "expenses": 32885,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 118426
+          },
+          {
+            "name": "Quincy Littlewolfe",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 82985,
+            "travel": 0,
+            "expenses": 35443,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 118428
+          },
+          {
+            "name": "Joe Waskewitch",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 82348,
+            "travel": 0,
+            "expenses": 22972,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 105320
+          }
+        ],
+        "2014-2015": [
+          {
+            "name": "Wallace Fox",
+            "role": "Chief",
+            "months": 12,
+            "remuneration": 123000,
+            "travel": 0,
+            "expenses": 45801,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 168801
+          },
+          {
+            "name": "Doreen Masson",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 79169,
+            "travel": 0,
+            "expenses": 28239,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 107408
+          },
+          {
+            "name": "Leon Whitstone",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 76500,
+            "travel": 0,
+            "expenses": 42940,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 119440
+          },
+          {
+            "name": "Walter Pahtaykan",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 76500,
+            "travel": 0,
+            "expenses": 39476,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 115976
+          },
+          {
+            "name": "Joe Dillon",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 76500,
+            "travel": 0,
+            "expenses": 35056,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 111556
+          },
+          {
+            "name": "Florence Blois",
+            "role": "Councillor",
+            "months": 9,
+            "remuneration": 61403,
+            "travel": 0,
+            "expenses": 26320,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 87723
+          },
+          {
+            "name": "Joe Waskewitch",
+            "role": "Councillor",
+            "months": 9,
+            "remuneration": 60864,
+            "travel": 0,
+            "expenses": 25154,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 86018
+          },
+          {
+            "name": "Hubert Pahtayken",
+            "role": "Councillor",
+            "months": 9,
+            "remuneration": 60049,
+            "travel": 0,
+            "expenses": 31621,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 91670
+          },
+          {
+            "name": "Quincy Littlewolfe",
+            "role": "Councillor",
+            "months": 9,
+            "remuneration": 59193,
+            "travel": 0,
+            "expenses": 32901,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 92094
+          },
+          {
+            "name": "Thomas Chief",
+            "role": "Councillor",
+            "months": 3,
+            "remuneration": 30969,
+            "travel": 0,
+            "expenses": 8439,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 39408
+          },
+          {
+            "name": "Roy Littlewolfe",
+            "role": "Councillor",
+            "months": 3,
+            "remuneration": 30969,
+            "travel": 0,
+            "expenses": 5908,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 36877
+          },
+          {
+            "name": "Delores Gamble",
+            "role": "Councillor",
+            "months": 3,
+            "remuneration": 30335,
+            "travel": 0,
+            "expenses": 8038,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 38373
+          },
+          {
+            "name": "George Dillon",
+            "role": "Councillor",
+            "months": 3,
+            "remuneration": 23700,
+            "travel": 0,
+            "expenses": 7529,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 31229
+          }
+        ]
+      }
+    },
+    {
+      "band": "Sturgeon Lake First Nation",
+      "requestedBand": "Sturgeon Lake First Nation",
+      "filings": {
+        "2024-2025": [
+          {
+            "name": "Christina Longjohn",
+            "role": "Chief",
+            "months": 12,
+            "remuneration": 100571,
+            "travel": 0,
+            "expenses": 161396,
+            "creditCard": 0,
+            "otherPayments": 9500,
+            "total": 271467
+          },
+          {
+            "name": "Mark Daniels",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 63750,
+            "travel": 0,
+            "expenses": 259440,
+            "creditCard": 0,
+            "otherPayments": 12300,
+            "total": 335490
+          },
+          {
+            "name": "Velmer Ermine",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 5385,
+            "travel": 0,
+            "expenses": 147619,
+            "creditCard": 0,
+            "otherPayments": 9500,
+            "total": 162504
+          },
+          {
+            "name": "Fred Felix",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 69135,
+            "travel": 0,
+            "expenses": 201962,
+            "creditCard": 0,
+            "otherPayments": 9500,
+            "total": 280597
+          },
+          {
+            "name": "Bernard Moosehunter",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 69135,
+            "travel": 0,
+            "expenses": 198030,
+            "creditCard": 0,
+            "otherPayments": 9500,
+            "total": 276664
+          },
+          {
+            "name": "Anita Parenteau",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 69135,
+            "travel": 0,
+            "expenses": 129218,
+            "creditCard": 0,
+            "otherPayments": 9500,
+            "total": 207852
+          },
+          {
+            "name": "Solomon Sanderson",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 65000,
+            "travel": 0,
+            "expenses": 287779,
+            "creditCard": 0,
+            "otherPayments": 12000,
+            "total": 364780
+          }
+        ],
+        "2023-2024": [
+          {
+            "name": "Longjohn, Christina",
+            "role": "Chief",
+            "months": 12,
+            "remuneration": 58197,
+            "travel": 0,
+            "expenses": 137677,
+            "creditCard": 0,
+            "otherPayments": 2000,
+            "total": 197874
+          },
+          {
+            "name": "Ermine, Velmer",
+            "role": "Councillor",
+            "months": 11.5,
+            "remuneration": 39016,
+            "travel": 0,
+            "expenses": 114689,
+            "creditCard": 0,
+            "otherPayments": 2000,
+            "total": 155705
+          },
+          {
+            "name": "Felix, Frederick",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 42334,
+            "travel": 0,
+            "expenses": 169959,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 212293
+          },
+          {
+            "name": "Parenteau, Anita",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 42254,
+            "travel": 0,
+            "expenses": 89014,
+            "creditCard": 0,
+            "otherPayments": 2000,
+            "total": 133268
+          },
+          {
+            "name": "Sanderson, Solomon",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 43915,
+            "travel": 0,
+            "expenses": 242785,
+            "creditCard": 0,
+            "otherPayments": 8000,
+            "total": 294700
+          },
+          {
+            "name": "Moosehunter, Bernard",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 42254,
+            "travel": 0,
+            "expenses": 167284,
+            "creditCard": 0,
+            "otherPayments": 3200,
+            "total": 212738
+          },
+          {
+            "name": "Daniels, Mark",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 42254,
+            "travel": 0,
+            "expenses": 235325,
+            "creditCard": 0,
+            "otherPayments": 2000,
+            "total": 279579
+          }
+        ],
+        "2022-2023": [
+          {
+            "name": "Longjohn, Christina",
+            "role": "Chief",
+            "months": 10.5,
+            "remuneration": 66030,
+            "travel": 0,
+            "expenses": 161907,
+            "creditCard": 0,
+            "otherPayments": 34700,
+            "total": 262637
+          },
+          {
+            "name": "Ermine, Greg",
+            "role": "Chief",
+            "months": 1.5,
+            "remuneration": 31710,
+            "travel": 0,
+            "expenses": 34110,
+            "creditCard": 0,
+            "otherPayments": 3000,
+            "total": 68819
+          },
+          {
+            "name": "Longjohn, Christina",
+            "role": "Councillor",
+            "months": 1.5,
+            "remuneration": 0,
+            "travel": 0,
+            "expenses": 8236,
+            "creditCard": 0,
+            "otherPayments": 3000,
+            "total": 11236
+          },
+          {
+            "name": "Ermine, Velmer",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 57699,
+            "travel": 0,
+            "expenses": 99931,
+            "creditCard": 0,
+            "otherPayments": 3000,
+            "total": 160630
+          },
+          {
+            "name": "Felix, Frederick",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 57699,
+            "travel": 0,
+            "expenses": 145993,
+            "creditCard": 0,
+            "otherPayments": 3000,
+            "total": 206692
+          },
+          {
+            "name": "Parenteau, Anita",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 48465,
+            "travel": 0,
+            "expenses": 79422,
+            "creditCard": 0,
+            "otherPayments": 3000,
+            "total": 130887
+          },
+          {
+            "name": "Sanderson, Solomon",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 54619,
+            "travel": 0,
+            "expenses": 249157,
+            "creditCard": 0,
+            "otherPayments": 28219,
+            "total": 331995
+          },
+          {
+            "name": "Moosehunter, Bernard",
+            "role": "Councillor",
+            "months": 10.5,
+            "remuneration": 34616,
+            "travel": 0,
+            "expenses": 110681,
+            "creditCard": 0,
+            "otherPayments": 3150,
+            "total": 148447
+          },
+          {
+            "name": "Ballantyne, Wesley",
+            "role": "Councillor",
+            "months": 6,
+            "remuneration": 22308,
+            "travel": 0,
+            "expenses": 48262,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 70570
+          },
+          {
+            "name": "Daniels, Mark",
+            "role": "Councillor",
+            "months": 1.5,
+            "remuneration": 3846,
+            "travel": 0,
+            "expenses": 20354,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 24201
+          },
+          {
+            "name": "Kingfisher, Dalton",
+            "role": "Councillor",
+            "months": 1.5,
+            "remuneration": 23083,
+            "travel": 0,
+            "expenses": 16565,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 39648
+          }
+        ]
+      }
+    },
+    {
+      "band": "Whitecap Dakota First Nation",
+      "requestedBand": "Whitecap Dakota First Nation",
+      "filings": {
+        "2017-2018": [
+          {
+            "name": "Darcy Bear",
+            "role": "Chief",
+            "months": 12,
+            "remuneration": 169129,
+            "travel": 37284,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 206413
+          },
+          {
+            "name": "Dalyn Bear",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 135025,
+            "travel": 62589,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 197614
+          },
+          {
+            "name": "Dwayne Eagle",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 153156,
+            "travel": 37382,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 190538
+          }
+        ],
+        "2016-2017": [
+          {
+            "name": "Darcy Bear",
+            "role": "Chief",
+            "months": 12,
+            "remuneration": 165806,
+            "travel": 49677,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 215483
+          },
+          {
+            "name": "Dalyn Bear",
+            "role": "Councillor",
+            "months": 4,
+            "remuneration": 43398,
+            "travel": 21769,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 65167
+          },
+          {
+            "name": "Frank Royal",
+            "role": "Councillor",
+            "months": 8,
+            "remuneration": 106958,
+            "travel": 28992,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 135950
+          },
+          {
+            "name": "Dwayne Eagle",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 132323,
+            "travel": 36891,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 169214
+          }
+        ],
+        "2015-2016": [
+          {
+            "name": "Darcy Bear",
+            "role": "Chief",
+            "months": 12,
+            "remuneration": 162502,
+            "travel": 37435,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 199937
+          },
+          {
+            "name": "Frank Royal",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 128657,
+            "travel": 44882,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 173539
+          },
+          {
+            "name": "Dwayne Eagle",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 129258,
+            "travel": 38225,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 0,
+            "total": 167483
+          }
+        ]
+      }
+    },
+    {
+      "band": "Wood Mountain Lakota First Nation",
+      "requestedBand": "Wood Mountain Lakota First Nation",
+      "filings": {
+        "2024-2025": [
+          {
+            "name": "LeCaine, Ellen",
+            "role": "Chief",
+            "months": 12,
+            "remuneration": 50400,
+            "travel": 13810,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 25362,
+            "total": 89572
+          },
+          {
+            "name": "Craig, Angeline",
+            "role": "Councillor",
+            "months": 6,
+            "remuneration": 12000,
+            "travel": 128,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 9750,
+            "total": 21878
+          },
+          {
+            "name": "LeCaine, Eric",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 24000,
+            "travel": 8772,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 19200,
+            "total": 51972
+          },
+          {
+            "name": "Lethbridge, Loretta",
+            "role": "Councillor",
+            "months": 6,
+            "remuneration": 12000,
+            "travel": 5482,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 3150,
+            "total": 20632
+          },
+          {
+            "name": "Ogle, Colten",
+            "role": "Councillor",
+            "months": 6,
+            "remuneration": 12000,
+            "travel": 4664,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 66482,
+            "total": 83146
+          },
+          {
+            "name": "Ogle, David",
+            "role": "Councillor",
+            "months": 6,
+            "remuneration": 12000,
+            "travel": 1497,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 6250,
+            "total": 19747
+          },
+          {
+            "name": "Ogle, Travis",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 24000,
+            "travel": 8421,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 19650,
+            "total": 52071
+          }
+        ],
+        "2023-2024": [
+          {
+            "name": "LeCaine, Ellen",
+            "role": "Chief",
+            "months": 12,
+            "remuneration": 50400,
+            "travel": 14633,
+            "expenses": 9110,
+            "creditCard": 0,
+            "otherPayments": 14100,
+            "total": 88243
+          },
+          {
+            "name": "LeCaine, Eric",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 24000,
+            "travel": 10693,
+            "expenses": 7500,
+            "creditCard": 0,
+            "otherPayments": 11450,
+            "total": 53643
+          },
+          {
+            "name": "Lethbridge, Loretta",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 24000,
+            "travel": 8654,
+            "expenses": 3100,
+            "creditCard": 0,
+            "otherPayments": 8100,
+            "total": 43854
+          },
+          {
+            "name": "Ogle, David",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 24000,
+            "travel": 5368,
+            "expenses": 1250,
+            "creditCard": 0,
+            "otherPayments": 5850,
+            "total": 36468
+          },
+          {
+            "name": "Ogle, Travis",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 24000,
+            "travel": 10735,
+            "expenses": 350,
+            "creditCard": 0,
+            "otherPayments": 8700,
+            "total": 43785
+          }
+        ],
+        "2022-2023": [
+          {
+            "name": "LeCaine, Ellen",
+            "role": "Chief",
+            "months": 12,
+            "remuneration": 50400,
+            "travel": 17853,
+            "expenses": 11939,
+            "creditCard": 0,
+            "otherPayments": 9950,
+            "total": 90142
+          },
+          {
+            "name": "LeCaine, Eric",
+            "role": "Councillor",
+            "months": 5,
+            "remuneration": 10000,
+            "travel": 4623,
+            "expenses": 1480,
+            "creditCard": 0,
+            "otherPayments": 5650,
+            "total": 21753
+          },
+          {
+            "name": "Lethbridge, Loretta",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 24000,
+            "travel": 6943,
+            "expenses": 1169,
+            "creditCard": 0,
+            "otherPayments": 13150,
+            "total": 45262
+          },
+          {
+            "name": "Lethbridge, Stanley",
+            "role": "Councillor",
+            "months": 4,
+            "remuneration": 8000,
+            "travel": 500,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 2188,
+            "total": 10688
+          },
+          {
+            "name": "Ogle, David",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 24000,
+            "travel": 8661,
+            "expenses": 3689,
+            "creditCard": 0,
+            "otherPayments": 7850,
+            "total": 44200
+          },
+          {
+            "name": "Ogle, Travis",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 24000,
+            "travel": 12012,
+            "expenses": 2300,
+            "creditCard": 0,
+            "otherPayments": 8850,
+            "total": 47162
+          }
+        ]
+      }
+    },
+    {
+      "band": "Yellow Quill First Nation",
+      "requestedBand": "Yellow Quill First Nation",
+      "filings": {
+        "2023-2024": [
+          {
+            "name": "Machiskinic, John",
+            "role": "Chief",
+            "months": 12,
+            "remuneration": 49130,
+            "travel": 24083,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 45000,
+            "total": 118213
+          },
+          {
+            "name": "Machiskinic, Sarah",
+            "role": "Councillor",
+            "months": 8,
+            "remuneration": 33186,
+            "travel": 15639,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 10656,
+            "total": 59481
+          },
+          {
+            "name": "Moose, Terry",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 48953,
+            "travel": 27076,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 29990,
+            "total": 106019
+          },
+          {
+            "name": "Nashacappo, Kashtin",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 49130,
+            "travel": 14686,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 18250,
+            "total": 82066
+          },
+          {
+            "name": "Peace, Tyrone",
+            "role": "Councillor",
+            "months": 8,
+            "remuneration": 33186,
+            "travel": 18412,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 28500,
+            "total": 80098
+          },
+          {
+            "name": "Peequaqaut, Brandon",
+            "role": "Councillor",
+            "months": 4,
+            "remuneration": 15944,
+            "travel": 7702,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 11600,
+            "total": 35246
+          },
+          {
+            "name": "Peequaqaut, Charlene",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 49130,
+            "travel": 23875,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 19200,
+            "total": 92205
+          },
+          {
+            "name": "Poochay, Erin",
+            "role": "Councillor",
+            "months": 4,
+            "remuneration": 15944,
+            "travel": 6189,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 5550,
+            "total": 27683
+          },
+          {
+            "name": "Squirrel, Eric",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 49130,
+            "travel": 14546,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 18900,
+            "total": 82576
+          },
+          {
+            "name": "Whitehead, Agnes",
+            "role": "Councillor",
+            "months": 8,
+            "remuneration": 33186,
+            "travel": 9398,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 9950,
+            "total": 52534
+          },
+          {
+            "name": "Whitehead, Clarissa",
+            "role": "Councillor",
+            "months": 4,
+            "remuneration": 15944,
+            "travel": 8227,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 9700,
+            "total": 33871
+          }
+        ],
+        "2022-2023": [
+          {
+            "name": "Machiskinic, John",
+            "role": "Chief",
+            "months": 12,
+            "remuneration": 48204,
+            "travel": 8792,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 53758,
+            "total": 110754
+          },
+          {
+            "name": "Peace, Tyrone",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 48204,
+            "travel": 12172,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 67986,
+            "total": 128362
+          },
+          {
+            "name": "Whitehead, Agnes",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 48204,
+            "travel": 3534,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 29016,
+            "total": 80754
+          },
+          {
+            "name": "Machiskinic, Sarah",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 48204,
+            "travel": 4475,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 36207,
+            "total": 88886
+          },
+          {
+            "name": "Moose, Terry",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 48204,
+            "travel": 9592,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 47396,
+            "total": 105192
+          },
+          {
+            "name": "Nashacappo, Kashtin",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 48204,
+            "travel": 4775,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 28296,
+            "total": 81275
+          },
+          {
+            "name": "Peequaqaut, Charlene",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 48204,
+            "travel": 12345,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 18110,
+            "total": 78659
+          },
+          {
+            "name": "Squirrel, Eric",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 48204,
+            "travel": 6332,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 32015,
+            "total": 86551
+          }
+        ],
+        "2021-2022": [
+          {
+            "name": "Machiskinic, John",
+            "role": "Chief",
+            "months": 12,
+            "remuneration": 48204,
+            "travel": 18622,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 43048,
+            "total": 109874
+          },
+          {
+            "name": "Peace, Tyrone",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 48204,
+            "travel": 18925,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 17150,
+            "total": 84279
+          },
+          {
+            "name": "Whitehead, Agnes",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 48204,
+            "travel": 11046,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 9550,
+            "total": 68800
+          },
+          {
+            "name": "Machiskinic, Sarah",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 48204,
+            "travel": 7018,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 8750,
+            "total": 63972
+          },
+          {
+            "name": "Moose, Terry",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 48204,
+            "travel": 24590,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 18098,
+            "total": 90982
+          },
+          {
+            "name": "Nashacappo, Kashtin",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 48204,
+            "travel": 8008,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 12270,
+            "total": 68482
+          },
+          {
+            "name": "Peequaqaut, Charlene",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 48204,
+            "travel": 10205,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 1850,
+            "total": 60259
+          },
+          {
+            "name": "Squirrel, Eric",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 48204,
+            "travel": 8023,
+            "expenses": 0,
+            "creditCard": 0,
+            "otherPayments": 9650,
+            "total": 65877
+          }
+        ]
+      }
+    }
+  ]
+}
