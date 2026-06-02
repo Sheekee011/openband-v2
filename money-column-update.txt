@@ -1,0 +1,7 @@
+reduce table width after fewer columns
+rename summary bucket
+combine table money columns
+fix empty-row colspan
+render combined expenses bucket
+make CSV match public display
+explain combined bucket in source note
