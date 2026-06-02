@@ -1,0 +1,78 @@
+name: Apply parser keyword patch once
+
+on:
+  push:
+    paths:
+      - ".github/workflows/apply-parser-keyword-patch.yml"
+      - "tools/patch_parser_keywords.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply-parser-patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Apply parser patch
+        run: python tools/patch_parser_keywords.py
+
+      - name: Smoke test parser layouts
+        run: |
+          python -m py_compile run_scraper.py tools/patch_parser_keywords.py
+          python - <<'PY'
+          import run_scraper as r
+
+          canoe = [
+              ['Chief and Council', '', 'Number of Months', 'Remuneration', 'Travel and Per Diems', 'Other Payments'],
+              ['Chief', 'Francis X Iron', '12', '90,000', '150,465', '126,605'],
+              ['Councillor', 'Lorne Iron', '12', '66,000', '116,067', '67,975'],
+              ['', '', '', '483,250', '686,546', '393,331'],
+          ]
+          people = r._extract_people_from_keyword_table(canoe)
+          assert people[0]['name'] == 'Francis X Iron', people
+          assert people[0]['role'] == 'Chief', people[0]
+          assert people[0]['remuneration'] == 90000, people[0]
+          assert people[0]['travel'] == 150465, people[0]
+          assert people[0]['otherPayments'] == 126605, people[0]
+          assert people[0]['total'] == 367070, people[0]
+
+          carry = [
+              ['Name', 'Position', 'Number of Months', 'Remuneration', 'Travel', 'Expenses', 'Credit Card', 'Total'],
+              ['Scott Eashappie', 'Chief', '12', '$108,791', '$13,000', '$256,865', '$264,662', '$643,318'],
+          ]
+          people = r._extract_people_from_keyword_table(carry)
+          assert people[0]['expenses'] == 256865, people[0]
+          assert people[0]['creditCard'] == 264662, people[0]
+          assert people[0]['total'] == 643318, people[0]
+
+          other_total = [
+              ['Name', 'Position', 'Months', 'Remuneration', 'Travel', 'Expenses', 'Other', 'Total'],
+              ['Alex Person', 'Chief', '12', '100,000', '20,000', '5,000', '7,500', '132,500'],
+          ]
+          people = r._extract_people_from_keyword_table(other_total)
+          assert people[0]['otherPayments'] == 7500, people[0]
+          assert people[0]['total'] == 132500, people[0]
+
+          line = 'Chief Francis X Iron 12 90,000 150,465 126,605'
+          person = r._parse_text_line(line, True, 'Number of Months Remuneration Travel and Per Diems Other Payments')
+          assert person['name'] == 'Francis X Iron', person
+          assert person['otherPayments'] == 126605, person
+
+          print('parser smoke tests passed')
+          PY
+
+      - name: Commit parser patch and remove temporary runner
+        run: |
+          git config user.name "openband-bot"
+          git config user.email "openband-bot@users.noreply.github.com"
+          rm -f .github/workflows/apply-parser-keyword-patch.yml tools/patch_parser_keywords.py
+          git add -A run_scraper.py .github/workflows/apply-parser-keyword-patch.yml tools/patch_parser_keywords.py
+          if git diff --cached --quiet; then
+            echo "No parser changes to commit"
+          else
+            git commit -m "Strengthen FNFTA parser keyword layouts"
+            git push
+          fi
