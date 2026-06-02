@@ -1,0 +1,91 @@
+name: Split expenses travel and other once
+
+on:
+  push:
+    paths:
+      - ".github/workflows/split-expenses-travel-other.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  split-money-columns:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Split expenses travel from other
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path('index.html')
+          html = path.read_text(encoding='utf-8')
+
+          replacements = [
+              (
+                  '<div class="sc"><div class="sc-lbl">Expenses &amp; other</div><div class="sc-val" id="sExp">-</div><div class="sc-sub">Non-remuneration payments</div></div>',
+                  '<div class="sc"><div class="sc-lbl">Expenses / travel</div><div class="sc-val" id="sExp">-</div><div class="sc-sub">Travel, expenses, cards</div></div>',
+                  'rename summary card',
+              ),
+              (
+                  'function rowExtra(p){return num(p.travel)+num(p.expenses)+num(p.creditCard)+num(p.otherPayments)}',
+                  'function rowExpenseTravel(p){return num(p.travel)+num(p.expenses)+num(p.creditCard)}\nfunction rowOther(p){return num(p.otherPayments)}\nfunction rowExtra(p){return rowExpenseTravel(p)+rowOther(p)}',
+                  'add separate money buckets',
+              ),
+              (
+                  '<table><thead><tr><th>Name</th><th>Role</th><th>Months</th><th>Remuneration</th><th>Expenses &amp; other</th><th>Total</th></tr></thead><tbody id="tb"></tbody></table>',
+                  '<table><thead><tr><th>Name</th><th>Role</th><th>Months</th><th>Remuneration</th><th>Expenses / travel</th><th>Other</th><th>Total</th></tr></thead><tbody id="tb"></tbody></table>',
+                  'split table headers',
+              ),
+              (
+                  "tb.innerHTML='<tr><td colspan=\"6\" style=\"text-align:center;color:var(--muted)\">No rows match this filter.</td></tr>';",
+                  "tb.innerHTML='<tr><td colspan=\"7\" style=\"text-align:center;color:var(--muted)\">No rows match this filter.</td></tr>';",
+                  'fix empty-row colspan',
+              ),
+              (
+                  '<td class=\"amt\">${money(p.remuneration)}</td><td class=\"amt\">${money(rowExtra(p))}</td><td class=\"amtt\">${fmt(rowTotal(p))}</td>',
+                  '<td class=\"amt\">${money(p.remuneration)}</td><td class=\"amt\">${money(rowExpenseTravel(p))}</td><td class=\"amt\">${money(rowOther(p))}</td><td class=\"amtt\">${fmt(rowTotal(p))}</td>',
+                  'render split money columns',
+              ),
+              (
+                  "const header=['band','fiscal_year','name','role','months','remuneration','expenses_and_other','total','source_url'];const body=rows.map(p=>[curName,curYear,p.name,p.role,p.months||'',num(p.remuneration),rowExtra(p),rowTotal(p),filing.href||ISC_FILING(bandMap[curName].id)].map(csvEscape).join(','));",
+                  "const header=['band','fiscal_year','name','role','months','remuneration','expenses_travel','other','total','source_url'];const body=rows.map(p=>[curName,curYear,p.name,p.role,p.months||'',num(p.remuneration),rowExpenseTravel(p),rowOther(p),rowTotal(p),filing.href||ISC_FILING(bandMap[curName].id)].map(csvEscape).join(','));",
+                  'update CSV columns',
+              ),
+              (
+                  'source PDFs use different column labels, so OpenBand groups non-remuneration amounts as expenses &amp; other.',
+                  'source PDFs use different column labels, so OpenBand groups travel, expenses, and card amounts together while keeping other payments separate.',
+                  'update source note',
+              ),
+          ]
+
+          changed = []
+          for old, new, label in replacements:
+              if old in html:
+                  html = html.replace(old, new, 1)
+                  changed.append(label)
+              elif new in html:
+                  changed.append(label + ' already applied')
+              else:
+                  raise SystemExit(f'Could not find pattern for: {label}')
+
+          Path('money-column-update.txt').write_text('\n'.join(changed) + '\n', encoding='utf-8')
+          path.write_text(html, encoding='utf-8')
+          print('\n'.join(changed))
+          PY
+
+      - name: Commit split money columns
+        run: |
+          git config user.name "openband-bot"
+          git config user.email "openband-bot@users.noreply.github.com"
+          rm -f .github/workflows/split-expenses-travel-other.yml
+          git add index.html money-column-update.txt
+          git add -u .github/workflows/split-expenses-travel-other.yml
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Split expenses travel and other columns"
+            git push
+          fi
