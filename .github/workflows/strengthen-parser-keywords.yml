@@ -19,19 +19,25 @@ jobs:
         run: |
           python - <<'PY'
           from pathlib import Path
+          import re
 
           path = Path('run_scraper.py')
           text = path.read_text(encoding='utf-8')
 
-          text = text.replace(
-              '_NAME_RE = re.compile(r"^[A-Z][A-Za-z\'\u2019.-]+(?:\\s+[A-Z][A-Za-z\'\u2019.-]+){1,5}\\*?$")',
+          text, count = re.subn(
+              r'_NAME_RE = re\.compile\(r"[^"]+"\)',
               '_NAME_RE = re.compile(r"^[A-Za-z][A-Za-z\'., -]{1,90}\\*?$")',
-              1,
+              text,
+              count=1,
           )
+          if count != 1:
+              raise SystemExit('Could not replace _NAME_RE')
 
           marker = '# --- Keyword-aware FNFTA table parsing ---'
           if marker not in text:
-              insert_after = '_NAME_RE = re.compile(r"^[A-Za-z][A-Za-z\'., -]{1,90}\\*?$")\n'
+              name_line = re.search(r'_NAME_RE = re\.compile\(r"[^"]+"\)\n', text)
+              if not name_line:
+                  raise SystemExit('Could not find _NAME_RE insert point')
               block = r'''
 # --- Keyword-aware FNFTA table parsing ---
 _ROLE_WORD_RE = re.compile(r"\b(chief|councillor|councilor)\b", re.I)
@@ -85,7 +91,7 @@ def _column_key(text):
         return "total"
     if re.search(r"\b(remuneration|salary|honou?raria|wages?)\b", t):
         return "remuneration"
-    if re.search(r"\b(other|benefits?|incentives?)\b", t) and re.search(r"\b(payments?|remuneration|benefits?|incentives?)\b", t):
+    if re.search(r"\b(other|benefits?|incentives?)\b", t):
         return "otherPayments"
     if re.search(r"\b(travel|per\s*diems?|mileage|accommodation)\b", t):
         return "travel"
@@ -262,8 +268,9 @@ def _parse_keyword_table_row(row, column_map, header_hint):
         role = "Chief" if re.search(r"\bchief\b", joined, re.I) else "Councillor"
 
     months = None
-    for idx, key in column_map.items():
-        if key == "months" and idx < len(cells):
+    months_cols = [idx for idx, key in column_map.items() if key == "months"]
+    for idx in months_cols:
+        if idx < len(cells):
             amount = amounts_by_col.get(idx)
             if amount is not None and 0 < amount <= 24:
                 months = amount
@@ -292,7 +299,7 @@ def _parse_keyword_table_row(row, column_map, header_hint):
             value = amounts_by_col[idx]
             if value is None:
                 continue
-            if months is not None and idx in [i for i, key in column_map.items() if key == "months"]:
+            if months is not None and idx in months_cols:
                 continue
             if value <= 24 and idx <= numeric_cols[0] + 1:
                 continue
@@ -321,7 +328,7 @@ def _extract_people_from_keyword_table(table):
             people.append(person)
     return _dedupe_people(people)
 '''
-              text = text.replace(insert_after, insert_after + block, 1)
+              text = text[:name_line.end()] + block + text[name_line.end():]
 
           old_amount_block = '''    amounts = [item["amount"] for item in money_values]
     remuneration = amounts[0] if len(amounts) > 0 else None
@@ -369,9 +376,12 @@ def _extract_people_from_keyword_table(table):
         **money,
     }
 '''
-          if old_amount_block in text:
-              text = text.replace(old_amount_block, new_amount_block, 1)
+          if old_amount_block not in text:
+              raise SystemExit('Could not find text amount assignment block')
+          text = text.replace(old_amount_block, new_amount_block, 1)
 
+          if 'def _parse_text_line(line, allow_inferred_councillor=False):' not in text:
+              raise SystemExit('Could not find _parse_text_line signature')
           text = text.replace(
               'def _parse_text_line(line, allow_inferred_councillor=False):',
               'def _parse_text_line(line, allow_inferred_councillor=False, header_context=""):',
@@ -396,8 +406,9 @@ def _extract_people_from_keyword_table(table):
                 if person:
                     people.append(person)
 '''
-          if old_text_loop in text:
-              text = text.replace(old_text_loop, new_text_loop, 1)
+          if old_text_loop not in text:
+              raise SystemExit('Could not find text extraction loop')
+          text = text.replace(old_text_loop, new_text_loop, 1)
 
           old_table_block = '''            people = []
             with scraper.pdfplumber.open(io.BytesIO(pdf_bytes)) as pdf:
@@ -430,8 +441,9 @@ def _extract_people_from_keyword_table(table):
             if people:
                 warnings.append("Discarded table extraction because rows looked project-heavy")
 '''
-          if old_table_block in text:
-              text = text.replace(old_table_block, new_table_block, 1)
+          if old_table_block not in text:
+              raise SystemExit('Could not find table extraction block')
+          text = text.replace(old_table_block, new_table_block, 1)
 
           path.write_text(text, encoding='utf-8')
           PY
