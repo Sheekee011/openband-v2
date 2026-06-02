@@ -1,7 +1,7 @@
-reduce table width after fewer columns
-rename summary bucket
-combine table money columns
+rename summary card
+add separate money buckets
+split table headers
 fix empty-row colspan
-render combined expenses bucket
-make CSV match public display
-explain combined bucket in source note
+render split money columns
+update CSV columns
+update source note
