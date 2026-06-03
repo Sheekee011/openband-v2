@@ -32,12 +32,11 @@ jobs:
           from pathlib import Path
 
           data = json.loads(Path('data.json').read_text(encoding='utf-8'))
-          pay = ('remuneration', 'travel', 'expenses', 'creditCard', 'otherPayments')
-          bad_name_re = re.compile(
-              r'\b(docusign|envelope|indigenous\s+services\s+canada|services\s+canada|schedule|remuneration|expenses?|signature|total|project|program|asset|liability|revenue|income)\b'
-              r'|latoT|rehtO|yralaS|shtnoM|emaN|noitisoP|levarT',
+          bad_word_re = re.compile(
+              r'\b(docusign|envelope|indigenous\s+services\s+canada|services\s+canada|schedule|remuneration|expenses?|signature|total|project|program|asset|liability|revenue|income)\b',
               re.I,
           )
+          reversed_header_re = re.compile(r'latoT|rehtO|yralaS|shtnoM|emaN|noitisoP|levarT')
 
           def amount(value):
               if value is None or value == '':
@@ -62,7 +61,7 @@ jobs:
                       name = str(person.get('name') or '')
                       total = amount(person.get('total'))
                       remuneration = amount(person.get('remuneration'))
-                      if bad_name_re.search(name):
+                      if bad_word_re.search(name) or reversed_header_re.search(name):
                           problems.append((band.get('name'), filing.get('year'), name, 'bad_name'))
                       if 0 < remuneration <= 24 and total > 50000:
                           problems.append((band.get('name'), filing.get('year'), name, 'months_shift'))
