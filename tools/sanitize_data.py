@@ -44,6 +44,8 @@ BAD_NAME_RE = re.compile(
     r"\b("
     r"year\s+ended|schedule|remuneration|expenses?|unaudited|audited|"
     r"signature|signatures?|total|subtotal|page|note|notes?|"
+    r"docusign|envelope|indigenous\s+services\s+canada|services\s+canada|"
+    r"isc|aadnc|aandc|sac|government\s+of\s+canada|"
     r"chief\s+and\s+council|chief\s+and\s+councillors?|"
     r"number\s+of\s+months|travel|payments?|per\s+diems?|credit\s+card|"
     r"acknowledged|approved|accompanying|statement|financial|"
@@ -56,6 +58,7 @@ BAD_NAME_RE = re.compile(
 
 ROLE_RE = re.compile(r"\b(chief|councillor|councilor|council)\b", re.IGNORECASE)
 WHITESPACE_RE = re.compile(r"\s+")
+REVERSED_HEADER_RE = re.compile(r"(latoT|rehtO|yralaS|shtnoM|emaN|noitisoP|levarT)")
 
 
 def clean_text(value):
@@ -112,6 +115,8 @@ def is_bad_name(name):
     text = clean_name(name)
     if not text or not re.search(r"[A-Za-z]", text):
         return True
+    if REVERSED_HEADER_RE.search(text):
+        return True
     if BAD_NAME_RE.search(text):
         return True
     if ROLE_RE.fullmatch(text):
@@ -135,6 +140,50 @@ def sane_months(value):
 
 def total_from_components(person):
     return sum(person.get(key) or 0 for key in PAYMENT_KEYS)
+
+
+def has_months_shift(person):
+    remuneration = person.get("remuneration")
+    total = person.get("total") or total_from_components(person)
+    if remuneration is None:
+        return False
+    return 0 < remuneration <= 24 and total > 50000
+
+
+def has_total_echo(person):
+    """Detect rows where a total column was also treated as another payment."""
+    remuneration = person.get("remuneration") or 0
+    travel = person.get("travel") or 0
+    expenses = person.get("expenses") or 0
+    credit_card = person.get("creditCard") or 0
+    other = person.get("otherPayments") or 0
+    total = person.get("total") or 0
+    base = remuneration + travel + expenses + credit_card
+    if base <= 0 or other <= 0 or total <= 0:
+        return False
+    return abs(other - base) <= max(2, base * 0.02) and abs(total - (base + other)) <= max(2, total * 0.02)
+
+
+def suspicious_filing_reasons(people):
+    if not people:
+        return []
+
+    reasons = []
+    if len(people) == 1:
+        reasons.append("only one parsed row")
+
+    if any(has_months_shift(person) for person in people):
+        reasons.append("month values appear in money columns")
+
+    total_echo_count = sum(1 for person in people if has_total_echo(person))
+    if total_echo_count >= max(1, len(people) // 3):
+        reasons.append("total column appears duplicated into payment columns")
+
+    chief_count = sum(1 for person in people if normalize_role(person.get("role")) == "Chief")
+    if chief_count == 0 and len(people) <= 3:
+        reasons.append("no Chief row in a small parsed filing")
+
+    return reasons
 
 
 def add_warning(filing, note):
@@ -253,6 +302,12 @@ def sanitize_filing(filing):
 
     cleaned_people, duplicates = dedupe_people(cleaned_people)
     removed += duplicates
+
+    reasons = suspicious_filing_reasons(cleaned_people)
+    if reasons:
+        removed += len(cleaned_people)
+        cleaned_people = []
+        add_warning(filing, "Quarantined parsed rows: " + "; ".join(reasons))
 
     if removed or fixed or len(cleaned_people) != len(people):
         filing["people"] = cleaned_people

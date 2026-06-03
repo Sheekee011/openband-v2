@@ -1,32 +1,33 @@
 generated: 2026-05-27T00:41:43Z
 bands: 69
 error_count: 0
-bands with parsed remuneration: 68
-parsed remuneration filings: 386
-posted remuneration filings still pending: 316
+bands with parsed remuneration: 64
+parsed remuneration filings: 324
+posted remuneration filings still pending: 378
 
 pending by fiscal year:
-  2024-2025: 8 pending, 28 parsed
-  2023-2024: 9 pending, 37 parsed
-  2022-2023: 11 pending, 42 parsed
-  2021-2022: 11 pending, 45 parsed
-  2020-2021: 20 pending, 39 parsed
-  2019-2020: 22 pending, 40 parsed
-  2018-2019: 28 pending, 35 parsed
-  2017-2018: 28 pending, 37 parsed
-  2016-2017: 33 pending, 32 parsed
-  2015-2016: 38 pending, 28 parsed
-  2014-2015: 52 pending, 14 parsed
-  2013-2014: 56 pending, 9 parsed
+  2024-2025: 10 pending, 26 parsed
+  2023-2024: 14 pending, 32 parsed
+  2022-2023: 17 pending, 36 parsed
+  2021-2022: 21 pending, 35 parsed
+  2020-2021: 30 pending, 29 parsed
+  2019-2020: 26 pending, 36 parsed
+  2018-2019: 31 pending, 32 parsed
+  2017-2018: 32 pending, 33 parsed
+  2016-2017: 43 pending, 22 parsed
+  2015-2016: 41 pending, 25 parsed
+  2014-2015: 54 pending, 12 parsed
+  2013-2014: 59 pending, 6 parsed
 
 pending by parse status:
   error_openai_http: 279
+  pending_manual_review: 76
   pending_retry: 23
-  pending_manual_review: 14
 
 expected SK names missing: 0
 
 first pending examples:
+  PENDING: Cote First Nation 2013-2014 (pending_manual_review)
   PENDING: Cote First Nation 2014-2015 (error_openai_http)
   PENDING: Cote First Nation 2015-2016 (error_openai_http)
   PENDING: Cote First Nation 2016-2017 (error_openai_http)
@@ -42,6 +43,7 @@ first pending examples:
   PENDING: Kahkewistahaw First Nation 2013-2014 (error_openai_http)
   PENDING: Kahkewistahaw First Nation 2014-2015 (error_openai_http)
   PENDING: Kahkewistahaw First Nation 2015-2016 (error_openai_http)
+  PENDING: Kahkewistahaw First Nation 2017-2018 (pending_manual_review)
   PENDING: Keeseekoose First Nation 2013-2014 (error_openai_http)
   PENDING: Keeseekoose First Nation 2014-2015 (error_openai_http)
   PENDING: Keeseekoose First Nation 2015-2016 (error_openai_http)
@@ -65,5 +67,3 @@ first pending examples:
   PENDING: Canoe Lake Cree First Nation 2013-2014 (error_openai_http)
   PENDING: Canoe Lake Cree First Nation 2014-2015 (error_openai_http)
   PENDING: Canoe Lake Cree First Nation 2015-2016 (error_openai_http)
-  PENDING: Canoe Lake Cree First Nation 2016-2017 (error_openai_http)
-  PENDING: Canoe Lake Cree First Nation 2017-2018 (error_openai_http)
