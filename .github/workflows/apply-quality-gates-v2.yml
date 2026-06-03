@@ -1,0 +1,94 @@
+name: Apply parser quality gates v2
+
+on:
+  push:
+    paths:
+      - .github/workflows/apply-quality-gates-v2.yml
+      - tools/apply_quality_gates_v2.py
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Apply sanitizer patch
+        run: python tools/apply_quality_gates_v2.py
+
+      - name: Sanitize data
+        run: python tools/sanitize_data.py data.json
+
+      - name: Audit data
+        run: python tools/audit_data.py | tee audit-results.txt
+
+      - name: Verify high-risk parser patterns are gone
+        run: |
+          python - <<'PY'
+          import json
+          import re
+          from collections import Counter
+
+          data = json.load(open('data.json', encoding='utf-8'))
+          payment_keys = ['remuneration', 'travel', 'expenses', 'creditCard', 'otherPayments']
+
+          def is_remuneration(filing):
+              return 'remuneration' in (filing.get('docType') or '').lower()
+
+          def value(raw):
+              return raw if isinstance(raw, (int, float)) else 0
+
+          def nearly_equal(left, right):
+              return bool(left and right and abs(left - right) <= max(2, abs(right) * 0.02))
+
+          issues = []
+          for band in data.get('bands', []):
+              for filing in band.get('filings', []):
+                  people = filing.get('people') or []
+                  if not is_remuneration(filing) or not people:
+                      continue
+                  for person in people:
+                      total = value(person.get('total')) or sum(value(person.get(key)) for key in payment_keys)
+                      remuneration = value(person.get('remuneration'))
+                      travel = value(person.get('travel'))
+                      expenses = value(person.get('expenses'))
+                      if any(0 < abs(value(person.get(key))) <= 24 for key in ['travel', 'expenses', 'creditCard', 'otherPayments']) and total > 30000:
+                          issues.append(('small_component', band.get('name'), filing.get('year'), person.get('name')))
+                      if 0 < remuneration <= 24 and total > 1000:
+                          issues.append(('month_in_remuneration', band.get('name'), filing.get('year'), person.get('name')))
+                      if nearly_equal(travel, remuneration) and total > remuneration + 10000:
+                          issues.append(('travel_echo_remuneration', band.get('name'), filing.get('year'), person.get('name')))
+                      if nearly_equal(expenses, remuneration + travel) and total > expenses + 10000:
+                          issues.append(('expenses_echo_subtotal', band.get('name'), filing.get('year'), person.get('name')))
+                      if re.search(r'\b(director|manager|finance|post\s+secondary|lands|education|coordinator|administrator|employee)\b', person.get('name') or '', re.I):
+                          issues.append(('staff_title_name', band.get('name'), filing.get('year'), person.get('name')))
+                      if re.search(r'(^|\b)(council\s+member|council|chief|councillor|councilor)\b', person.get('name') or '', re.I):
+                          issues.append(('role_word_in_name', band.get('name'), filing.get('year'), person.get('name')))
+
+          if issues:
+              print(Counter(issue[0] for issue in issues))
+              for issue in issues[:80]:
+                  print(issue)
+              raise SystemExit('High-risk parser patterns remain')
+
+          print('High-risk parser pattern scan passed')
+          PY
+
+      - name: Remove temporary workflow files
+        run: |
+          rm -f tools/apply_quality_gates_v2.py .github/workflows/apply-quality-gates-v2.yml
+
+      - name: Commit cleaned data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tools/sanitize_data.py data.json audit-results.txt tools/apply_quality_gates_v2.py .github/workflows/apply-quality-gates-v2.yml
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Tighten parser quality gates"
+            git push
+          fi
