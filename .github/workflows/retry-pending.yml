@@ -76,6 +76,23 @@ jobs:
           PY
           }
 
+          preflight_isc() {
+            python - <<'PY'
+          import urllib.request
+          url = 'https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=378&lang=eng'
+          req = urllib.request.Request(url, headers={'User-Agent': 'OpenBand/1.0 (GitHub Actions preflight)'})
+          try:
+              with urllib.request.urlopen(req, timeout=20) as resp:
+                  body = resp.read(4096)
+              if resp.status >= 400 or not body:
+                  raise RuntimeError(f'bad ISC response: {resp.status}')
+              print('ISC preflight passed')
+          except Exception as exc:
+              print(f'ISC preflight failed: {exc}')
+              raise SystemExit(1)
+          PY
+          }
+
           validate_batch() {
             local before_file="$1"
             python - "$before_file" <<'PY'
@@ -110,16 +127,22 @@ jobs:
           print(f'errors: {after_errors}')
 
           if after_bands < 60:
-              raise SystemExit('Refusing to continue: too few bands in data.json')
+              raise SystemExit('Refusing batch: too few bands in data.json')
           if after_errors > 5:
-              raise SystemExit('Refusing to continue: too many scraper errors')
+              raise SystemExit('Refusing batch: too many scraper errors')
           if after_parsed < before_parsed:
-              raise SystemExit('Refusing to continue: parsed filing count regressed')
+              raise SystemExit('Refusing batch: parsed filing count regressed')
           PY
           }
 
           python tools/sanitize_data.py data.json
           echo "Initial: $(count_data)"
+
+          if ! preflight_isc; then
+            echo "ISC is timing out. Keeping existing data.json and stopping without changes."
+            python tools/audit_data.py | tee audit-results.txt
+            exit 0
+          fi
 
           for YEARS in \
             "2024-2025,2023-2024,2022-2023" \
@@ -133,10 +156,17 @@ jobs:
             OPENBAND_PARSE_YEARS="$YEARS" python run_scraper_v2.py
             python tools/merge_previous_data.py data.before.json data.json
             python tools/sanitize_data.py data.json
-            validate_batch data.before.json
-            python tools/audit_data.py | tee audit-results.txt
-            rm -f data.before.json
-            echo "Now: $(count_data)"
+            if validate_batch data.before.json; then
+              python tools/audit_data.py | tee audit-results.txt
+              rm -f data.before.json
+              echo "Now: $(count_data)"
+            else
+              echo "Batch $YEARS produced unsafe data. Restoring previous data.json and continuing."
+              cp data.before.json data.json
+              rm -f data.before.json
+              python tools/audit_data.py | tee audit-results.txt
+              echo "Restored: $(count_data)"
+            fi
             echo "::endgroup::"
           done
 
