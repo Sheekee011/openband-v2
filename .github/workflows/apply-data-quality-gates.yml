@@ -1,0 +1,87 @@
+name: Apply data quality gates once
+
+on:
+  push:
+    paths:
+      - ".github/workflows/apply-data-quality-gates.yml"
+      - "tools/patch_quality_gates.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply-quality-gates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Patch sanitizer
+        run: python tools/patch_quality_gates.py
+
+      - name: Sanitize data and audit
+        run: |
+          python tools/sanitize_data.py data.json
+          python tools/audit_data.py | tee audit-results.txt
+
+      - name: Check high-risk rows removed
+        run: |
+          python - <<'PY'
+          import json
+          import re
+          from pathlib import Path
+
+          data = json.loads(Path('data.json').read_text(encoding='utf-8'))
+          pay = ('remuneration', 'travel', 'expenses', 'creditCard', 'otherPayments')
+          bad_name_re = re.compile(
+              r'\b(docusign|envelope|indigenous\s+services\s+canada|services\s+canada|schedule|remuneration|expenses?|signature|total|project|program|asset|liability|revenue|income)\b'
+              r'|latoT|rehtO|yralaS|shtnoM|emaN|noitisoP|levarT',
+              re.I,
+          )
+
+          def amount(value):
+              if value is None or value == '':
+                  return 0.0
+              if isinstance(value, (int, float)):
+                  return float(value)
+              try:
+                  return float(re.sub(r'[^0-9.\-]', '', str(value)) or 0)
+              except ValueError:
+                  return 0.0
+
+          problems = []
+          parsed = 0
+          for band in data.get('bands', []):
+              for filing in band.get('filings', []):
+                  if 'remuneration' not in (filing.get('docType') or '').lower():
+                      continue
+                  people = filing.get('people') or []
+                  if people:
+                      parsed += 1
+                  for person in people:
+                      name = str(person.get('name') or '')
+                      total = amount(person.get('total'))
+                      remuneration = amount(person.get('remuneration'))
+                      if bad_name_re.search(name):
+                          problems.append((band.get('name'), filing.get('year'), name, 'bad_name'))
+                      if 0 < remuneration <= 24 and total > 50000:
+                          problems.append((band.get('name'), filing.get('year'), name, 'months_shift'))
+          print(f'parsed remuneration filings after quality gates: {parsed}')
+          if problems:
+              for problem in problems[:20]:
+                  print(problem)
+              raise SystemExit(f'high-risk parsed rows remain: {len(problems)}')
+          PY
+
+      - name: Commit quality gates and cleaned data
+        run: |
+          git config user.name "openband-bot"
+          git config user.email "openband-bot@users.noreply.github.com"
+          rm -f .github/workflows/apply-data-quality-gates.yml tools/patch_quality_gates.py
+          git add -A tools/sanitize_data.py data.json audit-results.txt .github/workflows/apply-data-quality-gates.yml tools/patch_quality_gates.py
+          if git diff --cached --quiet; then
+            echo "No quality-gate changes to commit"
+          else
+            git commit -m "Add data quality gates for parsed filings"
+            git push
+          fi
