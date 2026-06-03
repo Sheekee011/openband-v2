@@ -51,12 +51,15 @@ BAD_NAME_RE = re.compile(
     r"acknowledged|approved|accompanying|statement|financial|"
     r"project|program|contract|construction|maintenance|repair|renovation|"
     r"insurance|administration|audit|legal|professional|revenue|income|"
-    r"asset|liability|payable|receivable"
+    r"asset|liability|payable|receivable|"
+    r"director|manager|finance|post\s+secondary|lands\s+manager|"
+    r"education|coordinator|administrator|employee"
     r")\b",
     re.IGNORECASE,
 )
 
 ROLE_RE = re.compile(r"\b(chief|councillor|councilor|council)\b", re.IGNORECASE)
+ROLE_WORD_IN_NAME_RE = re.compile(r"(^|\b)(council\s+member|council|chief|councillor|councilor)\b", re.IGNORECASE)
 WHITESPACE_RE = re.compile(r"\s+")
 REVERSED_HEADER_RE = re.compile(r"(latoT|rehtO|yralaS|shtnoM|emaN|noitisoP|levarT)")
 
@@ -121,6 +124,8 @@ def is_bad_name(name):
         return True
     if ROLE_RE.fullmatch(text):
         return True
+    if ROLE_WORD_IN_NAME_RE.search(text):
+        return True
     if len(text) > 90:
         return True
     tokens = text.split()
@@ -147,7 +152,38 @@ def has_months_shift(person):
     total = person.get("total") or total_from_components(person)
     if remuneration is None:
         return False
-    return 0 < remuneration <= 24 and total > 50000
+    return 0 < remuneration <= 24 and total > 1000
+
+
+def has_small_component_shift(person):
+    total = person.get("total") or total_from_components(person)
+    if total <= 30000:
+        return False
+    for key in ("travel", "expenses", "creditCard", "otherPayments"):
+        amount = person.get(key)
+        if amount is not None and 0 < abs(amount) <= 24:
+            return True
+    return False
+
+
+def nearly_equal(left, right):
+    if not left or not right:
+        return False
+    return abs(left - right) <= max(2, abs(right) * 0.02)
+
+
+def has_component_echo(person):
+    remuneration = person.get("remuneration") or 0
+    travel = person.get("travel") or 0
+    expenses = person.get("expenses") or 0
+    total = person.get("total") or total_from_components(person)
+    if total <= 30000:
+        return False
+    if nearly_equal(travel, remuneration) and total > remuneration + 10000:
+        return True
+    if nearly_equal(expenses, remuneration + travel) and total > expenses + 10000:
+        return True
+    return False
 
 
 def has_total_echo(person):
@@ -172,11 +208,20 @@ def suspicious_filing_reasons(people):
     if len(people) == 1:
         reasons.append("only one parsed row")
 
-    if any(has_months_shift(person) for person in people):
+    month_shift_count = sum(1 for person in people if has_months_shift(person))
+    if month_shift_count:
         reasons.append("month values appear in money columns")
 
+    small_component_count = sum(1 for person in people if has_small_component_shift(person))
+    if small_component_count:
+        reasons.append("small month-like values appear in payment columns")
+
+    component_echo_count = sum(1 for person in people if has_component_echo(person))
+    if component_echo_count:
+        reasons.append("payment columns appear duplicated or shifted")
+
     total_echo_count = sum(1 for person in people if has_total_echo(person))
-    if total_echo_count >= max(1, len(people) // 3):
+    if total_echo_count:
         reasons.append("total column appears duplicated into payment columns")
 
     chief_count = sum(1 for person in people if normalize_role(person.get("role")) == "Chief")
