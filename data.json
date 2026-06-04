@@ -3799,7 +3799,7 @@
               "total": 74830
             },
             {
-              "name": "Bellegarde, Michael J.",
+              "name": "Bellegarde, Michael J",
               "role": "Councillor",
               "months": 12,
               "remuneration": 46131,
@@ -3816,7 +3816,8 @@
             "OpenAI HTTP 429: {\n  \"error\": {\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"insufficient_quota\"\n  }\n}",
             "OpenAI file_url retry failed; inline PDF retry also failed",
             "OpenAI HTTP 429: {\n  \"error\": {\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"insufficient_quota\"\n  }\n}",
-            "Manual transcription from user-provided PARSED.pdf screenshots; verify against ISC source PDF before publication"
+            "Manual transcription from user-provided PARSED.pdf screenshots; verify against ISC source PDF before publication",
+            "Sanitized parsed rows: removed 0, fixed totals 0"
           ]
         },
         {
@@ -3883,7 +3884,7 @@
               "total": 76417
             },
             {
-              "name": "Bellegarde, Michael J.",
+              "name": "Bellegarde, Michael J",
               "role": "Councillor",
               "months": 12,
               "remuneration": 47793,
@@ -3900,7 +3901,8 @@
             "OpenAI HTTP 429: {\n  \"error\": {\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"insufficient_quota\"\n  }\n}",
             "OpenAI file_url retry failed; inline PDF retry also failed",
             "OpenAI HTTP 429: {\n  \"error\": {\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"insufficient_quota\"\n  }\n}",
-            "Manual transcription from user-provided PARSED.pdf screenshots; verify against ISC source PDF before publication"
+            "Manual transcription from user-provided PARSED.pdf screenshots; verify against ISC source PDF before publication",
+            "Sanitized parsed rows: removed 0, fixed totals 0"
           ]
         },
         {
@@ -3967,7 +3969,7 @@
               "total": 107343
             },
             {
-              "name": "Bellegarde, Michael J.",
+              "name": "Bellegarde, Michael J",
               "role": "Councillor",
               "months": 12,
               "remuneration": 49227,
@@ -3984,7 +3986,8 @@
             "OpenAI HTTP 429: {\n  \"error\": {\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"insufficient_quota\"\n  }\n}",
             "OpenAI file_url retry failed; inline PDF retry also failed",
             "OpenAI HTTP 429: {\n  \"error\": {\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.\",\n    \"type\": \"insufficient_quota\",\n    \"param\": null,\n    \"code\": \"insufficient_quota\"\n  }\n}",
-            "Manual transcription from user-provided PARSED.pdf screenshots; verify against ISC source PDF before publication"
+            "Manual transcription from user-provided PARSED.pdf screenshots; verify against ISC source PDF before publication",
+            "Sanitized parsed rows: removed 0, fixed totals 0"
           ]
         }
       ],
@@ -4154,73 +4157,74 @@
             {
               "name": "Lorne Iron",
               "role": "Councillor",
-              "months": 12.0,
-              "remuneration": 60000.0,
-              "travel": 40281.0,
+              "months": 12,
+              "remuneration": 60000,
+              "travel": 40281,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 100281.0
+              "total": 100281
             },
             {
               "name": "Wilfred Iron",
               "role": "Councillor",
-              "months": 12.0,
-              "remuneration": 60000.0,
-              "travel": 42743.0,
+              "months": 12,
+              "remuneration": 60000,
+              "travel": 42743,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 102743.0
+              "total": 102743
             },
             {
-              "name": "Ralph Opikokew Jr.",
+              "name": "Ralph Opikokew Jr",
               "role": "Councillor",
-              "months": 12.0,
-              "remuneration": 60000.0,
-              "travel": 34876.0,
+              "months": 12,
+              "remuneration": 60000,
+              "travel": 34876,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 94876.0
+              "total": 94876
             },
             {
               "name": "Bernice Iron",
               "role": "Councillor",
-              "months": 12.0,
-              "remuneration": 60000.0,
-              "travel": 42285.0,
+              "months": 12,
+              "remuneration": 60000,
+              "travel": 42285,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 102285.0
+              "total": 102285
             },
             {
               "name": "Lenny Iron",
               "role": "Councillor",
-              "months": 12.0,
-              "remuneration": 60000.0,
-              "travel": 43662.0,
+              "months": 12,
+              "remuneration": 60000,
+              "travel": 43662,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 103662.0
+              "total": 103662
             },
             {
               "name": "Roxanne Gamble",
               "role": "Councillor",
-              "months": 12.0,
-              "remuneration": 60000.0,
-              "travel": 31837.0,
+              "months": 12,
+              "remuneration": 60000,
+              "travel": 31837,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 91837.0
+              "total": 91837
             }
           ],
           "parse_status": "ok_pdf_text",
           "warnings": [
-            "Parsed from PDF text fallback"
+            "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 0"
           ]
         },
         {
@@ -4272,106 +4276,107 @@
             {
               "name": "Francis X. Iron",
               "role": "Chief",
-              "months": 12.0,
-              "remuneration": 87500.0,
-              "travel": 55386.0,
+              "months": 12,
+              "remuneration": 87500,
+              "travel": 55386,
               "expenses": null,
               "creditCard": null,
-              "otherPayments": 21309.0,
-              "total": 164195.0
+              "otherPayments": 21309,
+              "total": 164195
             },
             {
               "name": "Lorne Iron",
               "role": "Councillor",
-              "months": 12.0,
-              "remuneration": 60000.0,
-              "travel": 42877.0,
+              "months": 12,
+              "remuneration": 60000,
+              "travel": 42877,
               "expenses": null,
               "creditCard": null,
-              "otherPayments": 10551.0,
-              "total": 113428.0
+              "otherPayments": 10551,
+              "total": 113428
             },
             {
               "name": "Wilfred Iron",
               "role": "Councillor",
-              "months": 12.0,
-              "remuneration": 60000.0,
-              "travel": 33534.0,
+              "months": 12,
+              "remuneration": 60000,
+              "travel": 33534,
               "expenses": null,
               "creditCard": null,
-              "otherPayments": 11215.0,
-              "total": 104749.0
+              "otherPayments": 11215,
+              "total": 104749
             },
             {
-              "name": "Ralph Opikokew Jr.",
+              "name": "Ralph Opikokew Jr",
               "role": "Councillor",
-              "months": 9.0,
-              "remuneration": 45000.0,
-              "travel": 16569.0,
+              "months": 9,
+              "remuneration": 45000,
+              "travel": 16569,
               "expenses": null,
               "creditCard": null,
-              "otherPayments": 9865.0,
-              "total": 71434.0
+              "otherPayments": 9865,
+              "total": 71434
             },
             {
               "name": "Bernice Iron",
               "role": "Councillor",
-              "months": 12.0,
-              "remuneration": 60000.0,
-              "travel": 22564.0,
+              "months": 12,
+              "remuneration": 60000,
+              "travel": 22564,
               "expenses": null,
               "creditCard": null,
-              "otherPayments": 5622.0,
-              "total": 88186.0
+              "otherPayments": 5622,
+              "total": 88186
             },
             {
               "name": "Lenny Iron",
               "role": "Councillor",
-              "months": 12.0,
-              "remuneration": 60000.0,
-              "travel": 31567.0,
+              "months": 12,
+              "remuneration": 60000,
+              "travel": 31567,
               "expenses": null,
               "creditCard": null,
-              "otherPayments": 13572.0,
-              "total": 105139.0
+              "otherPayments": 13572,
+              "total": 105139
             },
             {
               "name": "Roxanne Gamble",
               "role": "Councillor",
-              "months": 9.0,
-              "remuneration": 45000.0,
-              "travel": 13886.0,
+              "months": 9,
+              "remuneration": 45000,
+              "travel": 13886,
               "expenses": null,
               "creditCard": null,
-              "otherPayments": 4272.0,
-              "total": 63158.0
+              "otherPayments": 4272,
+              "total": 63158
             },
             {
               "name": "Walter Coulineur",
               "role": "Councillor",
-              "months": 3.0,
-              "remuneration": 17500.0,
-              "travel": 9858.0,
+              "months": 3,
+              "remuneration": 17500,
+              "travel": 9858,
               "expenses": null,
               "creditCard": null,
-              "otherPayments": 4310.0,
-              "total": 31668.0
+              "otherPayments": 4310,
+              "total": 31668
             },
             {
               "name": "Robert Opikokew",
               "role": "Councillor",
-              "months": 3.0,
-              "remuneration": 17500.0,
-              "travel": 10885.0,
+              "months": 3,
+              "remuneration": 17500,
+              "travel": 10885,
               "expenses": null,
               "creditCard": null,
-              "otherPayments": 9600.0,
-              "total": 37985.0
+              "otherPayments": 9600,
+              "total": 37985
             }
           ],
           "parse_status": "ok_pdf_text",
           "warnings": [
-            "Parsed from PDF text fallback"
+            "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 0"
           ]
         },
         {
@@ -7276,7 +7281,7 @@
           "posted": true,
           "people": [
             {
-              "name": "WATSON DARYL",
+              "name": "Daryl Watson",
               "role": "Chief",
               "months": 12,
               "remuneration": 114231,
@@ -7287,7 +7292,7 @@
               "total": 173991
             },
             {
-              "name": "DANIELS COLBY",
+              "name": "Colby Daniels",
               "role": "Councillor",
               "months": 12,
               "remuneration": 73892,
@@ -7298,7 +7303,7 @@
               "total": 103998
             },
             {
-              "name": "DANIELS ROBIN",
+              "name": "Robin Daniels",
               "role": "Councillor",
               "months": 12,
               "remuneration": 73892,
@@ -7309,7 +7314,7 @@
               "total": 105092
             },
             {
-              "name": "JOHNSTON STEVEN",
+              "name": "Steven Johnston",
               "role": "Councillor",
               "months": 12,
               "remuneration": 73892,
@@ -7320,7 +7325,7 @@
               "total": 106174
             },
             {
-              "name": "PECHAWIS, LESLIE",
+              "name": "Pechawis, Leslie",
               "role": "Councillor",
               "months": 12,
               "remuneration": 73892,
@@ -7331,7 +7336,7 @@
               "total": 104260
             },
             {
-              "name": "SANDERSON, DEREK",
+              "name": "Sanderson, Derek",
               "role": "Councillor",
               "months": 12,
               "remuneration": 73892,
@@ -7345,7 +7350,8 @@
           "parse_status": "ok_pdfplumber",
           "warnings": [
             "Sanitized parsed rows: removed 0, fixed totals 6",
-            "Preserved parsed rows from previous data.json snapshot"
+            "Preserved parsed rows from previous data.json snapshot",
+            "Sanitized parsed rows: removed 0, fixed totals 0"
           ]
         },
         {
@@ -7368,7 +7374,7 @@
           "posted": true,
           "people": [
             {
-              "name": "WATSON, DARYL",
+              "name": "Watson, Daryl",
               "role": "Chief",
               "months": 12,
               "remuneration": 110000,
@@ -7379,7 +7385,7 @@
               "total": 150000
             },
             {
-              "name": "DANIELS, COLBY",
+              "name": "Daniels, Colby",
               "role": "Councillor",
               "months": 12,
               "remuneration": 70000,
@@ -7390,7 +7396,7 @@
               "total": 95000
             },
             {
-              "name": "DANIELS, ROBIN",
+              "name": "Daniels, Robin",
               "role": "Councillor",
               "months": 12,
               "remuneration": 70000,
@@ -7401,7 +7407,7 @@
               "total": 95000
             },
             {
-              "name": "JOHNSTON, STEVEN",
+              "name": "Johnston, Steven",
               "role": "Councillor",
               "months": 12,
               "remuneration": 70000,
@@ -7412,7 +7418,7 @@
               "total": 95000
             },
             {
-              "name": "PECHAWIS, LESLIE",
+              "name": "Pechawis, Leslie",
               "role": "Councillor",
               "months": 12,
               "remuneration": 70000,
@@ -7423,7 +7429,7 @@
               "total": 95000
             },
             {
-              "name": "SANDERSON, DEREK",
+              "name": "Sanderson, Derek",
               "role": "Councillor",
               "months": 12,
               "remuneration": 70000,
@@ -7437,7 +7443,8 @@
           "parse_status": "ok_pdfplumber",
           "warnings": [
             "Sanitized parsed rows: removed 1, fixed totals 6",
-            "Preserved parsed rows from previous data.json snapshot"
+            "Preserved parsed rows from previous data.json snapshot",
+            "Sanitized parsed rows: removed 0, fixed totals 0"
           ]
         },
         {
@@ -33858,75 +33865,76 @@
           "posted": true,
           "people": [
             {
-              "name": "Leo Moccasin Jr.",
+              "name": "Leo Moccasin Jr",
               "role": "Chief",
-              "months": 12.0,
-              "remuneration": 49400.0,
-              "travel": 31293.0,
+              "months": 12,
+              "remuneration": 49400,
+              "travel": 31293,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 80693.0
+              "total": 80693
             },
             {
               "name": "Oscar Gopher",
               "role": "Councillor",
-              "months": 12.0,
-              "remuneration": 37500.0,
-              "travel": 10876.0,
+              "months": 12,
+              "remuneration": 37500,
+              "travel": 10876,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 48376.0
+              "total": 48376
             },
             {
               "name": "Ricky Moccasin",
               "role": "Councillor",
-              "months": 12.0,
-              "remuneration": 39000.0,
-              "travel": 8961.0,
+              "months": 12,
+              "remuneration": 39000,
+              "travel": 8961,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 47961.0
+              "total": 47961
             },
             {
               "name": "Shane Gopher",
               "role": "Councillor",
-              "months": 12.0,
-              "remuneration": 39000.0,
-              "travel": 8183.0,
+              "months": 12,
+              "remuneration": 39000,
+              "travel": 8183,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 47183.0
+              "total": 47183
             },
             {
               "name": "Rebecca Gopher",
               "role": "Councillor",
-              "months": 12.0,
-              "remuneration": 39000.0,
-              "travel": 10002.0,
+              "months": 12,
+              "remuneration": 39000,
+              "travel": 10002,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 49002.0
+              "total": 49002
             },
             {
               "name": "Brenda Moccasin",
               "role": "Councillor",
-              "months": 12.0,
-              "remuneration": 39000.0,
-              "travel": 12893.0,
+              "months": 12,
+              "remuneration": 39000,
+              "travel": 12893,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 51893.0
+              "total": 51893
             }
           ],
           "parse_status": "ok_pdf_text",
           "warnings": [
-            "Parsed from PDF text fallback"
+            "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 0"
           ]
         },
         {
@@ -33951,95 +33959,96 @@
             {
               "name": "Kenny Moccasin",
               "role": "Chief",
-              "months": 11.0,
-              "remuneration": 48077.0,
-              "travel": 19579.0,
+              "months": 11,
+              "remuneration": 48077,
+              "travel": 19579,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 67656.0
+              "total": 67656
             },
             {
               "name": "Velma Knight",
               "role": "Councillor",
-              "months": 11.0,
-              "remuneration": 38462.0,
-              "travel": 11915.0,
+              "months": 11,
+              "remuneration": 38462,
+              "travel": 11915,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 50377.0
+              "total": 50377
             },
             {
               "name": "Shane Gopher",
               "role": "Councillor",
-              "months": 12.0,
-              "remuneration": 46009.0,
-              "travel": 7406.0,
+              "months": 12,
+              "remuneration": 46009,
+              "travel": 7406,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 53415.0
+              "total": 53415
             },
             {
               "name": "Spencer Gopher",
               "role": "Councillor",
-              "months": 11.0,
-              "remuneration": 38462.0,
-              "travel": 8323.0,
+              "months": 11,
+              "remuneration": 38462,
+              "travel": 8323,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 46785.0
+              "total": 46785
             },
             {
               "name": "Dophus Moccasin",
               "role": "Councillor",
-              "months": 11.0,
-              "remuneration": 38462.0,
-              "travel": 7935.0,
+              "months": 11,
+              "remuneration": 38462,
+              "travel": 7935,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 46397.0
+              "total": 46397
             },
             {
               "name": "Julius Thomas",
               "role": "Councillor",
-              "months": 11.0,
-              "remuneration": 38462.0,
-              "travel": 9134.0,
+              "months": 11,
+              "remuneration": 38462,
+              "travel": 9134,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 47596.0
+              "total": 47596
             },
             {
-              "name": "Leo Moccasin Jr.",
+              "name": "Leo Moccasin Jr",
               "role": "Chief",
-              "months": 1.0,
-              "remuneration": 9879.0,
-              "travel": 792.0,
+              "months": 1,
+              "remuneration": 9879,
+              "travel": 792,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 10671.0
+              "total": 10671
             },
             {
               "name": "Ricky Moccasin",
               "role": "Councillor",
-              "months": 1.0,
-              "remuneration": 7799.0,
-              "travel": 628.0,
+              "months": 1,
+              "remuneration": 7799,
+              "travel": 628,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 8427.0
+              "total": 8427
             }
           ],
           "parse_status": "ok_pdf_text",
           "warnings": [
-            "Parsed from PDF text fallback"
+            "Parsed from PDF text fallback",
+            "Sanitized parsed rows: removed 0, fixed totals 0"
           ]
         },
         {
@@ -37270,7 +37279,7 @@
           "posted": true,
           "people": [
             {
-              "name": "MORIN D.BRUCE",
+              "name": "D.bruce Morin",
               "role": "Chief",
               "months": 7,
               "remuneration": 52692,
@@ -37281,7 +37290,7 @@
               "total": 121179
             },
             {
-              "name": "RAYNE JACK",
+              "name": "Jack Rayne",
               "role": "Chief",
               "months": 5,
               "remuneration": 54000,
@@ -37297,7 +37306,8 @@
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved parsed rows from previous data.json snapshot",
-            "Sanitized parsed rows: removed 20, fixed totals 0"
+            "Sanitized parsed rows: removed 20, fixed totals 0",
+            "Sanitized parsed rows: removed 0, fixed totals 0"
           ]
         },
         {
@@ -37407,7 +37417,7 @@
           "posted": true,
           "people": [
             {
-              "name": "BEAR JONATHAN",
+              "name": "Jonathan Bear",
               "role": "Chief",
               "months": 5,
               "remuneration": 53077,
@@ -37418,7 +37428,7 @@
               "total": 103685
             },
             {
-              "name": "RAYNE JACK",
+              "name": "Jack Rayne",
               "role": "Chief",
               "months": 7,
               "remuneration": 64615,
@@ -37434,7 +37444,8 @@
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 1, fixed totals 0",
             "Preserved parsed rows from previous data.json snapshot",
-            "Sanitized parsed rows: removed 19, fixed totals 0"
+            "Sanitized parsed rows: removed 19, fixed totals 0",
+            "Sanitized parsed rows: removed 0, fixed totals 0"
           ]
         },
         {
