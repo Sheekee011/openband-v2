@@ -59,7 +59,8 @@ BAD_NAME_RE = re.compile(
 )
 
 ROLE_RE = re.compile(r"\b(chief|councillor|councilor|council)\b", re.IGNORECASE)
-ROLE_WORD_IN_NAME_RE = re.compile(r"(^|\b)(council\s+member|council|chief|councillor|councilor)\b", re.IGNORECASE)
+ROLE_PREFIX_RE = re.compile(r"^(chief|councillor|councilor|council\s+member|council)\s+", re.IGNORECASE)
+ROLE_SUFFIX_RE = re.compile(r"\s+(chief|councillor|councilor|council\s+member|council)$", re.IGNORECASE)
 WHITESPACE_RE = re.compile(r"\s+")
 REVERSED_HEADER_RE = re.compile(r"(latoT|rehtO|yralaS|shtnoM|emaN|noitisoP|levarT)")
 
@@ -73,9 +74,46 @@ def is_remuneration(filing):
 
 
 def clean_name(value):
-    text = clean_text(value).strip(" -*:;,.\t")
+    text = clean_text(value).strip(" -*:;,.	")
     text = re.sub(r"\*+$", "", text).strip()
+    had_role_prefix = bool(ROLE_PREFIX_RE.search(text))
+    text = ROLE_PREFIX_RE.sub("", text).strip()
+    text = ROLE_SUFFIX_RE.sub("", text).strip()
+    if had_role_prefix or is_uppercase_last_first_candidate(text):
+        text = reorder_last_first_name(text)
+    text = normalize_name_case(text)
     return text
+
+
+def is_uppercase_last_first_candidate(text):
+    tokens = text.split()
+    if len(tokens) < 2 or len(tokens) > 4:
+        return False
+    comparable = "".join(tokens).replace(".", "").replace("-", "").replace("'", "")
+    return comparable.isalpha() and comparable.isupper()
+
+
+def normalize_name_case(text):
+    if not text or not text.replace(".", "").replace("-", "").replace("'", "").replace(" ", "").isupper():
+        return text
+
+    def format_token(token):
+        return "-".join(
+            "'".join(piece[:1].upper() + piece[1:].lower() if piece else piece for piece in part.split("'"))
+            for part in token.split("-")
+        )
+
+    return " ".join(format_token(token) for token in text.split())
+
+
+def reorder_last_first_name(text):
+    tokens = text.split()
+    if len(tokens) < 2 or len(tokens) > 4:
+        return text
+    comparable = "".join(tokens).replace(".", "").replace("-", "").replace("'", "")
+    if not comparable.isalpha() or not comparable.isupper():
+        return text
+    return " ".join(tokens[1:] + tokens[:1])
 
 
 def normalize_role(value):
@@ -123,8 +161,6 @@ def is_bad_name(name):
     if BAD_NAME_RE.search(text):
         return True
     if ROLE_RE.fullmatch(text):
-        return True
-    if ROLE_WORD_IN_NAME_RE.search(text):
         return True
     if len(text) > 90:
         return True
@@ -174,13 +210,11 @@ def nearly_equal(left, right):
 
 def has_component_echo(person):
     remuneration = person.get("remuneration") or 0
-    travel = person.get("travel") or 0
     expenses = person.get("expenses") or 0
     total = person.get("total") or total_from_components(person)
-    if total <= 30000:
+    if total <= 1000:
         return False
-    if nearly_equal(travel, remuneration) and total > remuneration + 10000:
-        return True
+    travel = person.get("travel") or 0
     if nearly_equal(expenses, remuneration + travel) and total > expenses + 10000:
         return True
     return False
@@ -336,6 +370,7 @@ def sanitize_filing(filing):
     cleaned_people = []
     removed = 0
     fixed = 0
+    changed = 0
     for person in people:
         cleaned, status = sanitize_person(person)
         if cleaned is None:
@@ -343,6 +378,8 @@ def sanitize_filing(filing):
             continue
         if status == "fixed_total":
             fixed += 1
+        if cleaned != person:
+            changed += 1
         cleaned_people.append(cleaned)
 
     cleaned_people, duplicates = dedupe_people(cleaned_people)
@@ -354,7 +391,7 @@ def sanitize_filing(filing):
         cleaned_people = []
         add_warning(filing, "Quarantined parsed rows: " + "; ".join(reasons))
 
-    if removed or fixed or len(cleaned_people) != len(people):
+    if removed or fixed or changed or len(cleaned_people) != len(people):
         filing["people"] = cleaned_people
         add_warning(filing, f"Sanitized parsed rows: removed {removed}, fixed totals {fixed}")
 
