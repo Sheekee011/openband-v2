@@ -183,12 +183,53 @@ def total_from_components(person):
     return sum(person.get(key) or 0 for key in PAYMENT_KEYS)
 
 
+def repair_shifted_payment_columns(person):
+    changed = False
+
+    remuneration = person.get("remuneration") or 0
+    travel = person.get("travel") or 0
+    expenses = person.get("expenses") or 0
+    credit_card = person.get("creditCard") or 0
+    other = person.get("otherPayments") or 0
+    total = person.get("total") or total_from_components(person)
+
+    # Some text-extracted PDFs expose a subtotal column after travel. If that
+    # subtotal is treated as expenses, totals are doubled. Keep the component
+    # columns we can identify and recalculate the total below.
+    if expenses and remuneration and nearly_equal(expenses, remuneration + travel):
+        person["expenses"] = None
+        expenses = 0
+        changed = True
+
+    base_without_other = remuneration + travel + expenses + credit_card
+    if other and base_without_other and nearly_equal(other, base_without_other):
+        person["otherPayments"] = None
+        changed = True
+
+    if total > 30000:
+        for key in ("travel", "expenses", "creditCard", "otherPayments"):
+            amount = person.get(key)
+            if amount is not None and 0 < abs(amount) <= 24:
+                person[key] = None
+                changed = True
+
+    return changed
+
+
 def has_months_shift(person):
     remuneration = person.get("remuneration")
     total = person.get("total") or total_from_components(person)
     if remuneration is None:
         return False
     return 0 < remuneration <= 24 and total > 1000
+
+
+def has_low_remuneration_shift(person):
+    remuneration = person.get("remuneration")
+    total = person.get("total") or total_from_components(person)
+    if remuneration is None:
+        return False
+    return 0 < remuneration <= 1000 and total > 30000
 
 
 def has_small_component_shift(person):
@@ -245,6 +286,10 @@ def suspicious_filing_reasons(people):
     month_shift_count = sum(1 for person in people if has_months_shift(person))
     if month_shift_count:
         reasons.append("month values appear in money columns")
+
+    low_remuneration_count = sum(1 for person in people if has_low_remuneration_shift(person))
+    if low_remuneration_count:
+        reasons.append("implausibly small remuneration values appear in money columns")
 
     small_component_count = sum(1 for person in people if has_small_component_shift(person))
     if small_component_count:
@@ -319,6 +364,8 @@ def sanitize_person(person):
     for key in ALL_MONEY_KEYS:
         cleaned[key] = parse_money(cleaned.get(key))
 
+    shifted_columns_fixed = repair_shifted_payment_columns(cleaned)
+
     component_total = total_from_components(cleaned)
     current_total = cleaned.get("total")
     max_component = max((cleaned.get(key) or 0 for key in PAYMENT_KEYS), default=0)
@@ -342,6 +389,10 @@ def sanitize_person(person):
     if largest_money <= 31:
         return None, "date_like_money"
 
+    if changed_total and shifted_columns_fixed:
+        return cleaned, "fixed_shifted_columns_and_total"
+    if shifted_columns_fixed:
+        return cleaned, "fixed_shifted_columns"
     return cleaned, "fixed_total" if changed_total else "ok"
 
 

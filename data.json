@@ -1449,15 +1449,69 @@
           "date": "2017-07-24",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=362&FY=2016-2017&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Louis Taypotat",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 79947,
+              "travel": 789,
+              "expenses": 42298,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 123046
+            },
+            {
+              "name": "Michael Bob",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 55344,
+              "travel": 4897,
+              "expenses": 70213,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 130466
+            },
+            {
+              "name": "Iris Taypotat-Scribe",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 55344,
+              "travel": 6533,
+              "expenses": 52291,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 114180
+            },
+            {
+              "name": "Leila Louison",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 55344,
+              "travel": 6580,
+              "expenses": 54371,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 116307
+            },
+            {
+              "name": "Darrell Taypotat",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 55344,
+              "travel": 5711,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 61055
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 1, fixed totals 5",
-            "Quarantined parsed rows: small month-like values appear in payment columns; payment columns appear duplicated or shifted",
-            "Sanitized parsed rows: removed 5, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2017-2018",
@@ -1505,15 +1559,69 @@
           "date": "2019-07-18",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=362&FY=2018-2019&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Evan Taypotat",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 84769,
+              "travel": 4915,
+              "expenses": 67054,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 156750
+            },
+            {
+              "name": "Michael Bob",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 58683,
+              "travel": 5270,
+              "expenses": 59896,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 123861
+            },
+            {
+              "name": "Iris Taypotat-Scribe",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 58683,
+              "travel": 6833,
+              "expenses": 47730,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 113258
+            },
+            {
+              "name": "Cory Alexson",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 58683,
+              "travel": 5257,
+              "expenses": 57631,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 121583
+            },
+            {
+              "name": "William Kaysaywaysemat",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 58683,
+              "travel": 5246,
+              "expenses": 39439,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 103380
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 1, fixed totals 5",
-            "Quarantined parsed rows: small month-like values appear in payment columns",
-            "Sanitized parsed rows: removed 5, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2019-2020",
@@ -1533,15 +1641,69 @@
           "date": "2020-07-28",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=362&FY=2019-2020&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Evan Taypotat",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 87311,
+              "travel": 5314,
+              "expenses": 59482,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 152119
+            },
+            {
+              "name": "William Kaysaywaysemat",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 60442,
+              "travel": 5417,
+              "expenses": 42970,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 108841
+            },
+            {
+              "name": "Iris Taypotat-Scribe",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 60442,
+              "travel": 7242,
+              "expenses": 44749,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 112445
+            },
+            {
+              "name": "Cory Alexson",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 60442,
+              "travel": 5417,
+              "expenses": 51614,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 117485
+            },
+            {
+              "name": "Michael Bob",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 60442,
+              "travel": 5441,
+              "expenses": 52240,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 118135
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 1, fixed totals 5",
-            "Quarantined parsed rows: small month-like values appear in payment columns",
-            "Sanitized parsed rows: removed 5, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2020-2021",
@@ -1561,15 +1723,69 @@
           "date": "2021-07-29",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=362&FY=2020-2021&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Evan Taypotat",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 113193,
+              "travel": 9641,
+              "expenses": 56811,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 179645
+            },
+            {
+              "name": "William Kaysaywaysemat",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 78723,
+              "travel": 8210,
+              "expenses": 27432,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 114365
+            },
+            {
+              "name": "Iris Taypotat-Scribe",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 78723,
+              "travel": 9186,
+              "expenses": 37545,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 125466
+            },
+            {
+              "name": "Cory Alexson",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 78723,
+              "travel": 6734,
+              "expenses": 49066,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 134535
+            },
+            {
+              "name": "Michael Bob",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 78723,
+              "travel": 6718,
+              "expenses": 55571,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 141012
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 1, fixed totals 5",
-            "Quarantined parsed rows: small month-like values appear in payment columns",
-            "Sanitized parsed rows: removed 5, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2021-2022",
@@ -1589,15 +1805,69 @@
           "date": "2022-09-30",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=362&FY=2021-2022&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Evan Taypotat",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 120744,
+              "travel": 13450,
+              "expenses": 89236,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 223430
+            },
+            {
+              "name": "William Kaysaywaysemat",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 84726,
+              "travel": 9732,
+              "expenses": 56770,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 151228
+            },
+            {
+              "name": "Iris Taypotat-Scribe",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 84726,
+              "travel": 9736,
+              "expenses": 66327,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 160789
+            },
+            {
+              "name": "Cory Alexson",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 84726,
+              "travel": 7262,
+              "expenses": 75480,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 167480
+            },
+            {
+              "name": "Michael Bob",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 84726,
+              "travel": 7266,
+              "expenses": 104562,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 196566
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 1, fixed totals 5",
-            "Quarantined parsed rows: small month-like values appear in payment columns",
-            "Sanitized parsed rows: removed 5, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2022-2023",
@@ -1617,15 +1887,69 @@
           "date": "2023-09-29",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=362&FY=2022-2023&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Evan Taypotat",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 121867,
+              "travel": 14301,
+              "expenses": 78300,
+              "creditCard": 12457,
+              "otherPayments": null,
+              "total": 226925
+            },
+            {
+              "name": "William Kaysaywaysemat",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 84777,
+              "travel": 10437,
+              "expenses": 56534,
+              "creditCard": 12207,
+              "otherPayments": null,
+              "total": 163955
+            },
+            {
+              "name": "Iris Taypotat-Scribe",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 84777,
+              "travel": 10959,
+              "expenses": 82505,
+              "creditCard": 12451,
+              "otherPayments": null,
+              "total": 190692
+            },
+            {
+              "name": "Cory Alexson",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 84777,
+              "travel": 7502,
+              "expenses": 66912,
+              "creditCard": 11726,
+              "otherPayments": null,
+              "total": 170917
+            },
+            {
+              "name": "Michael Bob",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 84777,
+              "travel": 7855,
+              "expenses": null,
+              "creditCard": 12457,
+              "otherPayments": null,
+              "total": 105089
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 1, fixed totals 5",
-            "Quarantined parsed rows: payment columns appear duplicated or shifted",
-            "Sanitized parsed rows: removed 5, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2023-2024",
@@ -1645,15 +1969,69 @@
           "date": "2024-07-29",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=362&FY=2023-2024&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Evan Taypotat",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 130092,
+              "travel": 16376,
+              "expenses": 83994,
+              "creditCard": 20390,
+              "otherPayments": null,
+              "total": 250852
+            },
+            {
+              "name": "William Kaysaywaysemat",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 99128,
+              "travel": 12506,
+              "expenses": 64560,
+              "creditCard": 19793,
+              "otherPayments": null,
+              "total": 195987
+            },
+            {
+              "name": "Iris Taypotat-Scribe",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 99128,
+              "travel": 11967,
+              "expenses": 77180,
+              "creditCard": 24216,
+              "otherPayments": null,
+              "total": 212491
+            },
+            {
+              "name": "Cory Alexson",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 99128,
+              "travel": 9344,
+              "expenses": 67839,
+              "creditCard": 24266,
+              "otherPayments": null,
+              "total": 200577
+            },
+            {
+              "name": "Michael Bob",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 99128,
+              "travel": 9585,
+              "expenses": null,
+              "creditCard": 19793,
+              "otherPayments": null,
+              "total": 128506
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 1, fixed totals 5",
-            "Quarantined parsed rows: payment columns appear duplicated or shifted",
-            "Sanitized parsed rows: removed 5, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2024-2025",
@@ -5049,16 +5427,114 @@
           "date": "2025-02-25",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=378&FY=2023-2024&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Scott Eashappie",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 108238,
+              "travel": 125925,
+              "expenses": null,
+              "creditCard": 36245,
+              "otherPayments": null,
+              "total": 270409
+            },
+            {
+              "name": "Shawn Spencer",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 87077,
+              "travel": 77187,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 164265
+            },
+            {
+              "name": "Dwayne Thomson",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 87077,
+              "travel": 65643,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 152721
+            },
+            {
+              "name": "Lucy Musqua",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 84385,
+              "travel": 52732,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 137118
+            },
+            {
+              "name": "Tamara Thomson",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 87077,
+              "travel": 44859,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 131937
+            },
+            {
+              "name": "Terrina Ashdohonk-Bellegarde",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 87077,
+              "travel": 87077,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 174154
+            },
+            {
+              "name": "Joellen Haywahe",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 87077,
+              "travel": 87077,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 174154
+            },
+            {
+              "name": "Brady O'Watch",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 87077,
+              "travel": 101659,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 188737
+            },
+            {
+              "name": "Morris Passap",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 87077,
+              "travel": 62750,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 149828
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 0, fixed totals 7",
             "Preserved parsed rows from previous data.json snapshot",
-            "Quarantined parsed rows: small month-like values appear in payment columns",
-            "Sanitized parsed rows: removed 9, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2024-2025",
@@ -5403,15 +5879,113 @@
           "date": "2016-04-04",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=361&FY=2014-2015&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Terrence Lavallee",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 78000,
+              "travel": 985,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 78985
+            },
+            {
+              "name": "Walter Pelletier",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 38000,
+              "travel": 1045,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 39045
+            },
+            {
+              "name": "William Tanner",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 38000,
+              "travel": 1286,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 39286
+            },
+            {
+              "name": "Carol Lavallee",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 38000,
+              "travel": 1021,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 39021
+            },
+            {
+              "name": "Edward Asaican",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 38000,
+              "travel": 1237,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 39237
+            },
+            {
+              "name": "Ernest Delorme",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 38000,
+              "travel": 948,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 38948
+            },
+            {
+              "name": "Kevin Delorme",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 38000,
+              "travel": 994,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 38994
+            },
+            {
+              "name": "Malcolm Delorme",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 38000,
+              "travel": 816,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 38816
+            },
+            {
+              "name": "Valerie Tanner",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 38000,
+              "travel": 802,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 38802
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 0, fixed totals 9",
-            "Quarantined parsed rows: payment columns appear duplicated or shifted",
-            "Sanitized parsed rows: removed 9, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2015-2016",
@@ -5431,15 +6005,113 @@
           "date": "2016-10-07",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=361&FY=2015-2016&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Terrence Lavallee",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 78000,
+              "travel": 1287,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 79287
+            },
+            {
+              "name": "Carol Lavallee",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 38000,
+              "travel": 1250,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 39250
+            },
+            {
+              "name": "Edward Asaican",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 38000,
+              "travel": 1387,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 39387
+            },
+            {
+              "name": "Ernest Delorme",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 38000,
+              "travel": 1371,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 39371
+            },
+            {
+              "name": "Kevin Delorme",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 38000,
+              "travel": 1401,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 39401
+            },
+            {
+              "name": "Malcolm Delorme",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 38000,
+              "travel": 1279,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 39279
+            },
+            {
+              "name": "Valerie Tanner",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 38000,
+              "travel": 1233,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 39233
+            },
+            {
+              "name": "Walter Pelletier",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 38000,
+              "travel": 1275,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 39275
+            },
+            {
+              "name": "William Tanner",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 38000,
+              "travel": 1357,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 39357
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 0, fixed totals 9",
-            "Quarantined parsed rows: payment columns appear duplicated or shifted",
-            "Sanitized parsed rows: removed 9, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2016-2017",
@@ -5459,16 +6131,191 @@
           "date": "2017-08-30",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=361&FY=2016-2017&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Terrence Lavallee",
+              "role": "Chief",
+              "months": 1,
+              "remuneration": 6900,
+              "travel": 4200,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 11100
+            },
+            {
+              "name": "Carol Lavallee",
+              "role": "Councillor",
+              "months": 4,
+              "remuneration": 11055,
+              "travel": 11055,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": 3947,
+              "total": 26057
+            },
+            {
+              "name": "Edward Aisaican",
+              "role": "Councillor",
+              "months": 1,
+              "remuneration": 3362,
+              "travel": 3362,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": 1662,
+              "total": 8386
+            },
+            {
+              "name": "Ernest Delorme",
+              "role": "Councillor",
+              "months": 1,
+              "remuneration": 3362,
+              "travel": 3362,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": 255,
+              "total": 6979
+            },
+            {
+              "name": "Kevin Delorme",
+              "role": "Councillor",
+              "months": 1,
+              "remuneration": 3362,
+              "travel": 3362,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": 510,
+              "total": 7234
+            },
+            {
+              "name": "Malcolm Delorme",
+              "role": "Councillor",
+              "months": 4,
+              "remuneration": 10965,
+              "travel": 10965,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": 2549,
+              "total": 24479
+            },
+            {
+              "name": "Valerie Tanner",
+              "role": "Councillor",
+              "months": 1,
+              "remuneration": 3362,
+              "travel": 4800,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 8162
+            },
+            {
+              "name": "Walter Pelletier",
+              "role": "Councillor",
+              "months": 1,
+              "remuneration": 3362,
+              "travel": 3362,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": 1320,
+              "total": 8044
+            },
+            {
+              "name": "William Tanner",
+              "role": "Councillor",
+              "months": 1,
+              "remuneration": 3362,
+              "travel": 3362,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": 1001,
+              "total": 7725
+            },
+            {
+              "name": "Cadmus Delorme",
+              "role": "Chief",
+              "months": 11,
+              "remuneration": 63808,
+              "travel": 63808,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": 23787,
+              "total": 151403
+            },
+            {
+              "name": "Jonathan Lerat",
+              "role": "Councillor",
+              "months": 11,
+              "remuneration": 36463,
+              "travel": 36463,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": 17062,
+              "total": 89988
+            },
+            {
+              "name": "Bonnie Lavallee",
+              "role": "Councillor",
+              "months": 11,
+              "remuneration": 36463,
+              "travel": 36463,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": 24034,
+              "total": 96960
+            },
+            {
+              "name": "Patricia Sparvier",
+              "role": "Councillor",
+              "months": 11,
+              "remuneration": 36463,
+              "travel": 36463,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": 5843,
+              "total": 78769
+            },
+            {
+              "name": "Richard Aisaican",
+              "role": "Councillor",
+              "months": 11,
+              "remuneration": 36463,
+              "travel": 36463,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": 13084,
+              "total": 86010
+            },
+            {
+              "name": "Lionel Sparvier",
+              "role": "Councillor",
+              "months": 11,
+              "remuneration": 36463,
+              "travel": 36463,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": 13917,
+              "total": 86843
+            },
+            {
+              "name": "Curtis Lerat",
+              "role": "Councillor",
+              "months": 3,
+              "remuneration": 7468,
+              "travel": 7468,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": 2064,
+              "total": 17000
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 0, fixed totals 2",
             "Preserved parsed rows from previous data.json snapshot",
-            "Quarantined parsed rows: payment columns appear duplicated or shifted",
-            "Sanitized parsed rows: removed 16, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2017-2018",
@@ -5488,16 +6335,114 @@
           "date": "2018-10-17",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=361&FY=2017-2018&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Cadmus Delorme",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 73500,
+              "travel": 50,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 73550
+            },
+            {
+              "name": "Jonathan Lerat",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 42000,
+              "travel": 418,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 42418
+            },
+            {
+              "name": "Bonnie Lavallee",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 42000,
+              "travel": 50,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 42050
+            },
+            {
+              "name": "Patricia Sparvier",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 42000,
+              "travel": 50,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 42050
+            },
+            {
+              "name": "Richard Aisaican",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 42000,
+              "travel": 400,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 42400
+            },
+            {
+              "name": "Lionel Sparvier",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 42000,
+              "travel": 50,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 42050
+            },
+            {
+              "name": "Malcolm Delorme",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 42000,
+              "travel": 566,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 42566
+            },
+            {
+              "name": "Carol Lavallee",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 42000,
+              "travel": 78,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 42078
+            },
+            {
+              "name": "Curtis Lerat",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 42000,
+              "travel": 305,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 42305
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 0, fixed totals 9",
             "Preserved parsed rows from previous data.json snapshot",
-            "Quarantined parsed rows: payment columns appear duplicated or shifted",
-            "Sanitized parsed rows: removed 9, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2018-2019",
@@ -5517,16 +6462,114 @@
           "date": "2019-11-01",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=361&FY=2018-2019&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Cadmus Delorme",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 77187,
+              "travel": 77187,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": 27207,
+              "total": 181581
+            },
+            {
+              "name": "Jonathan Lerat",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 43227,
+              "travel": 850,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 44077
+            },
+            {
+              "name": "Bonnie Lavallee",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 43227,
+              "travel": 43227,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": 30227,
+              "total": 116681
+            },
+            {
+              "name": "Patricia Sparvier",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 43227,
+              "travel": 43227,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": 16442,
+              "total": 102896
+            },
+            {
+              "name": "Richard Aisaican",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 43227,
+              "travel": 2135,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 45362
+            },
+            {
+              "name": "Lionel Sparvier",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 43227,
+              "travel": 43227,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": 29278,
+              "total": 115732
+            },
+            {
+              "name": "Malcolm Delorme",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 43227,
+              "travel": 870,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 44097
+            },
+            {
+              "name": "Carol Lavallee",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 43257,
+              "travel": 150,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 43407
+            },
+            {
+              "name": "Curtis Lerat",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 43227,
+              "travel": 43227,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": 12189,
+              "total": 98643
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 0, fixed totals 4",
             "Preserved parsed rows from previous data.json snapshot",
-            "Quarantined parsed rows: payment columns appear duplicated or shifted",
-            "Sanitized parsed rows: removed 9, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2019-2020",
@@ -5546,16 +6589,147 @@
           "date": "2020-11-19",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=361&FY=2019-2020&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Cadmus Delorme",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 84196,
+              "travel": 100,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 84296
+            },
+            {
+              "name": "Jonathan Lerat",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 49271,
+              "travel": 100,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 49371
+            },
+            {
+              "name": "Patricia Sparvier",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 49271,
+              "travel": 100,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 49371
+            },
+            {
+              "name": "Malcolm Delorme",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 49271,
+              "travel": 100,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 49371
+            },
+            {
+              "name": "Richard Aisaican",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 49271,
+              "travel": 100,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 49371
+            },
+            {
+              "name": "Curtis Lerat",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 49271,
+              "travel": 250,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 49521
+            },
+            {
+              "name": "Denise Pelletier",
+              "role": "Councillor",
+              "months": 11,
+              "remuneration": 44231,
+              "travel": 100,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 44331
+            },
+            {
+              "name": "Gary Sparvier",
+              "role": "Councillor",
+              "months": 11,
+              "remuneration": 44231,
+              "travel": 100,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 44331
+            },
+            {
+              "name": "Damon Delorme",
+              "role": "Councillor",
+              "months": 11,
+              "remuneration": 44231,
+              "travel": 100,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 44331
+            },
+            {
+              "name": "Carol Lavallee",
+              "role": "Councillor",
+              "months": 1,
+              "remuneration": 5104,
+              "travel": 5104,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": 95,
+              "total": 10303
+            },
+            {
+              "name": "Lionel Sparvier",
+              "role": "Councillor",
+              "months": 1,
+              "remuneration": 5104,
+              "travel": 5104,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": 95,
+              "total": 10303
+            },
+            {
+              "name": "Bonnie Lavallee",
+              "role": "Councillor",
+              "months": 1,
+              "remuneration": 5104,
+              "travel": 5104,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": 912,
+              "total": 11120
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 0, fixed totals 9",
             "Preserved parsed rows from previous data.json snapshot",
-            "Quarantined parsed rows: payment columns appear duplicated or shifted",
-            "Sanitized parsed rows: removed 12, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2020-2021",
@@ -5575,16 +6749,114 @@
           "date": "2021-10-06",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=361&FY=2020-2021&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Cadmus Delorme",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 87550,
+              "travel": 100,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 87650
+            },
+            {
+              "name": "Jonathan Lerat",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 51500,
+              "travel": 400,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 51900
+            },
+            {
+              "name": "Patricia Sparvier",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 51500,
+              "travel": 100,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 51600
+            },
+            {
+              "name": "Malcolm Delorme",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 51500,
+              "travel": 275,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 51775
+            },
+            {
+              "name": "Richard Aisaican",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 51500,
+              "travel": 14585,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 66085
+            },
+            {
+              "name": "Curtis Lerat",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 51500,
+              "travel": 100,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 51600
+            },
+            {
+              "name": "Denise Pelletier",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 51500,
+              "travel": 200,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 51700
+            },
+            {
+              "name": "Gary Sparvier",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 51500,
+              "travel": 3892,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 55392
+            },
+            {
+              "name": "Damon Delorme",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 51500,
+              "travel": 100,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 51600
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 0, fixed totals 9",
             "Preserved parsed rows from previous data.json snapshot",
-            "Quarantined parsed rows: payment columns appear duplicated or shifted",
-            "Sanitized parsed rows: removed 9, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2021-2022",
@@ -5604,16 +6876,114 @@
           "date": "2023-01-18",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=361&FY=2021-2022&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Cadmus Delorme",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 90096,
+              "travel": 100,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 90196
+            },
+            {
+              "name": "Jonathan Lerat",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 52998,
+              "travel": 100,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 53098
+            },
+            {
+              "name": "Patricia Sparvier",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 52998,
+              "travel": 600,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 53598
+            },
+            {
+              "name": "Malcolm Delorme",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 52998,
+              "travel": 100,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 53098
+            },
+            {
+              "name": "Richard Aisaican",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 52998,
+              "travel": 29550,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 82548
+            },
+            {
+              "name": "Curtis Lerat",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 48917,
+              "travel": 100,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 49017
+            },
+            {
+              "name": "Denise Pelletier",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 52998,
+              "travel": 100,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 53098
+            },
+            {
+              "name": "Gary Sparvier",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 52998,
+              "travel": 100,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 53098
+            },
+            {
+              "name": "Damon Delorme",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 52998,
+              "travel": 100,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 53098
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 0, fixed totals 9",
             "Preserved parsed rows from previous data.json snapshot",
-            "Quarantined parsed rows: payment columns appear duplicated or shifted",
-            "Sanitized parsed rows: removed 9, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2022-2023",
@@ -5633,16 +7003,125 @@
           "date": "2024-10-31",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=361&FY=2022-2023&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Cadmus Delorme",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 93229,
+              "travel": 100,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 93329
+            },
+            {
+              "name": "Gary Sparvier",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 54841,
+              "travel": 100,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 54941
+            },
+            {
+              "name": "Damon Delorme",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 54841,
+              "travel": 100,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 54941
+            },
+            {
+              "name": "Patricia Sparvier",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 54841,
+              "travel": 100,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 54941
+            },
+            {
+              "name": "Curtis Lerat",
+              "role": "Councillor",
+              "months": 7,
+              "remuneration": 26849,
+              "travel": 100,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 26949
+            },
+            {
+              "name": "Terry Lerat",
+              "role": "Councillor",
+              "months": 5,
+              "remuneration": 23149,
+              "travel": 100,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 23249
+            },
+            {
+              "name": "Malcolm Delorme",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 54851,
+              "travel": 100,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 54951
+            },
+            {
+              "name": "Jonathan Lerat",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 54841,
+              "travel": 100,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 54941
+            },
+            {
+              "name": "Richard Aisaican",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 54841,
+              "travel": 10710,
+              "expenses": 76161,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 141712
+            },
+            {
+              "name": "Denise Pelletier",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 54841,
+              "travel": 100,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 54941
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 0, fixed totals 10",
             "Preserved parsed rows from previous data.json snapshot",
-            "Quarantined parsed rows: payment columns appear duplicated or shifted",
-            "Sanitized parsed rows: removed 10, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2023-2024",
@@ -5662,16 +7141,158 @@
           "date": "2026-04-21",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=361&FY=2023-2024&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Gary Sparvier",
+              "role": "Councillor",
+              "months": 1,
+              "remuneration": 4690,
+              "travel": 4690,
+              "expenses": 72,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 9452
+            },
+            {
+              "name": "Damon Delorme",
+              "role": "Councillor",
+              "months": 1,
+              "remuneration": 4793,
+              "travel": 4793,
+              "expenses": 74,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 9660
+            },
+            {
+              "name": "Patricia Sparvier",
+              "role": "Councillor",
+              "months": 1,
+              "remuneration": 5791,
+              "travel": 5791,
+              "expenses": 62,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 11644
+            },
+            {
+              "name": "Richard Aisaican",
+              "role": "Councillor",
+              "months": 1,
+              "remuneration": 4767,
+              "travel": 4767,
+              "expenses": 109,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 9643
+            },
+            {
+              "name": "Denise Pelletier",
+              "role": "Councillor",
+              "months": 1,
+              "remuneration": 4622,
+              "travel": 4622,
+              "expenses": 74,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 9318
+            },
+            {
+              "name": "Jonathan Lerat",
+              "role": "Councillor",
+              "months": 9,
+              "remuneration": 63513,
+              "travel": 63513,
+              "expenses": 18008,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 145034
+            },
+            {
+              "name": "Curtis Delorme",
+              "role": "Councillor",
+              "months": 11,
+              "remuneration": 76962,
+              "travel": 500,
+              "expenses": null,
+              "creditCard": 41392,
+              "otherPayments": null,
+              "total": 118854
+            },
+            {
+              "name": "Josh Aisaican",
+              "role": "Councillor",
+              "months": 11,
+              "remuneration": 77347,
+              "travel": 500,
+              "expenses": null,
+              "creditCard": 32642,
+              "otherPayments": null,
+              "total": 110489
+            },
+            {
+              "name": "Allison Whiteman",
+              "role": "Councillor",
+              "months": 11,
+              "remuneration": 76492,
+              "travel": 500,
+              "expenses": null,
+              "creditCard": 25696,
+              "otherPayments": null,
+              "total": 102688
+            },
+            {
+              "name": "Ira Aisaican",
+              "role": "Councillor",
+              "months": 11,
+              "remuneration": 77088,
+              "travel": 500,
+              "expenses": null,
+              "creditCard": 25617,
+              "otherPayments": null,
+              "total": 103205
+            },
+            {
+              "name": "Brandon Pelltier",
+              "role": "Councillor",
+              "months": 11,
+              "remuneration": 76872,
+              "travel": 500,
+              "expenses": null,
+              "creditCard": 27769,
+              "otherPayments": null,
+              "total": 105141
+            },
+            {
+              "name": "Terry Lerat",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 71481,
+              "travel": 500,
+              "expenses": null,
+              "creditCard": 17292,
+              "otherPayments": null,
+              "total": 89273
+            },
+            {
+              "name": "Malcolm Delorme",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 71400,
+              "travel": 500,
+              "expenses": null,
+              "creditCard": 6250,
+              "otherPayments": null,
+              "total": 78150
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 0, fixed totals 13",
             "Preserved parsed rows from previous data.json snapshot",
-            "Quarantined parsed rows: payment columns appear duplicated or shifted",
-            "Sanitized parsed rows: removed 13, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2024-2025",
@@ -6207,16 +7828,81 @@
           "date": "2019-11-27",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=389&FY=2018-2019&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Lloyd Buffalo",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 38700,
+              "travel": 5475,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 44175
+            },
+            {
+              "name": "David Crow Buffalo",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 32200,
+              "travel": 8900,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 41100
+            },
+            {
+              "name": "Delbert Kinequon",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 32200,
+              "travel": 6825,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 39025
+            },
+            {
+              "name": "Coraleigh Buffalo",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 32200,
+              "travel": 5550,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 37750
+            },
+            {
+              "name": "Max Itittakoose",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 31750,
+              "travel": 5850,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 37600
+            },
+            {
+              "name": "Linda Kinequon",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 32200,
+              "travel": 3900,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 36100
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 0, fixed totals 6",
             "Preserved parsed rows from previous data.json snapshot",
-            "Quarantined parsed rows: payment columns appear duplicated or shifted",
-            "Sanitized parsed rows: removed 6, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2019-2020",
@@ -6236,16 +7922,81 @@
           "date": "2020-07-29",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=389&FY=2019-2020&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Lloyd Buffalo",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 38950,
+              "travel": 21895,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 60845
+            },
+            {
+              "name": "David Crow Buffalo",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 32450,
+              "travel": 22925,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 55375
+            },
+            {
+              "name": "Delbert Kinequon",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 32450,
+              "travel": 21275,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 53725
+            },
+            {
+              "name": "Coraleigh Buffalo",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 32450,
+              "travel": 19325,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 51775
+            },
+            {
+              "name": "Max Itittakoose",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 32450,
+              "travel": 19050,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 51500
+            },
+            {
+              "name": "Linda Kinequon",
+              "role": "Councillor",
+              "months": 4,
+              "remuneration": 9600,
+              "travel": 2050,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 11650
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 0, fixed totals 6",
             "Preserved parsed rows from previous data.json snapshot",
-            "Quarantined parsed rows: payment columns appear duplicated or shifted",
-            "Sanitized parsed rows: removed 6, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2020-2021",
@@ -6265,16 +8016,70 @@
           "date": "2025-06-03",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=389&FY=2020-2021&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Lloyd Buffalo",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 47860,
+              "travel": 52050,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 99910
+            },
+            {
+              "name": "David Crow Buffalo",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 40200,
+              "travel": 51700,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 91900
+            },
+            {
+              "name": "Delbert Kinequon",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 40200,
+              "travel": 53325,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 93525
+            },
+            {
+              "name": "Coraleigh Buffalo",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 40200,
+              "travel": 48625,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 88825
+            },
+            {
+              "name": "Max Itittakoose",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 40200,
+              "travel": 47050,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 87250
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 0, fixed totals 5",
             "Preserved parsed rows from previous data.json snapshot",
-            "Quarantined parsed rows: payment columns appear duplicated or shifted",
-            "Sanitized parsed rows: removed 5, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2021-2022",
@@ -7237,16 +9042,92 @@
           "date": "2025-12-02",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=396&FY=2024-2025&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Melvin Mooswa",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 123000,
+              "travel": 101462,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 224462
+            },
+            {
+              "name": "Derrick Cantre",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 103000,
+              "travel": null,
+              "expenses": 7086,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 110094
+            },
+            {
+              "name": "Dean Mitsuing",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 103000,
+              "travel": null,
+              "expenses": 8992,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 112001
+            },
+            {
+              "name": "Kenneth Mitsuing",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 103000,
+              "travel": null,
+              "expenses": 555,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 103563
+            },
+            {
+              "name": "Michael Mitsuing",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 103000,
+              "travel": null,
+              "expenses": 2803,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 105811
+            },
+            {
+              "name": "Walter Mitsuing",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 103000,
+              "travel": null,
+              "expenses": 6661,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 109669
+            },
+            {
+              "name": "Julia Ouellette",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 103000,
+              "travel": null,
+              "expenses": 3503,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 106511
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 0, fixed totals 6",
             "Preserved parsed rows from previous data.json snapshot",
-            "Quarantined parsed rows: small month-like values appear in payment columns; total column appears duplicated into payment columns",
-            "Sanitized parsed rows: removed 7, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         }
       ],
       "status": "ok",
@@ -7896,16 +9777,81 @@
           "date": "2018-07-30",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=371&FY=2017-2018&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Austin Bear",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 92742,
+              "travel": null,
+              "expenses": 348,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 96090
+            },
+            {
+              "name": "Herman Crain",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 28660,
+              "travel": 47911,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 76571
+            },
+            {
+              "name": "Elaine Ross",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 51671,
+              "travel": null,
+              "expenses": 6664,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 58336
+            },
+            {
+              "name": "Merle Crain",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 51421,
+              "travel": null,
+              "expenses": 864,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 52293
+            },
+            {
+              "name": "Randy Bear",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 53763,
+              "travel": null,
+              "expenses": 602,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 54374
+            },
+            {
+              "name": "Delbert Bear",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 46371,
+              "travel": null,
+              "expenses": 622,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 47002
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 1, fixed totals 4",
             "Preserved parsed rows from previous data.json snapshot",
-            "Quarantined parsed rows: small month-like values appear in payment columns; total column appears duplicated into payment columns",
-            "Sanitized parsed rows: removed 6, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2018-2019",
@@ -10836,15 +12782,256 @@
           "date": "2022-02-10",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=355&FY=2018-2019&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Peter A. Beatty",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 90000,
+              "travel": 103511,
+              "expenses": 64090,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 257601
+            },
+            {
+              "name": "Cornelius Ballantyne",
+              "role": "Councillor",
+              "months": 1,
+              "remuneration": 15405,
+              "travel": 1262,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 16667
+            },
+            {
+              "name": "Della Ballantyne",
+              "role": "Councillor",
+              "months": 1,
+              "remuneration": 9243,
+              "travel": 9243,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 18486
+            },
+            {
+              "name": "Eileen Linklater",
+              "role": "Councillor",
+              "months": 1,
+              "remuneration": 21567,
+              "travel": 21567,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 43134
+            },
+            {
+              "name": "Harold Linklater",
+              "role": "Councillor",
+              "months": 1,
+              "remuneration": 13864,
+              "travel": 13864,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 27728
+            },
+            {
+              "name": "Harvey Nataweyes",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 52000,
+              "travel": 53973,
+              "expenses": 8615,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 114588
+            },
+            {
+              "name": "Justin Halcrow",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 52000,
+              "travel": 100635,
+              "expenses": 29235,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 181870
+            },
+            {
+              "name": "Kevin Morin",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 52000,
+              "travel": 85177,
+              "expenses": 13136,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 150313
+            },
+            {
+              "name": "Margaret Michel",
+              "role": "Councillor",
+              "months": 1,
+              "remuneration": 9243,
+              "travel": 250,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 9493
+            },
+            {
+              "name": "Marvin Morin",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 52000,
+              "travel": 57507,
+              "expenses": 12600,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 122107
+            },
+            {
+              "name": "Myrtle Ballantyne",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 52000,
+              "travel": 92324,
+              "expenses": 23159,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 167483
+            },
+            {
+              "name": "Nora Bear",
+              "role": "Councillor",
+              "months": 1,
+              "remuneration": 15405,
+              "travel": 15405,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 30810
+            },
+            {
+              "name": "Simon Jobb",
+              "role": "Councillor",
+              "months": 1,
+              "remuneration": 15405,
+              "travel": 15405,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 30810
+            },
+            {
+              "name": "Warren McCallum",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 52000,
+              "travel": 42597,
+              "expenses": 50600,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 145197
+            },
+            {
+              "name": "Weldon McCallum",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 52000,
+              "travel": 100924,
+              "expenses": 32659,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 185583
+            },
+            {
+              "name": "Charles Sinclair",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 39000,
+              "travel": 25772,
+              "expenses": 43688,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 108460
+            },
+            {
+              "name": "Darrin Morin",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 52000,
+              "travel": 87203,
+              "expenses": 11236,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 150439
+            },
+            {
+              "name": "Elizabeth Michel",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 52000,
+              "travel": 80250,
+              "expenses": 30810,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 163060
+            },
+            {
+              "name": "Peter R.Beatty",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 52000,
+              "travel": 79111,
+              "expenses": 11747,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 142858
+            },
+            {
+              "name": "Tim Underwood",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 52000,
+              "travel": 56734,
+              "expenses": 19400,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 128134
+            },
+            {
+              "name": "Walter Ballantyne",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 52000,
+              "travel": 78178,
+              "expenses": 735,
+              "creditCard": 0,
+              "otherPayments": null,
+              "total": 137528
+            },
+            {
+              "name": "Wesley Custer",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 52000,
+              "travel": 91351,
+              "expenses": 25359,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 168710
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Preserved parsed rows from previous data.json snapshot",
-            "Quarantined parsed rows: total column appears duplicated into payment columns",
-            "Sanitized parsed rows: removed 22, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2019-2020",
@@ -12641,16 +14828,81 @@
           "date": "2023-09-07",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=356&FY=2021-2022&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Fabian Head",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 77900,
+              "travel": null,
+              "expenses": 5707,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 83615
+            },
+            {
+              "name": "Barry Mckay",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 64900,
+              "travel": null,
+              "expenses": 4562,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 69469
+            },
+            {
+              "name": "Calehan Head",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 64900,
+              "travel": null,
+              "expenses": 8339,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 73248
+            },
+            {
+              "name": "Charlie Mckay",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 64900,
+              "travel": null,
+              "expenses": 5679,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 70584
+            },
+            {
+              "name": "Hilliard Umpherville",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 64900,
+              "travel": null,
+              "expenses": 2592,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 67501
+            },
+            {
+              "name": "Zachary Whitecap",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 64900,
+              "travel": null,
+              "expenses": 7514,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 72419
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 0, fixed totals 6",
             "Preserved parsed rows from previous data.json snapshot",
-            "Quarantined parsed rows: small month-like values appear in payment columns",
-            "Sanitized parsed rows: removed 6, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2022-2023",
@@ -12670,16 +14922,92 @@
           "date": "2024-10-01",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=356&FY=2022-2023&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Fabian Head",
+              "role": "Chief",
+              "months": 11,
+              "remuneration": 85750,
+              "travel": 12000,
+              "expenses": 65068,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 162818
+            },
+            {
+              "name": "Zachary Whitecap",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 75250,
+              "travel": 27000,
+              "expenses": 49020,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 151270
+            },
+            {
+              "name": "Barry Mckay",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 74250,
+              "travel": 9000,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 83250
+            },
+            {
+              "name": "Calehan Head",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 74250,
+              "travel": 9000,
+              "expenses": 73209,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 156459
+            },
+            {
+              "name": "Charlie Mckay",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 74250,
+              "travel": 36000,
+              "expenses": 55639,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 165889
+            },
+            {
+              "name": "Hilliard Umpherville",
+              "role": "Councillor",
+              "months": 6,
+              "remuneration": 38500,
+              "travel": 13159,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 51659
+            },
+            {
+              "name": "Wilbert Head",
+              "role": "Councillor",
+              "months": 1,
+              "remuneration": 4125,
+              "travel": 5,
+              "expenses": 541,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 4671
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 0, fixed totals 1",
             "Preserved parsed rows from previous data.json snapshot",
-            "Quarantined parsed rows: payment columns appear duplicated or shifted; total column appears duplicated into payment columns",
-            "Sanitized parsed rows: removed 7, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2023-2024",
@@ -12862,14 +15190,123 @@
           "date": "2018-07-26",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=346&FY=2017-2018&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Wuttunee, Clinton",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 60000,
+              "travel": null,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 60000
+            },
+            {
+              "name": "Benson, Lux",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 32000,
+              "travel": null,
+              "expenses": 34568,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 66568
+            },
+            {
+              "name": "Cuthand, Mandy",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 32000,
+              "travel": null,
+              "expenses": 34568,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 66568
+            },
+            {
+              "name": "Wuttunee, Larry",
+              "role": "Councillor",
+              "months": 3,
+              "remuneration": 6154,
+              "travel": null,
+              "expenses": 9331,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 15485
+            },
+            {
+              "name": "Peeaychew, Sabrina",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 32000,
+              "travel": null,
+              "expenses": 34568,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 66568
+            },
+            {
+              "name": "Bugler, Ryan",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 32000,
+              "travel": null,
+              "expenses": 34568,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 66568
+            },
+            {
+              "name": "Gardipy, Henry",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 32000,
+              "travel": null,
+              "expenses": 34568,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 66568
+            },
+            {
+              "name": "Nicotine, Gary",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 32000,
+              "travel": null,
+              "expenses": 34568,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 66568
+            },
+            {
+              "name": "Falcon, Dana",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 32000,
+              "travel": null,
+              "expenses": 34568,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 66568
+            },
+            {
+              "name": "Wuttunee, Shawn",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 32000,
+              "travel": null,
+              "expenses": 34568,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 66568
+            }
+          ],
+          "parse_status": "ok_pdfplumber",
           "warnings": [
             "Preserved parsed rows from previous data.json snapshot",
-            "Quarantined parsed rows: payment columns appear duplicated or shifted",
-            "Sanitized parsed rows: removed 10, fixed totals 0"
-          ],
-          "technical_status": "ok_pdfplumber"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2018-2019",
@@ -12889,14 +15326,112 @@
           "date": "2019-08-08",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=346&FY=2018-2019&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Clinton Wuttunee",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 60000,
+              "travel": null,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 60000
+            },
+            {
+              "name": "Lux Benson",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 32000,
+              "travel": null,
+              "expenses": 38417,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 70417
+            },
+            {
+              "name": "Mandy Cuthand",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 32000,
+              "travel": null,
+              "expenses": 38376,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 70376
+            },
+            {
+              "name": "Sabrina Peeaychew",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 32000,
+              "travel": null,
+              "expenses": 38327,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 70327
+            },
+            {
+              "name": "Ryan Bugler",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 32000,
+              "travel": null,
+              "expenses": 38769,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 70769
+            },
+            {
+              "name": "Henry Gardipy",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 32000,
+              "travel": null,
+              "expenses": 38257,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 70257
+            },
+            {
+              "name": "Gary Nicotine",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 32000,
+              "travel": null,
+              "expenses": 38811,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 70811
+            },
+            {
+              "name": "Dana Falcon",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 32000,
+              "travel": null,
+              "expenses": 38764,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 70764
+            },
+            {
+              "name": "Shawn Wuttunee",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 32000,
+              "travel": null,
+              "expenses": 38554,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 70554
+            }
+          ],
+          "parse_status": "ok_pdfplumber",
           "warnings": [
             "Preserved parsed rows from previous data.json snapshot",
-            "Quarantined parsed rows: payment columns appear duplicated or shifted",
-            "Sanitized parsed rows: removed 9, fixed totals 0"
-          ],
-          "technical_status": "ok_pdfplumber"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2019-2020",
@@ -13708,14 +16243,101 @@
           "date": "2015-07-29",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=364&FY=2014-2015&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Lynn Acoose",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 57126,
+              "travel": 19036,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 76162
+            },
+            {
+              "name": "Lindsay Kaye",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 52499,
+              "travel": 1200,
+              "expenses": 3747,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 57446
+            },
+            {
+              "name": "Gilbert Panipekeesick",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 52505,
+              "travel": 1500,
+              "expenses": 16104,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 70109
+            },
+            {
+              "name": "Tim Ponace",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 51591,
+              "travel": 1500,
+              "expenses": 10191,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 63282
+            },
+            {
+              "name": "Cameron Sangwais",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 52499,
+              "travel": 2000,
+              "expenses": 4830,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 59329
+            },
+            {
+              "name": "Rachel Sangwais",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 52196,
+              "travel": 1500,
+              "expenses": 5302,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 58998
+            },
+            {
+              "name": "Randy Sangwais",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 52499,
+              "travel": 500,
+              "expenses": 13564,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 66563
+            },
+            {
+              "name": "Randall Sparvier",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 52499,
+              "travel": 1500,
+              "expenses": 7528,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 61527
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Quarantined parsed rows: total column appears duplicated into payment columns",
-            "Sanitized parsed rows: removed 8, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2015-2016",
@@ -13865,15 +16487,102 @@
           "date": "2018-08-21",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=364&FY=2017-2018&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Lynn Acoose",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 58737,
+              "travel": 500,
+              "expenses": 23181,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 82418
+            },
+            {
+              "name": "Cynthia Sangwais",
+              "role": "Councillor",
+              "months": 7,
+              "remuneration": 30157,
+              "travel": 400,
+              "expenses": 8332,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 38889
+            },
+            {
+              "name": "Rachel Sangwais",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 54075,
+              "travel": 800,
+              "expenses": 8582,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 63457
+            },
+            {
+              "name": "Randy Sangwais",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 54075,
+              "travel": 800,
+              "expenses": 17247,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 72122
+            },
+            {
+              "name": "Randall Sparvier",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 54075,
+              "travel": 800,
+              "expenses": 12324,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 67199
+            },
+            {
+              "name": "Clare Acoose",
+              "role": "Councillor",
+              "months": 5,
+              "remuneration": 22462,
+              "travel": 5611,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 28073
+            },
+            {
+              "name": "Paula Acoose",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 54075,
+              "travel": 100,
+              "expenses": 8256,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 62431
+            },
+            {
+              "name": "Amber Sangwais",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 54075,
+              "travel": 600,
+              "expenses": 14030,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 68705
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Preserved parsed rows from previous data.json snapshot",
-            "Quarantined parsed rows: total column appears duplicated into payment columns",
-            "Sanitized parsed rows: removed 8, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2018-2019",
@@ -14403,7 +17112,7 @@
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 0, fixed totals 6",
             "Preserved parsed rows from previous data.json snapshot",
-            "Quarantined parsed rows: month values appear in money columns; total column appears duplicated into payment columns",
+            "Quarantined parsed rows: month values appear in money columns; implausibly small remuneration values appear in money columns",
             "Sanitized parsed rows: removed 7, fixed totals 0"
           ],
           "technical_status": "ok_pdf_text"
@@ -15927,16 +18636,81 @@
           "date": "2019-08-02",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=368&FY=2018-2019&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Clarence Papequash",
+              "role": "Chief",
+              "months": 10,
+              "remuneration": 57890,
+              "travel": 28000,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 85890
+            },
+            {
+              "name": "Gilda Dokuchie",
+              "role": "Councillor",
+              "months": 10,
+              "remuneration": 47752,
+              "travel": 4750,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 52502
+            },
+            {
+              "name": "Chris Gareau",
+              "role": "Councillor",
+              "months": 10,
+              "remuneration": 45934,
+              "travel": 45934,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": 30501,
+              "total": 122369
+            },
+            {
+              "name": "David Cote",
+              "role": "Councillor",
+              "months": 10,
+              "remuneration": 44459,
+              "travel": 44459,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": 22164,
+              "total": 111082
+            },
+            {
+              "name": "Marcella Pelletier",
+              "role": "Councillor",
+              "months": 10,
+              "remuneration": 46884,
+              "travel": 120,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 47004
+            },
+            {
+              "name": "Clinton Key",
+              "role": "Councillor",
+              "months": 10,
+              "remuneration": 46140,
+              "travel": 56580,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 102720
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 0, fixed totals 4",
             "Preserved parsed rows from previous data.json snapshot",
-            "Quarantined parsed rows: payment columns appear duplicated or shifted",
-            "Sanitized parsed rows: removed 6, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2019-2020",
@@ -15956,16 +18730,81 @@
           "date": "2020-07-29",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=368&FY=2019-2020&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Clarence Papequash",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 69992,
+              "travel": 20469,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 90461
+            },
+            {
+              "name": "Gilda Dokuchie",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 50804,
+              "travel": 9378,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 60182
+            },
+            {
+              "name": "Chris Gareau",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 50804,
+              "travel": 10203,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 61007
+            },
+            {
+              "name": "David Cote",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 50804,
+              "travel": 8128,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 58932
+            },
+            {
+              "name": "Marcella Pelletier",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 50804,
+              "travel": 9423,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 60227
+            },
+            {
+              "name": "Clinton Key",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 50804,
+              "travel": 53978,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 104782
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 0, fixed totals 6",
             "Preserved parsed rows from previous data.json snapshot",
-            "Quarantined parsed rows: payment columns appear duplicated or shifted",
-            "Sanitized parsed rows: removed 6, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2020-2021",
@@ -16014,16 +18853,70 @@
           "date": "2025-02-18",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=368&FY=2021-2022&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Clarence Papequash",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 75600,
+              "travel": 5750,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 81350
+            },
+            {
+              "name": "Chris Gareau",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 64908,
+              "travel": 4750,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 69658
+            },
+            {
+              "name": "Gilda Dokuchie",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 64908,
+              "travel": 4500,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 69408
+            },
+            {
+              "name": "David Cote",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 64908,
+              "travel": 5750,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 70658
+            },
+            {
+              "name": "Clinton Key",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 64908,
+              "travel": 5550,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 70458
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 0, fixed totals 5",
             "Preserved parsed rows from previous data.json snapshot",
-            "Quarantined parsed rows: payment columns appear duplicated or shifted",
-            "Sanitized parsed rows: removed 5, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2022-2023",
@@ -17422,68 +20315,15 @@
           "date": "2016-07-28",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=402&FY=2015-2016&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [
-            {
-              "name": "Fvirhe Jmhhpiv Gsyrgmpsv",
-              "role": "Councillor",
-              "months": null,
-              "remuneration": 45,
-              "travel": 17728,
-              "expenses": 47917,
-              "creditCard": null,
-              "otherPayments": null,
-              "total": 65690
-            },
-            {
-              "name": "Hirrmw Qevxipp Gsyrgmpsv",
-              "role": "Councillor",
-              "months": null,
-              "remuneration": 45,
-              "travel": 11842,
-              "expenses": 49621,
-              "creditCard": null,
-              "otherPayments": null,
-              "total": 61508
-            },
-            {
-              "name": "Vmglevh Jmhhpiv Gsyrgmpsv",
-              "role": "Councillor",
-              "months": null,
-              "remuneration": 45,
-              "travel": 16667,
-              "expenses": 47917,
-              "creditCard": null,
-              "otherPayments": null,
-              "total": 64629
-            },
-            {
-              "name": "Hiptlmri Zmrgirx Gsyrgmpsv",
-              "role": "Councillor",
-              "months": null,
-              "remuneration": 45,
-              "travel": 19322,
-              "expenses": null,
-              "creditCard": null,
-              "otherPayments": 47884,
-              "total": 67251
-            },
-            {
-              "name": "Fpemri Jmhhpiv Gsyrgmpsv",
-              "role": "Councillor",
-              "months": null,
-              "remuneration": 45,
-              "travel": 20607,
-              "expenses": null,
-              "creditCard": null,
-              "otherPayments": 47917,
-              "total": 68569
-            }
-          ],
-          "parse_status": "ok_pdf_text",
+          "people": [],
+          "parse_status": "pending_manual_review",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Sanitized parsed rows: removed 0, fixed totals 3"
-          ]
+            "Sanitized parsed rows: removed 0, fixed totals 3",
+            "Quarantined parsed rows: implausibly small remuneration values appear in money columns",
+            "Sanitized parsed rows: removed 5, fixed totals 0"
+          ],
+          "technical_status": "ok_pdf_text"
         },
         {
           "year": "2016-2017",
@@ -18715,10 +21555,10 @@
               "months": 3,
               "remuneration": 1172,
               "travel": 950,
-              "expenses": 2122,
+              "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 4244
+              "total": 2122
             },
             {
               "name": "Thomas Maxie",
@@ -18757,7 +21597,8 @@
           "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
-            "Sanitized parsed rows: removed 0, fixed totals 7"
+            "Sanitized parsed rows: removed 0, fixed totals 7",
+            "Sanitized parsed rows: removed 0, fixed totals 0"
           ]
         },
         {
@@ -19753,16 +22594,81 @@
           "date": "2025-08-01",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=365&FY=2024-2025&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Tanya Littlechief",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 66485,
+              "travel": 11924,
+              "expenses": null,
+              "creditCard": 32333,
+              "otherPayments": null,
+              "total": 110742
+            },
+            {
+              "name": "Debbie Maxie",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 66485,
+              "travel": 7468,
+              "expenses": null,
+              "creditCard": 25481,
+              "otherPayments": null,
+              "total": 99434
+            },
+            {
+              "name": "Tanya Whitebear",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 63521,
+              "travel": 3918,
+              "expenses": null,
+              "creditCard": 28298,
+              "otherPayments": null,
+              "total": 95737
+            },
+            {
+              "name": "Brett Standingready",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 66485,
+              "travel": 6375,
+              "expenses": null,
+              "creditCard": 24735,
+              "otherPayments": null,
+              "total": 97595
+            },
+            {
+              "name": "Sheri McArthur",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 66485,
+              "travel": 10625,
+              "expenses": null,
+              "creditCard": 20949,
+              "otherPayments": null,
+              "total": 98059
+            },
+            {
+              "name": "Clarence Nokahoot",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 66485,
+              "travel": 4041,
+              "expenses": null,
+              "creditCard": 18983,
+              "otherPayments": null,
+              "total": 89509
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 0, fixed totals 6",
             "Preserved parsed rows from previous data.json snapshot",
-            "Quarantined parsed rows: payment columns appear duplicated or shifted",
-            "Sanitized parsed rows: removed 6, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         }
       ],
       "status": "ok",
@@ -21043,16 +23949,224 @@
           "date": "2022-11-10",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=406&FY=2021-2022&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Larry Ahenakew",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 20544,
+              "travel": 33576,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": 104876,
+              "total": 158996
+            },
+            {
+              "name": "Russel Ahenakew",
+              "role": "Councillor",
+              "months": 7,
+              "remuneration": 39559,
+              "travel": 12696,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 52255
+            },
+            {
+              "name": "David Mususkapoe",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 40386,
+              "travel": 10907,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 51293
+            },
+            {
+              "name": "Dean Genereaux",
+              "role": "Councillor",
+              "months": 7,
+              "remuneration": 32090,
+              "travel": 13221,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 45311
+            },
+            {
+              "name": "Cynthia Williams-Johnstone",
+              "role": "Councillor",
+              "months": 7,
+              "remuneration": 30338,
+              "travel": 7491,
+              "expenses": 5399,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 43228
+            },
+            {
+              "name": "Ben Ahenakew",
+              "role": "Councillor",
+              "months": 7,
+              "remuneration": 25268,
+              "travel": 9116,
+              "expenses": 11797,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 46181
+            },
+            {
+              "name": "Rodney Saskamoose",
+              "role": "Councillor",
+              "months": 7,
+              "remuneration": 24112,
+              "travel": 9145,
+              "expenses": 30400,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 63657
+            },
+            {
+              "name": "Lanny Ahenakew",
+              "role": "Councillor",
+              "months": 7,
+              "remuneration": 24040,
+              "travel": 7701,
+              "expenses": 41041,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 72782
+            },
+            {
+              "name": "Stanley Saskamoose",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 21979,
+              "travel": 8327,
+              "expenses": 33005,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 63311
+            },
+            {
+              "name": "Patricia Isbister",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 21356,
+              "travel": 7943,
+              "expenses": 43659,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 72958
+            },
+            {
+              "name": "Chad Peekeekoot",
+              "role": "Councillor",
+              "months": 7,
+              "remuneration": 21704,
+              "travel": 7042,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 28746
+            },
+            {
+              "name": "James Isbister",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 20787,
+              "travel": 6508,
+              "expenses": 62823,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 90118
+            },
+            {
+              "name": "Evan Williams",
+              "role": "Councillor",
+              "months": 7,
+              "remuneration": 17461,
+              "travel": 7136,
+              "expenses": 40510,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 65107
+            },
+            {
+              "name": "Eliza Saskamoose",
+              "role": "Councillor",
+              "months": 3,
+              "remuneration": 8610,
+              "travel": 2604,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 11214
+            },
+            {
+              "name": "Utin Ahenakew",
+              "role": "Councillor",
+              "months": 3,
+              "remuneration": 8600,
+              "travel": 1881,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 10481
+            },
+            {
+              "name": "Clifford S. Ahenakew",
+              "role": "Councillor",
+              "months": 3,
+              "remuneration": 7502,
+              "travel": 1925,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 9427
+            },
+            {
+              "name": "Bryce Isbister",
+              "role": "Councillor",
+              "months": 3,
+              "remuneration": 7066,
+              "travel": 1881,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 8947
+            },
+            {
+              "name": "Burton Ahenakew",
+              "role": "Councillor",
+              "months": 3,
+              "remuneration": 7620,
+              "travel": 1159,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 8779
+            },
+            {
+              "name": "Carmen Little",
+              "role": "Councillor",
+              "months": 3,
+              "remuneration": 6002,
+              "travel": 250,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 6252
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 1, fixed totals 9",
             "Preserved parsed rows from previous data.json snapshot",
-            "Quarantined parsed rows: payment columns appear duplicated or shifted",
-            "Sanitized parsed rows: removed 19, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2022-2023",
@@ -21072,16 +24186,147 @@
           "date": "2023-07-28",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=406&FY=2022-2023&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Larry Ahenakew",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 8700,
+              "travel": 51063,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": 103485,
+              "total": 163248
+            },
+            {
+              "name": "Russell Ahenakew",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 45784,
+              "travel": 28614,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 74398
+            },
+            {
+              "name": "David Masuskapoe",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 42314,
+              "travel": 19225,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 61539
+            },
+            {
+              "name": "Dean Genereaux",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 49487,
+              "travel": 30297,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 79784
+            },
+            {
+              "name": "Ben Ahenakew",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 40551,
+              "travel": 22195,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 62746
+            },
+            {
+              "name": "Rodney Sasakamoose",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 22945,
+              "travel": 29024,
+              "expenses": 44737,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 96706
+            },
+            {
+              "name": "Lanny Ahenakew",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 26474,
+              "travel": 24833,
+              "expenses": 63875,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 115182
+            },
+            {
+              "name": "Stanley Sasakamoose",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 21942,
+              "travel": 8937,
+              "expenses": 57557,
+              "creditCard": 1725,
+              "otherPayments": null,
+              "total": 90161
+            },
+            {
+              "name": "Patricia Isbister",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 36600,
+              "travel": 14861,
+              "expenses": 10114,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 61575
+            },
+            {
+              "name": "Chad Peekeekoot",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 38229,
+              "travel": 23279,
+              "expenses": 17935,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 79443
+            },
+            {
+              "name": "James Isbister",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 21075,
+              "travel": 12076,
+              "expenses": 60000,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 93151
+            },
+            {
+              "name": "Evan Williams",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 23438,
+              "travel": 22659,
+              "expenses": null,
+              "creditCard": 300,
+              "otherPayments": null,
+              "total": 46397
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 1, fixed totals 7",
             "Preserved parsed rows from previous data.json snapshot",
-            "Quarantined parsed rows: payment columns appear duplicated or shifted",
-            "Sanitized parsed rows: removed 12, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2023-2024",
@@ -25575,15 +28820,113 @@
           "date": "2016-07-29",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=390&FY=2015-2016&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Derek Sunshine",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 43200,
+              "travel": null,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": 669,
+              "total": 43874
+            },
+            {
+              "name": "Sheryl Kayseas",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 23200,
+              "travel": 5,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": 603,
+              "total": 23808
+            },
+            {
+              "name": "Terence Sabit",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 24250,
+              "travel": 4,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": 686,
+              "total": 24940
+            },
+            {
+              "name": "Tracey Brania",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 24550,
+              "travel": 2,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": 922,
+              "total": 25474
+            },
+            {
+              "name": "Colin Labanowich",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 24800,
+              "travel": 3,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": 39,
+              "total": 24842
+            },
+            {
+              "name": "Corbett Sabit",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 12350,
+              "travel": 39000,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 51356
+            },
+            {
+              "name": "Randall Sabit",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 20100,
+              "travel": 6,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": 533,
+              "total": 20639
+            },
+            {
+              "name": "Steve Sunshine",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 22400,
+              "travel": 2,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": 692,
+              "total": 23094
+            },
+            {
+              "name": "Wilard Young",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 24150,
+              "travel": 1600,
+              "expenses": 4,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 25754
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 0, fixed totals 2",
-            "Quarantined parsed rows: small month-like values appear in payment columns",
-            "Sanitized parsed rows: removed 9, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2016-2017",
@@ -25603,16 +28946,147 @@
           "date": "2017-10-05",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=390&FY=2016-2017&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Derek Sunshine",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 48000,
+              "travel": 2072,
+              "expenses": 800,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 50874
+            },
+            {
+              "name": "Terence Sabit",
+              "role": "Councillor",
+              "months": 11,
+              "remuneration": 22000,
+              "travel": 659,
+              "expenses": 600,
+              "creditCard": 1,
+              "otherPayments": null,
+              "total": 23260
+            },
+            {
+              "name": "Randal Sabit",
+              "role": "Councillor",
+              "months": 11,
+              "remuneration": 22000,
+              "travel": 727,
+              "expenses": 600,
+              "creditCard": 1,
+              "otherPayments": null,
+              "total": 23328
+            },
+            {
+              "name": "Tracey Brania",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 19500,
+              "travel": 9600,
+              "expenses": 822,
+              "creditCard": 600,
+              "otherPayments": null,
+              "total": 30522
+            },
+            {
+              "name": "Colin Labanowich",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 24000,
+              "travel": 793,
+              "expenses": 600,
+              "creditCard": 2,
+              "otherPayments": null,
+              "total": 25395
+            },
+            {
+              "name": "Willard Young",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 24000,
+              "travel": 1036,
+              "expenses": 600,
+              "creditCard": 2,
+              "otherPayments": null,
+              "total": 25638
+            },
+            {
+              "name": "Sheryl Kayseas",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 24000,
+              "travel": 437,
+              "expenses": 600,
+              "creditCard": 3,
+              "otherPayments": null,
+              "total": 25040
+            },
+            {
+              "name": "Corbitt Sabit",
+              "role": "Councillor",
+              "months": 11,
+              "remuneration": 11000,
+              "travel": 39000,
+              "expenses": 698,
+              "creditCard": 400,
+              "otherPayments": null,
+              "total": 51098
+            },
+            {
+              "name": "Steve Sunshine",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 24000,
+              "travel": 546,
+              "expenses": 1,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 24547
+            },
+            {
+              "name": "Darryl Slippery",
+              "role": "Councillor",
+              "months": 1,
+              "remuneration": 2000,
+              "travel": 95,
+              "expenses": 1,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 2096
+            },
+            {
+              "name": "Larry Kayseas",
+              "role": "Councillor",
+              "months": 1,
+              "remuneration": 2000,
+              "travel": 3000,
+              "expenses": 95,
+              "creditCard": 1,
+              "otherPayments": null,
+              "total": 5096
+            },
+            {
+              "name": "Fred Brania",
+              "role": "Councillor",
+              "months": 1,
+              "remuneration": 1000,
+              "travel": 2078,
+              "expenses": 152,
+              "creditCard": 1,
+              "otherPayments": null,
+              "total": 3231
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 0, fixed totals 12",
             "Preserved parsed rows from previous data.json snapshot",
-            "Quarantined parsed rows: small month-like values appear in payment columns",
-            "Sanitized parsed rows: removed 12, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2017-2018",
@@ -27739,15 +31213,80 @@
           "date": "2017-09-07",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=340&FY=2016-2017&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Wayne Semaganis",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 61551,
+              "travel": null,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": 9622,
+              "total": 71178
+            },
+            {
+              "name": "Serinda Baptiste",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 55139,
+              "travel": 44637,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 99776
+            },
+            {
+              "name": "Russell Kennedy",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 53392,
+              "travel": 40852,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 94244
+            },
+            {
+              "name": "Richard Checkosis",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 55439,
+              "travel": 26979,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 82418
+            },
+            {
+              "name": "Carl Kennedy",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 55139,
+              "travel": 47902,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 103041
+            },
+            {
+              "name": "Christine Jack",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 56885,
+              "travel": 34303,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 91188
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Preserved parsed rows from previous data.json snapshot",
-            "Quarantined parsed rows: small month-like values appear in payment columns",
-            "Sanitized parsed rows: removed 6, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2017-2018",
@@ -31881,15 +35420,47 @@
           "date": "2016-07-28",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=375&FY=2015-2016&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Gilbert Ledoux",
+              "role": "Chief",
+              "months": 7,
+              "remuneration": 50158,
+              "travel": 2371,
+              "expenses": null,
+              "creditCard": 5581,
+              "otherPayments": null,
+              "total": 58110
+            },
+            {
+              "name": "Dana Greyeyes",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 40000,
+              "travel": 3195,
+              "expenses": null,
+              "creditCard": 8572,
+              "otherPayments": null,
+              "total": 51767
+            },
+            {
+              "name": "Paul Ledoux",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 40000,
+              "travel": 4984,
+              "expenses": null,
+              "creditCard": 7741,
+              "otherPayments": null,
+              "total": 52725
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 0, fixed totals 3",
-            "Quarantined parsed rows: payment columns appear duplicated or shifted",
-            "Sanitized parsed rows: removed 3, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2016-2017",
@@ -31987,16 +35558,70 @@
           "date": "2020-10-23",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=375&FY=2019-2020&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Paul Ledoux",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 52000,
+              "travel": 6070,
+              "expenses": null,
+              "creditCard": 25731,
+              "otherPayments": null,
+              "total": 83801
+            },
+            {
+              "name": "Cliff Tawpisin Sr",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 52000,
+              "travel": 567,
+              "expenses": null,
+              "creditCard": 27476,
+              "otherPayments": null,
+              "total": 80043
+            },
+            {
+              "name": "Tina Arcand",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 52000,
+              "travel": 3540,
+              "expenses": null,
+              "creditCard": 13987,
+              "otherPayments": null,
+              "total": 69527
+            },
+            {
+              "name": "Curtis Lafond",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 52000,
+              "travel": 3686,
+              "expenses": null,
+              "creditCard": 12089,
+              "otherPayments": null,
+              "total": 67775
+            },
+            {
+              "name": "Terran Keewatin",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 52000,
+              "travel": 3461,
+              "expenses": null,
+              "creditCard": 4678,
+              "otherPayments": null,
+              "total": 60139
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 0, fixed totals 5",
             "Preserved parsed rows from previous data.json snapshot",
-            "Quarantined parsed rows: payment columns appear duplicated or shifted",
-            "Sanitized parsed rows: removed 5, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2020-2021",
@@ -32022,7 +35647,7 @@
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 0, fixed totals 7",
             "Preserved parsed rows from previous data.json snapshot",
-            "Quarantined parsed rows: month values appear in money columns; small month-like values appear in payment columns; payment columns appear duplicated or shifted",
+            "Quarantined parsed rows: month values appear in money columns",
             "Sanitized parsed rows: removed 7, fixed totals 0"
           ],
           "technical_status": "ok_pdf_text"
@@ -32045,16 +35670,81 @@
           "date": "2023-11-07",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=375&FY=2021-2022&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Cliff Tawpisin Sr",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 52000,
+              "travel": 3559,
+              "expenses": null,
+              "creditCard": 18066,
+              "otherPayments": null,
+              "total": 73625
+            },
+            {
+              "name": "Tina Arcand",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 52000,
+              "travel": 8707,
+              "expenses": null,
+              "creditCard": 26980,
+              "otherPayments": null,
+              "total": 87687
+            },
+            {
+              "name": "Curtis Lafond",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 52000,
+              "travel": 9767,
+              "expenses": null,
+              "creditCard": 21968,
+              "otherPayments": null,
+              "total": 83735
+            },
+            {
+              "name": "Terran Keewatin",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 52000,
+              "travel": null,
+              "expenses": 5076,
+              "creditCard": 67076,
+              "otherPayments": null,
+              "total": 124153
+            },
+            {
+              "name": "Cal Arcand",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 52000,
+              "travel": 3000,
+              "expenses": null,
+              "creditCard": 43376,
+              "otherPayments": null,
+              "total": 98376
+            },
+            {
+              "name": "Carol Lafond",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 52000,
+              "travel": 3000,
+              "expenses": null,
+              "creditCard": 19372,
+              "otherPayments": null,
+              "total": 74372
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 0, fixed totals 6",
             "Preserved parsed rows from previous data.json snapshot",
-            "Quarantined parsed rows: small month-like values appear in payment columns; payment columns appear duplicated or shifted",
-            "Sanitized parsed rows: removed 6, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2022-2023",
@@ -32320,16 +36010,114 @@
           "date": "2017-07-28",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=392&FY=2016-2017&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Reginald Bellerose",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 18619,
+              "travel": 85800,
+              "expenses": 1028,
+              "creditCard": 105447,
+              "otherPayments": null,
+              "total": 210894
+            },
+            {
+              "name": "Calvin Wolfe",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 37980,
+              "travel": 16910,
+              "expenses": null,
+              "creditCard": 22898,
+              "otherPayments": null,
+              "total": 77788
+            },
+            {
+              "name": "Jamie Wolfe",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 32032,
+              "travel": 1500,
+              "expenses": 9470,
+              "creditCard": 43002,
+              "otherPayments": null,
+              "total": 86004
+            },
+            {
+              "name": "Cynthia Desjarlais",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 35918,
+              "travel": 6452,
+              "expenses": null,
+              "creditCard": 23054,
+              "otherPayments": null,
+              "total": 65424
+            },
+            {
+              "name": "Holly Geddes",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 33374,
+              "travel": 4700,
+              "expenses": null,
+              "creditCard": 38390,
+              "otherPayments": null,
+              "total": 76464
+            },
+            {
+              "name": "Linda Hunter",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 35305,
+              "travel": 35305,
+              "expenses": 26041,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 96651
+            },
+            {
+              "name": "Leon Wolfe Jr",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 33879,
+              "travel": 700,
+              "expenses": null,
+              "creditCard": 37542,
+              "otherPayments": null,
+              "total": 72121
+            },
+            {
+              "name": "William Pinacie Jr",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 33650,
+              "travel": 200,
+              "expenses": null,
+              "creditCard": 14314,
+              "otherPayments": null,
+              "total": 48164
+            },
+            {
+              "name": "Teryole Wolfe",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 29450,
+              "travel": 29450,
+              "expenses": 14494,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 73394
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 1, fixed totals 9",
             "Preserved parsed rows from previous data.json snapshot",
-            "Quarantined parsed rows: payment columns appear duplicated or shifted",
-            "Sanitized parsed rows: removed 9, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2017-2018",
@@ -32349,16 +36137,114 @@
           "date": "2018-07-27",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=392&FY=2017-2018&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Reginald Bellerose",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 13906,
+              "travel": 91500,
+              "expenses": null,
+              "creditCard": 6130,
+              "otherPayments": null,
+              "total": 111536
+            },
+            {
+              "name": "Holly Geddes",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 50259,
+              "travel": 11500,
+              "expenses": null,
+              "creditCard": 11731,
+              "otherPayments": null,
+              "total": 73490
+            },
+            {
+              "name": "Jamie Wolfe",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 48534,
+              "travel": 11200,
+              "expenses": null,
+              "creditCard": 11596,
+              "otherPayments": null,
+              "total": 71330
+            },
+            {
+              "name": "Karen Desjarlais",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 55608,
+              "travel": 55608,
+              "expenses": 10650,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 121866
+            },
+            {
+              "name": "Cynthia Desjarlais",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 54227,
+              "travel": 54227,
+              "expenses": 11958,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 120412
+            },
+            {
+              "name": "Leon Wolfe Jr",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 52186,
+              "travel": 52186,
+              "expenses": 23074,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 127446
+            },
+            {
+              "name": "Calvin Wolfe",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 49235,
+              "travel": 2000,
+              "expenses": null,
+              "creditCard": 11188,
+              "otherPayments": null,
+              "total": 62423
+            },
+            {
+              "name": "Teryole Wolfe",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 49583,
+              "travel": 49583,
+              "expenses": 10417,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 109583
+            },
+            {
+              "name": "Ernest Moise",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 45824,
+              "travel": 45824,
+              "expenses": 14304,
+              "creditCard": 14304,
+              "otherPayments": null,
+              "total": 120256
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 1, fixed totals 9",
             "Preserved parsed rows from previous data.json snapshot",
-            "Quarantined parsed rows: payment columns appear duplicated or shifted",
-            "Sanitized parsed rows: removed 9, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2018-2019",
@@ -33143,16 +37029,59 @@
           "date": "2024-01-19",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=380&FY=2022-2023&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Alvin Francis",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 78000,
+              "travel": 3510,
+              "expenses": null,
+              "creditCard": 5232,
+              "otherPayments": null,
+              "total": 86744
+            },
+            {
+              "name": "Shauna Buffalocalf",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 71500,
+              "travel": 2855,
+              "expenses": null,
+              "creditCard": 8016,
+              "otherPayments": null,
+              "total": 82374
+            },
+            {
+              "name": "Wesley Daniel",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 71500,
+              "travel": 1538,
+              "expenses": null,
+              "creditCard": 119,
+              "otherPayments": null,
+              "total": 73160
+            },
+            {
+              "name": "Roberta Francis",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 71500,
+              "travel": 1036,
+              "expenses": null,
+              "creditCard": 7039,
+              "otherPayments": null,
+              "total": 79577
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 0, fixed totals 4",
             "Preserved parsed rows from previous data.json snapshot",
-            "Quarantined parsed rows: small month-like values appear in payment columns",
-            "Sanitized parsed rows: removed 4, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2023-2024",
@@ -33376,16 +37305,81 @@
           "date": "2017-09-28",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=408&FY=2016-2017&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Connie Big Eagle",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 44800,
+              "travel": 600,
+              "expenses": 28444,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 73844
+            },
+            {
+              "name": "Trevor Ewack",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 37200,
+              "travel": 128,
+              "expenses": 0,
+              "creditCard": 37443,
+              "otherPayments": null,
+              "total": 74771
+            },
+            {
+              "name": "Craig Big Eagle",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 37200,
+              "travel": 150,
+              "expenses": 16280,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 53630
+            },
+            {
+              "name": "Faye McArthur",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 37200,
+              "travel": 600,
+              "expenses": 26835,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 64635
+            },
+            {
+              "name": "Ernest Standingready",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 37200,
+              "travel": 900,
+              "expenses": 36993,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 75093
+            },
+            {
+              "name": "Daniel Akachuk",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 37200,
+              "travel": 600,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 37800
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 1, fixed totals 6",
             "Preserved parsed rows from previous data.json snapshot",
-            "Quarantined parsed rows: payment columns appear duplicated or shifted",
-            "Sanitized parsed rows: removed 6, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2017-2018",
@@ -36537,7 +40531,7 @@
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 0, fixed totals 6",
             "Preserved parsed rows from previous data.json snapshot",
-            "Quarantined parsed rows: small month-like values appear in payment columns",
+            "Quarantined parsed rows: implausibly small remuneration values appear in money columns",
             "Sanitized parsed rows: removed 6, fixed totals 0"
           ],
           "technical_status": "ok_pdf_text"
@@ -42900,16 +46894,180 @@
           "date": "2024-01-22",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=370&FY=2022-2023&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Wally Burns James Smith",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 70000,
+              "travel": 71800,
+              "expenses": null,
+              "creditCard": 7849,
+              "otherPayments": null,
+              "total": 149654
+            },
+            {
+              "name": "Deborah Mclean James Smith",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 44000,
+              "travel": 19250,
+              "expenses": null,
+              "creditCard": 5698,
+              "otherPayments": null,
+              "total": 68950
+            },
+            {
+              "name": "Gerald McKay James Smith",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 40500,
+              "travel": 11300,
+              "expenses": null,
+              "creditCard": 5085,
+              "otherPayments": null,
+              "total": 56886
+            },
+            {
+              "name": "Justin Burns James Smith",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 43500,
+              "travel": 25600,
+              "expenses": null,
+              "creditCard": 6159,
+              "otherPayments": null,
+              "total": 75261
+            },
+            {
+              "name": "Alvin Moostoos James Smith",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 47000,
+              "travel": 7925,
+              "expenses": null,
+              "creditCard": 1502,
+              "otherPayments": null,
+              "total": 56429
+            },
+            {
+              "name": "Calvin Sanderson Chakastaypasin",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 58000,
+              "travel": 44600,
+              "expenses": null,
+              "creditCard": 6998,
+              "otherPayments": null,
+              "total": 109599
+            },
+            {
+              "name": "Barry Sanderson Chakastaypasin",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 36000,
+              "travel": 7050,
+              "expenses": null,
+              "creditCard": 1435,
+              "otherPayments": null,
+              "total": 44486
+            },
+            {
+              "name": "Florence Sanderson Chakastaypasin",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 30000,
+              "travel": 9473,
+              "expenses": null,
+              "creditCard": 9417,
+              "otherPayments": null,
+              "total": 48891
+            },
+            {
+              "name": "Derrick Sanderson Chakastaypasin",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 32500,
+              "travel": 6350,
+              "expenses": null,
+              "creditCard": 100,
+              "otherPayments": null,
+              "total": 38951
+            },
+            {
+              "name": "Gillis Sanderson Chakastaypasin",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 35500,
+              "travel": 7800,
+              "expenses": null,
+              "creditCard": 5845,
+              "otherPayments": null,
+              "total": 49146
+            },
+            {
+              "name": "Robert Head Peter Chapman",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 66000,
+              "travel": 54300,
+              "expenses": null,
+              "creditCard": 1790,
+              "otherPayments": null,
+              "total": 122092
+            },
+            {
+              "name": "Brian Head Peter Chapman",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 47500,
+              "travel": 9023,
+              "expenses": null,
+              "creditCard": 3209,
+              "otherPayments": null,
+              "total": 59733
+            },
+            {
+              "name": "Kevin Head Peter Chapman",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 16000,
+              "travel": 6550,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 22550
+            },
+            {
+              "name": "Valerie Whitehead Peter Chapman",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 34500,
+              "travel": 13050,
+              "expenses": null,
+              "creditCard": 3468,
+              "otherPayments": null,
+              "total": 51019
+            },
+            {
+              "name": "Adam Whitehead Peter Chapman",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 41000,
+              "travel": 21000,
+              "expenses": null,
+              "creditCard": 1873,
+              "otherPayments": null,
+              "total": 63875
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 0, fixed totals 14",
             "Preserved parsed rows from previous data.json snapshot",
-            "Quarantined parsed rows: small month-like values appear in payment columns; total column appears duplicated into payment columns",
-            "Sanitized parsed rows: removed 15, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2023-2024",
@@ -42929,16 +47087,180 @@
           "date": "2024-10-01",
           "href": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=370&FY=2023-2024&DOC=Schedule of Remuneration and Expenses&lang=eng",
           "posted": true,
-          "people": [],
-          "parse_status": "pending_manual_review",
+          "people": [
+            {
+              "name": "Wally Burns James Smith",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 74000,
+              "travel": 131222,
+              "expenses": 68466,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 273688
+            },
+            {
+              "name": "Alvin Moostoos James Smith",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 12600,
+              "travel": null,
+              "expenses": 300,
+              "creditCard": 22633,
+              "otherPayments": null,
+              "total": 35541
+            },
+            {
+              "name": "Deborah Mclean James Smith",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 8100,
+              "travel": null,
+              "expenses": 4447,
+              "creditCard": 23980,
+              "otherPayments": null,
+              "total": 36536
+            },
+            {
+              "name": "Gerald McKay James Smith",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 8100,
+              "travel": 6,
+              "expenses": 7700,
+              "creditCard": 10844,
+              "otherPayments": null,
+              "total": 26650
+            },
+            {
+              "name": "Justin Burns James Smith",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 8100,
+              "travel": 109685,
+              "expenses": 20118,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 137904
+            },
+            {
+              "name": "Calvin Sanderson Chakastaypasin",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 53000,
+              "travel": 110346,
+              "expenses": 15082,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 178427
+            },
+            {
+              "name": "Barry Sanderson Chakastaypasin",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 8100,
+              "travel": 3,
+              "expenses": 0,
+              "creditCard": 8028,
+              "otherPayments": null,
+              "total": 16131
+            },
+            {
+              "name": "Derrick Sanderson Chakastaypasin",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 8100,
+              "travel": 3,
+              "expenses": 3896,
+              "creditCard": 6749,
+              "otherPayments": null,
+              "total": 18748
+            },
+            {
+              "name": "Florence Sanderson Chakastaypasin",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 12600,
+              "travel": 3,
+              "expenses": 800,
+              "creditCard": 5437,
+              "otherPayments": null,
+              "total": 18840
+            },
+            {
+              "name": "Gillis Sanderson Chakastaypasin",
+              "role": "Councillor",
+              "months": 6,
+              "remuneration": 4800,
+              "travel": 3,
+              "expenses": 5300,
+              "creditCard": 728,
+              "otherPayments": null,
+              "total": 10831
+            },
+            {
+              "name": "Robert Head Peter Chapman",
+              "role": "Chief",
+              "months": 12,
+              "remuneration": 54000,
+              "travel": 139250,
+              "expenses": 14285,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 207535
+            },
+            {
+              "name": "Adam Whitehead Peter Chapman",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 8100,
+              "travel": 7,
+              "expenses": 7245,
+              "creditCard": 13232,
+              "otherPayments": null,
+              "total": 28584
+            },
+            {
+              "name": "Brian Head Peter Chapman",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 11100,
+              "travel": 5,
+              "expenses": 3050,
+              "creditCard": 1355,
+              "otherPayments": null,
+              "total": 15510
+            },
+            {
+              "name": "Kevin Head Peter Chapman",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 8100,
+              "travel": 1,
+              "expenses": 1300,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 9401
+            },
+            {
+              "name": "Valerie Whitehead Peter Chapman",
+              "role": "Councillor",
+              "months": 12,
+              "remuneration": 8100,
+              "travel": 7,
+              "expenses": 4850,
+              "creditCard": 2685,
+              "otherPayments": null,
+              "total": 15642
+            }
+          ],
+          "parse_status": "ok_pdf_text",
           "warnings": [
             "Parsed from PDF text fallback",
             "Sanitized parsed rows: removed 0, fixed totals 11",
             "Preserved parsed rows from previous data.json snapshot",
-            "Quarantined parsed rows: small month-like values appear in payment columns",
-            "Sanitized parsed rows: removed 15, fixed totals 0"
-          ],
-          "technical_status": "ok_pdf_text"
+            "Sanitized parsed rows: removed 0, fixed totals 0"
+          ]
         },
         {
           "year": "2024-2025",
