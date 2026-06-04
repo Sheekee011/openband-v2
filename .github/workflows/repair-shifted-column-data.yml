@@ -1,0 +1,270 @@
+name: Repair shifted-column parsed data
+
+on:
+  push:
+    paths:
+      - .github/workflows/repair-shifted-column-data.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Patch sanitizer and rebuild data
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path('tools/sanitize_data.py')
+          text = path.read_text(encoding='utf-8')
+
+          repair_func = '''def total_from_components(person):
+              return sum(person.get(key) or 0 for key in PAYMENT_KEYS)
+
+
+          def repair_shifted_payment_columns(person):
+              changed = False
+
+              remuneration = person.get("remuneration") or 0
+              travel = person.get("travel") or 0
+              expenses = person.get("expenses") or 0
+              credit_card = person.get("creditCard") or 0
+              other = person.get("otherPayments") or 0
+              total = person.get("total") or total_from_components(person)
+
+              # Some text-extracted PDFs expose a subtotal column after travel. If that
+              # subtotal is treated as expenses, totals are doubled. Keep the component
+              # columns we can identify and recalculate the total below.
+              if expenses and remuneration and nearly_equal(expenses, remuneration + travel):
+                  person["expenses"] = None
+                  expenses = 0
+                  changed = True
+
+              base_without_other = remuneration + travel + expenses + credit_card
+              if other and base_without_other and nearly_equal(other, base_without_other):
+                  person["otherPayments"] = None
+                  changed = True
+
+              if total > 30000:
+                  for key in ("travel", "expenses", "creditCard", "otherPayments"):
+                      amount = person.get(key)
+                      if amount is not None and 0 < abs(amount) <= 24:
+                          person[key] = None
+                          changed = True
+
+              return changed
+          '''
+
+          if 'def repair_shifted_payment_columns' not in text:
+              text = text.replace(
+                  '''def total_from_components(person):
+              return sum(person.get(key) or 0 for key in PAYMENT_KEYS)
+          ''',
+                  repair_func,
+                  1,
+              )
+
+          if 'def has_low_remuneration_shift' not in text:
+              text = text.replace(
+                  '''def has_months_shift(person):
+              remuneration = person.get("remuneration")
+              total = person.get("total") or total_from_components(person)
+              if remuneration is None:
+                  return False
+              return 0 < remuneration <= 24 and total > 1000
+
+
+          def has_small_component_shift(person):
+          ''',
+                  '''def has_months_shift(person):
+              remuneration = person.get("remuneration")
+              total = person.get("total") or total_from_components(person)
+              if remuneration is None:
+                  return False
+              return 0 < remuneration <= 24 and total > 1000
+
+
+          def has_low_remuneration_shift(person):
+              remuneration = person.get("remuneration")
+              total = person.get("total") or total_from_components(person)
+              if remuneration is None:
+                  return False
+              return 0 < remuneration <= 1000 and total > 30000
+
+
+          def has_small_component_shift(person):
+          ''',
+                  1,
+              )
+
+          if 'implausibly small remuneration values appear in money columns' not in text:
+              text = text.replace(
+                  '''    month_shift_count = sum(1 for person in people if has_months_shift(person))
+              if month_shift_count:
+                  reasons.append("month values appear in money columns")
+
+              small_component_count = sum(1 for person in people if has_small_component_shift(person))
+          ''',
+                  '''    month_shift_count = sum(1 for person in people if has_months_shift(person))
+              if month_shift_count:
+                  reasons.append("month values appear in money columns")
+
+              low_remuneration_count = sum(1 for person in people if has_low_remuneration_shift(person))
+              if low_remuneration_count:
+                  reasons.append("implausibly small remuneration values appear in money columns")
+
+              small_component_count = sum(1 for person in people if has_small_component_shift(person))
+          ''',
+                  1,
+              )
+
+          if 'shifted_columns_fixed = repair_shifted_payment_columns(cleaned)' not in text:
+              text = text.replace(
+                  '''    for key in ALL_MONEY_KEYS:
+                  cleaned[key] = parse_money(cleaned.get(key))
+
+              component_total = total_from_components(cleaned)
+          ''',
+                  '''    for key in ALL_MONEY_KEYS:
+                  cleaned[key] = parse_money(cleaned.get(key))
+
+              shifted_columns_fixed = repair_shifted_payment_columns(cleaned)
+
+              component_total = total_from_components(cleaned)
+          ''',
+                  1,
+              )
+
+          if 'fixed_shifted_columns_and_total' not in text:
+              text = text.replace(
+                  '''    return cleaned, "fixed_total" if changed_total else "ok"
+          ''',
+                  '''    if changed_total and shifted_columns_fixed:
+                  return cleaned, "fixed_shifted_columns_and_total"
+              if shifted_columns_fixed:
+                  return cleaned, "fixed_shifted_columns"
+              return cleaned, "fixed_total" if changed_total else "ok"
+          ''',
+                  1,
+              )
+
+          text = text.replace(
+              '''        if status == "fixed_total":
+                  fixed += 1
+          ''',
+              '''        if status in {"fixed_total", "fixed_shifted_columns_and_total"}:
+                  fixed += 1
+          ''',
+              1,
+          )
+
+          path.write_text(text, encoding='utf-8')
+          print('patched tools/sanitize_data.py')
+          PY
+          git show 9a1e4c2:data.json > data.json
+          python tools/sanitize_data.py data.json
+          python tools/audit_data.py > audit-results.txt
+
+      - name: Verify repaired data
+        run: |
+          python - <<'PY'
+          import json
+          import re
+          from collections import Counter
+
+          with open('data.json', encoding='utf-8') as f:
+              data = json.load(f)
+
+          payment_keys = ['remuneration', 'travel', 'expenses', 'creditCard', 'otherPayments']
+
+          def is_remuneration(filing):
+              return 'remuneration' in (filing.get('docType') or '').lower()
+
+          def value(raw):
+              return raw if isinstance(raw, (int, float)) else 0
+
+          def nearly_equal(left, right):
+              return bool(left and right and abs(left - right) <= max(2, abs(right) * 0.02))
+
+          parsed = 0
+          pending = 0
+          issues = []
+          big_river_years = {}
+          for band in data.get('bands', []):
+              for filing in band.get('filings', []):
+                  if not is_remuneration(filing):
+                      continue
+                  people = filing.get('people') or []
+                  if people:
+                      parsed += 1
+                  elif filing.get('posted'):
+                      pending += 1
+                  if band.get('name') == 'Big River First Nation':
+                      big_river_years[filing.get('year')] = len(people)
+                  for person in people:
+                      total = value(person.get('total')) or sum(value(person.get(key)) for key in payment_keys)
+                      remuneration = value(person.get('remuneration'))
+                      travel = value(person.get('travel'))
+                      expenses = value(person.get('expenses'))
+                      credit = value(person.get('creditCard'))
+                      other = value(person.get('otherPayments'))
+                      name = person.get('name') or ''
+                      if any(0 < abs(value(person.get(key))) <= 24 for key in ['travel', 'expenses', 'creditCard', 'otherPayments']) and total > 30000:
+                          issues.append(('small_component', band.get('name'), filing.get('year'), name))
+                      if 0 < remuneration <= 1000 and total > 30000:
+                          issues.append(('low_remuneration', band.get('name'), filing.get('year'), name))
+                      if nearly_equal(expenses, remuneration + travel) and total > expenses + 10000:
+                          issues.append(('expenses_echo_subtotal', band.get('name'), filing.get('year'), name))
+                      base = remuneration + travel + expenses + credit
+                      if base and other and nearly_equal(other, base):
+                          issues.append(('other_echo_base', band.get('name'), filing.get('year'), name))
+                      if re.search(r'\b(director|manager|finance|post\s+secondary|lands|education|coordinator|administrator|employee)\b', name, re.I):
+                          issues.append(('staff_title_name', band.get('name'), filing.get('year'), name))
+                      if re.search(r'(^|\b)(council\s+member|council|councillor|councilor)\b', name, re.I):
+                          issues.append(('role_word_in_name', band.get('name'), filing.get('year'), name))
+
+          if issues:
+              print(Counter(issue[0] for issue in issues))
+              for issue in issues[:80]:
+                  print(issue)
+              raise SystemExit('High-risk parser patterns remain')
+
+          if parsed < 316 or pending > 386:
+              raise SystemExit(f'Unexpected audit regression: parsed={parsed}, pending={pending}')
+
+          expected_big_river = {
+              '2014-2015', '2015-2016', '2016-2017', '2017-2018', '2019-2020',
+              '2020-2021', '2021-2022', '2022-2023', '2023-2024', '2024-2025'
+          }
+          missing = sorted(year for year in expected_big_river if big_river_years.get(year, 0) == 0)
+          if missing:
+              print(big_river_years)
+              raise SystemExit(f'Big River parsed rows missing after repair: {missing}')
+
+          print('Quality scan passed')
+          print('parsed', parsed)
+          print('pending', pending)
+          print('Big River years:', big_river_years)
+          PY
+
+      - name: Remove temporary workflow
+        run: rm -f .github/workflows/repair-shifted-column-data.yml
+
+      - name: Commit repaired data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tools/sanitize_data.py data.json audit-results.txt .github/workflows/repair-shifted-column-data.yml
+          if git diff --cached --quiet; then
+            echo "No data changes to commit"
+          else
+            git commit -m "Repair shifted-column parsed data"
+            git push
+          fi
