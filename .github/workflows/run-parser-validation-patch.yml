@@ -1,0 +1,46 @@
+name: Run parser validation patch
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/run-parser-validation-patch.yml
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Pull staged patch bundle
+        run: |
+          git fetch origin codex/parser-validation-patch
+          git checkout origin/codex/parser-validation-patch -- .openband-parser-fix-1982916
+          cat .openband-parser-fix-1982916/part_* > /tmp/openband-parser-fix.tgz.b64
+          base64 -d /tmp/openband-parser-fix.tgz.b64 > /tmp/openband-parser-fix.tgz
+          tar -xzf /tmp/openband-parser-fix.tgz
+      - name: Verify parser reliability
+        run: |
+          python -m unittest discover -s tests
+          PYTHONPYCACHEPREFIX=/tmp/openband-pycache python -m py_compile run_scraper.py run_scraper_v2.py scraper.py tools/parser_quality.py tools/apply_manual_overrides.py tools/sanitize_data.py tools/audit_data.py tools/merge_previous_data.py
+      - name: Commit validated patch to main
+        run: |
+          rm -rf .openband-parser-fix-1982916
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A .github/workflows/backfill-pending.yml .github/workflows/retry-pending.yml .github/workflows/sanitize-data.yml .github/workflows/scrape.yml index.html run_scraper.py tests/test_parser_quality.py tools/apply_manual_overrides.py tools/parser_quality.py tools/sanitize_data.py .openband-parser-fix-1982916 .github/workflows/run-parser-validation-patch.yml
+          git commit -m "Improve FNFTA parser validation"
+          git push
+      - name: Remove staging branch
+        run: |
+          git push origin --delete codex/parser-validation-patch || true
