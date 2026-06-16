@@ -4,6 +4,9 @@ on:
   workflow_dispatch:
   push:
     paths:
+      - manual_overrides/**
+      - tools/parser_quality.py
+      - tools/apply_manual_overrides.py
       - tools/sanitize_data.py
       - .github/workflows/sanitize-data.yml
 
@@ -28,8 +31,13 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Sanitize parsed rows and statuses
-        run: python tools/sanitize_data.py data.json
+      - name: Run parser reliability tests
+        run: python -m unittest tests/test_parser_quality.py
+
+      - name: Apply manual overrides and sanitize parsed rows
+        run: |
+          python tools/apply_manual_overrides.py data.json
+          python tools/sanitize_data.py data.json
 
       - name: Validate sanitized data
         run: |

@@ -12,8 +12,14 @@ import re
 import sys
 from pathlib import Path
 
+try:
+    from tools import parser_quality
+except ImportError:  # pragma: no cover - supports running from tools/ directly
+    import parser_quality
+
 PAYMENT_KEYS = ("remuneration", "travel", "expenses", "creditCard", "otherPayments")
-ALL_MONEY_KEYS = PAYMENT_KEYS + ("total",)
+CANONICAL_MONEY_KEYS = ("travelExpenses", "other")
+ALL_MONEY_KEYS = PAYMENT_KEYS + CANONICAL_MONEY_KEYS + ("total",)
 
 PUBLIC_STATUS_MAP = {
     "": "pending_review",
@@ -390,9 +396,12 @@ def sanitize_person(person):
         return None, "date_like_money"
 
     if changed_total and shifted_columns_fixed:
+        cleaned = parser_quality.normalize_person(cleaned)
         return cleaned, "fixed_shifted_columns_and_total"
     if shifted_columns_fixed:
+        cleaned = parser_quality.normalize_person(cleaned)
         return cleaned, "fixed_shifted_columns"
+    cleaned = parser_quality.normalize_person(cleaned)
     return cleaned, "fixed_total" if changed_total else "ok"
 
 
@@ -437,6 +446,16 @@ def sanitize_filing(filing):
     removed += duplicates
 
     reasons = suspicious_filing_reasons(cleaned_people)
+    validation = parser_quality.validate_people(cleaned_people)
+    filing["parse_confidence"] = validation["confidence"]
+    filing["manual_review_required"] = validation["manual_review_required"]
+    for warning in validation["warnings"]:
+        add_warning(filing, warning)
+    if validation["manual_review_required"]:
+        reasons.append("parser confidence is low")
+    else:
+        cleaned_people = validation["people"]
+
     if reasons:
         removed += len(cleaned_people)
         cleaned_people = []

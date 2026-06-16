@@ -32,6 +32,9 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Run parser reliability tests
+        run: python -m unittest tests/test_parser_quality.py
+
       - name: Confirm OpenAI key is available
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -155,6 +158,7 @@ jobs:
             python tools/sanitize_data.py data.before.json
             OPENBAND_PARSE_YEARS="$YEARS" python run_scraper_v2.py
             python tools/merge_previous_data.py data.before.json data.json
+            python tools/apply_manual_overrides.py data.json
             python tools/sanitize_data.py data.json
             if validate_batch data.before.json; then
               python tools/audit_data.py | tee audit-results.txt

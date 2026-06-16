@@ -33,7 +33,7 @@ h2,h3{font-family:Syne,sans-serif}.status-band{background:var(--surface);border:
 <script>
 let bandsData=[],names=[],bandMap={},curName=null,curYear=null,filt='all';
 const ISC_FILING=id=>`https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=${id}&lang=eng`;
-const aliases={name:['name','n'],role:['role','r','position'],months:['months','mo','numberOfMonths','number_of_months'],remuneration:['remuneration','re','salary','honoraria'],travel:['travel','travelAndPerDiems','travelPerDiems','travel_and_per_diems'],expenses:['expenses','ex','expense'],creditCard:['creditCard','credit_card','cc'],otherPayments:['otherPayments','other','other_payments','otherPaymentsReceived'],total:['total','t']};
+const aliases={name:['name','n'],role:['role','r','position'],months:['months','mo','numberOfMonths','number_of_months'],remuneration:['remuneration','re','salary','honoraria'],travel:['travel','travelExpenses','travelAndPerDiems','travelPerDiems','travel_and_per_diems'],expenses:['expenses','ex','expense'],creditCard:['creditCard','credit_card','cc'],otherPayments:['otherPayments','other','other_payments','otherPaymentsReceived'],total:['total','t']};
 function raw(p,k){for(const a of aliases[k]||[k]){if(p&&p[a]!=null&&p[a]!=='')return p[a]}return null}
 function num(v){if(v==null||v==='')return 0;if(typeof v==='number')return isFinite(v)?v:0;const s=String(v).trim();if(!s||s==='-'||s==='—'||/n\/?a/i.test(s))return 0;const neg=/^\(.+\)$/.test(s);const n=Number(s.replace(/[^0-9.\-]/g,''));return isFinite(n)?(neg?-Math.abs(n):n):0}
 function fmt(n){return '$'+Math.round(num(n)).toLocaleString('en-CA')}

@@ -25,6 +25,7 @@ def _patched_urlopen(request, *args, **kwargs):
 urllib.request.urlopen = _patched_urlopen
 
 import scraper  # noqa: E402
+from tools import parser_quality  # noqa: E402
 
 scraper.urllib.request.urlopen = _patched_urlopen
 
@@ -283,13 +284,13 @@ def _column_key(text):
         return "creditCard"
     if re.search(r"\b(total\s+paid|total)$|^total\b", t) and "remuneration" not in t:
         return "total"
-    if re.search(r"\b(remuneration|salary|honou?raria|wages?)\b", t):
-        return "remuneration"
     if re.search(r"\b(other|benefits?|incentives?)\b", t):
         return "otherPayments"
+    if re.search(r"\b(remuneration|salary|honou?raria|wages?)\b", t):
+        return "remuneration"
     if re.search(r"\b(travel|per\s*diems?|mileage|accommodation)\b", t):
         return "travel"
-    if re.search(r"\b(expenses?|reimbursements?|allowances?)\b", t):
+    if re.search(r"\b(expenses?|reimbursements?|reimbursement|allowances?)\b", t):
         return "expenses"
     if re.search(r"\bpayments?\b", t):
         return "otherPayments"
@@ -653,9 +654,21 @@ def _extract_remuneration_rows_enhanced(pdf_url):
         try:
             keyword_people = []
             fallback_people = []
+            candidate_count = 0
+            accepted_qualities = []
+            source_totals = []
             with scraper.pdfplumber.open(io.BytesIO(pdf_bytes)) as pdf:
                 for page in pdf.pages:
+                    page_text = page.extract_text(x_tolerance=1, y_tolerance=3) or ""
                     for table in page.extract_tables() or []:
+                        quality = parser_quality.score_candidate_table(table, page_text)
+                        if not quality["accepted"]:
+                            continue
+                        candidate_count += 1
+                        accepted_qualities.append(quality)
+                        source_total = parser_quality.source_total_from_table(table)
+                        if source_total is not None:
+                            source_totals.append(source_total)
                         parsed = _extract_people_from_keyword_table(table)
                         if parsed:
                             keyword_people.extend(parsed)
@@ -667,20 +680,36 @@ def _extract_remuneration_rows_enhanced(pdf_url):
                 note = "Parsed from keyword-aware PDF table extraction" if keyword_people else None
                 if note:
                     warnings.append(note)
-                return {"parse_status": method, "warnings": warnings, "people": people}
+                if candidate_count > 1:
+                    warnings.append("Multiple candidate Chief and Council tables found")
+                quality = accepted_qualities[0] if accepted_qualities else None
+                source_total = source_totals[0] if source_totals else None
+                result = {"parse_status": method, "warnings": warnings, "people": people}
+                result = parser_quality.apply_validation_metadata(result, source_total, quality)
+                if result.get("manual_review_required"):
+                    result["parse_status"] = "pending_manual_review"
+                    result["people"] = []
+                return result
             if people:
                 warnings.append("Discarded table extraction because rows looked project-heavy")
+            elif candidate_count == 0:
+                warnings.append("No clear Chief and Council remuneration table found")
         except Exception as exc:
             warnings.append(f"PDF table extraction failed: {exc}")
 
         try:
             text_people = _extract_people_from_text(pdf_bytes)
             if text_people:
-                return {
+                result = {
                     "parse_status": "ok_pdf_text",
                     "warnings": warnings + ["Parsed from PDF text fallback"],
                     "people": text_people,
                 }
+                result = parser_quality.apply_validation_metadata(result)
+                if result.get("manual_review_required"):
+                    result["parse_status"] = "pending_manual_review"
+                    result["people"] = []
+                return result
         except Exception as exc:
             warnings.append(f"PDF text extraction failed: {exc}")
     else:
@@ -703,6 +732,10 @@ def _extract_remuneration_rows_enhanced(pdf_url):
             ai_result = inline_result
     if ai_result.get("people"):
         ai_result["warnings"] = warnings + ["Parsed via OpenAI fallback"] + ai_result.get("warnings", [])
+        ai_result = parser_quality.apply_validation_metadata(ai_result)
+        if ai_result.get("manual_review_required"):
+            ai_result["parse_status"] = "pending_manual_review"
+            ai_result["people"] = []
         return ai_result
 
     warnings.append("No remuneration rows detected from PDF table or text extraction")
