@@ -89,7 +89,9 @@ jobs:
           PY
 
       - name: Audit current data
-        run: python tools/audit_data.py
+        run: |
+          python tools/audit_data.py
+          python tools/manual_review_report.py
 
       - name: Remove validation snapshot
         run: rm -f data.before.json
@@ -98,4 +100,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Update FNFTA data"
-          file_pattern: data.json
+          file_pattern: data.json manual-review-report.json

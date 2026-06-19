@@ -135,10 +135,12 @@ jobs:
           PY
 
       - name: Final audit
-        run: python tools/audit_data.py | tee audit-results.txt
+        run: |
+          python tools/audit_data.py | tee audit-results.txt
+          python tools/manual_review_report.py
 
       - name: Commit auto-backfilled data
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Auto backfill FNFTA remuneration data"
-          file_pattern: data.json audit-results.txt
+          file_pattern: data.json audit-results.txt manual-review-report.json

@@ -370,7 +370,21 @@ def sanitize_person(person):
     for key in ALL_MONEY_KEYS:
         cleaned[key] = parse_money(cleaned.get(key))
 
+    had_expense_components = any(
+        cleaned.get(key) is not None for key in ("travel", "expenses", "creditCard")
+    )
+    had_other_component = cleaned.get("otherPayments") is not None
     shifted_columns_fixed = repair_shifted_payment_columns(cleaned)
+
+    # Canonical fields may have been calculated before a shifted raw column was
+    # repaired. Rebuild them from the repaired source components so stale
+    # values cannot duplicate a subtotal or total during validation.
+    if had_expense_components:
+        cleaned["travelExpenses"] = sum(
+            cleaned.get(key) or 0 for key in ("travel", "expenses", "creditCard")
+        )
+    if had_other_component:
+        cleaned["other"] = cleaned.get("otherPayments") or 0
 
     component_total = total_from_components(cleaned)
     current_total = cleaned.get("total")

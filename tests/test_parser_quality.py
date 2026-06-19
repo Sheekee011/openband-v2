@@ -2,6 +2,7 @@ import unittest
 
 import run_scraper
 from tools import parser_quality
+from tools import sanitize_data
 
 
 class ParserQualityTests(unittest.TestCase):
@@ -159,6 +160,28 @@ class ParserQualityTests(unittest.TestCase):
         self.assertEqual(person["expenses"], 23415)
         self.assertEqual(person["otherPayments"], 18533)
         self.assertEqual(person["total"], 121948)
+
+    def test_sanitizer_rebuilds_stale_canonical_fields_after_total_echo_repair(self):
+        person = {
+            "name": "Shawn Spencer",
+            "role": "Councillor",
+            "months": 12,
+            "remuneration": 70000,
+            "travel": 69862,
+            "expenses": None,
+            "creditCard": None,
+            "otherPayments": 139862,
+            "travelExpenses": 69862,
+            "other": 139862,
+            "total": 279724,
+        }
+
+        cleaned, status = sanitize_data.sanitize_person(person)
+
+        self.assertEqual(status, "fixed_shifted_columns_and_total")
+        self.assertEqual(cleaned["travelExpenses"], 69862)
+        self.assertEqual(cleaned["other"], 0)
+        self.assertEqual(cleaned["total"], 139862)
 
 
 if __name__ == "__main__":
