@@ -105,6 +105,61 @@ class ParserQualityTests(unittest.TestCase):
         result = parser_quality.validate_people([], table_quality=quality)
         self.assertTrue(result["manual_review_required"])
 
+    def test_text_row_keeps_chief_and_combined_expense_columns(self):
+        header = "Chief and Council Months Remuneration Travel and Per Diems Other Payments"
+        person = run_scraper._parse_text_line(
+            "Chief Francis X Iron 12 90,000 150,465 126,605",
+            allow_inferred_councillor=True,
+            header_context=header,
+        )
+        self.assertEqual(person["name"], "Francis X Iron")
+        self.assertEqual(person["role"], "Chief")
+        self.assertEqual(person["travel"], 150465)
+        self.assertEqual(person["otherPayments"], 126605)
+        self.assertEqual(person["total"], 367070)
+
+    def test_text_row_ignores_subtotal_and_repeated_role(self):
+        header = "Name Position Months Salary Other Remuneration Subtotal Expenses Total"
+        self.assertTrue(
+            run_scraper._is_column_header_line(
+                "Name Position Months (1) Salary (2) Remuneration (3) Subtotal Expenses (4) Total"
+            )
+        )
+        chief = run_scraper._parse_text_line(
+            "Chief Erica Beaudin Chief 11 106,719 500 107,219 66,828 174,047",
+            allow_inferred_councillor=True,
+            header_context=header,
+        )
+        councillor = run_scraper._parse_text_line(
+            "Gary Sparvier Councillor 1 4,690 - 4,690 72 4,762",
+            allow_inferred_councillor=True,
+            header_context=header,
+        )
+        self.assertEqual(chief["name"], "Erica Beaudin")
+        self.assertEqual(chief["role"], "Chief")
+        self.assertEqual(chief["remuneration"], 106719)
+        self.assertEqual(chief["otherPayments"], 500)
+        self.assertEqual(chief["expenses"], 66828)
+        self.assertEqual(chief["total"], 174047)
+        self.assertEqual(councillor["remuneration"], 4690)
+        self.assertIsNone(councillor["otherPayments"])
+        self.assertEqual(councillor["expenses"], 72)
+        self.assertEqual(councillor["total"], 4762)
+
+    def test_text_row_supports_parentheses_and_other_entities(self):
+        header = "Other Entities Other Remuneration Months Remuneration Remuneration Expenses and Expenses"
+        person = run_scraper._parse_text_line(
+            "Chief Alexander (Byron) Bitternose 12 80,000 7,500 23,415 11,033",
+            allow_inferred_councillor=True,
+            header_context=header,
+        )
+        self.assertEqual(person["name"], "Alexander (Byron) Bitternose")
+        self.assertEqual(person["role"], "Chief")
+        self.assertEqual(person["remuneration"], 80000)
+        self.assertEqual(person["expenses"], 23415)
+        self.assertEqual(person["otherPayments"], 18533)
+        self.assertEqual(person["total"], 121948)
+
 
 if __name__ == "__main__":
     unittest.main()

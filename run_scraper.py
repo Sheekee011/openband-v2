@@ -220,7 +220,7 @@ _PROJECT_LINE_RE = re.compile(
     r"\b(project|program|contract|consulting|construction|maintenance|repair|renovation|insurance|administration|audit|legal|professional|revenue|income|asset|liability|payable|receivable)\b",
     re.I,
 )
-_NAME_RE = re.compile(r"^[A-Za-z][A-Za-z'., -]{1,90}\*?$")
+_NAME_RE = re.compile(r"^[A-Za-z][A-Za-z'.,() -]{1,90}\*?$")
 
 # --- Keyword-aware FNFTA table parsing ---
 _ROLE_WORD_RE = re.compile(r"\b(chief|councillor|councilor)\b", re.I)
@@ -251,6 +251,14 @@ def _is_column_header_line(line):
         r"\b(name|position|role|months?|travel|credit|other|total)\b", low
     ):
         return False
+    header_hits = {match.lower() for match in _COLUMN_HEADER_RE.findall(line)}
+    if (
+        len(header_hits) >= 4
+        and re.search(r"\bmonths?\b", low)
+        and re.search(r"\b(remuneration|salary|honou?raria|wages?)\b", low)
+        and not re.search(r"\d{1,3}(?:,\d{3})+", line)
+    ):
+        return True
     money_count = len(_MONEY_RE.findall(line))
     return money_count <= 1 and not re.search(r"\b(chief|councillor|councilor)\b.+\d{2,}", low)
 
@@ -403,6 +411,68 @@ def _assign_money_values(amounts, header_hint=""):
     if result["total"] is None:
         result["total"] = sum(result.get(key) or 0 for key in ["remuneration", "travel", "expenses", "creditCard", "otherPayments"])
     return result
+
+
+def _assign_text_money_values(amounts, header_hint=""):
+    """Map flattened text values using the wording of the visible PDF header."""
+    amounts = [amount for amount in amounts if amount is not None]
+    hint = _clean_cell(header_hint).lower()
+
+    # Salary | Other Remuneration | Subtotal | Expenses | Total
+    if (
+        "salary" in hint
+        and "subtotal" in hint
+        and "expense" in hint
+        and "total" in hint
+        and len(amounts) >= 4
+    ):
+        remuneration = amounts[0]
+        total = amounts[-1]
+        expenses = amounts[-2]
+        middle = amounts[1:-2]
+        other = None
+        if len(middle) >= 2:
+            other = middle[0]
+        elif len(middle) == 1 and not _looks_like_total(middle[0], [remuneration]):
+            other = middle[0]
+        return {
+            "remuneration": remuneration,
+            "travel": None,
+            "expenses": expenses,
+            "creditCard": None,
+            "otherPayments": other,
+            "total": total,
+        }
+
+    # Remuneration | Other Remuneration | Expenses | Other Entities
+    if "other entities" in hint and "other remuneration" in hint and len(amounts) >= 4:
+        return {
+            "remuneration": amounts[0],
+            "travel": None,
+            "expenses": amounts[2],
+            "creditCard": None,
+            "otherPayments": amounts[1] + amounts[3],
+            "total": sum(amounts[:4]),
+        }
+
+    # Remuneration | Travel and Per Diems | Other Payments
+    if (
+        re.search(r"\btravel\b|\bper\s*diems?\b", hint)
+        and "other" in hint
+        and "payment" in hint
+        and len(amounts) >= 3
+        and "total" not in hint
+    ):
+        return {
+            "remuneration": amounts[0],
+            "travel": amounts[1],
+            "expenses": None,
+            "creditCard": None,
+            "otherPayments": amounts[2],
+            "total": sum(amounts[:3]),
+        }
+
+    return _assign_money_values(amounts, header_hint)
 
 
 def _strip_role_words(value):
@@ -576,20 +646,15 @@ def _parse_text_line(line, allow_inferred_councillor=False, header_context=""):
     if role_match:
         role_word = role_match.group(1).lower()
         role = "Chief" if role_word == "chief" else "Councillor"
-        if role_match.start() == 0:
-            name = name_part[role_match.end() :].strip(" -:\t")
-        else:
-            name = name_part[: role_match.start()].strip(" -:\t")
     else:
         role = "Councillor"
-        name = name_part
 
-    name = scraper.clean_person_name(name)
+    name = _strip_role_words(name_part)
     if not _looks_like_person_name(name):
         return None
 
     amounts = [item["amount"] for item in money_values]
-    money = _assign_money_values(amounts, header_context)
+    money = _assign_text_money_values(amounts, header_context)
 
     return {
         "name": name,
@@ -622,13 +687,25 @@ def _extract_people_from_text(pdf_bytes):
                 re.search(r"chief\s+and\s+council|chief\s+and\s+councillors|remuneration\s+and\s+expenses", text, re.I)
             )
             header_context = ""
+            in_data_section = False
             for line in text.splitlines():
                 if _is_column_header_line(line):
                     header_context = (header_context + " " + _clean_cell(line)).strip()
+                    header_hits = {
+                        match.lower()
+                        for match in _COLUMN_HEADER_RE.findall(header_context)
+                    }
+                    in_data_section = in_data_section or (
+                        "months" in header_context.lower()
+                        and bool(re.search(r"\b(remuneration|salary|honou?raria|wages?)\b", header_context, re.I))
+                        and len(header_hits) >= 3
+                    )
+                    continue
+                if not page_is_schedule or not in_data_section:
                     continue
                 person = _parse_text_line(
                     line,
-                    allow_inferred_councillor=page_is_schedule,
+                    allow_inferred_councillor=True,
                     header_context=header_context,
                 )
                 if person:

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-27T00:41:43Z",
+  "generated": "2026-06-19T07:32:34.448436Z",
   "band_count": 69,
   "error_count": 0,
   "bands": [
@@ -485,88 +485,119 @@
           "posted": true,
           "people": [
             {
+              "name": "Alexander (Byron) Bitternose",
+              "role": "Chief",
+              "months": 12.0,
+              "remuneration": 68440.0,
+              "travel": null,
+              "expenses": 18649.0,
+              "creditCard": null,
+              "otherPayments": 20017.0,
+              "total": 107106,
+              "travelExpenses": 18649.0,
+              "other": 20017.0
+            },
+            {
               "name": "Donna Anderson-Blind",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 39000,
-              "travel": 2315,
-              "expenses": 2299,
+              "months": 12.0,
+              "remuneration": 39000.0,
+              "travel": null,
+              "expenses": 2299.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 43614
+              "otherPayments": 23474.0,
+              "total": 64773,
+              "travelExpenses": 2299.0,
+              "other": 23474.0
             },
             {
               "name": "Nathan Bitternose",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 39000,
-              "travel": 2800,
-              "expenses": 13600,
+              "months": 12.0,
+              "remuneration": 39000.0,
+              "travel": null,
+              "expenses": 13600.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 55400
+              "otherPayments": 21328.0,
+              "total": 73928,
+              "travelExpenses": 13600.0,
+              "other": 21328.0
             },
             {
               "name": "Corey Blind",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 39000,
-              "travel": 3300,
-              "expenses": 29312,
+              "months": 12.0,
+              "remuneration": 39000.0,
+              "travel": null,
+              "expenses": 29312.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 71612
+              "otherPayments": 15338.0,
+              "total": 83650,
+              "travelExpenses": 29312.0,
+              "other": 15338.0
             },
             {
               "name": "Angela McNab",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 39000,
-              "travel": 6200,
-              "expenses": 14790,
+              "months": 12.0,
+              "remuneration": 39000.0,
+              "travel": null,
+              "expenses": 14790.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 59990
+              "otherPayments": 11566.0,
+              "total": 65356,
+              "travelExpenses": 14790.0,
+              "other": 11566.0
             },
             {
               "name": "Terry-Lynn McNab",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 39000,
-              "travel": 6200,
-              "expenses": 17179,
+              "months": 12.0,
+              "remuneration": 39000.0,
+              "travel": null,
+              "expenses": 17179.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 62379
+              "otherPayments": 11596.0,
+              "total": 67775,
+              "travelExpenses": 17179.0,
+              "other": 11596.0
             },
             {
               "name": "Jason Morris",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 39000,
-              "travel": 7115,
-              "expenses": 19268,
+              "months": 12.0,
+              "remuneration": 39000.0,
+              "travel": null,
+              "expenses": 19268.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 65383
+              "otherPayments": 17961.0,
+              "total": 76229,
+              "travelExpenses": 19268.0,
+              "other": 17961.0
             },
             {
               "name": "Hugh Pratt",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 39000,
-              "travel": 3400,
-              "expenses": 11714,
+              "months": 12.0,
+              "remuneration": 39000.0,
+              "travel": null,
+              "expenses": 11714.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 54114
+              "otherPayments": 36795.0,
+              "total": 87509,
+              "travelExpenses": 11714.0,
+              "other": 36795.0
             }
           ],
           "parse_status": "ok_pdf_text",
           "warnings": [
+            "No clear Chief and Council remuneration table found",
             "Parsed from PDF text fallback",
-            "Sanitized parsed rows: removed 1, fixed totals 7"
-          ]
+            "Reparsed after automated anomaly detection"
+          ],
+          "parse_confidence": "high",
+          "manual_review_required": false,
+          "reparsed": "2026-06-19T07:32:34.448436Z"
         },
         {
           "year": "2019-2020",
@@ -588,88 +619,119 @@
           "posted": true,
           "people": [
             {
+              "name": "Alexander (Byron) Bitternose",
+              "role": "Chief",
+              "months": 12.0,
+              "remuneration": 72800.0,
+              "travel": null,
+              "expenses": 14013.0,
+              "creditCard": null,
+              "otherPayments": 20864.0,
+              "total": 107677,
+              "travelExpenses": 14013.0,
+              "other": 20864.0
+            },
+            {
               "name": "Donna Anderson-Blind",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 39000,
-              "travel": 2200,
-              "expenses": 7256,
+              "months": 12.0,
+              "remuneration": 39000.0,
+              "travel": null,
+              "expenses": 7256.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 48456
+              "otherPayments": 8614.0,
+              "total": 54870,
+              "travelExpenses": 7256.0,
+              "other": 8614.0
             },
             {
               "name": "Nathan Bitternose",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 39000,
-              "travel": 3200,
-              "expenses": 11317,
+              "months": 12.0,
+              "remuneration": 39000.0,
+              "travel": null,
+              "expenses": 11317.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 53517
+              "otherPayments": 23719.0,
+              "total": 74036,
+              "travelExpenses": 11317.0,
+              "other": 23719.0
             },
             {
               "name": "Corey Blind",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 39000,
-              "travel": 4100,
-              "expenses": 16251,
+              "months": 12.0,
+              "remuneration": 39000.0,
+              "travel": null,
+              "expenses": 16251.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 59351
+              "otherPayments": 21085.0,
+              "total": 76336,
+              "travelExpenses": 16251.0,
+              "other": 21085.0
             },
             {
               "name": "Angela McNab",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 39000,
-              "travel": 5476,
-              "expenses": 13484,
+              "months": 12.0,
+              "remuneration": 39000.0,
+              "travel": null,
+              "expenses": 13484.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 57960
+              "otherPayments": 12075.0,
+              "total": 64559,
+              "travelExpenses": 13484.0,
+              "other": 12075.0
             },
             {
               "name": "Terry-Lynn McNab",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 39000,
-              "travel": 7900,
-              "expenses": 18060,
+              "months": 12.0,
+              "remuneration": 39000.0,
+              "travel": null,
+              "expenses": 18060.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 64960
+              "otherPayments": 17319.0,
+              "total": 74379,
+              "travelExpenses": 18060.0,
+              "other": 17319.0
             },
             {
               "name": "Jason Morris",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 39000,
-              "travel": 6300,
-              "expenses": 18790,
+              "months": 12.0,
+              "remuneration": 39000.0,
+              "travel": null,
+              "expenses": 18790.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 64090
+              "otherPayments": 18353.0,
+              "total": 76143,
+              "travelExpenses": 18790.0,
+              "other": 18353.0
             },
             {
               "name": "Hugh Pratt",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 39000,
-              "travel": 5200,
-              "expenses": 15705,
+              "months": 12.0,
+              "remuneration": 39000.0,
+              "travel": null,
+              "expenses": 15705.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 59905
+              "otherPayments": 30479.0,
+              "total": 85184,
+              "travelExpenses": 15705.0,
+              "other": 30479.0
             }
           ],
           "parse_status": "ok_pdf_text",
           "warnings": [
+            "No clear Chief and Council remuneration table found",
             "Parsed from PDF text fallback",
-            "Sanitized parsed rows: removed 1, fixed totals 7"
-          ]
+            "Reparsed after automated anomaly detection"
+          ],
+          "parse_confidence": "high",
+          "manual_review_required": false,
+          "reparsed": "2026-06-19T07:32:34.448436Z"
         },
         {
           "year": "2020-2021",
@@ -691,143 +753,184 @@
           "posted": true,
           "people": [
             {
+              "name": "Alexander (Byron) Bitternose",
+              "role": "Chief",
+              "months": 12.0,
+              "remuneration": 72800.0,
+              "travel": null,
+              "expenses": 4919.0,
+              "creditCard": null,
+              "otherPayments": 13042.0,
+              "total": 90761,
+              "travelExpenses": 4919.0,
+              "other": 13042.0
+            },
+            {
               "name": "Jason Morris",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 39000,
-              "travel": 6700,
-              "expenses": 3554,
+              "months": 12.0,
+              "remuneration": 39000.0,
+              "travel": null,
+              "expenses": 3554.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 49254
+              "otherPayments": 17536.0,
+              "total": 60090,
+              "travelExpenses": 3554.0,
+              "other": 17536.0
             },
             {
               "name": "Angela McNab",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 39000,
-              "travel": 4600,
-              "expenses": 2893,
+              "months": 12.0,
+              "remuneration": 39000.0,
+              "travel": null,
+              "expenses": 2893.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 46493
+              "otherPayments": 14802.0,
+              "total": 56695,
+              "travelExpenses": 2893.0,
+              "other": 14802.0
             },
             {
               "name": "Donna Anderson-Blind",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 39000,
-              "travel": 3100,
-              "expenses": 747,
+              "months": 12.0,
+              "remuneration": 39000.0,
+              "travel": null,
+              "expenses": 747.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 42847
+              "otherPayments": 8562.0,
+              "total": 48309,
+              "travelExpenses": 747.0,
+              "other": 8562.0
             },
             {
               "name": "Lance McNab",
               "role": "Councillor",
-              "months": 7,
-              "remuneration": 21000,
-              "travel": 4500,
-              "expenses": 5885,
+              "months": 7.0,
+              "remuneration": 21000.0,
+              "travel": null,
+              "expenses": 5885.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 31385
+              "otherPayments": 8551.0,
+              "total": 35436,
+              "travelExpenses": 5885.0,
+              "other": 8551.0
             },
             {
               "name": "Tammy Pelletier",
               "role": "Councillor",
-              "months": 7,
-              "remuneration": 21000,
-              "travel": 4300,
-              "expenses": 6039,
+              "months": 7.0,
+              "remuneration": 21000.0,
+              "travel": null,
+              "expenses": 6039.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 31339
+              "otherPayments": 8491.0,
+              "total": 35530,
+              "travelExpenses": 6039.0,
+              "other": 8491.0
             },
             {
               "name": "Daniel Cyr",
               "role": "Councillor",
-              "months": 7,
-              "remuneration": 21000,
-              "travel": 3050,
-              "expenses": 1784,
+              "months": 7.0,
+              "remuneration": 21000.0,
+              "travel": null,
+              "expenses": 1784.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 25834
+              "otherPayments": 10630.0,
+              "total": 33414,
+              "travelExpenses": 1784.0,
+              "other": 10630.0
             },
             {
               "name": "Alice Bitternose",
               "role": "Councillor",
-              "months": 7,
-              "remuneration": 21000,
-              "travel": 3000,
-              "expenses": 2713,
+              "months": 7.0,
+              "remuneration": 21000.0,
+              "travel": null,
+              "expenses": 2713.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 26713
+              "otherPayments": 7284.0,
+              "total": 30997,
+              "travelExpenses": 2713.0,
+              "other": 7284.0
             },
             {
               "name": "Bryan L. McNab",
               "role": "Councillor",
-              "months": 7,
-              "remuneration": 21000,
-              "travel": 3000,
-              "expenses": 2688,
+              "months": 7.0,
+              "remuneration": 21000.0,
+              "travel": null,
+              "expenses": 2688.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 26688
+              "otherPayments": 9579.0,
+              "total": 33267,
+              "travelExpenses": 2688.0,
+              "other": 9579.0
             },
             {
               "name": "Terry-Lynn McNab",
               "role": "Councillor",
-              "months": 5,
-              "remuneration": 18000,
-              "travel": 5700,
-              "expenses": 454,
+              "months": 5.0,
+              "remuneration": 18000.0,
+              "travel": null,
+              "expenses": 454.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 24154
+              "otherPayments": 10135.0,
+              "total": 28589,
+              "travelExpenses": 454.0,
+              "other": 10135.0
             },
             {
               "name": "Corey Blind",
               "role": "Councillor",
-              "months": 5,
-              "remuneration": 18000,
-              "travel": 4600,
-              "expenses": 236,
+              "months": 5.0,
+              "remuneration": 18000.0,
+              "travel": null,
+              "expenses": 236.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 22836
+              "otherPayments": 17117.0,
+              "total": 35353,
+              "travelExpenses": 236.0,
+              "other": 17117.0
             },
             {
               "name": "Nathan Bitternose",
               "role": "Councillor",
-              "months": 5,
-              "remuneration": 18000,
-              "travel": 4500,
-              "expenses": null,
+              "months": 5.0,
+              "remuneration": 18000.0,
+              "travel": 4500.0,
+              "expenses": 9255.0,
               "creditCard": null,
-              "otherPayments": 9255,
-              "total": 31755
+              "otherPayments": null,
+              "total": 31755,
+              "travelExpenses": 13755.0,
+              "other": 0.0
             },
             {
               "name": "Hugh Pratt",
               "role": "Councillor",
-              "months": 5,
-              "remuneration": 18000,
-              "travel": 4500,
-              "expenses": null,
+              "months": 5.0,
+              "remuneration": 18000.0,
+              "travel": 4500.0,
+              "expenses": 12450.0,
               "creditCard": null,
-              "otherPayments": 12450,
-              "total": 34950
+              "otherPayments": null,
+              "total": 34950,
+              "travelExpenses": 16950.0,
+              "other": 0.0
             }
           ],
           "parse_status": "ok_pdf_text",
           "warnings": [
+            "No clear Chief and Council remuneration table found",
             "Parsed from PDF text fallback",
-            "Sanitized parsed rows: removed 1, fixed totals 10"
-          ]
+            "Reparsed after automated anomaly detection"
+          ],
+          "parse_confidence": "high",
+          "manual_review_required": false,
+          "reparsed": "2026-06-19T07:32:34.448436Z"
         },
         {
           "year": "2021-2022",
@@ -849,99 +952,132 @@
           "posted": true,
           "people": [
             {
+              "name": "Alexander (Byron) Bitternose",
+              "role": "Chief",
+              "months": 12.0,
+              "remuneration": 72800.0,
+              "travel": null,
+              "expenses": 10507.0,
+              "creditCard": null,
+              "otherPayments": 18210.0,
+              "total": 101517,
+              "travelExpenses": 10507.0,
+              "other": 18210.0
+            },
+            {
               "name": "Lance McNab",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 39000,
-              "travel": 9691,
-              "expenses": 16936,
+              "months": 12.0,
+              "remuneration": 39000.0,
+              "travel": null,
+              "expenses": 16936.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 65627
+              "otherPayments": 28279.0,
+              "total": 84215,
+              "travelExpenses": 16936.0,
+              "other": 28279.0
             },
             {
               "name": "Daniel Cyr",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 39000,
-              "travel": 9800,
-              "expenses": 11840,
+              "months": 12.0,
+              "remuneration": 39000.0,
+              "travel": null,
+              "expenses": 11840.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 60640
+              "otherPayments": 26888.0,
+              "total": 77728,
+              "travelExpenses": 11840.0,
+              "other": 26888.0
             },
             {
               "name": "Jason Morris",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 39000,
-              "travel": 9850,
-              "expenses": 17218,
+              "months": 12.0,
+              "remuneration": 39000.0,
+              "travel": null,
+              "expenses": 17218.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 66068
+              "otherPayments": 20422.0,
+              "total": 76640,
+              "travelExpenses": 17218.0,
+              "other": 20422.0
             },
             {
               "name": "Bryan L. McNab",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 39000,
-              "travel": 8000,
-              "expenses": 6872,
+              "months": 12.0,
+              "remuneration": 39000.0,
+              "travel": null,
+              "expenses": 6872.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 53872
+              "otherPayments": 30448.0,
+              "total": 76320,
+              "travelExpenses": 6872.0,
+              "other": 30448.0
             },
             {
               "name": "Tammy Pelletier",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 39000,
-              "travel": 9350,
-              "expenses": 14074,
+              "months": 12.0,
+              "remuneration": 39000.0,
+              "travel": null,
+              "expenses": 14074.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 62424
+              "otherPayments": 21863.0,
+              "total": 74937,
+              "travelExpenses": 14074.0,
+              "other": 21863.0
             },
             {
               "name": "Donna Anderson-Blind",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 39000,
-              "travel": 8350,
-              "expenses": 13028,
+              "months": 12.0,
+              "remuneration": 39000.0,
+              "travel": null,
+              "expenses": 13028.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 60378
+              "otherPayments": 18399.0,
+              "total": 70427,
+              "travelExpenses": 13028.0,
+              "other": 18399.0
             },
             {
               "name": "Alice Bitternose",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 39000,
-              "travel": 8250,
-              "expenses": 9785,
+              "months": 12.0,
+              "remuneration": 39000.0,
+              "travel": null,
+              "expenses": 9785.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 57035
+              "otherPayments": 21371.0,
+              "total": 70156,
+              "travelExpenses": 9785.0,
+              "other": 21371.0
             },
             {
               "name": "Angela McNab",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 39000,
-              "travel": 8400,
-              "expenses": 6118,
+              "months": 12.0,
+              "remuneration": 39000.0,
+              "travel": null,
+              "expenses": 6118.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 53518
+              "otherPayments": 21480.0,
+              "total": 66598,
+              "travelExpenses": 6118.0,
+              "other": 21480.0
             }
           ],
           "parse_status": "ok_pdf_text",
           "warnings": [
+            "No clear Chief and Council remuneration table found",
             "Parsed from PDF text fallback",
-            "Sanitized parsed rows: removed 1, fixed totals 8"
-          ]
+            "Reparsed after automated anomaly detection"
+          ],
+          "parse_confidence": "high",
+          "manual_review_required": false,
+          "reparsed": "2026-06-19T07:32:34.448436Z"
         },
         {
           "year": "2022-2023",
@@ -963,99 +1099,132 @@
           "posted": true,
           "people": [
             {
+              "name": "Alexander (Byron) Bitternose",
+              "role": "Chief",
+              "months": 12.0,
+              "remuneration": 83000.0,
+              "travel": null,
+              "expenses": 21923.0,
+              "creditCard": null,
+              "otherPayments": 22388.0,
+              "total": 127311,
+              "travelExpenses": 21923.0,
+              "other": 22388.0
+            },
+            {
               "name": "Alice Bitternose",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 46500,
-              "travel": 8000,
-              "expenses": 18254,
+              "months": 12.0,
+              "remuneration": 46500.0,
+              "travel": null,
+              "expenses": 18254.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 72754
+              "otherPayments": 24748.0,
+              "total": 89502,
+              "travelExpenses": 18254.0,
+              "other": 24748.0
             },
             {
               "name": "Angela McNab",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 46500,
-              "travel": 6500,
-              "expenses": 12690,
+              "months": 12.0,
+              "remuneration": 46500.0,
+              "travel": null,
+              "expenses": 12690.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 65690
+              "otherPayments": 21589.0,
+              "total": 80779,
+              "travelExpenses": 12690.0,
+              "other": 21589.0
             },
             {
               "name": "Bryan L. McNab",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 46500,
-              "travel": 7200,
-              "expenses": 14056,
+              "months": 12.0,
+              "remuneration": 46500.0,
+              "travel": null,
+              "expenses": 14056.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 67756
+              "otherPayments": 26909.0,
+              "total": 87465,
+              "travelExpenses": 14056.0,
+              "other": 26909.0
             },
             {
               "name": "Daniel Cyr",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 46500,
-              "travel": 8500,
-              "expenses": 15845,
+              "months": 12.0,
+              "remuneration": 46500.0,
+              "travel": null,
+              "expenses": 15845.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 70845
+              "otherPayments": 23194.0,
+              "total": 85539,
+              "travelExpenses": 15845.0,
+              "other": 23194.0
             },
             {
               "name": "Donna Anderson-Blind",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 46500,
-              "travel": 11100,
-              "expenses": 18365,
+              "months": 12.0,
+              "remuneration": 46500.0,
+              "travel": null,
+              "expenses": 18365.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 75965
+              "otherPayments": 20125.0,
+              "total": 84990,
+              "travelExpenses": 18365.0,
+              "other": 20125.0
             },
             {
               "name": "Jason Morris",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 46500,
-              "travel": 8300,
-              "expenses": 13739,
+              "months": 12.0,
+              "remuneration": 46500.0,
+              "travel": null,
+              "expenses": 13739.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 68539
+              "otherPayments": 18378.0,
+              "total": 78617,
+              "travelExpenses": 13739.0,
+              "other": 18378.0
             },
             {
               "name": "Lance McNab",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 46500,
-              "travel": 8300,
-              "expenses": 20359,
+              "months": 12.0,
+              "remuneration": 46500.0,
+              "travel": null,
+              "expenses": 20359.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 75159
+              "otherPayments": 14552.0,
+              "total": 81411,
+              "travelExpenses": 20359.0,
+              "other": 14552.0
             },
             {
               "name": "Tammy Pelletier",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 46500,
-              "travel": 7300,
-              "expenses": 16129,
+              "months": 12.0,
+              "remuneration": 46500.0,
+              "travel": null,
+              "expenses": 16129.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 69929
+              "otherPayments": 13552.0,
+              "total": 76181,
+              "travelExpenses": 16129.0,
+              "other": 13552.0
             }
           ],
           "parse_status": "ok_pdf_text",
           "warnings": [
+            "No clear Chief and Council remuneration table found",
             "Parsed from PDF text fallback",
-            "Sanitized parsed rows: removed 1, fixed totals 8"
-          ]
+            "Reparsed after automated anomaly detection"
+          ],
+          "parse_confidence": "high",
+          "manual_review_required": false,
+          "reparsed": "2026-06-19T07:32:34.448436Z"
         },
         {
           "year": "2023-2024",
@@ -1077,99 +1246,132 @@
           "posted": true,
           "people": [
             {
+              "name": "Alexander (Byron) Bitternose",
+              "role": "Chief",
+              "months": 12.0,
+              "remuneration": 80000.0,
+              "travel": null,
+              "expenses": 23415.0,
+              "creditCard": null,
+              "otherPayments": 18533.0,
+              "total": 121948,
+              "travelExpenses": 23415.0,
+              "other": 18533.0
+            },
+            {
               "name": "Alice Bitternose",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 45000,
-              "travel": 9150,
-              "expenses": 26240,
+              "months": 12.0,
+              "remuneration": 45000.0,
+              "travel": null,
+              "expenses": 26240.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 80390
+              "otherPayments": 25413.0,
+              "total": 96653,
+              "travelExpenses": 26240.0,
+              "other": 25413.0
             },
             {
               "name": "Angela McNab",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 45000,
-              "travel": 6800,
-              "expenses": 20737,
+              "months": 12.0,
+              "remuneration": 45000.0,
+              "travel": null,
+              "expenses": 20737.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 72537
+              "otherPayments": 19294.0,
+              "total": 85031,
+              "travelExpenses": 20737.0,
+              "other": 19294.0
             },
             {
               "name": "Bryan L. McNabb",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 45000,
-              "travel": 6050,
-              "expenses": 19212,
+              "months": 12.0,
+              "remuneration": 45000.0,
+              "travel": null,
+              "expenses": 19212.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 70262
+              "otherPayments": 32369.0,
+              "total": 96581,
+              "travelExpenses": 19212.0,
+              "other": 32369.0
             },
             {
               "name": "Daniel Cyr",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 45000,
-              "travel": 13350,
-              "expenses": 34687,
+              "months": 12.0,
+              "remuneration": 45000.0,
+              "travel": null,
+              "expenses": 34687.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 93037
+              "otherPayments": 31092.0,
+              "total": 110779,
+              "travelExpenses": 34687.0,
+              "other": 31092.0
             },
             {
               "name": "Donna Anderson-Blind",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 45000,
-              "travel": 11450,
-              "expenses": 23480,
+              "months": 12.0,
+              "remuneration": 45000.0,
+              "travel": null,
+              "expenses": 23480.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 79930
+              "otherPayments": 19682.0,
+              "total": 88162,
+              "travelExpenses": 23480.0,
+              "other": 19682.0
             },
             {
               "name": "Jason Morris",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 45000,
-              "travel": 9350,
-              "expenses": 25393,
+              "months": 12.0,
+              "remuneration": 45000.0,
+              "travel": null,
+              "expenses": 25393.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 79743
+              "otherPayments": 18061.0,
+              "total": 88454,
+              "travelExpenses": 25393.0,
+              "other": 18061.0
             },
             {
               "name": "Lance McNab",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 45000,
-              "travel": 10000,
-              "expenses": 27280,
+              "months": 12.0,
+              "remuneration": 45000.0,
+              "travel": null,
+              "expenses": 27280.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 82280
+              "otherPayments": 23235.0,
+              "total": 95515,
+              "travelExpenses": 27280.0,
+              "other": 23235.0
             },
             {
               "name": "Tammy Pelletier",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 45000,
-              "travel": 11495,
-              "expenses": 31052,
+              "months": 12.0,
+              "remuneration": 45000.0,
+              "travel": null,
+              "expenses": 31052.0,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 87547
+              "otherPayments": 30025.0,
+              "total": 106077,
+              "travelExpenses": 31052.0,
+              "other": 30025.0
             }
           ],
           "parse_status": "ok_pdf_text",
           "warnings": [
+            "No clear Chief and Council remuneration table found",
             "Parsed from PDF text fallback",
-            "Sanitized parsed rows: removed 1, fixed totals 8"
-          ]
+            "Reparsed after automated anomaly detection"
+          ],
+          "parse_confidence": "high",
+          "manual_review_required": false,
+          "reparsed": "2026-06-19T07:32:34.448436Z"
         },
         {
           "year": "2024-2025",
@@ -1342,7 +1544,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-27T00:36:43Z"
+      "scraped": "2026-06-19T07:32:34.448436Z"
     },
     {
       "id": 362,
@@ -4533,77 +4735,106 @@
           "posted": true,
           "people": [
             {
-              "name": "Lorne Iron",
-              "role": "Councillor",
-              "months": 12,
-              "remuneration": 60000,
-              "travel": 40281,
+              "name": "Francis X Iron",
+              "role": "Chief",
+              "months": 12.0,
+              "remuneration": 84000.0,
+              "travel": 71493.0,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 100281
+              "total": 155493,
+              "travelExpenses": 71493.0,
+              "other": 0.0
+            },
+            {
+              "name": "Lorne Iron",
+              "role": "Councillor",
+              "months": 12.0,
+              "remuneration": 60000.0,
+              "travel": 40281.0,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 100281,
+              "travelExpenses": 40281.0,
+              "other": 0.0
             },
             {
               "name": "Wilfred Iron",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 60000,
-              "travel": 42743,
+              "months": 12.0,
+              "remuneration": 60000.0,
+              "travel": 42743.0,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 102743
+              "total": 102743,
+              "travelExpenses": 42743.0,
+              "other": 0.0
             },
             {
-              "name": "Ralph Opikokew Jr",
+              "name": "Ralph Opikokew Jr.",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 60000,
-              "travel": 34876,
+              "months": 12.0,
+              "remuneration": 60000.0,
+              "travel": 34876.0,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 94876
+              "total": 94876,
+              "travelExpenses": 34876.0,
+              "other": 0.0
             },
             {
               "name": "Bernice Iron",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 60000,
-              "travel": 42285,
+              "months": 12.0,
+              "remuneration": 60000.0,
+              "travel": 42285.0,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 102285
+              "total": 102285,
+              "travelExpenses": 42285.0,
+              "other": 0.0
             },
             {
               "name": "Lenny Iron",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 60000,
-              "travel": 43662,
+              "months": 12.0,
+              "remuneration": 60000.0,
+              "travel": 43662.0,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 103662
+              "total": 103662,
+              "travelExpenses": 43662.0,
+              "other": 0.0
             },
             {
               "name": "Roxanne Gamble",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 60000,
-              "travel": 31837,
+              "months": 12.0,
+              "remuneration": 60000.0,
+              "travel": 31837.0,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 91837
+              "total": 91837,
+              "travelExpenses": 31837.0,
+              "other": 0.0
             }
           ],
           "parse_status": "ok_pdf_text",
           "warnings": [
+            "No clear Chief and Council remuneration table found",
             "Parsed from PDF text fallback",
-            "Sanitized parsed rows: removed 0, fixed totals 0"
-          ]
+            "Reparsed after automated anomaly detection"
+          ],
+          "parse_confidence": "high",
+          "manual_review_required": false,
+          "reparsed": "2026-06-19T07:32:34.448436Z"
         },
         {
           "year": "2019-2020",
@@ -4625,77 +4856,106 @@
           "posted": true,
           "people": [
             {
-              "name": "Lorne Iron",
-              "role": "Councillor",
-              "months": 12,
-              "remuneration": 60000,
-              "travel": 63721,
+              "name": "Francis X Iron",
+              "role": "Chief",
+              "months": 12.0,
+              "remuneration": 84000.0,
+              "travel": 82169.0,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 123721
+              "total": 166169,
+              "travelExpenses": 82169.0,
+              "other": 0.0
+            },
+            {
+              "name": "Lorne Iron",
+              "role": "Councillor",
+              "months": 12.0,
+              "remuneration": 60000.0,
+              "travel": 63721.0,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 123721,
+              "travelExpenses": 63721.0,
+              "other": 0.0
             },
             {
               "name": "Wilfred Iron",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 60000,
-              "travel": 57782,
+              "months": 12.0,
+              "remuneration": 60000.0,
+              "travel": 57782.0,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 117782
+              "total": 117782,
+              "travelExpenses": 57782.0,
+              "other": 0.0
             },
             {
-              "name": "Ralph Opikokew Jr",
+              "name": "Ralph Opikokew Jr.",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 60000,
-              "travel": 33433,
+              "months": 12.0,
+              "remuneration": 60000.0,
+              "travel": 33433.0,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 93433
+              "total": 93433,
+              "travelExpenses": 33433.0,
+              "other": 0.0
             },
             {
               "name": "Bernice Iron",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 60000,
-              "travel": 50668,
+              "months": 12.0,
+              "remuneration": 60000.0,
+              "travel": 50668.0,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 110668
+              "total": 110668,
+              "travelExpenses": 50668.0,
+              "other": 0.0
             },
             {
               "name": "Lenny Iron",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 60000,
-              "travel": 60936,
+              "months": 12.0,
+              "remuneration": 60000.0,
+              "travel": 60936.0,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 120936
+              "total": 120936,
+              "travelExpenses": 60936.0,
+              "other": 0.0
             },
             {
               "name": "Roxanne Gamble",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 60000,
-              "travel": 48011,
+              "months": 12.0,
+              "remuneration": 60000.0,
+              "travel": 48011.0,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 108011
+              "total": 108011,
+              "travelExpenses": 48011.0,
+              "other": 0.0
             }
           ],
           "parse_status": "ok_pdf_text",
           "warnings": [
+            "No clear Chief and Council remuneration table found",
             "Parsed from PDF text fallback",
-            "Sanitized parsed rows: removed 0, fixed totals 0"
-          ]
+            "Reparsed after automated anomaly detection"
+          ],
+          "parse_confidence": "high",
+          "manual_review_required": false,
+          "reparsed": "2026-06-19T07:32:34.448436Z"
         },
         {
           "year": "2020-2021",
@@ -4842,6 +5102,19 @@
           "posted": true,
           "people": [
             {
+              "name": "Francis X Iron",
+              "role": "Chief",
+              "months": 12.0,
+              "remuneration": 90000.0,
+              "travel": 109251.0,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": 35561.0,
+              "total": 234812,
+              "travelExpenses": 109251.0,
+              "other": 35561.0
+            },
+            {
               "name": "Lorne Iron",
               "role": "Councillor",
               "months": 12.0,
@@ -4850,7 +5123,9 @@
               "expenses": null,
               "creditCard": null,
               "otherPayments": 21553.0,
-              "total": 161095.0
+              "total": 161095,
+              "travelExpenses": 73542.0,
+              "other": 21553.0
             },
             {
               "name": "Wilfred Iron",
@@ -4861,7 +5136,9 @@
               "expenses": null,
               "creditCard": null,
               "otherPayments": 14190.0,
-              "total": 160155.0
+              "total": 160155,
+              "travelExpenses": 79965.0,
+              "other": 14190.0
             },
             {
               "name": "Bernice Iron",
@@ -4872,7 +5149,9 @@
               "expenses": null,
               "creditCard": null,
               "otherPayments": 22278.0,
-              "total": 141724.0
+              "total": 141724,
+              "travelExpenses": 53446.0,
+              "other": 22278.0
             },
             {
               "name": "Lenny Iron",
@@ -4883,7 +5162,9 @@
               "expenses": null,
               "creditCard": null,
               "otherPayments": 8334.0,
-              "total": 127072.0
+              "total": 127072,
+              "travelExpenses": 52738.0,
+              "other": 8334.0
             },
             {
               "name": "Walter Coulineur",
@@ -4894,7 +5175,9 @@
               "expenses": null,
               "creditCard": null,
               "otherPayments": 9649.0,
-              "total": 127719.0
+              "total": 127719,
+              "travelExpenses": 52070.0,
+              "other": 9649.0
             },
             {
               "name": "Robert Opikokew",
@@ -4905,13 +5188,20 @@
               "expenses": null,
               "creditCard": null,
               "otherPayments": 14488.0,
-              "total": 126908.0
+              "total": 126908,
+              "travelExpenses": 46420.0,
+              "other": 14488.0
             }
           ],
           "parse_status": "ok_pdf_text",
           "warnings": [
-            "Parsed from PDF text fallback"
-          ]
+            "No clear Chief and Council remuneration table found",
+            "Parsed from PDF text fallback",
+            "Reparsed after automated anomaly detection"
+          ],
+          "parse_confidence": "high",
+          "manual_review_required": false,
+          "reparsed": "2026-06-19T07:32:34.448436Z"
         },
         {
           "year": "2022-2023",
@@ -4933,6 +5223,19 @@
           "posted": true,
           "people": [
             {
+              "name": "Francis X Iron",
+              "role": "Chief",
+              "months": 12.0,
+              "remuneration": 90000.0,
+              "travel": 150465.0,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": 126605.0,
+              "total": 367070,
+              "travelExpenses": 150465.0,
+              "other": 126605.0
+            },
+            {
               "name": "Lorne Iron",
               "role": "Councillor",
               "months": 12.0,
@@ -4941,7 +5244,9 @@
               "expenses": null,
               "creditCard": null,
               "otherPayments": 67975.0,
-              "total": 250042.0
+              "total": 250042,
+              "travelExpenses": 116067.0,
+              "other": 67975.0
             },
             {
               "name": "Wilfred Iron",
@@ -4952,7 +5257,9 @@
               "expenses": null,
               "creditCard": null,
               "otherPayments": 41083.0,
-              "total": 211888.0
+              "total": 211888,
+              "travelExpenses": 104805.0,
+              "other": 41083.0
             },
             {
               "name": "Bernice Iron",
@@ -4963,7 +5270,9 @@
               "expenses": null,
               "creditCard": null,
               "otherPayments": 59482.0,
-              "total": 211340.0
+              "total": 211340,
+              "travelExpenses": 85858.0,
+              "other": 59482.0
             },
             {
               "name": "Lenny Iron",
@@ -4974,7 +5283,9 @@
               "expenses": null,
               "creditCard": null,
               "otherPayments": 24730.0,
-              "total": 168631.0
+              "total": 168631,
+              "travelExpenses": 80651.0,
+              "other": 24730.0
             },
             {
               "name": "Walter Coulineur",
@@ -4985,7 +5296,9 @@
               "expenses": null,
               "creditCard": null,
               "otherPayments": 53769.0,
-              "total": 199038.0
+              "total": 199038,
+              "travelExpenses": 79269.0,
+              "other": 53769.0
             },
             {
               "name": "Robert Opikokew",
@@ -4996,13 +5309,20 @@
               "expenses": null,
               "creditCard": null,
               "otherPayments": 19687.0,
-              "total": 155118.0
+              "total": 155118,
+              "travelExpenses": 69431.0,
+              "other": 19687.0
             }
           ],
           "parse_status": "ok_pdf_text",
           "warnings": [
-            "Parsed from PDF text fallback"
-          ]
+            "No clear Chief and Council remuneration table found",
+            "Parsed from PDF text fallback",
+            "Reparsed after automated anomaly detection"
+          ],
+          "parse_confidence": "high",
+          "manual_review_required": false,
+          "reparsed": "2026-06-19T07:32:34.448436Z"
         },
         {
           "year": "2023-2024",
@@ -5054,7 +5374,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-27T00:41:43Z"
+      "scraped": "2026-06-19T07:32:34.448436Z"
     },
     {
       "id": 378,
@@ -7143,156 +7463,210 @@
           "posted": true,
           "people": [
             {
-              "name": "Gary Sparvier",
-              "role": "Councillor",
-              "months": 1,
-              "remuneration": 4690,
-              "travel": 4690,
-              "expenses": 72,
+              "name": "Cadmus Delorme",
+              "role": "Chief",
+              "months": 1.0,
+              "remuneration": 7607.0,
+              "travel": null,
+              "expenses": 509.0,
               "creditCard": null,
               "otherPayments": null,
-              "total": 9452
+              "total": 8116,
+              "travelExpenses": 509.0,
+              "other": 0.0
+            },
+            {
+              "name": "Erica Beaudin",
+              "role": "Chief",
+              "months": 11.0,
+              "remuneration": 106719.0,
+              "travel": null,
+              "expenses": 66828.0,
+              "creditCard": null,
+              "otherPayments": 500.0,
+              "total": 174047,
+              "travelExpenses": 66828.0,
+              "other": 500.0
+            },
+            {
+              "name": "Gary Sparvier",
+              "role": "Councillor",
+              "months": 1.0,
+              "remuneration": 4690.0,
+              "travel": null,
+              "expenses": 72.0,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 4762,
+              "travelExpenses": 72.0,
+              "other": 0.0
             },
             {
               "name": "Damon Delorme",
               "role": "Councillor",
-              "months": 1,
-              "remuneration": 4793,
-              "travel": 4793,
-              "expenses": 74,
+              "months": 1.0,
+              "remuneration": 4793.0,
+              "travel": null,
+              "expenses": 74.0,
               "creditCard": null,
               "otherPayments": null,
-              "total": 9660
+              "total": 4867,
+              "travelExpenses": 74.0,
+              "other": 0.0
             },
             {
               "name": "Patricia Sparvier",
               "role": "Councillor",
-              "months": 1,
-              "remuneration": 5791,
-              "travel": 5791,
-              "expenses": 62,
+              "months": 1.0,
+              "remuneration": 5791.0,
+              "travel": null,
+              "expenses": 62.0,
               "creditCard": null,
               "otherPayments": null,
-              "total": 11644
+              "total": 5853,
+              "travelExpenses": 62.0,
+              "other": 0.0
             },
             {
               "name": "Richard Aisaican",
               "role": "Councillor",
-              "months": 1,
-              "remuneration": 4767,
-              "travel": 4767,
-              "expenses": 109,
+              "months": 1.0,
+              "remuneration": 4767.0,
+              "travel": null,
+              "expenses": 109.0,
               "creditCard": null,
               "otherPayments": null,
-              "total": 9643
+              "total": 4876,
+              "travelExpenses": 109.0,
+              "other": 0.0
             },
             {
               "name": "Denise Pelletier",
               "role": "Councillor",
-              "months": 1,
-              "remuneration": 4622,
-              "travel": 4622,
-              "expenses": 74,
+              "months": 1.0,
+              "remuneration": 4622.0,
+              "travel": null,
+              "expenses": 74.0,
               "creditCard": null,
               "otherPayments": null,
-              "total": 9318
+              "total": 4696,
+              "travelExpenses": 74.0,
+              "other": 0.0
             },
             {
               "name": "Jonathan Lerat",
               "role": "Councillor",
-              "months": 9,
-              "remuneration": 63513,
-              "travel": 63513,
-              "expenses": 18008,
+              "months": 9.0,
+              "remuneration": 63513.0,
+              "travel": null,
+              "expenses": 18008.0,
               "creditCard": null,
               "otherPayments": null,
-              "total": 145034
+              "total": 81521,
+              "travelExpenses": 18008.0,
+              "other": 0.0
             },
             {
               "name": "Curtis Delorme",
               "role": "Councillor",
-              "months": 11,
-              "remuneration": 76962,
-              "travel": 500,
-              "expenses": null,
-              "creditCard": 41392,
-              "otherPayments": null,
-              "total": 118854
+              "months": 11.0,
+              "remuneration": 76962.0,
+              "travel": null,
+              "expenses": 41392.0,
+              "creditCard": null,
+              "otherPayments": 500.0,
+              "total": 118854,
+              "travelExpenses": 41392.0,
+              "other": 500.0
             },
             {
               "name": "Josh Aisaican",
               "role": "Councillor",
-              "months": 11,
-              "remuneration": 77347,
-              "travel": 500,
-              "expenses": null,
-              "creditCard": 32642,
-              "otherPayments": null,
-              "total": 110489
+              "months": 11.0,
+              "remuneration": 77347.0,
+              "travel": null,
+              "expenses": 32642.0,
+              "creditCard": null,
+              "otherPayments": 500.0,
+              "total": 110489,
+              "travelExpenses": 32642.0,
+              "other": 500.0
             },
             {
               "name": "Allison Whiteman",
               "role": "Councillor",
-              "months": 11,
-              "remuneration": 76492,
-              "travel": 500,
-              "expenses": null,
-              "creditCard": 25696,
-              "otherPayments": null,
-              "total": 102688
+              "months": 11.0,
+              "remuneration": 76492.0,
+              "travel": null,
+              "expenses": 25696.0,
+              "creditCard": null,
+              "otherPayments": 500.0,
+              "total": 102688,
+              "travelExpenses": 25696.0,
+              "other": 500.0
             },
             {
               "name": "Ira Aisaican",
               "role": "Councillor",
-              "months": 11,
-              "remuneration": 77088,
-              "travel": 500,
-              "expenses": null,
-              "creditCard": 25617,
-              "otherPayments": null,
-              "total": 103205
+              "months": 11.0,
+              "remuneration": 77088.0,
+              "travel": null,
+              "expenses": 25617.0,
+              "creditCard": null,
+              "otherPayments": 500.0,
+              "total": 103205,
+              "travelExpenses": 25617.0,
+              "other": 500.0
             },
             {
               "name": "Brandon Pelltier",
               "role": "Councillor",
-              "months": 11,
-              "remuneration": 76872,
-              "travel": 500,
-              "expenses": null,
-              "creditCard": 27769,
-              "otherPayments": null,
-              "total": 105141
+              "months": 11.0,
+              "remuneration": 76872.0,
+              "travel": null,
+              "expenses": 27769.0,
+              "creditCard": null,
+              "otherPayments": 500.0,
+              "total": 105141,
+              "travelExpenses": 27769.0,
+              "other": 500.0
             },
             {
               "name": "Terry Lerat",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 71481,
-              "travel": 500,
-              "expenses": null,
-              "creditCard": 17292,
-              "otherPayments": null,
-              "total": 89273
+              "months": 12.0,
+              "remuneration": 71481.0,
+              "travel": null,
+              "expenses": 17292.0,
+              "creditCard": null,
+              "otherPayments": 500.0,
+              "total": 89273,
+              "travelExpenses": 17292.0,
+              "other": 500.0
             },
             {
               "name": "Malcolm Delorme",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 71400,
-              "travel": 500,
-              "expenses": null,
-              "creditCard": 6250,
-              "otherPayments": null,
-              "total": 78150
+              "months": 12.0,
+              "remuneration": 71400.0,
+              "travel": null,
+              "expenses": 6250.0,
+              "creditCard": null,
+              "otherPayments": 500.0,
+              "total": 78150,
+              "travelExpenses": 6250.0,
+              "other": 500.0
             }
           ],
           "parse_status": "ok_pdf_text",
           "warnings": [
+            "No clear Chief and Council remuneration table found",
             "Parsed from PDF text fallback",
-            "Sanitized parsed rows: removed 0, fixed totals 13",
-            "Preserved parsed rows from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 0"
-          ]
+            "Reparsed after automated anomaly detection"
+          ],
+          "parse_confidence": "high",
+          "manual_review_required": false,
+          "reparsed": "2026-06-19T07:32:34.448436Z"
         },
         {
           "year": "2024-2025",
@@ -7320,7 +7694,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-26T05:54:03Z"
+      "scraped": "2026-06-19T07:32:34.448436Z"
     },
     {
       "id": 389,
@@ -10008,67 +10382,93 @@
           "posted": true,
           "people": [
             {
-              "name": "Theodore Bear",
-              "role": "Councillor",
-              "months": 12,
-              "remuneration": 72002,
-              "travel": 24569,
+              "name": "Ronald Bear",
+              "role": "Chief",
+              "months": 12.0,
+              "remuneration": 125825.0,
+              "travel": 15925.0,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 96571
+              "total": 141750,
+              "travelExpenses": 15925.0,
+              "other": 0.0
+            },
+            {
+              "name": "Theodore Bear",
+              "role": "Councillor",
+              "months": 12.0,
+              "remuneration": 72002.0,
+              "travel": 24569.0,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 96571,
+              "travelExpenses": 24569.0,
+              "other": 0.0
             },
             {
               "name": "Elaine Ross",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 73406,
-              "travel": 17371,
-              "expenses": null,
+              "months": 12.0,
+              "remuneration": 73406.0,
+              "travel": 17371.0,
+              "expenses": 4474.0,
               "creditCard": null,
-              "otherPayments": 4474,
-              "total": 95251
+              "otherPayments": null,
+              "total": 95251,
+              "travelExpenses": 21845.0,
+              "other": 0.0
             },
             {
               "name": "Herman Crain",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 73772,
-              "travel": 5954,
+              "months": 12.0,
+              "remuneration": 73772.0,
+              "travel": 5954.0,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 79726
+              "total": 79726,
+              "travelExpenses": 5954.0,
+              "other": 0.0
             },
             {
               "name": "Elizabeth Merle Crain",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 71648,
-              "travel": 4590,
+              "months": 12.0,
+              "remuneration": 71648.0,
+              "travel": 4590.0,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 76238
+              "total": 76238,
+              "travelExpenses": 4590.0,
+              "other": 0.0
             },
             {
               "name": "Beryl Bear",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 71581,
-              "travel": 4590,
+              "months": 12.0,
+              "remuneration": 71581.0,
+              "travel": 4590.0,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 76171
+              "total": 76171,
+              "travelExpenses": 4590.0,
+              "other": 0.0
             }
           ],
           "parse_status": "ok_pdf_text",
           "warnings": [
+            "No clear Chief and Council remuneration table found",
             "Parsed from PDF text fallback",
-            "Sanitized parsed rows: removed 1, fixed totals 0",
-            "Preserved parsed rows from previous data.json snapshot"
-          ]
+            "Reparsed after automated anomaly detection"
+          ],
+          "parse_confidence": "high",
+          "manual_review_required": false,
+          "reparsed": "2026-06-19T07:32:34.448436Z"
         },
         {
           "year": "2024-2025",
@@ -10090,71 +10490,97 @@
           "posted": true,
           "people": [
             {
-              "name": "Elaine Ross",
-              "role": "Councillor",
-              "months": 12,
-              "remuneration": 86579,
-              "travel": 23069,
+              "name": "Ronald Bear",
+              "role": "Chief",
+              "months": 12.0,
+              "remuneration": 133048.0,
+              "travel": 14226.0,
               "expenses": null,
               "creditCard": null,
-              "otherPayments": 972,
-              "total": 110620
+              "otherPayments": null,
+              "total": 147274,
+              "travelExpenses": 14226.0,
+              "other": 0.0
+            },
+            {
+              "name": "Elaine Ross",
+              "role": "Councillor",
+              "months": 12.0,
+              "remuneration": 86579.0,
+              "travel": 23069.0,
+              "expenses": 972.0,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 110620,
+              "travelExpenses": 24041.0,
+              "other": 0.0
             },
             {
               "name": "Theodore Bear",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 81153,
-              "travel": 24480,
+              "months": 12.0,
+              "remuneration": 81153.0,
+              "travel": 24480.0,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 105633
+              "total": 105633,
+              "travelExpenses": 24480.0,
+              "other": 0.0
             },
             {
               "name": "Elizabeth Merle Crain",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 80780,
-              "travel": 4580,
+              "months": 12.0,
+              "remuneration": 80780.0,
+              "travel": 4580.0,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 85360
+              "total": 85360,
+              "travelExpenses": 4580.0,
+              "other": 0.0
             },
             {
               "name": "Beryl Bear",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 81961,
-              "travel": 2296,
+              "months": 12.0,
+              "remuneration": 81961.0,
+              "travel": 2296.0,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 84257
+              "total": 84257,
+              "travelExpenses": 2296.0,
+              "other": 0.0
             },
             {
               "name": "Herman Crain",
               "role": "Councillor",
-              "months": 4,
-              "remuneration": 27305,
-              "travel": 2215,
+              "months": 4.0,
+              "remuneration": 27305.0,
+              "travel": 2215.0,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 29520
+              "total": 29520,
+              "travelExpenses": 2215.0,
+              "other": 0.0
             }
           ],
           "parse_status": "ok_pdf_text",
           "warnings": [
+            "No clear Chief and Council remuneration table found",
             "Parsed from PDF text fallback",
-            "Sanitized parsed rows: removed 1, fixed totals 0",
-            "Preserved parsed rows from previous data.json snapshot"
-          ]
+            "Reparsed after automated anomaly detection"
+          ],
+          "parse_confidence": "high",
+          "manual_review_required": false,
+          "reparsed": "2026-06-19T07:32:34.448436Z"
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-26T05:54:26Z"
+      "scraped": "2026-06-19T07:32:34.448436Z"
     },
     {
       "id": 363,
@@ -22596,83 +23022,110 @@
           "posted": true,
           "people": [
             {
+              "name": "Jonathan Pasap",
+              "role": "Chief",
+              "months": 12.0,
+              "remuneration": 98381.0,
+              "travel": null,
+              "expenses": 49071.0,
+              "creditCard": null,
+              "otherPayments": 5975.0,
+              "total": 153427,
+              "travelExpenses": 49071.0,
+              "other": 5975.0
+            },
+            {
               "name": "Tanya Littlechief",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 66485,
-              "travel": 11924,
-              "expenses": null,
-              "creditCard": 32333,
-              "otherPayments": null,
-              "total": 110742
+              "months": 12.0,
+              "remuneration": 66485.0,
+              "travel": null,
+              "expenses": 32333.0,
+              "creditCard": null,
+              "otherPayments": 11924.0,
+              "total": 110742,
+              "travelExpenses": 32333.0,
+              "other": 11924.0
             },
             {
               "name": "Debbie Maxie",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 66485,
-              "travel": 7468,
-              "expenses": null,
-              "creditCard": 25481,
-              "otherPayments": null,
-              "total": 99434
+              "months": 12.0,
+              "remuneration": 66485.0,
+              "travel": null,
+              "expenses": 25481.0,
+              "creditCard": null,
+              "otherPayments": 7468.0,
+              "total": 99434,
+              "travelExpenses": 25481.0,
+              "other": 7468.0
             },
             {
               "name": "Tanya Whitebear",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 63521,
-              "travel": 3918,
-              "expenses": null,
-              "creditCard": 28298,
-              "otherPayments": null,
-              "total": 95737
+              "months": 12.0,
+              "remuneration": 63521.0,
+              "travel": null,
+              "expenses": 28298.0,
+              "creditCard": null,
+              "otherPayments": 3918.0,
+              "total": 95737,
+              "travelExpenses": 28298.0,
+              "other": 3918.0
             },
             {
               "name": "Brett Standingready",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 66485,
-              "travel": 6375,
-              "expenses": null,
-              "creditCard": 24735,
-              "otherPayments": null,
-              "total": 97595
+              "months": 12.0,
+              "remuneration": 66485.0,
+              "travel": null,
+              "expenses": 24735.0,
+              "creditCard": null,
+              "otherPayments": 6375.0,
+              "total": 97595,
+              "travelExpenses": 24735.0,
+              "other": 6375.0
             },
             {
               "name": "Sheri McArthur",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 66485,
-              "travel": 10625,
-              "expenses": null,
-              "creditCard": 20949,
-              "otherPayments": null,
-              "total": 98059
+              "months": 12.0,
+              "remuneration": 66485.0,
+              "travel": null,
+              "expenses": 20949.0,
+              "creditCard": null,
+              "otherPayments": 10625.0,
+              "total": 98059,
+              "travelExpenses": 20949.0,
+              "other": 10625.0
             },
             {
               "name": "Clarence Nokahoot",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 66485,
-              "travel": 4041,
-              "expenses": null,
-              "creditCard": 18983,
-              "otherPayments": null,
-              "total": 89509
+              "months": 12.0,
+              "remuneration": 66485.0,
+              "travel": null,
+              "expenses": 18983.0,
+              "creditCard": null,
+              "otherPayments": 4041.0,
+              "total": 89509,
+              "travelExpenses": 18983.0,
+              "other": 4041.0
             }
           ],
           "parse_status": "ok_pdf_text",
           "warnings": [
+            "No clear Chief and Council remuneration table found",
             "Parsed from PDF text fallback",
-            "Sanitized parsed rows: removed 0, fixed totals 6",
-            "Preserved parsed rows from previous data.json snapshot",
-            "Sanitized parsed rows: removed 0, fixed totals 0"
-          ]
+            "Reparsed after automated anomaly detection"
+          ],
+          "parse_confidence": "high",
+          "manual_review_required": false,
+          "reparsed": "2026-06-19T07:32:34.448436Z"
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-26T05:55:01Z"
+      "scraped": "2026-06-19T07:32:34.448436Z"
     },
     {
       "id": 372,
@@ -30184,15 +30637,30 @@
           "posted": true,
           "people": [
             {
+              "name": "Bart Tsannie",
+              "role": "Chief",
+              "months": 12.0,
+              "remuneration": 78000.0,
+              "travel": 15024.0,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": 37208.0,
+              "total": 130232,
+              "travelExpenses": 15024.0,
+              "other": 37208.0
+            },
+            {
               "name": "George Tsannie",
               "role": "Councillor",
               "months": 12.0,
               "remuneration": 54000.0,
               "travel": 7200.0,
-              "expenses": 35159.0,
+              "expenses": null,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 96359.0
+              "otherPayments": 35159.0,
+              "total": 96359,
+              "travelExpenses": 7200.0,
+              "other": 35159.0
             },
             {
               "name": "Louis Josie",
@@ -30200,10 +30668,12 @@
               "months": 12.0,
               "remuneration": 52000.0,
               "travel": 15600.0,
-              "expenses": 34914.0,
+              "expenses": null,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 102514.0
+              "otherPayments": 34914.0,
+              "total": 102514,
+              "travelExpenses": 15600.0,
+              "other": 34914.0
             },
             {
               "name": "Peter Gaznadlare",
@@ -30211,10 +30681,12 @@
               "months": 12.0,
               "remuneration": 52000.0,
               "travel": 7300.0,
-              "expenses": 29894.0,
+              "expenses": null,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 89194.0
+              "otherPayments": 29894.0,
+              "total": 89194,
+              "travelExpenses": 7300.0,
+              "other": 29894.0
             },
             {
               "name": "Annie Joseyounen",
@@ -30222,10 +30694,12 @@
               "months": 12.0,
               "remuneration": 52000.0,
               "travel": 8562.0,
-              "expenses": 22684.0,
+              "expenses": null,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 83246.0
+              "otherPayments": 22684.0,
+              "total": 83246,
+              "travelExpenses": 8562.0,
+              "other": 22684.0
             },
             {
               "name": "Glenda Mercredi",
@@ -30233,10 +30707,12 @@
               "months": 12.0,
               "remuneration": 52000.0,
               "travel": 16182.0,
-              "expenses": 29088.0,
+              "expenses": null,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 97270.0
+              "otherPayments": 29088.0,
+              "total": 97270,
+              "travelExpenses": 16182.0,
+              "other": 29088.0
             },
             {
               "name": "Nancy Hansen",
@@ -30244,17 +30720,23 @@
               "months": 12.0,
               "remuneration": 52000.0,
               "travel": 10005.0,
-              "expenses": 32949.0,
+              "expenses": null,
               "creditCard": null,
-              "otherPayments": null,
-              "total": 94954.0
+              "otherPayments": 32949.0,
+              "total": 94954,
+              "travelExpenses": 10005.0,
+              "other": 32949.0
             }
           ],
           "parse_status": "ok_pdf_text",
           "warnings": [
+            "No clear Chief and Council remuneration table found",
             "Parsed from PDF text fallback",
-            "Preserved parsed rows from previous data.json snapshot"
-          ]
+            "Reparsed after automated anomaly detection"
+          ],
+          "parse_confidence": "high",
+          "manual_review_required": false,
+          "reparsed": "2026-06-19T07:32:34.448436Z"
         },
         {
           "year": "2018-2019",
@@ -30440,7 +30922,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-26T05:55:28Z"
+      "scraped": "2026-06-19T07:32:34.448436Z"
     },
     {
       "id": 353,
@@ -48344,133 +48826,184 @@
           "posted": true,
           "people": [
             {
+              "name": "Thomas E Dustyhorn",
+              "role": "Chief",
+              "months": 2.0,
+              "remuneration": 8036.0,
+              "travel": 12000.0,
+              "expenses": 9342.0,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 29378,
+              "travelExpenses": 21342.0,
+              "other": 0.0
+            },
+            {
               "name": "Cory Dustyhorn",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 53209,
-              "travel": 8000,
-              "expenses": null,
+              "months": 12.0,
+              "remuneration": 53209.0,
+              "travel": 8000.0,
+              "expenses": 37844.0,
               "creditCard": null,
-              "otherPayments": 37844,
-              "total": 99053
+              "otherPayments": null,
+              "total": 99053,
+              "travelExpenses": 45844.0,
+              "other": 0.0
             },
             {
               "name": "Delmont Asapace",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 55329,
-              "travel": 8000,
-              "expenses": null,
+              "months": 12.0,
+              "remuneration": 55329.0,
+              "travel": 8000.0,
+              "expenses": 44641.0,
               "creditCard": null,
-              "otherPayments": 44641,
-              "total": 107970
+              "otherPayments": null,
+              "total": 107970,
+              "travelExpenses": 52641.0,
+              "other": 0.0
             },
             {
               "name": "Marvin Albert",
               "role": "Councillor",
-              "months": 12,
-              "remuneration": 53209,
-              "travel": 8000,
-              "expenses": null,
+              "months": 12.0,
+              "remuneration": 53209.0,
+              "travel": 8000.0,
+              "expenses": 43177.0,
               "creditCard": null,
-              "otherPayments": 43177,
-              "total": 104386
+              "otherPayments": null,
+              "total": 104386,
+              "travelExpenses": 51177.0,
+              "other": 0.0
             },
             {
               "name": "Andrew Owl Child",
               "role": "Councillor",
-              "months": 10,
-              "remuneration": 47698,
-              "travel": 37095,
+              "months": 10.0,
+              "remuneration": 47698.0,
+              "travel": 37095.0,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 84793
+              "total": 84793,
+              "travelExpenses": 37095.0,
+              "other": 0.0
             },
             {
               "name": "Joan Ens",
               "role": "Councillor",
-              "months": 10,
-              "remuneration": 47698,
-              "travel": 38115,
+              "months": 10.0,
+              "remuneration": 47698.0,
+              "travel": 38115.0,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 85813
+              "total": 85813,
+              "travelExpenses": 38115.0,
+              "other": 0.0
             },
             {
               "name": "Lisa Kay",
               "role": "Councillor",
-              "months": 10,
-              "remuneration": 47698,
-              "travel": 31191,
+              "months": 10.0,
+              "remuneration": 47698.0,
+              "travel": 31191.0,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 78889
+              "total": 78889,
+              "travelExpenses": 31191.0,
+              "other": 0.0
+            },
+            {
+              "name": "Thomas M Dustyhorn",
+              "role": "Councillor",
+              "months": 10.0,
+              "remuneration": 47698.0,
+              "travel": 34976.0,
+              "expenses": null,
+              "creditCard": null,
+              "otherPayments": null,
+              "total": 82674,
+              "travelExpenses": 34976.0,
+              "other": 0.0
             },
             {
               "name": "Vincent Machiskinic",
               "role": "Councillor",
-              "months": 10,
-              "remuneration": 47698,
-              "travel": 42717,
+              "months": 10.0,
+              "remuneration": 47698.0,
+              "travel": 42717.0,
               "expenses": null,
               "creditCard": null,
               "otherPayments": null,
-              "total": 90415
+              "total": 90415,
+              "travelExpenses": 42717.0,
+              "other": 0.0
             },
             {
               "name": "Glen Worm",
               "role": "Councillor",
-              "months": 2,
-              "remuneration": 5512,
-              "travel": 8000,
-              "expenses": null,
+              "months": 2.0,
+              "remuneration": 5512.0,
+              "travel": 8000.0,
+              "expenses": 5603.0,
               "creditCard": null,
-              "otherPayments": 5603,
-              "total": 19115
+              "otherPayments": null,
+              "total": 19115,
+              "travelExpenses": 13603.0,
+              "other": 0.0
             },
             {
               "name": "Kimberly Rosling",
               "role": "Councillor",
-              "months": 2,
-              "remuneration": 5512,
-              "travel": 8000,
-              "expenses": null,
+              "months": 2.0,
+              "remuneration": 5512.0,
+              "travel": 8000.0,
+              "expenses": 3151.0,
               "creditCard": null,
-              "otherPayments": 3151,
-              "total": 16663
+              "otherPayments": null,
+              "total": 16663,
+              "travelExpenses": 11151.0,
+              "other": 0.0
             },
             {
               "name": "Sheila Kay-Machiskinic",
               "role": "Councillor",
-              "months": 2,
-              "remuneration": 5512,
-              "travel": 8000,
-              "expenses": null,
+              "months": 2.0,
+              "remuneration": 5512.0,
+              "travel": 8000.0,
+              "expenses": 2940.0,
               "creditCard": null,
-              "otherPayments": 2940,
-              "total": 16452
+              "otherPayments": null,
+              "total": 16452,
+              "travelExpenses": 10940.0,
+              "other": 0.0
             },
             {
               "name": "Wesley Machiskinic",
               "role": "Councillor",
-              "months": 2,
-              "remuneration": 5512,
-              "travel": 8000,
-              "expenses": null,
+              "months": 2.0,
+              "remuneration": 5512.0,
+              "travel": 8000.0,
+              "expenses": 3752.0,
               "creditCard": null,
-              "otherPayments": 3752,
-              "total": 17264
+              "otherPayments": null,
+              "total": 17264,
+              "travelExpenses": 11752.0,
+              "other": 0.0
             }
           ],
           "parse_status": "ok_pdf_text",
           "warnings": [
+            "No clear Chief and Council remuneration table found",
             "Parsed from PDF text fallback",
-            "Sanitized parsed rows: removed 1, fixed totals 0",
-            "Preserved parsed rows from previous data.json snapshot"
-          ]
+            "Reparsed after automated anomaly detection"
+          ],
+          "parse_confidence": "high",
+          "manual_review_required": false,
+          "reparsed": "2026-06-19T07:32:34.448436Z"
         },
         {
           "year": "2023-2024",
@@ -48704,7 +49237,7 @@
         }
       ],
       "status": "ok",
-      "scraped": "2026-05-26T05:56:06Z"
+      "scraped": "2026-06-19T07:32:34.448436Z"
     },
     {
       "id": 407,
