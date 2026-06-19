@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": null,
+  "generated": "2026-06-19T16:26:34.182236Z",
   "description": "Parsed audited financial statement summaries for the OpenBand Community Capital Tracker.",
   "recordShape": {
     "bands": {
@@ -27,6 +27,7 @@
               "total": "number or null",
               "categories": []
             },
+            "capitalAssets": "number or null",
             "debt": {
               "total": "number or null",
               "financingCosts": "number or null"
@@ -34,11 +35,3361 @@
             "sourceUrl": "string",
             "parseStatus": "parsed, pending_review, or manual_review",
             "confidence": "high, medium, or low",
+            "publishable": "boolean",
+            "parser": "string",
             "warnings": []
           }
         }
       }
     }
   },
-  "bands": {}
+  "bands": {
+    "378": {
+      "name": "Carry the Kettle Nakoda Nation",
+      "years": {
+        "2024-2025": {
+          "totalRevenue": 122259460,
+          "totalExpenses": 113820751,
+          "annualSurplusDeficit": 8438709,
+          "cashInvestments": 3369101,
+          "revenueBreakdown": [
+            {
+              "category": "Other revenue",
+              "amount": 84247081
+            },
+            {
+              "category": "Government transfers",
+              "amount": 25801561
+            },
+            {
+              "category": "Trust distributions",
+              "amount": 7522690
+            },
+            {
+              "category": "Own-source revenue",
+              "amount": 4688128
+            }
+          ],
+          "expenseBreakdown": [
+            {
+              "category": "Operations",
+              "amount": 88336384
+            },
+            {
+              "category": "Education",
+              "amount": 9736208
+            },
+            {
+              "category": "Health",
+              "amount": 6382818
+            },
+            {
+              "category": "Administration",
+              "amount": 4658169
+            },
+            {
+              "category": "Social programs",
+              "amount": 2734221
+            },
+            {
+              "category": "Infrastructure / public works",
+              "amount": 1599599
+            },
+            {
+              "category": "Economic development",
+              "amount": 373352
+            }
+          ],
+          "capitalSpending": {
+            "total": 3521432,
+            "categories": []
+          },
+          "capitalAssets": 73342617,
+          "debt": {
+            "total": 10911884,
+            "components": [
+              {
+                "label": "Long-Term Debt",
+                "amount": 10911884
+              }
+            ]
+          },
+          "sourceRevenueRows": [
+            {
+              "label": "Indigenous Services Canada",
+              "category": "Government transfers",
+              "amount": 22984624
+            },
+            {
+              "label": "Ottawa Trust Fund Revenue",
+              "category": "Trust distributions",
+              "amount": 2609885
+            },
+            {
+              "label": "First Nations Trust",
+              "category": "Trust distributions",
+              "amount": 1442888
+            },
+            {
+              "label": "CMHC",
+              "category": "Government transfers",
+              "amount": 1139471
+            },
+            {
+              "label": "File Hills Qu'Appelle Tribal Council",
+              "category": "Government transfers",
+              "amount": 487826
+            },
+            {
+              "label": "The Four Pillars Society",
+              "category": "Other revenue",
+              "amount": 200000
+            },
+            {
+              "label": "Canadian Heritage",
+              "category": "Other revenue",
+              "amount": 193261
+            },
+            {
+              "label": "SITAG",
+              "category": "Other revenue",
+              "amount": 168027
+            },
+            {
+              "label": "Living Sky Community Development Corp",
+              "category": "Other revenue",
+              "amount": 126194
+            },
+            {
+              "label": "Settlement Distribution",
+              "category": "Other revenue",
+              "amount": 81525381
+            },
+            {
+              "label": "Legacy Trust Annual Revenue",
+              "category": "Trust distributions",
+              "amount": 3469917
+            },
+            {
+              "label": "Administration fees",
+              "category": "Own-source revenue",
+              "amount": 2855866
+            },
+            {
+              "label": "Store Sales",
+              "category": "Own-source revenue",
+              "amount": 1587367
+            },
+            {
+              "label": "Trans Canada Pipeline LP",
+              "category": "Government transfers",
+              "amount": 1189640
+            },
+            {
+              "label": "Other Revenue",
+              "category": "Other revenue",
+              "amount": 991611
+            },
+            {
+              "label": "TLE Revenue",
+              "category": "Other revenue",
+              "amount": 261691
+            },
+            {
+              "label": "Rental income",
+              "category": "Own-source revenue",
+              "amount": 244895
+            },
+            {
+              "label": "Insurance proceeds",
+              "category": "Other revenue",
+              "amount": 177800
+            },
+            {
+              "label": "Limited Partnership Earnings",
+              "category": "Other revenue",
+              "amount": 103333
+            },
+            {
+              "label": "Loss in Government Business Enterprises",
+              "category": "Government transfers",
+              "amount": 0
+            },
+            {
+              "label": "Recognition of Unexpended Funding",
+              "category": "Other revenue",
+              "amount": 499783
+            }
+          ],
+          "sourceExpenseRows": [
+            {
+              "label": "Education",
+              "category": "Education",
+              "amount": 9736208
+            },
+            {
+              "label": "Health",
+              "category": "Health",
+              "amount": 6382818
+            },
+            {
+              "label": "Economic Development",
+              "category": "Economic development",
+              "amount": 101500
+            },
+            {
+              "label": "Social Development",
+              "category": "Social programs",
+              "amount": 2734221
+            },
+            {
+              "label": "Government Support",
+              "category": "Administration",
+              "amount": 4600663
+            },
+            {
+              "label": "Community Development",
+              "category": "Infrastructure / public works",
+              "amount": 1599599
+            },
+            {
+              "label": "Land Claims",
+              "category": "Operations",
+              "amount": 78308074
+            },
+            {
+              "label": "Land Management",
+              "category": "Economic development",
+              "amount": 271852
+            },
+            {
+              "label": "Membership",
+              "category": "Administration",
+              "amount": 57506
+            },
+            {
+              "label": "Other Programs",
+              "category": "Operations",
+              "amount": 7523946
+            },
+            {
+              "label": "Amortization",
+              "category": "Operations",
+              "amount": 2504364
+            }
+          ],
+          "sourceUrl": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=378&FY=2024-2025&DOC=Audited consolidated financial statements&lang=eng",
+          "fiscalYear": "2024-2025",
+          "parser": "capital_text_v1",
+          "parseStatus": "parsed",
+          "confidence": "high",
+          "warnings": [],
+          "publishable": true
+        }
+      }
+    },
+    "361": {
+      "name": "Cowessess First Nation",
+      "years": {
+        "2023-2024": {
+          "totalRevenue": 47947962,
+          "totalExpenses": 37021935,
+          "annualSurplusDeficit": 10926027,
+          "cashInvestments": 53686630,
+          "revenueBreakdown": [
+            {
+              "category": "Government transfers",
+              "amount": 34931686
+            },
+            {
+              "category": "Own-source revenue",
+              "amount": 6185041
+            },
+            {
+              "category": "Other revenue",
+              "amount": 4560044
+            },
+            {
+              "category": "Trust distributions",
+              "amount": 2271191
+            }
+          ],
+          "expenseBreakdown": [
+            {
+              "category": "Operations",
+              "amount": 14359687
+            },
+            {
+              "category": "Infrastructure / public works",
+              "amount": 5984454
+            },
+            {
+              "category": "Administration",
+              "amount": 5943714
+            },
+            {
+              "category": "Education",
+              "amount": 5024989
+            },
+            {
+              "category": "Health",
+              "amount": 3519729
+            },
+            {
+              "category": "Social programs",
+              "amount": 2189362
+            }
+          ],
+          "capitalSpending": {
+            "total": 4081906,
+            "categories": []
+          },
+          "capitalAssets": 60499205,
+          "debt": {
+            "total": 4127066,
+            "components": [
+              {
+                "label": "Short-term debt",
+                "amount": 0
+              },
+              {
+                "label": "Current portion of long-term debt",
+                "amount": 379076
+              },
+              {
+                "label": "Current portion of term loans due on demand",
+                "amount": 0
+              },
+              {
+                "label": "Current portion of capital lease obligations",
+                "amount": 169884
+              },
+              {
+                "label": "Long-term debt",
+                "amount": 3443808
+              },
+              {
+                "label": "Capital lease obligations",
+                "amount": 134298
+              }
+            ]
+          },
+          "sourceRevenueRows": [
+            {
+              "label": "Indigenous Services Canada",
+              "category": "Government transfers",
+              "amount": 33546795
+            },
+            {
+              "label": "Canada Mortgage and Housing Corporation",
+              "category": "Government transfers",
+              "amount": 828410
+            },
+            {
+              "label": "Settlement",
+              "category": "Other revenue",
+              "amount": 0
+            },
+            {
+              "label": "Other government revenue",
+              "category": "Government transfers",
+              "amount": 556481
+            },
+            {
+              "label": "SIIT",
+              "category": "Other revenue",
+              "amount": 142344
+            },
+            {
+              "label": "Investment income",
+              "category": "Own-source revenue",
+              "amount": 2811793
+            },
+            {
+              "label": "FSIN )",
+              "category": "Other revenue",
+              "amount": 1691915
+            },
+            {
+              "label": "First Nations Trust",
+              "category": "Trust distributions",
+              "amount": 2092341
+            },
+            {
+              "label": "Lease income",
+              "category": "Own-source revenue",
+              "amount": 1682658
+            },
+            {
+              "label": "Other",
+              "category": "Other revenue",
+              "amount": 995882
+            },
+            {
+              "label": "Contributions",
+              "category": "Other revenue",
+              "amount": 928335
+            },
+            {
+              "label": "Earnings from investment in Nation business entities",
+              "category": "Own-source revenue",
+              "amount": 608045
+            },
+            {
+              "label": "Rental income",
+              "category": "Own-source revenue",
+              "amount": 486858
+            },
+            {
+              "label": "YTC - Prevention",
+              "category": "Other revenue",
+              "amount": 679377
+            },
+            {
+              "label": "Golf Course sales",
+              "category": "Own-source revenue",
+              "amount": 493355
+            },
+            {
+              "label": "TLE Four Trusts",
+              "category": "Trust distributions",
+              "amount": 178850
+            },
+            {
+              "label": "Painted Hand Community Development Corporation",
+              "category": "Other revenue",
+              "amount": 112198
+            },
+            {
+              "label": "Bingo & fundraising activities",
+              "category": "Own-source revenue",
+              "amount": 75247
+            },
+            {
+              "label": "Royalties",
+              "category": "Own-source revenue",
+              "amount": 27085
+            },
+            {
+              "label": "Insurance proceeds",
+              "category": "Other revenue",
+              "amount": 9993
+            },
+            {
+              "label": "Farming income",
+              "category": "Own-source revenue",
+              "amount": 0
+            }
+          ],
+          "sourceExpenseRows": [
+            {
+              "label": "Lands and Memberships",
+              "category": "Administration",
+              "amount": 2299358
+            },
+            {
+              "label": "Education",
+              "category": "Education",
+              "amount": 5024989
+            },
+            {
+              "label": "Social Development",
+              "category": "Social programs",
+              "amount": 2189362
+            },
+            {
+              "label": "Health",
+              "category": "Health",
+              "amount": 3519729
+            },
+            {
+              "label": "Community Infrastructure",
+              "category": "Infrastructure / public works",
+              "amount": 4471424
+            },
+            {
+              "label": "Band Government",
+              "category": "Administration",
+              "amount": 3644356
+            },
+            {
+              "label": "Capital",
+              "category": "Infrastructure / public works",
+              "amount": 1513030
+            },
+            {
+              "label": "Other Band Programs",
+              "category": "Operations",
+              "amount": 14359687
+            }
+          ],
+          "sourceUrl": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=361&FY=2023-2024&DOC=Audited consolidated financial statements&lang=eng",
+          "fiscalYear": "2023-2024",
+          "parser": "capital_text_v1",
+          "parseStatus": "parsed",
+          "confidence": "high",
+          "warnings": [],
+          "publishable": true
+        }
+      }
+    },
+    "394": {
+      "name": "Canoe Lake Cree First Nation",
+      "years": {
+        "2022-2023": {
+          "totalRevenue": 30081627,
+          "totalExpenses": 26356060,
+          "annualSurplusDeficit": 3725567,
+          "cashInvestments": 134505,
+          "revenueBreakdown": [
+            {
+              "category": "Government transfers",
+              "amount": 22263240
+            },
+            {
+              "category": "Other revenue",
+              "amount": 5559322
+            },
+            {
+              "category": "Own-source revenue",
+              "amount": 1246042
+            },
+            {
+              "category": "Trust distributions",
+              "amount": 1013023
+            }
+          ],
+          "expenseBreakdown": [
+            {
+              "category": "Education",
+              "amount": 6127442
+            },
+            {
+              "category": "Health",
+              "amount": 4899312
+            },
+            {
+              "category": "Infrastructure / public works",
+              "amount": 4258161
+            },
+            {
+              "category": "Administration",
+              "amount": 3670751
+            },
+            {
+              "category": "Operations",
+              "amount": 3523073
+            },
+            {
+              "category": "Social programs",
+              "amount": 3182150
+            },
+            {
+              "category": "Economic development",
+              "amount": 695171
+            }
+          ],
+          "capitalSpending": {
+            "total": 4613597,
+            "categories": []
+          },
+          "capitalAssets": 29667429,
+          "debt": {
+            "total": 9459481,
+            "components": [
+              {
+                "label": "Bank indebtedness",
+                "amount": 576650
+              },
+              {
+                "label": "Current portion of long-term debt",
+                "amount": 602000
+              },
+              {
+                "label": "Current portion of capital lease obligations",
+                "amount": 226579
+              },
+              {
+                "label": "Long-term debt",
+                "amount": 7736343
+              },
+              {
+                "label": "Capital lease obligations",
+                "amount": 317909
+              }
+            ]
+          },
+          "sourceRevenueRows": [
+            {
+              "label": "Indigenous Services Canada",
+              "category": "Government transfers",
+              "amount": 18368580
+            },
+            {
+              "label": "MLTC Program Services Inc.",
+              "category": "Other revenue",
+              "amount": 4909078
+            },
+            {
+              "label": "Meadow Lake Health & Social Development Authority Inc.",
+              "category": "Government transfers",
+              "amount": 2758714
+            },
+            {
+              "label": "MLTC Child & Family Services Inc.",
+              "category": "Government transfers",
+              "amount": 638797
+            },
+            {
+              "label": "Canada Mortgage and Housing Corporation",
+              "category": "Government transfers",
+              "amount": 464655
+            },
+            {
+              "label": "National Indian Brotherhood Trust Fund",
+              "category": "Trust distributions",
+              "amount": 24385
+            },
+            {
+              "label": "Investment income",
+              "category": "Own-source revenue",
+              "amount": 1574709
+            },
+            {
+              "label": "First Nations Trust",
+              "category": "Trust distributions",
+              "amount": 988638
+            },
+            {
+              "label": "Other",
+              "category": "Other revenue",
+              "amount": 251201
+            },
+            {
+              "label": "Rental income",
+              "category": "Own-source revenue",
+              "amount": 183676
+            },
+            {
+              "label": "Fuel tax revenue",
+              "category": "Other revenue",
+              "amount": 151550
+            },
+            {
+              "label": "Contract revenue",
+              "category": "Other revenue",
+              "amount": 113345
+            },
+            {
+              "label": "Expense recoveries",
+              "category": "Other revenue",
+              "amount": 87893
+            },
+            {
+              "label": "Saskatchewan Rivers School Division",
+              "category": "Other revenue",
+              "amount": 35410
+            },
+            {
+              "label": "Government of Saskatchewan",
+              "category": "Government transfers",
+              "amount": 32494
+            },
+            {
+              "label": "Saskatchewan Lotteries",
+              "category": "Other revenue",
+              "amount": 10845
+            },
+            {
+              "label": "Canoe Lake Cree First Nation TLE Trust",
+              "category": "Trust distributions",
+              "amount": 0
+            },
+            {
+              "label": "Loss from investment in Nation business entities",
+              "category": "Own-source revenue",
+              "amount": -512343
+            }
+          ],
+          "sourceExpenseRows": [
+            {
+              "label": "Capital",
+              "category": "Infrastructure / public works",
+              "amount": 2218162
+            },
+            {
+              "label": "Economic Development",
+              "category": "Economic development",
+              "amount": 695171
+            },
+            {
+              "label": "Education",
+              "category": "Education",
+              "amount": 6127442
+            },
+            {
+              "label": "First Nation Programs",
+              "category": "Operations",
+              "amount": 3447924
+            },
+            {
+              "label": "Government Services",
+              "category": "Administration",
+              "amount": 3670751
+            },
+            {
+              "label": "Health",
+              "category": "Health",
+              "amount": 4899312
+            },
+            {
+              "label": "Infrastructure",
+              "category": "Infrastructure / public works",
+              "amount": 2039999
+            },
+            {
+              "label": "Reserves",
+              "category": "Operations",
+              "amount": 75149
+            },
+            {
+              "label": "Social Services",
+              "category": "Social programs",
+              "amount": 3182150
+            }
+          ],
+          "sourceUrl": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=394&FY=2022-2023&DOC=Audited consolidated financial statements&lang=eng",
+          "fiscalYear": "2022-2023",
+          "parser": "capital_text_v1",
+          "parseStatus": "parsed",
+          "confidence": "high",
+          "warnings": [],
+          "publishable": true
+        }
+      }
+    },
+    "365": {
+      "name": "White Bear First Nations",
+      "years": {
+        "2024-2025": {
+          "totalRevenue": 129288836,
+          "totalExpenses": 0,
+          "annualSurplusDeficit": 5378251,
+          "cashInvestments": 21897106,
+          "revenueBreakdown": [
+            {
+              "category": "Other revenue",
+              "amount": 105884424
+            },
+            {
+              "category": "Government transfers",
+              "amount": 20339964
+            },
+            {
+              "category": "Trust distributions",
+              "amount": 1829974
+            },
+            {
+              "category": "Own-source revenue",
+              "amount": 1234474
+            }
+          ],
+          "expenseBreakdown": [],
+          "capitalSpending": {
+            "total": 2142602,
+            "categories": []
+          },
+          "capitalAssets": 19070269,
+          "debt": {
+            "total": 6145472,
+            "components": [
+              {
+                "label": "Current portion of long-term debt",
+                "amount": 2627534
+              },
+              {
+                "label": "Long-term debt",
+                "amount": 3517938
+              }
+            ]
+          },
+          "sourceRevenueRows": [
+            {
+              "label": "Indigenous Services Canada",
+              "category": "Government transfers",
+              "amount": 17918881
+            },
+            {
+              "label": "Canada Mortgage and Housing Corporation",
+              "category": "Government transfers",
+              "amount": 487662
+            },
+            {
+              "label": "SITAG",
+              "category": "Other revenue",
+              "amount": 164547
+            },
+            {
+              "label": "Other revenue",
+              "category": "Other revenue",
+              "amount": 0
+            },
+            {
+              "label": "Settlement Proceeds",
+              "category": "Other revenue",
+              "amount": 1880920
+            },
+            {
+              "label": "First Nations Trust",
+              "category": "Trust distributions",
+              "amount": 1829974
+            },
+            {
+              "label": "Donations and Grants",
+              "category": "Other revenue",
+              "amount": 1544967
+            },
+            {
+              "label": "Federation of Sovereign Indigenous Nation",
+              "category": "Other revenue",
+              "amount": 1197279
+            },
+            {
+              "label": "Taxation",
+              "category": "Other revenue",
+              "amount": 577266
+            },
+            {
+              "label": "Insurance Proceeds",
+              "category": "Other revenue",
+              "amount": 196880
+            },
+            {
+              "label": "Earnings from investment in Nation business entities",
+              "category": "Own-source revenue",
+              "amount": 392124
+            },
+            {
+              "label": "Lease income",
+              "category": "Own-source revenue",
+              "amount": 325766
+            },
+            {
+              "label": "Other revenue",
+              "category": "Other revenue",
+              "amount": 257117
+            },
+            {
+              "label": "Rental income",
+              "category": "Own-source revenue",
+              "amount": 207451
+            },
+            {
+              "label": "Bear Claw Community Development Inc",
+              "category": "Other revenue",
+              "amount": 197932
+            },
+            {
+              "label": "Nurse fees",
+              "category": "Own-source revenue",
+              "amount": 138900
+            },
+            {
+              "label": "Interest income",
+              "category": "Own-source revenue",
+              "amount": 102385
+            },
+            {
+              "label": "Royalties",
+              "category": "Own-source revenue",
+              "amount": 64246
+            },
+            {
+              "label": "Contributions",
+              "category": "Other revenue",
+              "amount": 57601
+            },
+            {
+              "label": "User fees",
+              "category": "Own-source revenue",
+              "amount": 3602
+            },
+            {
+              "label": "Gain on Disposal of Capital Assets",
+              "category": "Other revenue",
+              "amount": 0
+            },
+            {
+              "label": "Band Administration",
+              "category": "Other revenue",
+              "amount": 4250928
+            },
+            {
+              "label": "Band Housing",
+              "category": "Other revenue",
+              "amount": 1327784
+            },
+            {
+              "label": "Health",
+              "category": "Other revenue",
+              "amount": 3200959
+            },
+            {
+              "label": "Child and Family Services",
+              "category": "Government transfers",
+              "amount": 1933421
+            },
+            {
+              "label": "Education",
+              "category": "Other revenue",
+              "amount": 6384250
+            },
+            {
+              "label": "Economic Development",
+              "category": "Other revenue",
+              "amount": 0
+            },
+            {
+              "label": "Community Infrastructure",
+              "category": "Other revenue",
+              "amount": 2298531
+            },
+            {
+              "label": "Income Assistance",
+              "category": "Other revenue",
+              "amount": 1289931
+            },
+            {
+              "label": "CMHC",
+              "category": "Government transfers",
+              "amount": 0
+            },
+            {
+              "label": "Annual surplus",
+              "category": "Other revenue",
+              "amount": 5378251
+            },
+            {
+              "label": "Accumulated surplus, beginning of year",
+              "category": "Other revenue",
+              "amount": 35150515
+            },
+            {
+              "label": "Accumulated surplus, end of year",
+              "category": "Other revenue",
+              "amount": 40528766
+            }
+          ],
+          "sourceExpenseRows": [],
+          "sourceUrl": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=365&FY=2024-2025&DOC=Audited consolidated financial statements&lang=eng",
+          "fiscalYear": "2024-2025",
+          "parser": "capital_text_v1",
+          "parseStatus": "manual_review",
+          "confidence": "low",
+          "warnings": [
+            "Total expenses were not extracted",
+            "Expense breakdown is incomplete",
+            "Annual surplus or deficit includes other items"
+          ],
+          "publishable": false
+        }
+      }
+    },
+    "402": {
+      "name": "Waterhen Lake First Nation",
+      "years": {
+        "2024-2025": {
+          "totalRevenue": 43372774,
+          "totalExpenses": 34412001,
+          "annualSurplusDeficit": null,
+          "cashInvestments": 22446804,
+          "revenueBreakdown": [
+            {
+              "category": "Government transfers",
+              "amount": 30499335
+            },
+            {
+              "category": "Other revenue",
+              "amount": 6305089
+            },
+            {
+              "category": "Own-source revenue",
+              "amount": 5586673
+            },
+            {
+              "category": "Trust distributions",
+              "amount": 981677
+            }
+          ],
+          "expenseBreakdown": [
+            {
+              "category": "Operations",
+              "amount": 84021138
+            },
+            {
+              "category": "Social programs",
+              "amount": 6504541
+            },
+            {
+              "category": "Education",
+              "amount": 6088203
+            },
+            {
+              "category": "Health",
+              "amount": 4745977
+            },
+            {
+              "category": "Infrastructure / public works",
+              "amount": 3692572
+            },
+            {
+              "category": "Administration",
+              "amount": 1017839
+            },
+            {
+              "category": "Economic development",
+              "amount": 0
+            }
+          ],
+          "capitalSpending": {
+            "total": 14335199,
+            "categories": []
+          },
+          "capitalAssets": 45759630,
+          "debt": {
+            "total": 20109507,
+            "components": [
+              {
+                "label": "Current portion of long-term debt",
+                "amount": 14892000
+              },
+              {
+                "label": "Long-term debt",
+                "amount": 5217507
+              }
+            ]
+          },
+          "sourceRevenueRows": [
+            {
+              "label": "Indigenous Services Canada",
+              "category": "Government transfers",
+              "amount": 28977132
+            },
+            {
+              "label": "MLTC Program Services Inc.",
+              "category": "Other revenue",
+              "amount": 3907385
+            },
+            {
+              "label": "Other revenue",
+              "category": "Other revenue",
+              "amount": 1524166
+            },
+            {
+              "label": "MLTC Child & Family Services Inc.",
+              "category": "Government transfers",
+              "amount": 905185
+            },
+            {
+              "label": "Canada Mortgage and Housing Corporation",
+              "category": "Government transfers",
+              "amount": 328158
+            },
+            {
+              "label": "Meadow Lake Health & Social Development Authority Inc.",
+              "category": "Government transfers",
+              "amount": 266036
+            },
+            {
+              "label": "Mistik Management Ltd.",
+              "category": "Other revenue",
+              "amount": 183758
+            },
+            {
+              "label": "Retail sales",
+              "category": "Own-source revenue",
+              "amount": 3203932
+            },
+            {
+              "label": "First Nations Trust",
+              "category": "Trust distributions",
+              "amount": 981677
+            },
+            {
+              "label": "Earnings from investment in Nation business entities",
+              "category": "Own-source revenue",
+              "amount": 810056
+            },
+            {
+              "label": "Rental income",
+              "category": "Own-source revenue",
+              "amount": 798227
+            },
+            {
+              "label": "Contracts",
+              "category": "Other revenue",
+              "amount": 549280
+            },
+            {
+              "label": "Interest income",
+              "category": "Own-source revenue",
+              "amount": 332400
+            },
+            {
+              "label": "Investment income - MLTC Resource Development LP",
+              "category": "Own-source revenue",
+              "amount": 275000
+            },
+            {
+              "label": "Management fees",
+              "category": "Own-source revenue",
+              "amount": 167058
+            },
+            {
+              "label": "Northern Lights CDC",
+              "category": "Other revenue",
+              "amount": 140500
+            },
+            {
+              "label": "Province of Saskatchewan",
+              "category": "Government transfers",
+              "amount": 22824
+            }
+          ],
+          "sourceExpenseRows": [
+            {
+              "label": "ADMINISTRATION",
+              "category": "Administration",
+              "amount": 1017839
+            },
+            {
+              "label": "BAND PROGRAMS",
+              "category": "Operations",
+              "amount": 3436023
+            },
+            {
+              "label": "CAPITAL",
+              "category": "Infrastructure / public works",
+              "amount": 3196157
+            },
+            {
+              "label": "EDUCATION",
+              "category": "Education",
+              "amount": 6088203
+            },
+            {
+              "label": "ECONOMIC DEVELOPMENT",
+              "category": "Economic development",
+              "amount": 0
+            },
+            {
+              "label": "HEALTH",
+              "category": "Health",
+              "amount": 4745977
+            },
+            {
+              "label": "INFRASTRUCTURE",
+              "category": "Infrastructure / public works",
+              "amount": 2770447
+            },
+            {
+              "label": "RESERVES AND TRUSTS",
+              "category": "Operations",
+              "amount": 1562491
+            },
+            {
+              "label": "SOCIAL SERVICES",
+              "category": "Social programs",
+              "amount": 3372482
+            },
+            {
+              "label": "RESORTS AND RETAIL",
+              "category": "Operations",
+              "amount": 0
+            },
+            {
+              "label": "CHILD & FAMILY SERVICES",
+              "category": "Social programs",
+              "amount": 3132059
+            },
+            {
+              "label": "Operating surplus before other items",
+              "category": "Operations",
+              "amount": 8960773
+            },
+            {
+              "label": "Agricultural benefit claim settlement",
+              "category": "Operations",
+              "amount": 123168704
+            },
+            {
+              "label": "Contribution to Waterhen Legacy Trust",
+              "category": "Operations",
+              "amount": -114070985
+            },
+            {
+              "label": "Legal",
+              "category": "Operations",
+              "amount": -5350160
+            },
+            {
+              "label": "Insurance",
+              "category": "Operations",
+              "amount": -775566
+            },
+            {
+              "label": "Per capita distribution revenue from trust",
+              "category": "Operations",
+              "amount": 39670000
+            },
+            {
+              "label": "Per capita distribution",
+              "category": "Operations",
+              "amount": -39670000
+            },
+            {
+              "label": "Loss on disposal of capital assets",
+              "category": "Infrastructure / public works",
+              "amount": -2274032
+            },
+            {
+              "label": "Operating surplus",
+              "category": "Operations",
+              "amount": 9658734
+            },
+            {
+              "label": "Accumulated operating surplus, beginning of year",
+              "category": "Operations",
+              "amount": 23886195
+            },
+            {
+              "label": "Accumulated operating surplus, end of year",
+              "category": "Operations",
+              "amount": 33544929
+            }
+          ],
+          "sourceUrl": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=402&FY=2024-2025&DOC=Audited consolidated financial statements&lang=eng",
+          "fiscalYear": "2024-2025",
+          "parser": "capital_text_v1",
+          "parseStatus": "manual_review",
+          "confidence": "low",
+          "warnings": [
+            "Expense categories do not reconcile to total expenses",
+            "Annual surplus or deficit was not extracted"
+          ],
+          "publishable": false
+        }
+      }
+    },
+    "348": {
+      "name": "Sweetgrass First Nation",
+      "years": {
+        "2024-2025": {
+          "totalRevenue": 0,
+          "totalExpenses": 14098980,
+          "annualSurplusDeficit": 20871920,
+          "cashInvestments": 5267017,
+          "revenueBreakdown": [],
+          "expenseBreakdown": [
+            {
+              "category": "Operations",
+              "amount": 4774689
+            },
+            {
+              "category": "Education",
+              "amount": 3727333
+            },
+            {
+              "category": "Social programs",
+              "amount": 2260552
+            },
+            {
+              "category": "Infrastructure / public works",
+              "amount": 2187879
+            },
+            {
+              "category": "Administration",
+              "amount": 1148527
+            }
+          ],
+          "capitalSpending": {
+            "total": 19856475,
+            "categories": []
+          },
+          "capitalAssets": 56948262,
+          "debt": {
+            "total": 4922415,
+            "components": [
+              {
+                "label": "Bank indebtedness",
+                "amount": 0
+              },
+              {
+                "label": "Current portion of long-term debt",
+                "amount": 301360
+              },
+              {
+                "label": "Long-term debt",
+                "amount": 4621055
+              }
+            ]
+          },
+          "sourceRevenueRows": [],
+          "sourceExpenseRows": [
+            {
+              "label": "Band Government Support",
+              "category": "Administration",
+              "amount": 1148527
+            },
+            {
+              "label": "Education",
+              "category": "Education",
+              "amount": 3727333
+            },
+            {
+              "label": "Community Development",
+              "category": "Infrastructure / public works",
+              "amount": 1953488
+            },
+            {
+              "label": "Lands and Trust",
+              "category": "Operations",
+              "amount": 320151
+            },
+            {
+              "label": "Other",
+              "category": "Operations",
+              "amount": 1184163
+            },
+            {
+              "label": "Own Source",
+              "category": "Operations",
+              "amount": 2783254
+            },
+            {
+              "label": "Capital",
+              "category": "Infrastructure / public works",
+              "amount": 234391
+            },
+            {
+              "label": "Ottawa Trust",
+              "category": "Operations",
+              "amount": 487121
+            },
+            {
+              "label": "Child and Family Services",
+              "category": "Social programs",
+              "amount": 2260552
+            }
+          ],
+          "sourceUrl": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=348&FY=2024-2025&DOC=Audited consolidated financial statements&lang=eng",
+          "fiscalYear": "2024-2025",
+          "parser": "capital_text_v1",
+          "parseStatus": "manual_review",
+          "confidence": "low",
+          "warnings": [
+            "Total revenue was not extracted",
+            "Revenue breakdown is incomplete",
+            "Annual surplus or deficit includes other items"
+          ],
+          "publishable": false
+        }
+      }
+    },
+    "360": {
+      "name": "Sturgeon Lake First Nation",
+      "years": {
+        "2024-2025": {
+          "totalRevenue": 218371682,
+          "totalExpenses": 204809797,
+          "annualSurplusDeficit": 13876333,
+          "cashInvestments": 11216546,
+          "revenueBreakdown": [
+            {
+              "category": "Other revenue",
+              "amount": 164528212
+            },
+            {
+              "category": "Government transfers",
+              "amount": 41144214
+            },
+            {
+              "category": "Own-source revenue",
+              "amount": 10819304
+            },
+            {
+              "category": "Trust distributions",
+              "amount": 1879952
+            }
+          ],
+          "expenseBreakdown": [
+            {
+              "category": "Operations",
+              "amount": 166337506
+            },
+            {
+              "category": "Education",
+              "amount": 13285096
+            },
+            {
+              "category": "Health",
+              "amount": 10691381
+            },
+            {
+              "category": "Administration",
+              "amount": 7491182
+            },
+            {
+              "category": "Social programs",
+              "amount": 5013514
+            },
+            {
+              "category": "Housing",
+              "amount": 1229471
+            },
+            {
+              "category": "Infrastructure / public works",
+              "amount": 722532
+            },
+            {
+              "category": "Economic development",
+              "amount": 39115
+            }
+          ],
+          "capitalSpending": {
+            "total": 11506222,
+            "categories": []
+          },
+          "capitalAssets": 73436565,
+          "debt": {
+            "total": 12091316,
+            "components": [
+              {
+                "label": "Long term debt",
+                "amount": 12091316
+              }
+            ]
+          },
+          "sourceRevenueRows": [
+            {
+              "label": "Indigenous Service Canada Revenue",
+              "category": "Government transfers",
+              "amount": 39216939
+            },
+            {
+              "label": "Prince Albert Grand Council",
+              "category": "Other revenue",
+              "amount": 2084555
+            },
+            {
+              "label": "First Nations Trust",
+              "category": "Trust distributions",
+              "amount": 1408857
+            },
+            {
+              "label": "Infrastructure & Communities Canada",
+              "category": "Government transfers",
+              "amount": 1300000
+            },
+            {
+              "label": "John Howard Society Revenue",
+              "category": "Other revenue",
+              "amount": 547500
+            },
+            {
+              "label": "CMHC Subsidy",
+              "category": "Government transfers",
+              "amount": 631980
+            },
+            {
+              "label": "Ottawa Trust",
+              "category": "Trust distributions",
+              "amount": 471095
+            },
+            {
+              "label": "SIIT",
+              "category": "Other revenue",
+              "amount": 260015
+            },
+            {
+              "label": "Northern Lights Community Development",
+              "category": "Other revenue",
+              "amount": 202003
+            },
+            {
+              "label": "Indigenous Languages & Culture Program",
+              "category": "Other revenue",
+              "amount": 1000
+            },
+            {
+              "label": "Other Revenue",
+              "category": "Other revenue",
+              "amount": 157465171
+            },
+            {
+              "label": "Store Sales",
+              "category": "Own-source revenue",
+              "amount": 8030073
+            },
+            {
+              "label": "Administrative Fees",
+              "category": "Own-source revenue",
+              "amount": 2566502
+            },
+            {
+              "label": "Limited Partnership Earnings",
+              "category": "Other revenue",
+              "amount": 554675
+            },
+            {
+              "label": "TLE Revenue Account",
+              "category": "Other revenue",
+              "amount": 255342
+            },
+            {
+              "label": "Rental Income",
+              "category": "Own-source revenue",
+              "amount": 222729
+            },
+            {
+              "label": "Earnings in Government Business Enterprises",
+              "category": "Government transfers",
+              "amount": -4705
+            },
+            {
+              "label": "Recognition of Unexpended Funding",
+              "category": "Other revenue",
+              "amount": 3157951
+            }
+          ],
+          "sourceExpenseRows": [
+            {
+              "label": "Education",
+              "category": "Education",
+              "amount": 13285096
+            },
+            {
+              "label": "Health",
+              "category": "Health",
+              "amount": 10691381
+            },
+            {
+              "label": "Economic Development",
+              "category": "Economic development",
+              "amount": 39115
+            },
+            {
+              "label": "Housing",
+              "category": "Housing",
+              "amount": 1229471
+            },
+            {
+              "label": "Social Services",
+              "category": "Social programs",
+              "amount": 5013514
+            },
+            {
+              "label": "Band Government",
+              "category": "Administration",
+              "amount": 7491182
+            },
+            {
+              "label": "Community Services",
+              "category": "Operations",
+              "amount": 3239190
+            },
+            {
+              "label": "Capital",
+              "category": "Infrastructure / public works",
+              "amount": 722532
+            },
+            {
+              "label": "Other Programs",
+              "category": "Operations",
+              "amount": 160804548
+            },
+            {
+              "label": "Amortization",
+              "category": "Operations",
+              "amount": 2293768
+            }
+          ],
+          "sourceUrl": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=360&FY=2024-2025&DOC=Audited consolidated financial statements&lang=eng",
+          "fiscalYear": "2024-2025",
+          "parser": "capital_text_v1",
+          "parseStatus": "parsed",
+          "confidence": "high",
+          "warnings": [],
+          "publishable": true
+        }
+      }
+    },
+    "387": {
+      "name": "Star Blanket Cree Nation",
+      "years": {
+        "2024-2025": {
+          "totalRevenue": 11293173,
+          "totalExpenses": 10083621,
+          "annualSurplusDeficit": 1609552,
+          "cashInvestments": 896079,
+          "revenueBreakdown": [
+            {
+              "category": "Government transfers",
+              "amount": 8546463
+            },
+            {
+              "category": "Other revenue",
+              "amount": 1910778
+            },
+            {
+              "category": "Own-source revenue",
+              "amount": 499502
+            },
+            {
+              "category": "Trust distributions",
+              "amount": 336430
+            }
+          ],
+          "expenseBreakdown": [
+            {
+              "category": "Social programs",
+              "amount": 2671731
+            },
+            {
+              "category": "Administration",
+              "amount": 2156234
+            },
+            {
+              "category": "Operations",
+              "amount": 1542429
+            },
+            {
+              "category": "Health",
+              "amount": 1064056
+            },
+            {
+              "category": "Housing",
+              "amount": 722295
+            },
+            {
+              "category": "Education",
+              "amount": 673796
+            },
+            {
+              "category": "Economic development",
+              "amount": 523931
+            },
+            {
+              "category": "Infrastructure / public works",
+              "amount": 0
+            }
+          ],
+          "capitalSpending": {
+            "total": 1729863,
+            "categories": []
+          },
+          "capitalAssets": 21387644,
+          "debt": {
+            "total": 3043626,
+            "components": [
+              {
+                "label": "Current portion of long-term debt",
+                "amount": 505256
+              },
+              {
+                "label": "Long-term debt",
+                "amount": 2538370
+              }
+            ]
+          },
+          "sourceRevenueRows": [
+            {
+              "label": "Indigenous Services Canada",
+              "category": "Government transfers",
+              "amount": 7897701
+            },
+            {
+              "label": "Band reparations settlement",
+              "category": "Other revenue",
+              "amount": 200000
+            },
+            {
+              "label": "First Nations Drinking Water Settlement",
+              "category": "Other revenue",
+              "amount": 947786
+            },
+            {
+              "label": "Other revenue",
+              "category": "Other revenue",
+              "amount": 663889
+            },
+            {
+              "label": "Rental income",
+              "category": "Own-source revenue",
+              "amount": 499502
+            },
+            {
+              "label": "FHQ Tribal Council",
+              "category": "Government transfers",
+              "amount": 404216
+            },
+            {
+              "label": "First Nations Trust",
+              "category": "Trust distributions",
+              "amount": 336430
+            },
+            {
+              "label": "Canada Mortgage and Housing Corporation",
+              "category": "Government transfers",
+              "amount": 164624
+            },
+            {
+              "label": "Natural Resources Canada",
+              "category": "Government transfers",
+              "amount": 79922
+            },
+            {
+              "label": "FHQ Casino Holdings",
+              "category": "Other revenue",
+              "amount": 60000
+            },
+            {
+              "label": "University of Saskatchewan",
+              "category": "Other revenue",
+              "amount": 39103
+            },
+            {
+              "label": "File Hills Community Health Services Inc.",
+              "category": "Other revenue",
+              "amount": 0
+            }
+          ],
+          "sourceExpenseRows": [
+            {
+              "label": "Band Government",
+              "category": "Administration",
+              "amount": 2156234
+            },
+            {
+              "label": "Capital",
+              "category": "Infrastructure / public works",
+              "amount": 0
+            },
+            {
+              "label": "Economic Development",
+              "category": "Economic development",
+              "amount": 523931
+            },
+            {
+              "label": "Education",
+              "category": "Education",
+              "amount": 673796
+            },
+            {
+              "label": "Housing",
+              "category": "Housing",
+              "amount": 722295
+            },
+            {
+              "label": "Operations & Maintenance",
+              "category": "Operations",
+              "amount": 1536359
+            },
+            {
+              "label": "Health",
+              "category": "Health",
+              "amount": 1064056
+            },
+            {
+              "label": "Reserves & Trusts",
+              "category": "Operations",
+              "amount": 6070
+            },
+            {
+              "label": "Social Development",
+              "category": "Social programs",
+              "amount": 962974
+            },
+            {
+              "label": "Child & Family Services",
+              "category": "Social programs",
+              "amount": 1708757
+            }
+          ],
+          "sourceUrl": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=387&FY=2024-2025&DOC=Audited consolidated financial statements&lang=eng",
+          "fiscalYear": "2024-2025",
+          "parser": "capital_text_v1",
+          "parseStatus": "manual_review",
+          "confidence": "low",
+          "warnings": [
+            "Expense categories do not reconcile to total expenses",
+            "Annual surplus or deficit includes other items"
+          ],
+          "publishable": false
+        }
+      }
+    },
+    "386": {
+      "name": "Standing Buffalo Dakota Nation",
+      "years": {
+        "2024-2025": {
+          "totalRevenue": 28105062,
+          "totalExpenses": 25903359,
+          "annualSurplusDeficit": 2213903,
+          "cashInvestments": 376452,
+          "revenueBreakdown": [
+            {
+              "category": "Government transfers",
+              "amount": 22407396
+            },
+            {
+              "category": "Other revenue",
+              "amount": 11426350
+            },
+            {
+              "category": "Trust distributions",
+              "amount": 599723
+            },
+            {
+              "category": "Own-source revenue",
+              "amount": -6328407
+            }
+          ],
+          "expenseBreakdown": [
+            {
+              "category": "Operations",
+              "amount": 9577960
+            },
+            {
+              "category": "Education",
+              "amount": 4681559
+            },
+            {
+              "category": "Social programs",
+              "amount": 3371429
+            },
+            {
+              "category": "Administration",
+              "amount": 3265663
+            },
+            {
+              "category": "Infrastructure / public works",
+              "amount": 1779416
+            },
+            {
+              "category": "Health",
+              "amount": 1388905
+            },
+            {
+              "category": "Housing",
+              "amount": 1032196
+            },
+            {
+              "category": "Economic development",
+              "amount": 806231
+            }
+          ],
+          "capitalSpending": null,
+          "capitalAssets": null,
+          "debt": {
+            "total": 9205718,
+            "components": [
+              {
+                "label": "Bank indebtedness",
+                "amount": 157248
+              },
+              {
+                "label": "Current portion of long-term debt",
+                "amount": 339930
+              },
+              {
+                "label": "Long-term debt",
+                "amount": 8708540
+              }
+            ]
+          },
+          "sourceRevenueRows": [
+            {
+              "label": "Indigenous Services Canada",
+              "category": "Government transfers",
+              "amount": 17256841
+            },
+            {
+              "label": "Trust funds held by federal government",
+              "category": "Government transfers",
+              "amount": 15291
+            },
+            {
+              "label": "Canada Mortgage and Housing Corporation",
+              "category": "Government transfers",
+              "amount": 519604
+            },
+            {
+              "label": "First Nations Trust",
+              "category": "Trust distributions",
+              "amount": 599723
+            },
+            {
+              "label": "File Hills Qu'appelle Tribal Council",
+              "category": "Government transfers",
+              "amount": 4463660
+            },
+            {
+              "label": "Living Sky Community Development Corp.",
+              "category": "Other revenue",
+              "amount": 59834
+            },
+            {
+              "label": "QBOW Child & Family Services Inc.",
+              "category": "Government transfers",
+              "amount": 0
+            },
+            {
+              "label": "Government of Canada",
+              "category": "Government transfers",
+              "amount": 0
+            },
+            {
+              "label": "Sports Canada",
+              "category": "Government transfers",
+              "amount": 90000
+            },
+            {
+              "label": "Heritage Canada",
+              "category": "Government transfers",
+              "amount": 62000
+            },
+            {
+              "label": "Future Generation Foundation - grant",
+              "category": "Other revenue",
+              "amount": 109800
+            },
+            {
+              "label": "NIB - grant",
+              "category": "Other revenue",
+              "amount": 72807
+            },
+            {
+              "label": "Land lease revenues",
+              "category": "Own-source revenue",
+              "amount": 142128
+            },
+            {
+              "label": "The Buffalo Crossing Convenience & Gas Bar - sales",
+              "category": "Own-source revenue",
+              "amount": 4951458
+            },
+            {
+              "label": "Standing Buffalo Care Home Inc. - rental revenue",
+              "category": "Own-source revenue",
+              "amount": 396670
+            },
+            {
+              "label": "Drinking water claim settlement",
+              "category": "Other revenue",
+              "amount": 150990
+            },
+            {
+              "label": "Keseechiwan Holdings Limited Partnership",
+              "category": "Other revenue",
+              "amount": 60000
+            },
+            {
+              "label": "Rental revenue",
+              "category": "Own-source revenue",
+              "amount": 233295
+            },
+            {
+              "label": "Interest revenue",
+              "category": "Own-source revenue",
+              "amount": 260784
+            },
+            {
+              "label": "Other revenue",
+              "category": "Other revenue",
+              "amount": 966228
+            },
+            {
+              "label": "Amortization of deferred contributions",
+              "category": "Other revenue",
+              "amount": 0
+            },
+            {
+              "label": "Deferred revenue - prior period",
+              "category": "Other revenue",
+              "amount": 10006691
+            },
+            {
+              "label": "Deferred revenue - current year",
+              "category": "Own-source revenue",
+              "amount": -12312742
+            }
+          ],
+          "sourceExpenseRows": [
+            {
+              "label": "Treaties & Indigenous Government",
+              "category": "Administration",
+              "amount": 20270
+            },
+            {
+              "label": "Community Infrastructure",
+              "category": "Infrastructure / public works",
+              "amount": 1779416
+            },
+            {
+              "label": "Lands & Economic Development",
+              "category": "Economic development",
+              "amount": 806231
+            },
+            {
+              "label": "Education",
+              "category": "Education",
+              "amount": 4681559
+            },
+            {
+              "label": "Indigenous Government Support",
+              "category": "Administration",
+              "amount": 3245393
+            },
+            {
+              "label": "Social Development",
+              "category": "Social programs",
+              "amount": 1575706
+            },
+            {
+              "label": "First Nation Child & Family Services",
+              "category": "Social programs",
+              "amount": 1795723
+            },
+            {
+              "label": "Health Services",
+              "category": "Health",
+              "amount": 1388905
+            },
+            {
+              "label": "CMHC Housing",
+              "category": "Housing",
+              "amount": 1032196
+            },
+            {
+              "label": "Other Band Programs",
+              "category": "Operations",
+              "amount": 8376799
+            },
+            {
+              "label": "Amortization",
+              "category": "Operations",
+              "amount": 1201161
+            }
+          ],
+          "sourceUrl": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=386&FY=2024-2025&DOC=Audited consolidated financial statements&lang=eng",
+          "fiscalYear": "2024-2025",
+          "parser": "capital_text_v1",
+          "parseStatus": "parsed",
+          "confidence": "medium",
+          "warnings": [
+            "Capital spending was not extracted"
+          ],
+          "publishable": true
+        }
+      }
+    },
+    "347": {
+      "name": "Saulteaux First Nation",
+      "years": {
+        "2024-2025": {
+          "totalRevenue": 23614214,
+          "totalExpenses": 25489963,
+          "annualSurplusDeficit": 1879499,
+          "cashInvestments": 5364474,
+          "revenueBreakdown": [
+            {
+              "category": "Government transfers",
+              "amount": 17013436
+            },
+            {
+              "category": "Other revenue",
+              "amount": 4799825
+            },
+            {
+              "category": "Own-source revenue",
+              "amount": 1149288
+            },
+            {
+              "category": "Trust distributions",
+              "amount": 651665
+            }
+          ],
+          "expenseBreakdown": [
+            {
+              "category": "Operations",
+              "amount": 13655161
+            },
+            {
+              "category": "Education",
+              "amount": 5128748
+            },
+            {
+              "category": "Infrastructure / public works",
+              "amount": 4287095
+            },
+            {
+              "category": "Health",
+              "amount": 2418959
+            },
+            {
+              "category": "Economic development",
+              "amount": 0
+            }
+          ],
+          "capitalSpending": {
+            "total": 2976740,
+            "categories": []
+          },
+          "capitalAssets": 38311115,
+          "debt": {
+            "total": 9433756,
+            "components": [
+              {
+                "label": "Current portion of long-term debt",
+                "amount": 476204
+              },
+              {
+                "label": "Term loans due on demand",
+                "amount": 2602704
+              },
+              {
+                "label": "Long-term debt",
+                "amount": 6354848
+              }
+            ]
+          },
+          "sourceRevenueRows": [
+            {
+              "label": "Indigenous Services Canada - Flexible contribution",
+              "category": "Government transfers",
+              "amount": 7401389
+            },
+            {
+              "label": "Indigenous Services Canada - Fixed contribution",
+              "category": "Government transfers",
+              "amount": 6139001
+            },
+            {
+              "label": "Indigenous Services Canada - Block contribution",
+              "category": "Government transfers",
+              "amount": 1795084
+            },
+            {
+              "label": "Indigenous Services Canada - Grant",
+              "category": "Government transfers",
+              "amount": 502002
+            },
+            {
+              "label": "Indigenous Services Canada - Set contribution",
+              "category": "Government transfers",
+              "amount": 215410
+            },
+            {
+              "label": "Indigenous Services Canada - Overpayment",
+              "category": "Government transfers",
+              "amount": -52451
+            },
+            {
+              "label": "Deferred revenue, beginning of year",
+              "category": "Other revenue",
+              "amount": 5507975
+            },
+            {
+              "label": "Deferred revenue, end of year",
+              "category": "Other revenue",
+              "amount": -6072996
+            },
+            {
+              "label": "Canada Mortgage and Housing Corporation - Subsidy",
+              "category": "Government transfers",
+              "amount": 757240
+            },
+            {
+              "label": "Other revenue",
+              "category": "Other revenue",
+              "amount": 2734716
+            },
+            {
+              "label": "Forgiveness of legal claims payables",
+              "category": "Other revenue",
+              "amount": 960217
+            },
+            {
+              "label": "Lease income",
+              "category": "Own-source revenue",
+              "amount": 867240
+            },
+            {
+              "label": "Federation of Sovereign Indigenous Nations",
+              "category": "Other revenue",
+              "amount": 680765
+            },
+            {
+              "label": "First Nations Trust",
+              "category": "Trust distributions",
+              "amount": 651665
+            },
+            {
+              "label": "Battlefords Agency Tribal Chiefs",
+              "category": "Other revenue",
+              "amount": 568000
+            },
+            {
+              "label": "Saskatchewan Indian Training Assessment Group",
+              "category": "Other revenue",
+              "amount": 354262
+            },
+            {
+              "label": "Interest income",
+              "category": "Own-source revenue",
+              "amount": 188234
+            },
+            {
+              "label": "CMHC - National Housing Co-Investment Fund",
+              "category": "Government transfers",
+              "amount": 137682
+            },
+            {
+              "label": "Government of Canada",
+              "category": "Government transfers",
+              "amount": 118079
+            },
+            {
+              "label": "Rental income",
+              "category": "Own-source revenue",
+              "amount": 93814
+            },
+            {
+              "label": "Fair value adjustment - bison",
+              "category": "Other revenue",
+              "amount": 66886
+            },
+            {
+              "label": "Insurance proceeds",
+              "category": "Other revenue",
+              "amount": 0
+            }
+          ],
+          "sourceExpenseRows": [
+            {
+              "label": "Band Support",
+              "category": "Operations",
+              "amount": 1482780
+            },
+            {
+              "label": "Capital",
+              "category": "Infrastructure / public works",
+              "amount": 2271654
+            },
+            {
+              "label": "Community Infrastructure",
+              "category": "Infrastructure / public works",
+              "amount": 2015441
+            },
+            {
+              "label": "Economic Development",
+              "category": "Economic development",
+              "amount": 0
+            },
+            {
+              "label": "Education",
+              "category": "Education",
+              "amount": 5128748
+            },
+            {
+              "label": "Health",
+              "category": "Health",
+              "amount": 2418959
+            },
+            {
+              "label": "Other Project Revenue",
+              "category": "Operations",
+              "amount": 11380560
+            },
+            {
+              "label": "Operating surplus before other items",
+              "category": "Operations",
+              "amount": -1087678
+            },
+            {
+              "label": "page)",
+              "category": "Operations",
+              "amount": 1879499
+            },
+            {
+              "label": "Treaty 6 Benefits Specific Claim Settlement",
+              "category": "Operations",
+              "amount": 0
+            },
+            {
+              "label": "Contribution to Saulteaux First Nation Sovereign Wealth Fund",
+              "category": "Operations",
+              "amount": 0
+            },
+            {
+              "label": "Fund",
+              "category": "Operations",
+              "amount": 0
+            },
+            {
+              "label": "Per capita distribution",
+              "category": "Operations",
+              "amount": 0
+            },
+            {
+              "label": "Deferred per capita distribution",
+              "category": "Operations",
+              "amount": 0
+            }
+          ],
+          "sourceUrl": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=347&FY=2024-2025&DOC=Audited consolidated financial statements&lang=eng",
+          "fiscalYear": "2024-2025",
+          "parser": "capital_text_v1",
+          "parseStatus": "parsed",
+          "confidence": "medium",
+          "warnings": [
+            "Annual surplus or deficit includes other items"
+          ],
+          "publishable": true
+        }
+      }
+    },
+    "346": {
+      "name": "Red Pheasant Cree Nation",
+      "years": {
+        "2024-2025": {
+          "totalRevenue": 73324294,
+          "totalExpenses": 0,
+          "annualSurplusDeficit": 8779209,
+          "cashInvestments": 4504828,
+          "revenueBreakdown": [
+            {
+              "category": "Other revenue",
+              "amount": 47162229
+            },
+            {
+              "category": "Government transfers",
+              "amount": 24966798
+            },
+            {
+              "category": "Trust distributions",
+              "amount": 1195267
+            }
+          ],
+          "expenseBreakdown": [],
+          "capitalSpending": {
+            "total": 8367927,
+            "categories": []
+          },
+          "capitalAssets": 38048104,
+          "debt": {
+            "total": 18922702,
+            "components": [
+              {
+                "label": "Long term debt",
+                "amount": 18922702
+              }
+            ]
+          },
+          "sourceRevenueRows": [
+            {
+              "label": "Indigenous Services Canada",
+              "category": "Government transfers",
+              "amount": 24652683
+            },
+            {
+              "label": "Canada Mortgage and Housing Corporation",
+              "category": "Government transfers",
+              "amount": 314115
+            },
+            {
+              "label": "First Nation Gaming Trust",
+              "category": "Trust distributions",
+              "amount": 1195267
+            },
+            {
+              "label": "Saskatchewan Indian Institute of Technologies",
+              "category": "Other revenue",
+              "amount": 352093
+            },
+            {
+              "label": "Other revenue",
+              "category": "Other revenue",
+              "amount": 10185915
+            },
+            {
+              "label": "Recovered - ISC",
+              "category": "Other revenue",
+              "amount": -75852
+            },
+            {
+              "label": "Administration",
+              "category": "Other revenue",
+              "amount": 1304273
+            },
+            {
+              "label": "Education",
+              "category": "Other revenue",
+              "amount": 5528371
+            },
+            {
+              "label": "Reserves",
+              "category": "Other revenue",
+              "amount": 266250
+            },
+            {
+              "label": "Community wellness",
+              "category": "Other revenue",
+              "amount": 2715879
+            },
+            {
+              "label": "Infrastructure",
+              "category": "Other revenue",
+              "amount": 1950199
+            },
+            {
+              "label": "First Nation programs",
+              "category": "Other revenue",
+              "amount": 7349142
+            },
+            {
+              "label": "Capital projects",
+              "category": "Other revenue",
+              "amount": 2298223
+            },
+            {
+              "label": "Community and economic development",
+              "category": "Other revenue",
+              "amount": 3299980
+            },
+            {
+              "label": "Housing",
+              "category": "Other revenue",
+              "amount": 383900
+            },
+            {
+              "label": "Social services",
+              "category": "Other revenue",
+              "amount": 2824647
+            },
+            {
+              "label": "ANNUAL SURPLUS",
+              "category": "Other revenue",
+              "amount": 8779209
+            }
+          ],
+          "sourceExpenseRows": [],
+          "sourceUrl": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=346&FY=2024-2025&DOC=Audited consolidated financial statements&lang=eng",
+          "fiscalYear": "2024-2025",
+          "parser": "capital_text_v1",
+          "parseStatus": "manual_review",
+          "confidence": "low",
+          "warnings": [
+            "Total expenses were not extracted",
+            "Expense breakdown is incomplete",
+            "Annual surplus or deficit includes other items"
+          ],
+          "publishable": false
+        }
+      }
+    },
+    "345": {
+      "name": "Poundmaker Cree Nation",
+      "years": {
+        "2024-2025": {
+          "totalRevenue": 138192523,
+          "totalExpenses": 138644508,
+          "annualSurplusDeficit": -451985,
+          "cashInvestments": null,
+          "revenueBreakdown": [
+            {
+              "category": "Government transfers",
+              "amount": 137109086
+            },
+            {
+              "category": "Other revenue",
+              "amount": 12668753
+            },
+            {
+              "category": "Trust distributions",
+              "amount": 3630999
+            },
+            {
+              "category": "Own-source revenue",
+              "amount": -15216315
+            }
+          ],
+          "expenseBreakdown": [
+            {
+              "category": "Administration",
+              "amount": 116014414
+            },
+            {
+              "category": "Education",
+              "amount": 8400138
+            },
+            {
+              "category": "Operations",
+              "amount": 5839133
+            },
+            {
+              "category": "Social programs",
+              "amount": 3445330
+            },
+            {
+              "category": "Infrastructure / public works",
+              "amount": 2439513
+            },
+            {
+              "category": "Health",
+              "amount": 1450491
+            },
+            {
+              "category": "Economic development",
+              "amount": 712439
+            },
+            {
+              "category": "Housing",
+              "amount": 343050
+            }
+          ],
+          "capitalSpending": null,
+          "capitalAssets": null,
+          "debt": {
+            "total": 12857247,
+            "components": [
+              {
+                "label": "Bank indebtedness",
+                "amount": 18858
+              },
+              {
+                "label": "Current portion of long-term debt",
+                "amount": 6053206
+              },
+              {
+                "label": "Long-term debt",
+                "amount": 6785183
+              }
+            ]
+          },
+          "sourceRevenueRows": [
+            {
+              "label": "Indigenous Services Canada",
+              "category": "Government transfers",
+              "amount": 19953459
+            },
+            {
+              "label": "Trust funds held by federal government",
+              "category": "Government transfers",
+              "amount": 106936
+            },
+            {
+              "label": "Canada Mortgage & Housing Corporation",
+              "category": "Government transfers",
+              "amount": 268927
+            },
+            {
+              "label": "First Nations Trust",
+              "category": "Trust distributions",
+              "amount": 872867
+            },
+            {
+              "label": "Battle River Treaty 6 Health Centre Inc.",
+              "category": "Other revenue",
+              "amount": 16500
+            },
+            {
+              "label": "Government of Canada - GST rebate",
+              "category": "Government transfers",
+              "amount": 63603
+            },
+            {
+              "label": "Government of Canada - Treaty 6 Ag. Benefits Claim",
+              "category": "Government transfers",
+              "amount": 116266126
+            },
+            {
+              "label": "Government of Canada - drinking water settlement",
+              "category": "Government transfers",
+              "amount": 450035
+            },
+            {
+              "label": "Province of Saskatchewan",
+              "category": "Government transfers",
+              "amount": 0
+            },
+            {
+              "label": "Poundmaker Legacy Trust",
+              "category": "Trust distributions",
+              "amount": 2629148
+            },
+            {
+              "label": "Annual income - Poundmaker Legacy Trust",
+              "category": "Trust distributions",
+              "amount": 128984
+            },
+            {
+              "label": "Equity losses - gov't business enterprise",
+              "category": "Other revenue",
+              "amount": -278784
+            },
+            {
+              "label": "Assembly of First Nations",
+              "category": "Other revenue",
+              "amount": 90000
+            },
+            {
+              "label": "Grants & proposal funding",
+              "category": "Other revenue",
+              "amount": 65971
+            },
+            {
+              "label": "Cattle sales",
+              "category": "Own-source revenue",
+              "amount": 129008
+            },
+            {
+              "label": "Tire shop sales",
+              "category": "Own-source revenue",
+              "amount": 93752
+            },
+            {
+              "label": "Meat shop sales",
+              "category": "Own-source revenue",
+              "amount": 0
+            },
+            {
+              "label": "Lease revenue",
+              "category": "Own-source revenue",
+              "amount": 357153
+            },
+            {
+              "label": "Rental revenue",
+              "category": "Own-source revenue",
+              "amount": 187997
+            },
+            {
+              "label": "Other revenue",
+              "category": "Other revenue",
+              "amount": 810807
+            },
+            {
+              "label": "Deferred revenue - prior year",
+              "category": "Other revenue",
+              "amount": 11964259
+            },
+            {
+              "label": "Deferred revenue - current year",
+              "category": "Own-source revenue",
+              "amount": -15984225
+            }
+          ],
+          "sourceExpenseRows": [
+            {
+              "label": "Treaties & Indigenous Government",
+              "category": "Administration",
+              "amount": 114692935
+            },
+            {
+              "label": "Community Infrastructure",
+              "category": "Infrastructure / public works",
+              "amount": 2439513
+            },
+            {
+              "label": "Lands & Economic Development",
+              "category": "Economic development",
+              "amount": 712439
+            },
+            {
+              "label": "Education",
+              "category": "Education",
+              "amount": 8400138
+            },
+            {
+              "label": "Indigenous Government Support",
+              "category": "Administration",
+              "amount": 1321479
+            },
+            {
+              "label": "Social Development",
+              "category": "Social programs",
+              "amount": 2219825
+            },
+            {
+              "label": "First Nation Child & Family Services",
+              "category": "Social programs",
+              "amount": 1225505
+            },
+            {
+              "label": "Health Services",
+              "category": "Health",
+              "amount": 1450491
+            },
+            {
+              "label": "CMHC Housing",
+              "category": "Housing",
+              "amount": 343050
+            },
+            {
+              "label": "Other Band Programs",
+              "category": "Operations",
+              "amount": 4018795
+            },
+            {
+              "label": "Amortization",
+              "category": "Operations",
+              "amount": 1820338
+            }
+          ],
+          "sourceUrl": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=345&FY=2024-2025&DOC=Audited consolidated financial statements&lang=eng",
+          "fiscalYear": "2024-2025",
+          "parser": "capital_text_v1",
+          "parseStatus": "parsed",
+          "confidence": "medium",
+          "warnings": [
+            "Capital spending was not extracted"
+          ],
+          "publishable": true
+        }
+      }
+    },
+    "385": {
+      "name": "Piapot First Nation",
+      "years": {
+        "2024-2025": {
+          "totalRevenue": 189699500,
+          "totalExpenses": 186001804,
+          "annualSurplusDeficit": 3697696,
+          "cashInvestments": 461603,
+          "revenueBreakdown": [
+            {
+              "category": "Other revenue",
+              "amount": 159717996
+            },
+            {
+              "category": "Government transfers",
+              "amount": 22912099
+            },
+            {
+              "category": "Own-source revenue",
+              "amount": 5892497
+            },
+            {
+              "category": "Trust distributions",
+              "amount": 1176908
+            }
+          ],
+          "expenseBreakdown": [
+            {
+              "category": "Administration",
+              "amount": 160226339
+            },
+            {
+              "category": "Education",
+              "amount": 7669106
+            },
+            {
+              "category": "Operations",
+              "amount": 6985084
+            },
+            {
+              "category": "Social programs",
+              "amount": 5601924
+            },
+            {
+              "category": "Infrastructure / public works",
+              "amount": 2794019
+            },
+            {
+              "category": "Health",
+              "amount": 1674613
+            },
+            {
+              "category": "Economic development",
+              "amount": 1050719
+            }
+          ],
+          "capitalSpending": {
+            "total": 3518250,
+            "categories": []
+          },
+          "capitalAssets": 76971441,
+          "debt": {
+            "total": 18116860,
+            "components": [
+              {
+                "label": "Bank indebtedness",
+                "amount": 491701
+              },
+              {
+                "label": "Long term debt",
+                "amount": 17625159
+              }
+            ]
+          },
+          "sourceRevenueRows": [
+            {
+              "label": "Indigenous Services Canada",
+              "category": "Government transfers",
+              "amount": 20519629
+            },
+            {
+              "label": "File Hills Qu'Appelle Tribal Council",
+              "category": "Government transfers",
+              "amount": 1532236
+            },
+            {
+              "label": "First Nations Trust",
+              "category": "Trust distributions",
+              "amount": 1176908
+            },
+            {
+              "label": "Canada Mortgage and Housing",
+              "category": "Government transfers",
+              "amount": 860234
+            },
+            {
+              "label": "Living Sky Community Development Corp income",
+              "category": "Other revenue",
+              "amount": 109484
+            },
+            {
+              "label": "Saskatchewan Lotteries",
+              "category": "Other revenue",
+              "amount": 8563
+            },
+            {
+              "label": "Settlement Compensation",
+              "category": "Other revenue",
+              "amount": 156971475
+            },
+            {
+              "label": "Rental income",
+              "category": "Own-source revenue",
+              "amount": 2457102
+            },
+            {
+              "label": "Admin fees",
+              "category": "Own-source revenue",
+              "amount": 1581670
+            },
+            {
+              "label": "Investment income",
+              "category": "Own-source revenue",
+              "amount": 1540876
+            },
+            {
+              "label": "Other revenue",
+              "category": "Other revenue",
+              "amount": 1080272
+            },
+            {
+              "label": "Interest income",
+              "category": "Own-source revenue",
+              "amount": 312849
+            },
+            {
+              "label": "Gains on disposal of capital assets",
+              "category": "Other revenue",
+              "amount": 75200
+            },
+            {
+              "label": "Recognition of unexpended funding",
+              "category": "Other revenue",
+              "amount": 1473002
+            }
+          ],
+          "sourceExpenseRows": [
+            {
+              "label": "Community Infrastructure",
+              "category": "Infrastructure / public works",
+              "amount": 2794019
+            },
+            {
+              "label": "Economic Development",
+              "category": "Economic development",
+              "amount": 658594
+            },
+            {
+              "label": "Education",
+              "category": "Education",
+              "amount": 7669106
+            },
+            {
+              "label": "Government Support",
+              "category": "Administration",
+              "amount": 160226339
+            },
+            {
+              "label": "Land Management",
+              "category": "Economic development",
+              "amount": 392125
+            },
+            {
+              "label": "Social Development",
+              "category": "Social programs",
+              "amount": 2473325
+            },
+            {
+              "label": "Child Family Services",
+              "category": "Social programs",
+              "amount": 3128599
+            },
+            {
+              "label": "Health",
+              "category": "Health",
+              "amount": 1674613
+            },
+            {
+              "label": "Band Programs",
+              "category": "Operations",
+              "amount": 5549585
+            },
+            {
+              "label": "Amortization",
+              "category": "Operations",
+              "amount": 1435499
+            }
+          ],
+          "sourceUrl": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=385&FY=2024-2025&DOC=Audited consolidated financial statements&lang=eng",
+          "fiscalYear": "2024-2025",
+          "parser": "capital_text_v1",
+          "parseStatus": "parsed",
+          "confidence": "high",
+          "warnings": [],
+          "publishable": true
+        }
+      }
+    },
+    "409": {
+      "name": "Pheasant Rump Nakota Nation",
+      "years": {
+        "2024-2025": {
+          "totalRevenue": 19100565,
+          "totalExpenses": 29286003,
+          "annualSurplusDeficit": 8789350,
+          "cashInvestments": 1163848,
+          "revenueBreakdown": [
+            {
+              "category": "Government transfers",
+              "amount": 12174569
+            },
+            {
+              "category": "Other revenue",
+              "amount": 5245467
+            },
+            {
+              "category": "Own-source revenue",
+              "amount": 1464999
+            },
+            {
+              "category": "Trust distributions",
+              "amount": 215530
+            }
+          ],
+          "expenseBreakdown": [
+            {
+              "category": "Operations",
+              "amount": 21784736
+            },
+            {
+              "category": "Health",
+              "amount": 1705013
+            },
+            {
+              "category": "Infrastructure / public works",
+              "amount": 1625042
+            },
+            {
+              "category": "Economic development",
+              "amount": 1369643
+            },
+            {
+              "category": "Education",
+              "amount": 1211939
+            },
+            {
+              "category": "Social programs",
+              "amount": 904050
+            },
+            {
+              "category": "Administration",
+              "amount": 685580
+            },
+            {
+              "category": "Housing",
+              "amount": 0
+            }
+          ],
+          "capitalSpending": {
+            "total": 9799376,
+            "categories": []
+          },
+          "capitalAssets": 30545280,
+          "debt": {
+            "total": 3616048,
+            "components": [
+              {
+                "label": "Current portion of long-term debt",
+                "amount": 1228020
+              },
+              {
+                "label": "Long-term debt",
+                "amount": 2388028
+              }
+            ]
+          },
+          "sourceRevenueRows": [
+            {
+              "label": "Indigenous Services Canada",
+              "category": "Government transfers",
+              "amount": 9614765
+            },
+            {
+              "label": "Canada Mortgage and Housing Corporation",
+              "category": "Government transfers",
+              "amount": 99546
+            },
+            {
+              "label": "Green and Inclusive Community Buildings Program",
+              "category": "Other revenue",
+              "amount": 2412371
+            },
+            {
+              "label": "Investing in Canada Infrastructure Program",
+              "category": "Government transfers",
+              "amount": 2460258
+            },
+            {
+              "label": "Grants",
+              "category": "Other revenue",
+              "amount": 1441990
+            },
+            {
+              "label": "Retail sales",
+              "category": "Own-source revenue",
+              "amount": 1306563
+            },
+            {
+              "label": "Other",
+              "category": "Other revenue",
+              "amount": 476931
+            },
+            {
+              "label": "FSIN",
+              "category": "Other revenue",
+              "amount": 309661
+            },
+            {
+              "label": "First Nations Trust",
+              "category": "Trust distributions",
+              "amount": 215530
+            },
+            {
+              "label": "Painted Hand CDC",
+              "category": "Other revenue",
+              "amount": 214294
+            },
+            {
+              "label": "SIIT",
+              "category": "Other revenue",
+              "amount": 160502
+            },
+            {
+              "label": "Oil and Gas",
+              "category": "Other revenue",
+              "amount": 102462
+            },
+            {
+              "label": "Rental income",
+              "category": "Own-source revenue",
+              "amount": 94757
+            },
+            {
+              "label": "Donation",
+              "category": "Other revenue",
+              "amount": 89198
+            },
+            {
+              "label": "Interest income",
+              "category": "Own-source revenue",
+              "amount": 63679
+            },
+            {
+              "label": "Taxes",
+              "category": "Other revenue",
+              "amount": 38058
+            },
+            {
+              "label": "Rapid Housing Initiative",
+              "category": "Other revenue",
+              "amount": 0
+            }
+          ],
+          "sourceExpenseRows": [
+            {
+              "label": "Community Development",
+              "category": "Infrastructure / public works",
+              "amount": 1625042
+            },
+            {
+              "label": "Economic Development",
+              "category": "Economic development",
+              "amount": 1369643
+            },
+            {
+              "label": "Education",
+              "category": "Education",
+              "amount": 1211939
+            },
+            {
+              "label": "Government Support",
+              "category": "Administration",
+              "amount": 680448
+            },
+            {
+              "label": "Social Development",
+              "category": "Social programs",
+              "amount": 904050
+            },
+            {
+              "label": "Registration and Membership",
+              "category": "Administration",
+              "amount": 5132
+            },
+            {
+              "label": "Health",
+              "category": "Health",
+              "amount": 1705013
+            },
+            {
+              "label": "CMHC Housing",
+              "category": "Housing",
+              "amount": 0
+            },
+            {
+              "label": "Other Band Programs",
+              "category": "Operations",
+              "amount": 2684171
+            },
+            {
+              "label": "Total expenditures",
+              "category": "Operations",
+              "amount": 10311215
+            },
+            {
+              "label": "Operating surplus before other income",
+              "category": "Operations",
+              "amount": 8789350
+            },
+            {
+              "label": "Gain on disposal of tangible capital assets",
+              "category": "Infrastructure / public works",
+              "amount": 0
+            }
+          ],
+          "sourceUrl": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=409&FY=2024-2025&DOC=Audited consolidated financial statements&lang=eng",
+          "fiscalYear": "2024-2025",
+          "parser": "capital_text_v1",
+          "parseStatus": "parsed",
+          "confidence": "medium",
+          "warnings": [
+            "Annual surplus or deficit includes other items"
+          ],
+          "publishable": true
+        }
+      }
+    },
+    "371": {
+      "name": "Muskoday First Nation",
+      "years": {
+        "2024-2025": {
+          "totalRevenue": 29361924,
+          "totalExpenses": 25376599,
+          "annualSurplusDeficit": 2406429,
+          "cashInvestments": 6860173,
+          "revenueBreakdown": [
+            {
+              "category": "Government transfers",
+              "amount": 23275477
+            },
+            {
+              "category": "Own-source revenue",
+              "amount": 2736265
+            },
+            {
+              "category": "Other revenue",
+              "amount": 2360893
+            },
+            {
+              "category": "Trust distributions",
+              "amount": 989289
+            }
+          ],
+          "expenseBreakdown": [
+            {
+              "category": "Health",
+              "amount": 6107483
+            },
+            {
+              "category": "Education",
+              "amount": 5255278
+            },
+            {
+              "category": "Infrastructure / public works",
+              "amount": 4570216
+            },
+            {
+              "category": "Administration",
+              "amount": 3580440
+            },
+            {
+              "category": "Operations",
+              "amount": 3446147
+            },
+            {
+              "category": "Social programs",
+              "amount": 2417035
+            },
+            {
+              "category": "Economic development",
+              "amount": 0
+            }
+          ],
+          "capitalSpending": {
+            "total": 7609930,
+            "categories": []
+          },
+          "capitalAssets": 49268824,
+          "debt": {
+            "total": 10482416,
+            "components": [
+              {
+                "label": "Current portion of long-term debt",
+                "amount": 1021350
+              },
+              {
+                "label": "Long-term debt",
+                "amount": 9461066
+              }
+            ]
+          },
+          "sourceRevenueRows": [
+            {
+              "label": "Indigenous Services Canada",
+              "category": "Government transfers",
+              "amount": 19274475
+            },
+            {
+              "label": "Saskatoon Tribal Council",
+              "category": "Government transfers",
+              "amount": 3820733
+            },
+            {
+              "label": "Canada Mortgage and Housing Corporation",
+              "category": "Government transfers",
+              "amount": 180269
+            },
+            {
+              "label": "Other revenue",
+              "category": "Other revenue",
+              "amount": 1624301
+            },
+            {
+              "label": "Lease income",
+              "category": "Own-source revenue",
+              "amount": 1117213
+            },
+            {
+              "label": "First Nations Trust",
+              "category": "Trust distributions",
+              "amount": 989289
+            },
+            {
+              "label": "Retail sales",
+              "category": "Own-source revenue",
+              "amount": 763586
+            },
+            {
+              "label": "Dakota Dunes Community Development Corporation",
+              "category": "Other revenue",
+              "amount": 736592
+            },
+            {
+              "label": "Interest income",
+              "category": "Own-source revenue",
+              "amount": 654996
+            },
+            {
+              "label": "Portfolio investment income",
+              "category": "Own-source revenue",
+              "amount": 100462
+            },
+            {
+              "label": "Rental income",
+              "category": "Own-source revenue",
+              "amount": 100008
+            }
+          ],
+          "sourceExpenseRows": [
+            {
+              "label": "Band Administration & Governance",
+              "category": "Administration",
+              "amount": 3580440
+            },
+            {
+              "label": "Education",
+              "category": "Education",
+              "amount": 5255278
+            },
+            {
+              "label": "Community Development",
+              "category": "Infrastructure / public works",
+              "amount": 4570216
+            },
+            {
+              "label": "Economic Development",
+              "category": "Economic development",
+              "amount": 0
+            },
+            {
+              "label": "Social Development",
+              "category": "Social programs",
+              "amount": 2417035
+            },
+            {
+              "label": "Health",
+              "category": "Health",
+              "amount": 6107483
+            },
+            {
+              "label": "Justice",
+              "category": "Operations",
+              "amount": 768383
+            },
+            {
+              "label": "Band - Owned",
+              "category": "Operations",
+              "amount": 2677764
+            }
+          ],
+          "sourceUrl": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=371&FY=2024-2025&DOC=Audited consolidated financial statements&lang=eng",
+          "fiscalYear": "2024-2025",
+          "parser": "capital_text_v1",
+          "parseStatus": "parsed",
+          "confidence": "medium",
+          "warnings": [
+            "Annual surplus or deficit includes other items"
+          ],
+          "publishable": true
+        }
+      }
+    }
+  }
 }

@@ -25,6 +25,29 @@ The public website focuses on Saskatchewan FNFTA Chief and Council remuneration 
 - `tools/merge_previous_data.py` - preserves already parsed rows and pending statuses during incremental runs
 - `tools/sanitize_data.py` - removes obvious non-person rows and repairs broken totals
 - `tools/audit_data.py` - checks coverage and pending parser work
+- `tools/capital_parser.py` - extracts validated audited-statement summaries into `capital-data.json`
+
+## Community Capital data
+
+Community Capital summaries are stored separately from remuneration data in
+`capital-data.json`. The parser targets the statement of operations, statement
+of financial position, and change in net assets/debt to extract:
+
+- revenue and expense totals with category breakdowns
+- annual surplus or deficit
+- cash and investments
+- tangible capital assets and annual capital purchases
+- reported debt
+
+Run a bounded local batch with:
+
+```bash
+python tools/capital_parser.py --year 2024-2025 --limit 10
+```
+
+The `Backfill Community Capital data` GitHub Actions workflow supports larger
+batches and an optional OpenAI fallback. Summaries that fail reconciliation
+remain marked for manual review and are not displayed as parsed data.
 
 ## Workflows
 

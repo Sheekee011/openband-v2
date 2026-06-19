@@ -1,0 +1,103 @@
+name: Backfill Community Capital data
+
+on:
+  workflow_dispatch:
+    inputs:
+      years:
+        description: "Comma-separated fiscal years"
+        required: true
+        default: "2024-2025,2023-2024,2022-2023"
+      max_filings:
+        description: "Maximum audited statements to parse"
+        required: true
+        default: "30"
+      use_openai:
+        description: "Use OpenAI fallback for statements needing manual review"
+        required: true
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: openband-v2-capital-parser
+  cancel-in-progress: true
+
+jobs:
+  capital-backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Preserve current capital data
+        run: cp capital-data.json capital-data.before.json
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run parser tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Parse audited financial statements
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: gpt-4.1
+          CAPITAL_YEARS: ${{ inputs.years }}
+          CAPITAL_LIMIT: ${{ inputs.max_filings }}
+          USE_OPENAI: ${{ inputs.use_openai }}
+        run: |
+          set -euo pipefail
+          ARGS=(--limit "$CAPITAL_LIMIT")
+          IFS=',' read -ra YEARS <<< "$CAPITAL_YEARS"
+          for YEAR in "${YEARS[@]}"; do
+            ARGS+=(--year "$YEAR")
+          done
+          if [ "$USE_OPENAI" = "true" ]; then
+            ARGS+=(--use-openai)
+          fi
+          python tools/capital_parser.py "${ARGS[@]}"
+
+      - name: Validate capital data did not regress
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          before = json.loads(Path("capital-data.before.json").read_text(encoding="utf-8"))
+          after = json.loads(Path("capital-data.json").read_text(encoding="utf-8"))
+
+          def parsed_count(data):
+              return sum(
+                  1
+                  for band in data.get("bands", {}).values()
+                  for summary in band.get("years", {}).values()
+                  if summary.get("parseStatus") == "parsed"
+                  and summary.get("publishable") is not False
+              )
+
+          before_count = parsed_count(before)
+          after_count = parsed_count(after)
+          print(f"parsed capital summaries: {before_count} -> {after_count}")
+          if after_count < before_count:
+              raise SystemExit("Refusing to commit: parsed capital count regressed")
+          if after.get("schemaVersion") != 1:
+              raise SystemExit("Refusing to commit: unsupported capital schema")
+          PY
+
+      - name: Remove validation snapshot
+        run: rm -f capital-data.before.json
+
+      - name: Commit Community Capital data
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Backfill Community Capital data"
+          file_pattern: capital-data.json
