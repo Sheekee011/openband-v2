@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "generated": null,
+  "description": "Parsed audited financial statement summaries for the OpenBand Community Capital Tracker.",
+  "recordShape": {
+    "bands": {
+      "<bandId>": {
+        "years": {
+          "<fiscalYear>": {
+            "totalRevenue": "number or null",
+            "totalExpenses": "number or null",
+            "annualSurplusDeficit": "number or null",
+            "cashInvestments": "number or null",
+            "revenueBreakdown": [
+              {
+                "category": "string",
+                "amount": "number"
+              }
+            ],
+            "expenseBreakdown": [
+              {
+                "category": "string",
+                "amount": "number"
+              }
+            ],
+            "capitalSpending": {
+              "total": "number or null",
+              "categories": []
+            },
+            "debt": {
+              "total": "number or null",
+              "financingCosts": "number or null"
+            },
+            "sourceUrl": "string",
+            "parseStatus": "parsed, pending_review, or manual_review",
+            "confidence": "high, medium, or low",
+            "warnings": []
+          }
+        }
+      }
+    }
+  },
+  "bands": {}
+}
