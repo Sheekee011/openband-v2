@@ -71,6 +71,7 @@ jobs:
           python - <<'PY'
           import json
           from pathlib import Path
+          from tools.capital_parser import validate_summary
 
           before = json.loads(Path("capital-data.before.json").read_text(encoding="utf-8"))
           after = json.loads(Path("capital-data.json").read_text(encoding="utf-8"))
@@ -87,11 +88,32 @@ jobs:
           before_count = parsed_count(before)
           after_count = parsed_count(after)
           print(f"parsed capital summaries: {before_count} -> {after_count}")
-          if after_count < before_count:
-              raise SystemExit("Refusing to commit: parsed capital count regressed")
           if after.get("schemaVersion") != 1:
               raise SystemExit("Refusing to commit: unsupported capital schema")
+
+          invalid = []
+          for band_id, band in after.get("bands", {}).items():
+              for fiscal_year, summary in band.get("years", {}).items():
+                  if (
+                      summary.get("parseStatus") != "parsed"
+                      or summary.get("publishable") is False
+                  ):
+                      continue
+                  validation = validate_summary(summary)
+                  if validation.get("parseStatus") != "parsed":
+                      invalid.append(
+                          f"{band_id} {band.get('name')} {fiscal_year}: "
+                          + "; ".join(validation.get("warnings") or [])
+                      )
+          if invalid:
+              raise SystemExit(
+                  "Refusing to commit invalid publishable capital summaries:\n"
+                  + "\n".join(invalid)
+              )
           PY
+
+      - name: Run parser tests against generated capital data
+        run: python -m unittest discover -s tests -v
 
       - name: Remove validation snapshot
         run: rm -f capital-data.before.json

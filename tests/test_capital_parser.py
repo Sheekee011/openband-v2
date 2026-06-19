@@ -1,4 +1,6 @@
 import unittest
+import json
+from pathlib import Path
 
 from tools import capital_parser
 
@@ -127,6 +129,148 @@ class CapitalParserTests(unittest.TestCase):
             capital_parser.broad_expense_category("Land Management"),
             "Economic development",
         )
+
+    def test_pheasant_rump_2024_2025_regression(self):
+        pages = [
+            """
+            Pheasant Rump Nakota Nation
+            Consolidated Statement of Operations
+            For the year ended March 31, 2025
+            Schedules 2025 2025 2024
+            Budget Actual Actual
+            Revenue
+            Indigenous Services Canada 9,000,000 12,174,569 11,000,000
+            Other revenue 4,096,432 6,925,996 5,000,000
+            Total revenue 13,096,432 19,100,565 16,000,000
+            Expenditures
+            Community Development 3 587,752 1,625,042 2,250,342
+            Economic Development 4 122,621 1,369,643 1,599,370
+            Education 5 1,164,532 1,211,939 1,040,708
+            Government Support 6 536,136 680,448 1,045,123
+            Social Development 7 556,678 904,050 812,432
+            Registration and Membership 8 5,540 5,132 5,540
+            Health 9 1,148,973 1,705,013 1,274,334
+            CMHC Housing 10 - 125,777 111,127
+            Other Band Programs 11 2,440,359 2,684,171 1,617,653
+            Total expenditures 6,562,591 10,311,215 9,756,629
+            Operating surplus before other income 2,533,841 8,789,350 11,040,545
+            Gain on disposal of tangible capital assets - - 20,843
+            """,
+            """
+            Pheasant Rump Nakota Nation
+            Consolidated Statement of Financial Position
+            As at March 31, 2025
+            2025 2024
+            Cash 1,163,848 900,000
+            Current portion of long-term debt 1,228,020 1,100,000
+            Long-term debt 2,388,028 2,500,000
+            Tangible capital assets 30,545,280 21,000,000
+            """,
+            """
+            Pheasant Rump Nakota Nation
+            Consolidated Statement of Changes in Net Financial Assets
+            For the year ended March 31, 2025
+            2025 2025 2024
+            Budget Actual Actual
+            Purchases of tangible capital assets - (9,799,376) (2,000,000)
+            """,
+        ]
+
+        result = capital_parser.parse_page_texts(
+            pages,
+            fiscal_year="2024-2025",
+        )
+        expenses = {
+            row["category"]: row["amount"]
+            for row in result["expenseBreakdown"]
+        }
+
+        self.assertEqual(result["parseStatus"], "parsed")
+        self.assertTrue(result["publishable"])
+        self.assertEqual(result["totalRevenue"], 19100565)
+        self.assertEqual(result["totalExpenses"], 10311215)
+        self.assertEqual(result["annualSurplusDeficit"], 8789350)
+        self.assertEqual(result["capitalSpending"]["total"], 9799376)
+        self.assertEqual(result["capitalAssets"], 30545280)
+        self.assertEqual(result["cashInvestments"], 1163848)
+        self.assertEqual(result["debt"]["total"], 3616048)
+        self.assertEqual(expenses["Infrastructure / public works"], 1625042)
+        self.assertEqual(expenses["Economic development"], 1369643)
+        self.assertEqual(expenses["Education"], 1211939)
+        self.assertEqual(expenses["Administration"], 685580)
+        self.assertEqual(expenses["Social programs"], 904050)
+        self.assertEqual(expenses["Health"], 1705013)
+        self.assertEqual(expenses["Housing"], 125777)
+        self.assertEqual(expenses["Operations"], 2684171)
+        self.assertEqual(sum(expenses.values()), 10311215)
+        self.assertNotIn(
+            "Total expenditures",
+            [row["label"] for row in result["sourceExpenseRows"]],
+        )
+
+    def test_revenue_value_in_expense_category_requires_manual_review(self):
+        summary = {
+            "totalRevenue": 19100565,
+            "totalExpenses": 10311215,
+            "annualSurplusDeficit": 8789350,
+            "revenueBreakdown": [
+                {"category": "Government transfers", "amount": 12174569},
+                {"category": "Other revenue", "amount": 6925996},
+            ],
+            "expenseBreakdown": [
+                {"category": "Operations", "amount": 19100565},
+                {"category": "Education", "amount": 1211939},
+            ],
+            "capitalSpending": {"total": 9799376, "categories": []},
+            "debt": {"total": 3616048, "components": []},
+        }
+
+        validation = capital_parser.validate_summary(summary)
+
+        self.assertEqual(validation["parseStatus"], "manual_review")
+        self.assertFalse(validation["publishable"])
+        self.assertIn(
+            "An expense category appears to contain total revenue",
+            validation["warnings"],
+        )
+
+    def test_capital_expense_grouping_variants(self):
+        self.assertEqual(
+            capital_parser.broad_expense_category("CMHC Housing"),
+            "Housing",
+        )
+        self.assertEqual(
+            capital_parser.broad_expense_category("Government Services"),
+            "Administration",
+        )
+        self.assertEqual(
+            capital_parser.broad_expense_category("Registration and Membership"),
+            "Administration",
+        )
+        self.assertEqual(
+            capital_parser.broad_expense_category("Community Development"),
+            "Infrastructure / public works",
+        )
+
+    def test_all_publishable_capital_records_pass_current_validation(self):
+        data_path = Path(__file__).resolve().parents[1] / "capital-data.json"
+        capital_data = json.loads(data_path.read_text(encoding="utf-8"))
+
+        for band_id, band in capital_data.get("bands", {}).items():
+            for fiscal_year, summary in band.get("years", {}).items():
+                if (
+                    summary.get("parseStatus") != "parsed"
+                    or summary.get("publishable") is False
+                ):
+                    continue
+                with self.subTest(
+                    band_id=band_id,
+                    band=band.get("name"),
+                    fiscal_year=fiscal_year,
+                ):
+                    validation = capital_parser.validate_summary(summary)
+                    self.assertEqual(validation["parseStatus"], "parsed")
+                    self.assertTrue(validation["publishable"])
 
 
 if __name__ == "__main__":

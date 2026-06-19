@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-06-19T16:26:34.182236Z",
+  "generated": "2026-06-19T16:57:16.575189Z",
   "description": "Parsed audited financial statement summaries for the OpenBand Community Capital Tracker.",
   "recordShape": {
     "bands": {
@@ -772,18 +772,18 @@
       "name": "White Bear First Nations",
       "years": {
         "2024-2025": {
-          "totalRevenue": 129288836,
+          "totalRevenue": 131015860,
           "totalExpenses": 0,
           "annualSurplusDeficit": 5378251,
           "cashInvestments": 21897106,
           "revenueBreakdown": [
             {
               "category": "Other revenue",
-              "amount": 105884424
+              "amount": 107019541
             },
             {
               "category": "Government transfers",
-              "amount": 20339964
+              "amount": 20931871
             },
             {
               "category": "Trust distributions",
@@ -947,7 +947,7 @@
             {
               "label": "Economic Development",
               "category": "Other revenue",
-              "amount": 0
+              "amount": 1135117
             },
             {
               "label": "Community Infrastructure",
@@ -962,7 +962,7 @@
             {
               "label": "CMHC",
               "category": "Government transfers",
-              "amount": 0
+              "amount": 591907
             },
             {
               "label": "Annual surplus",
@@ -989,7 +989,7 @@
           "warnings": [
             "Total expenses were not extracted",
             "Expense breakdown is incomplete",
-            "Annual surplus or deficit includes other items"
+            "Revenue, expenses, and annual surplus do not reconcile"
           ],
           "publishable": false
         }
@@ -1001,7 +1001,7 @@
         "2024-2025": {
           "totalRevenue": 43372774,
           "totalExpenses": 34412001,
-          "annualSurplusDeficit": null,
+          "annualSurplusDeficit": 8960773,
           "cashInvestments": 22446804,
           "revenueBreakdown": [
             {
@@ -1024,7 +1024,7 @@
           "expenseBreakdown": [
             {
               "category": "Operations",
-              "amount": 84021138
+              "amount": 10015027
             },
             {
               "category": "Social programs",
@@ -1035,12 +1035,12 @@
               "amount": 6088203
             },
             {
-              "category": "Health",
-              "amount": 4745977
+              "category": "Infrastructure / public works",
+              "amount": 5966604
             },
             {
-              "category": "Infrastructure / public works",
-              "amount": 3692572
+              "category": "Health",
+              "amount": 4745977
             },
             {
               "category": "Administration",
@@ -1048,7 +1048,7 @@
             },
             {
               "category": "Economic development",
-              "amount": 0
+              "amount": 73810
             }
           ],
           "capitalSpending": {
@@ -1180,7 +1180,7 @@
             {
               "label": "ECONOMIC DEVELOPMENT",
               "category": "Economic development",
-              "amount": 0
+              "amount": 73810
             },
             {
               "label": "HEALTH",
@@ -1205,79 +1205,21 @@
             {
               "label": "RESORTS AND RETAIL",
               "category": "Operations",
-              "amount": 0
+              "amount": 5016513
             },
             {
               "label": "CHILD & FAMILY SERVICES",
               "category": "Social programs",
               "amount": 3132059
-            },
-            {
-              "label": "Operating surplus before other items",
-              "category": "Operations",
-              "amount": 8960773
-            },
-            {
-              "label": "Agricultural benefit claim settlement",
-              "category": "Operations",
-              "amount": 123168704
-            },
-            {
-              "label": "Contribution to Waterhen Legacy Trust",
-              "category": "Operations",
-              "amount": -114070985
-            },
-            {
-              "label": "Legal",
-              "category": "Operations",
-              "amount": -5350160
-            },
-            {
-              "label": "Insurance",
-              "category": "Operations",
-              "amount": -775566
-            },
-            {
-              "label": "Per capita distribution revenue from trust",
-              "category": "Operations",
-              "amount": 39670000
-            },
-            {
-              "label": "Per capita distribution",
-              "category": "Operations",
-              "amount": -39670000
-            },
-            {
-              "label": "Loss on disposal of capital assets",
-              "category": "Infrastructure / public works",
-              "amount": -2274032
-            },
-            {
-              "label": "Operating surplus",
-              "category": "Operations",
-              "amount": 9658734
-            },
-            {
-              "label": "Accumulated operating surplus, beginning of year",
-              "category": "Operations",
-              "amount": 23886195
-            },
-            {
-              "label": "Accumulated operating surplus, end of year",
-              "category": "Operations",
-              "amount": 33544929
             }
           ],
           "sourceUrl": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=402&FY=2024-2025&DOC=Audited consolidated financial statements&lang=eng",
           "fiscalYear": "2024-2025",
           "parser": "capital_text_v1",
-          "parseStatus": "manual_review",
-          "confidence": "low",
-          "warnings": [
-            "Expense categories do not reconcile to total expenses",
-            "Annual surplus or deficit was not extracted"
-          ],
-          "publishable": false
+          "parseStatus": "parsed",
+          "confidence": "high",
+          "warnings": [],
+          "publishable": true
         }
       }
     },
@@ -1390,7 +1332,7 @@
           "warnings": [
             "Total revenue was not extracted",
             "Revenue breakdown is incomplete",
-            "Annual surplus or deficit includes other items"
+            "Revenue, expenses, and annual surplus do not reconcile"
           ],
           "publishable": false
         }
@@ -1617,10 +1559,12 @@
           "sourceUrl": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=360&FY=2024-2025&DOC=Audited consolidated financial statements&lang=eng",
           "fiscalYear": "2024-2025",
           "parser": "capital_text_v1",
-          "parseStatus": "parsed",
-          "confidence": "high",
-          "warnings": [],
-          "publishable": true
+          "parseStatus": "manual_review",
+          "confidence": "low",
+          "warnings": [
+            "Revenue, expenses, and annual surplus do not reconcile"
+          ],
+          "publishable": false
         }
       }
     },
@@ -1668,6 +1612,10 @@
               "amount": 1064056
             },
             {
+              "category": "Infrastructure / public works",
+              "amount": 729149
+            },
+            {
               "category": "Housing",
               "amount": 722295
             },
@@ -1678,10 +1626,6 @@
             {
               "category": "Economic development",
               "amount": 523931
-            },
-            {
-              "category": "Infrastructure / public works",
-              "amount": 0
             }
           ],
           "capitalSpending": {
@@ -1773,7 +1717,7 @@
             {
               "label": "Capital",
               "category": "Infrastructure / public works",
-              "amount": 0
+              "amount": 729149
             },
             {
               "label": "Economic Development",
@@ -1822,8 +1766,7 @@
           "parseStatus": "manual_review",
           "confidence": "low",
           "warnings": [
-            "Expense categories do not reconcile to total expenses",
-            "Annual surplus or deficit includes other items"
+            "Revenue, expenses, and annual surplus do not reconcile"
           ],
           "publishable": false
         }
@@ -2099,8 +2042,8 @@
       "years": {
         "2024-2025": {
           "totalRevenue": 23614214,
-          "totalExpenses": 25489963,
-          "annualSurplusDeficit": 1879499,
+          "totalExpenses": 14113153,
+          "annualSurplusDeficit": -1087678,
           "cashInvestments": 5364474,
           "revenueBreakdown": [
             {
@@ -2122,10 +2065,6 @@
           ],
           "expenseBreakdown": [
             {
-              "category": "Operations",
-              "amount": 13655161
-            },
-            {
               "category": "Education",
               "amount": 5128748
             },
@@ -2138,8 +2077,12 @@
               "amount": 2418959
             },
             {
+              "category": "Operations",
+              "amount": 2274601
+            },
+            {
               "category": "Economic development",
-              "amount": 0
+              "amount": 3750
             }
           ],
           "capitalSpending": {
@@ -2295,7 +2238,7 @@
             {
               "label": "Economic Development",
               "category": "Economic development",
-              "amount": 0
+              "amount": 3750
             },
             {
               "label": "Education",
@@ -2306,11 +2249,6 @@
               "label": "Health",
               "category": "Health",
               "amount": 2418959
-            },
-            {
-              "label": "Other Project Revenue",
-              "category": "Operations",
-              "amount": 11380560
             },
             {
               "label": "Operating surplus before other items",
@@ -2351,12 +2289,12 @@
           "sourceUrl": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=347&FY=2024-2025&DOC=Audited consolidated financial statements&lang=eng",
           "fiscalYear": "2024-2025",
           "parser": "capital_text_v1",
-          "parseStatus": "parsed",
-          "confidence": "medium",
+          "parseStatus": "manual_review",
+          "confidence": "low",
           "warnings": [
-            "Annual surplus or deficit includes other items"
+            "Revenue, expenses, and annual surplus do not reconcile"
           ],
-          "publishable": true
+          "publishable": false
         }
       }
     },
@@ -2364,25 +2302,54 @@
       "name": "Red Pheasant Cree Nation",
       "years": {
         "2024-2025": {
-          "totalRevenue": 73324294,
-          "totalExpenses": 0,
+          "totalRevenue": 36624221,
+          "totalExpenses": 27920864,
           "annualSurplusDeficit": 8779209,
           "cashInvestments": 4504828,
           "revenueBreakdown": [
             {
-              "category": "Other revenue",
-              "amount": 47162229
-            },
-            {
               "category": "Government transfers",
               "amount": 24966798
+            },
+            {
+              "category": "Other revenue",
+              "amount": 10462156
             },
             {
               "category": "Trust distributions",
               "amount": 1195267
             }
           ],
-          "expenseBreakdown": [],
+          "expenseBreakdown": [
+            {
+              "category": "Operations",
+              "amount": 10331271
+            },
+            {
+              "category": "Education",
+              "amount": 5528371
+            },
+            {
+              "category": "Infrastructure / public works",
+              "amount": 4248422
+            },
+            {
+              "category": "Economic development",
+              "amount": 3299980
+            },
+            {
+              "category": "Social programs",
+              "amount": 2824647
+            },
+            {
+              "category": "Administration",
+              "amount": 1304273
+            },
+            {
+              "category": "Housing",
+              "amount": 383900
+            }
+          ],
           "capitalSpending": {
             "total": 8367927,
             "categories": []
@@ -2427,75 +2394,67 @@
               "label": "Recovered - ISC",
               "category": "Other revenue",
               "amount": -75852
-            },
+            }
+          ],
+          "sourceExpenseRows": [
             {
               "label": "Administration",
-              "category": "Other revenue",
+              "category": "Administration",
               "amount": 1304273
             },
             {
               "label": "Education",
-              "category": "Other revenue",
+              "category": "Education",
               "amount": 5528371
             },
             {
               "label": "Reserves",
-              "category": "Other revenue",
+              "category": "Operations",
               "amount": 266250
             },
             {
               "label": "Community wellness",
-              "category": "Other revenue",
+              "category": "Operations",
               "amount": 2715879
             },
             {
               "label": "Infrastructure",
-              "category": "Other revenue",
+              "category": "Infrastructure / public works",
               "amount": 1950199
             },
             {
               "label": "First Nation programs",
-              "category": "Other revenue",
+              "category": "Operations",
               "amount": 7349142
             },
             {
               "label": "Capital projects",
-              "category": "Other revenue",
+              "category": "Infrastructure / public works",
               "amount": 2298223
             },
             {
               "label": "Community and economic development",
-              "category": "Other revenue",
+              "category": "Economic development",
               "amount": 3299980
             },
             {
               "label": "Housing",
-              "category": "Other revenue",
+              "category": "Housing",
               "amount": 383900
             },
             {
               "label": "Social services",
-              "category": "Other revenue",
+              "category": "Social programs",
               "amount": 2824647
-            },
-            {
-              "label": "ANNUAL SURPLUS",
-              "category": "Other revenue",
-              "amount": 8779209
             }
           ],
-          "sourceExpenseRows": [],
           "sourceUrl": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=346&FY=2024-2025&DOC=Audited consolidated financial statements&lang=eng",
           "fiscalYear": "2024-2025",
           "parser": "capital_text_v1",
-          "parseStatus": "manual_review",
-          "confidence": "low",
-          "warnings": [
-            "Total expenses were not extracted",
-            "Expense breakdown is incomplete",
-            "Annual surplus or deficit includes other items"
-          ],
-          "publishable": false
+          "parseStatus": "parsed",
+          "confidence": "high",
+          "warnings": [],
+          "publishable": true
         }
       }
     },
@@ -2972,7 +2931,7 @@
       "years": {
         "2024-2025": {
           "totalRevenue": 19100565,
-          "totalExpenses": 29286003,
+          "totalExpenses": 10311215,
           "annualSurplusDeficit": 8789350,
           "cashInvestments": 1163848,
           "revenueBreakdown": [
@@ -2996,7 +2955,7 @@
           "expenseBreakdown": [
             {
               "category": "Operations",
-              "amount": 21784736
+              "amount": 2684171
             },
             {
               "category": "Health",
@@ -3024,7 +2983,7 @@
             },
             {
               "category": "Housing",
-              "amount": 0
+              "amount": 125777
             }
           ],
           "capitalSpending": {
@@ -3171,37 +3130,20 @@
             {
               "label": "CMHC Housing",
               "category": "Housing",
-              "amount": 0
+              "amount": 125777
             },
             {
               "label": "Other Band Programs",
               "category": "Operations",
               "amount": 2684171
-            },
-            {
-              "label": "Total expenditures",
-              "category": "Operations",
-              "amount": 10311215
-            },
-            {
-              "label": "Operating surplus before other income",
-              "category": "Operations",
-              "amount": 8789350
-            },
-            {
-              "label": "Gain on disposal of tangible capital assets",
-              "category": "Infrastructure / public works",
-              "amount": 0
             }
           ],
           "sourceUrl": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/DisplayBinaryData.aspx?BAND_NUMBER_FF=409&FY=2024-2025&DOC=Audited consolidated financial statements&lang=eng",
           "fiscalYear": "2024-2025",
           "parser": "capital_text_v1",
           "parseStatus": "parsed",
-          "confidence": "medium",
-          "warnings": [
-            "Annual surplus or deficit includes other items"
-          ],
+          "confidence": "high",
+          "warnings": [],
           "publishable": true
         }
       }
@@ -3211,7 +3153,7 @@
       "years": {
         "2024-2025": {
           "totalRevenue": 29361924,
-          "totalExpenses": 25376599,
+          "totalExpenses": 26955495,
           "annualSurplusDeficit": 2406429,
           "cashInvestments": 6860173,
           "revenueBreakdown": [
@@ -3259,7 +3201,7 @@
             },
             {
               "category": "Economic development",
-              "amount": 0
+              "amount": 1578896
             }
           ],
           "capitalSpending": {
@@ -3356,7 +3298,7 @@
             {
               "label": "Economic Development",
               "category": "Economic development",
-              "amount": 0
+              "amount": 1578896
             },
             {
               "label": "Social Development",
@@ -3383,10 +3325,8 @@
           "fiscalYear": "2024-2025",
           "parser": "capital_text_v1",
           "parseStatus": "parsed",
-          "confidence": "medium",
-          "warnings": [
-            "Annual surplus or deficit includes other items"
-          ],
+          "confidence": "high",
+          "warnings": [],
           "publishable": true
         }
       }

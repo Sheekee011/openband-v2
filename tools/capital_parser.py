@@ -31,8 +31,25 @@ NET_ASSET_RE = re.compile(
     re.I,
 )
 TOTAL_REVENUE_RE = re.compile(r"^(?:total\s+)?revenue$", re.I)
-TOTAL_EXPENSE_RE = re.compile(r"^(?:total\s+)?(?:program\s+)?expenses?(?:\s+\(.*\))?$", re.I)
-SURPLUS_RE = re.compile(r"^(?:annual|current)?\s*surplus(?:\s+\(deficit\))?(?:\s+before.*)?$", re.I)
+TOTAL_EXPENSE_RE = re.compile(
+    r"^(?:total\s+)?(?:(?:program|operating)\s+)?"
+    r"(?:expenses?|expenditures?)(?:\s+\(.*\))?$",
+    re.I,
+)
+EXPENSE_SECTION_RE = re.compile(
+    r"^(?:program\s+)?(?:expenses?|expenditures?)$",
+    re.I,
+)
+SURPLUS_RE = re.compile(
+    r"^(?:(?:annual|current|operating)\s+)?"
+    r"(?:surplus|deficit)(?:\s+\(deficit\))?(?:\s+before.*)?$",
+    re.I,
+)
+EXPENSE_SECTION_END_RE = re.compile(
+    r"^(?:total\s+(?:(?:program|operating)\s+)?(?:expenses?|expenditures?)"
+    r"|(?:(?:annual|current|operating)\s+)?(?:surplus|deficit))",
+    re.I,
+)
 CAPITAL_PURCHASE_RE = re.compile(
     r"^(?:purchases?|acquisition|additions?)\s+(?:of\s+)?tangible\s+capital\s+assets?",
     re.I,
@@ -112,6 +129,12 @@ def actual_value(values, page_text, line=""):
         if len(values) == 2 and re.search(
             r"\d[\d,]*(?:\.\d+)?\s+-\s+\(?-?\d", line
         ):
+            if re.search(
+                r"(?:^|\s)\d{1,2}\s+-\s+\(?-?\d[\d,]*(?:\.\d+)?"
+                r"\s+\(?-?\d[\d,]*(?:\.\d+)?",
+                line,
+            ):
+                return values[0]
             return 0
         if len(values) == 1 and re.search(
             r"\s-\s+-\s+\(?-?\d", line
@@ -146,13 +169,17 @@ def broad_expense_category(label):
     if "land claims" in low:
         return "Operations"
     mappings = [
-        (r"housing", "Housing"),
+        (r"housing|\bcmhc\b", "Housing"),
         (r"education|school", "Education"),
         (r"health", "Health"),
         (r"infrastructure|public works|community development|capital", "Infrastructure / public works"),
         (r"economic|land management", "Economic development"),
         (r"social|child|family", "Social programs"),
-        (r"government|administration|band government|membership|lands and memberships", "Administration"),
+        (
+            r"government (?:support|services)|administration|band government|"
+            r"registration(?: and)? membership|membership|lands and memberships",
+            "Administration",
+        ),
     ]
     for pattern, category in mappings:
         if re.search(pattern, low):
@@ -168,7 +195,13 @@ def statement_pages(page_texts, pattern):
     ]
 
 
-def parse_section_rows(page_texts, start_pattern, end_pattern, category_fn):
+def parse_section_rows(
+    page_texts,
+    start_pattern,
+    end_pattern,
+    category_fn,
+    reject_pattern=None,
+):
     rows = []
     active = False
     for page_text in page_texts:
@@ -183,6 +216,8 @@ def parse_section_rows(page_texts, start_pattern, end_pattern, category_fn):
                 continue
             label, values = line_parts(line)
             if not label or not values or SKIP_LINE_RE.search(label):
+                continue
+            if reject_pattern and reject_pattern.search(label):
                 continue
             if TOTAL_REVENUE_RE.match(label) or TOTAL_EXPENSE_RE.match(label):
                 continue
@@ -263,7 +298,7 @@ def extract_debt(position_pages):
     return {"total": rounded(total), "components": components} if components else None
 
 
-def nearly_equal(left, right, tolerance=0.05):
+def nearly_equal(left, right, tolerance=0.01):
     if left is None or right is None:
         return False
     return abs(left - right) <= max(10.0, abs(right) * tolerance)
@@ -288,14 +323,23 @@ def validate_summary(summary):
         severe.append("Expense breakdown is incomplete")
     if revenue_rows and revenue is not None and not nearly_equal(sum_rows(revenue_rows), revenue):
         severe.append("Revenue categories do not reconcile to total revenue")
-    if expense_rows and expenses is not None and not nearly_equal(sum_rows(expense_rows), expenses):
-        severe.append("Expense categories do not reconcile to total expenses")
+    expense_sum = sum_rows(expense_rows)
+    if expense_rows and expenses is not None and not nearly_equal(expense_sum, expenses):
+        if expense_sum > expenses:
+            severe.append("Expense categories exceed reported expenses")
+        else:
+            severe.append("Expense categories do not reconcile to total expenses")
+    if revenue is not None and any(
+        nearly_equal(parse_money(row.get("amount")), revenue, tolerance=0.001)
+        for row in expense_rows
+    ):
+        severe.append("An expense category appears to contain total revenue")
     if surplus is None:
         warnings.append("Annual surplus or deficit was not extracted")
     elif revenue is not None and expenses is not None and not nearly_equal(
-        surplus, revenue - expenses, tolerance=0.15
+        surplus, revenue - expenses
     ):
-        warnings.append("Annual surplus or deficit includes other items")
+        severe.append("Revenue, expenses, and annual surplus do not reconcile")
     if summary.get("capitalSpending") is None:
         warnings.append("Capital spending was not extracted")
     if summary.get("debt") is None:
@@ -332,14 +376,15 @@ def parse_page_texts(page_texts, source_url=None, fiscal_year=None):
     revenue_rows = parse_section_rows(
         operations,
         re.compile(r"^revenue$", re.I),
-        re.compile(r"^(?:program\s+)?expenses?$", re.I),
+        EXPENSE_SECTION_RE,
         broad_revenue_category,
     )
     expense_rows = parse_section_rows(
         operations,
-        re.compile(r"^(?:program\s+)?expenses?$", re.I),
-        re.compile(r"^(?:surplus|deficit|current surplus|annual surplus)", re.I),
+        EXPENSE_SECTION_RE,
+        EXPENSE_SECTION_END_RE,
         broad_expense_category,
+        reject_pattern=re.compile(r"\brevenue\b", re.I),
     )
     revenue_breakdown, revenue_source_rows = aggregate_categories(revenue_rows)
     expense_breakdown, expense_source_rows = aggregate_categories(expense_rows)
