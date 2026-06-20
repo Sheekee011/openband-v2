@@ -97,6 +97,60 @@ class CapitalParserTests(unittest.TestCase):
         self.assertEqual(result["totalExpenses"], 1050000)
         self.assertEqual(result["annualSurplusDeficit"], -50000)
 
+    def test_budget_actual_layout_with_trailing_prior_year_dash(self):
+        page = """
+        Example First Nation
+        Statement of Operations
+        2025 2025 2024
+        Budget Actual Actual
+        Revenue
+        Insurance proceeds 196,880 442,459 -
+        CMHC - 487,662 337,715
+        Total revenue 196,880 930,121 337,715
+        Expenses
+        Operations 100,000 800,000 300,000
+        Total expenses 100,000 800,000 300,000
+        Surplus 96,880 130,121 37,715
+        """
+
+        result = capital_parser.parse_page_texts([page])
+
+        self.assertEqual(result["totalRevenue"], 930121)
+        self.assertEqual(result["totalExpenses"], 800000)
+        self.assertEqual(result["annualSurplusDeficit"], 130121)
+
+    def test_plural_revenues_and_other_items_reconcile(self):
+        page = """
+        Example First Nation
+        Consolidated Statement of Operations and Accumulated Surplus
+        2025 2025 2024
+        Budget Actual Actual
+        Revenues
+        Government funding 1,000,000 2,000,000 1,800,000
+        Rental income 100,000 200,000 180,000
+        Total revenues 1,100,000 2,200,000 1,980,000
+        Program expenses (Schedule 2)
+        Education 400,000 500,000 450,000
+        Health 300,000 350,000 325,000
+        Total expenses 700,000 850,000 775,000
+        Surplus before other items 400,000 1,350,000 1,205,000
+        Other items
+        Legal settlement - (100,000) -
+        Annual surplus 400,000 1,250,000 1,205,000
+        """
+
+        result = capital_parser.parse_page_texts([page])
+
+        self.assertEqual(result["parseStatus"], "parsed")
+        self.assertTrue(result["publishable"])
+        self.assertEqual(result["totalRevenue"], 2200000)
+        self.assertEqual(result["totalExpenses"], 850000)
+        self.assertEqual(result["annualSurplusDeficit"], 1250000)
+        self.assertEqual(
+            result["surplusAdjustments"],
+            [{"label": "Legal settlement", "amount": -100000}],
+        )
+
     def test_unreconciled_categories_require_manual_review(self):
         summary = {
             "totalRevenue": 1000000,

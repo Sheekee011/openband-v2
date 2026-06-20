@@ -49,6 +49,10 @@ The `Backfill Community Capital data` GitHub Actions workflow supports larger
 batches and an optional OpenAI fallback. Summaries that fail reconciliation
 remain marked for manual review and are not displayed as parsed data.
 
+Each run also writes `capital-extraction-report.json`, including before/after
+coverage, successful and partial records, failed records, non-applicable source
+documents, unresolved filings, parser method, and extraction warnings.
+
 ## Workflows
 
 - **Scrape FNFTA data**: manual current-year scraper run. It validates the new `data.json` before committing so a bad scrape cannot easily overwrite the working site data.

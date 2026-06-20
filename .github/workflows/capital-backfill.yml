@@ -8,7 +8,7 @@ on:
         required: true
         default: "2024-2025,2023-2024,2022-2023"
       max_filings:
-        description: "Maximum audited statements to parse"
+        description: "Maximum audited statements to parse (0 means all matching filings)"
         required: true
         default: "30"
       use_openai:
@@ -64,7 +64,9 @@ jobs:
           if [ "$USE_OPENAI" = "true" ]; then
             ARGS+=(--use-openai)
           fi
-          python tools/capital_parser.py "${ARGS[@]}"
+          python tools/capital_parser.py \
+            --report capital-extraction-report.json \
+            "${ARGS[@]}"
 
       - name: Validate capital data did not regress
         run: |
@@ -122,4 +124,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Backfill Community Capital data"
-          file_pattern: capital-data.json
+          file_pattern: capital-data.json capital-extraction-report.json

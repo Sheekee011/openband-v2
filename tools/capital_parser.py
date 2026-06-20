@@ -24,30 +24,42 @@ except ImportError:  # pragma: no cover
 
 MONEY_RE = re.compile(r"\(?\$?\s*-?\d[\d,]*(?:\.\d+)?\)?")
 YEAR_RE = re.compile(r"\b20\d{2}\b")
-OPERATIONS_RE = re.compile(r"statement of operations", re.I)
+OPERATIONS_RE = re.compile(
+    r"statement of (?:consolidated )?(?:operations|revenues? and expenses|"
+    r"financial activities|activities)",
+    re.I,
+)
 POSITION_RE = re.compile(r"statement of financial position", re.I)
 NET_ASSET_RE = re.compile(
     r"statement of (?:changes? in )?net (?:financial assets|financial debt|debt)",
     re.I,
 )
-TOTAL_REVENUE_RE = re.compile(r"^(?:total\s+)?revenue$", re.I)
+TOTAL_REVENUE_RE = re.compile(r"^(?:total\s+)?revenues?$", re.I)
+REVENUE_SECTION_RE = re.compile(
+    r"^revenues?(?:\s+\(.*\))?$",
+    re.I,
+)
 TOTAL_EXPENSE_RE = re.compile(
     r"^(?:total\s+)?(?:(?:program|operating)\s+)?"
     r"(?:expenses?|expenditures?)(?:\s+\(.*\))?$",
     re.I,
 )
 EXPENSE_SECTION_RE = re.compile(
-    r"^(?:program\s+)?(?:expenses?|expenditures?)$",
+    r"^(?:program\s+)?(?:expenses?|expenditures?)(?:\s+\(.*\))?$",
     re.I,
 )
-SURPLUS_RE = re.compile(
-    r"^(?:(?:annual|current|operating)\s+)?"
-    r"(?:surplus|deficit)(?:\s+\(deficit\))?(?:\s+before.*)?$",
+FINAL_SURPLUS_RE = re.compile(
+    r"^(?:(?:annual|current)\s+)?"
+    r"(?:surplus|deficit)(?:\s+\(deficit\))?$",
+    re.I,
+)
+BEFORE_OTHER_RE = re.compile(
+    r"^.*\b(?:surplus|deficit)\b.*\bbefore\s+(?:other|trust settlement)",
     re.I,
 )
 EXPENSE_SECTION_END_RE = re.compile(
     r"^(?:total\s+(?:(?:program|operating)\s+)?(?:expenses?|expenditures?)"
-    r"|(?:(?:annual|current|operating)\s+)?(?:surplus|deficit))",
+    r"|.*\b(?:surplus|deficit)\b.*(?:before\s+(?:other|trust settlement)|$))",
     re.I,
 )
 CAPITAL_PURCHASE_RE = re.compile(
@@ -55,7 +67,16 @@ CAPITAL_PURCHASE_RE = re.compile(
     re.I,
 )
 SKIP_LINE_RE = re.compile(
-    r"^(schedules?|budget|actual|note|the accompanying|for the year|as at|page \d+)",
+    r"^(schedules?|budget|actual|note|the accompanying|for the year|as at|"
+    r"continued|page \d+)",
+    re.I,
+)
+REMUNERATION_DOCUMENT_RE = re.compile(
+    r"schedule of remuneration and expenses|chief and council",
+    re.I,
+)
+SEGMENT_SCHEDULE_RE = re.compile(
+    r"(?:schedule|statement).{0,45}(?:revenues?|income).{0,20}(?:expenses?|expenditures?)",
     re.I,
 )
 
@@ -65,7 +86,24 @@ def now_iso():
 
 
 def clean_text(value):
-    return " ".join(str(value or "").replace("\u00a0", " ").split()).strip()
+    text = str(value or "")
+    replacements = {
+        "\u00a0": " ",
+        "\u2010": "-",
+        "\u2011": "-",
+        "\u2012": "-",
+        "\u2013": "-",
+        "\u2014": "-",
+        "\ufb01": "fi",
+        "\ufb02": "fl",
+        "\u2018": "'",
+        "\u2019": "'",
+        "\u201c": '"',
+        "\u201d": '"',
+    }
+    for source, replacement in replacements.items():
+        text = text.replace(source, replacement)
+    return " ".join(text.split()).strip()
 
 
 def parse_money(value):
@@ -94,17 +132,32 @@ def rounded(value):
 
 
 def line_parts(line):
-    line = re.sub(r"\([^)]*[A-Za-z][^)]*\)", "", line)
+    line = re.sub(r"\((?:note|schedule)[^)]*\)", "", line, flags=re.I)
     matches = list(MONEY_RE.finditer(line))
     if not matches:
         return clean_text(line), []
+    if len(matches) > 1:
+        first_value = parse_money(matches[0].group(0))
+        between = line[matches[0].end() : matches[1].start()]
+        if (
+            first_value is not None
+            and 1900 <= first_value <= 2099
+            and re.search(r"[A-Za-z]", between)
+        ):
+            matches.pop(0)
     while len(matches) > 1:
         raw = matches[0].group(0).strip()
         amount = parse_money(raw)
         later = [parse_money(match.group(0)) for match in matches[1:]]
         is_schedule_index = (
             amount is not None
-            and 0 <= amount <= 99
+            and (
+                0 <= amount <= 99
+                or (
+                    len(matches) >= 4
+                    and 0 <= amount <= 9999
+                )
+            )
             and "," not in raw
             and "." not in raw
             and "$" not in raw
@@ -127,6 +180,12 @@ def actual_value(values, page_text, line=""):
         if len(values) >= 3:
             return values[1]
         if len(values) == 2 and re.search(
+            r"\(?-?\d[\d,]*(?:\.\d+)?\)?\s+"
+            r"\(?-?\d[\d,]*(?:\.\d+)?\)?\s+-\s*$",
+            line,
+        ):
+            return values[1]
+        if len(values) == 2 and re.search(
             r"\d[\d,]*(?:\.\d+)?\s+-\s+\(?-?\d", line
         ):
             if re.search(
@@ -138,6 +197,11 @@ def actual_value(values, page_text, line=""):
             return 0
         if len(values) == 1 and re.search(
             r"\s-\s+-\s+\(?-?\d", line
+        ):
+            return 0
+        if len(values) == 1 and re.search(
+            r"\(?-?\d[\d,]*(?:\.\d+)?\)?\s+-\s+-\s*$",
+            line,
         ):
             return 0
     elif len(values) == 1 and re.search(r"\s-\s+\(?-?\d", line):
@@ -170,14 +234,23 @@ def broad_expense_category(label):
         return "Operations"
     mappings = [
         (r"housing|\bcmhc\b", "Housing"),
-        (r"education|school", "Education"),
+        (r"education|school|post[- ]secondary|training", "Education"),
         (r"health", "Health"),
-        (r"infrastructure|public works|community development|capital", "Infrastructure / public works"),
-        (r"economic|land management", "Economic development"),
-        (r"social|child|family", "Social programs"),
+        (
+            r"infrastructure|public works|community development|capital|"
+            r"facilit(?:y|ies) maintenance|operations?\s*(?:&|and)\s*maintenance",
+            "Infrastructure / public works",
+        ),
+        (
+            r"economic|land management|band development|first nation owned|"
+            r"retail operations|commercial enterprises?",
+            "Economic development",
+        ),
+        (r"social|child|family|income assistance|community based services", "Social programs"),
         (
             r"government (?:support|services)|administration|band government|"
-            r"registration(?: and)? membership|membership|lands and memberships",
+            r"registration(?: and)? membership|membership|lands and memberships|"
+            r"reserves? (?:and|&) trusts?",
             "Administration",
         ),
     ]
@@ -192,6 +265,41 @@ def statement_pages(page_texts, pattern):
         text
         for text in page_texts
         if pattern.search("\n".join(text.splitlines()[:8]))
+    ]
+
+
+def likely_operations_pages(page_texts):
+    candidates = []
+    for text in page_texts:
+        lines = text.splitlines()
+        header = "\n".join(lines[:12])
+        low = text.lower()
+        score = 0
+        if re.search(r"statement of .{0,30}(?:operations|activities)", header, re.I):
+            score += 4
+        if re.search(r"^revenues?(?:\s+\(.*\))?$", text, re.I | re.M):
+            score += 2
+        if re.search(r"^(?:program\s+)?(?:expenses?|expenditures?)", text, re.I | re.M):
+            score += 2
+        if re.search(r"surplus|deficit", low):
+            score += 1
+        if score >= 5:
+            candidates.append(text)
+    return candidates
+
+
+def inherit_budget_context(page_texts):
+    has_budget_layout = any(
+        "budget" in "\n".join(text.splitlines()[:12]).lower()
+        for text in page_texts
+    )
+    if not has_budget_layout:
+        return page_texts
+    return [
+        text
+        if "budget" in "\n".join(text.splitlines()[:12]).lower()
+        else "Budget Actual Actual\n" + text
+        for text in page_texts
     ]
 
 
@@ -217,6 +325,8 @@ def parse_section_rows(
             label, values = line_parts(line)
             if not label or not values or SKIP_LINE_RE.search(label):
                 continue
+            if re.fullmatch(r"page\)?", label, re.I):
+                continue
             if reject_pattern and reject_pattern.search(label):
                 continue
             if TOTAL_REVENUE_RE.match(label) or TOTAL_EXPENSE_RE.match(label):
@@ -241,15 +351,98 @@ def sum_rows(rows):
     return sum(parse_money(row.get("amount")) or 0 for row in rows)
 
 
-def find_named_amount(page_texts, pattern):
+def find_named_amount(page_texts, pattern, last=False):
+    found = []
     for page_text in page_texts:
         for raw_line in page_text.splitlines():
             label, values = line_parts(clean_text(raw_line))
             if pattern.search(label):
                 value = actual_value(values, page_text, clean_text(raw_line))
                 if value is not None:
-                    return value
-    return None
+                    found.append(value)
+    if not found:
+        return None
+    return found[-1] if last else found[0]
+
+
+def parse_surplus_adjustments(page_texts):
+    rows = []
+    active = False
+    for page_text in page_texts:
+        for raw_line in page_text.splitlines():
+            line = clean_text(raw_line)
+            label, values = line_parts(line)
+            if BEFORE_OTHER_RE.search(label):
+                active = True
+                continue
+            if not active:
+                continue
+            if FINAL_SURPLUS_RE.match(label):
+                return rows
+            if not label or not values or SKIP_LINE_RE.search(label):
+                continue
+            if re.fullmatch(r"page\)?", label, re.I):
+                continue
+            if re.search(r"accumulated surplus|opening|beginning of year|end of year", label, re.I):
+                continue
+            amount = actual_value(values, page_text, line)
+            if amount is None or amount == 0:
+                continue
+            raw_values = MONEY_RE.findall(line)
+            if (
+                abs(amount) < 100
+                and len(raw_values) == 1
+                and "," not in raw_values[0]
+                and "$" not in raw_values[0]
+            ):
+                continue
+            rows.append(
+                {
+                    "label": normalize_category(label),
+                    "amount": rounded(amount),
+                }
+            )
+    return rows
+
+
+def parse_segment_schedule_expenses(page_texts):
+    by_label = {}
+    for page_text in page_texts:
+        lines = [clean_text(line) for line in page_text.splitlines() if clean_text(line)]
+        if len(lines) < 4:
+            continue
+        header = "\n".join(lines[:8])
+        if not SEGMENT_SCHEDULE_RE.search(header):
+            continue
+        if re.search(r"consolidated expenses by object", header, re.I):
+            continue
+        schedule_index = next(
+            (index for index, line in enumerate(lines[:8]) if SEGMENT_SCHEDULE_RE.search(line)),
+            None,
+        )
+        source_label = normalize_category(
+            lines[schedule_index - 1] if schedule_index and schedule_index > 0 else lines[0]
+        )
+        if re.search(r"first nation|nation$", source_label, re.I):
+            continue
+        amount = find_named_amount(
+            [page_text],
+            re.compile(r"^total\s+(?:program\s+)?(?:expenses?|expenditures?)$", re.I),
+            last=True,
+        )
+        if amount is None:
+            continue
+        existing = by_label.get(source_label)
+        if existing is None or abs(amount) > abs(existing):
+            by_label[source_label] = amount
+    return [
+        {
+            "category": broad_expense_category(label),
+            "sourceLabel": label,
+            "amount": rounded(amount),
+        }
+        for label, amount in by_label.items()
+    ]
 
 
 def aggregate_categories(rows):
@@ -312,6 +505,8 @@ def validate_summary(summary):
     surplus = parse_money(summary.get("annualSurplusDeficit"))
     revenue_rows = summary.get("revenueBreakdown") or []
     expense_rows = summary.get("expenseBreakdown") or []
+    adjustment_rows = summary.get("surplusAdjustments") or []
+    adjustments = sum_rows(adjustment_rows)
 
     if revenue is None or revenue <= 0:
         severe.append("Total revenue was not extracted")
@@ -337,9 +532,11 @@ def validate_summary(summary):
     if surplus is None:
         warnings.append("Annual surplus or deficit was not extracted")
     elif revenue is not None and expenses is not None and not nearly_equal(
-        surplus, revenue - expenses
+        surplus, revenue - expenses + adjustments
     ):
         severe.append("Revenue, expenses, and annual surplus do not reconcile")
+    elif adjustment_rows:
+        warnings.append("Annual surplus includes separately reported adjustments")
     if summary.get("capitalSpending") is None:
         warnings.append("Capital spending was not extracted")
     if summary.get("debt") is None:
@@ -364,18 +561,38 @@ def validate_summary(summary):
 
 def parse_page_texts(page_texts, source_url=None, fiscal_year=None):
     operations = statement_pages(page_texts, OPERATIONS_RE)
+    if not operations:
+        operations = likely_operations_pages(page_texts)
+    operations = inherit_budget_context(operations)
     position = statement_pages(page_texts, POSITION_RE)
     net_assets = statement_pages(page_texts, NET_ASSET_RE)
     if not operations:
+        full_text = "\n".join(page_texts)
+        if REMUNERATION_DOCUMENT_RE.search(full_text):
+            return {
+                "parseStatus": "not_applicable",
+                "confidence": "high",
+                "warnings": ["Source document is a remuneration schedule, not an audited financial statement"],
+                "publishable": False,
+                "extractionCompleteness": "not_applicable",
+                "sourceUrl": source_url,
+                "fiscalYear": fiscal_year,
+                "parser": "capital_text_v2",
+            }
         return {
             "parseStatus": "manual_review",
             "confidence": "low",
             "warnings": ["No clear statement of operations found"],
+            "publishable": False,
+            "extractionCompleteness": "failed",
+            "sourceUrl": source_url,
+            "fiscalYear": fiscal_year,
+            "parser": "capital_text_v2",
         }
 
     revenue_rows = parse_section_rows(
         operations,
-        re.compile(r"^revenue$", re.I),
+        REVENUE_SECTION_RE,
         EXPENSE_SECTION_RE,
         broad_revenue_category,
     )
@@ -384,14 +601,18 @@ def parse_page_texts(page_texts, source_url=None, fiscal_year=None):
         EXPENSE_SECTION_RE,
         EXPENSE_SECTION_END_RE,
         broad_expense_category,
-        reject_pattern=re.compile(r"\brevenue\b", re.I),
     )
+    if len(expense_rows) < 2:
+        expense_rows = parse_segment_schedule_expenses(page_texts)
     revenue_breakdown, revenue_source_rows = aggregate_categories(revenue_rows)
     expense_breakdown, expense_source_rows = aggregate_categories(expense_rows)
 
     total_revenue = find_named_amount(operations, TOTAL_REVENUE_RE) or sum_rows(revenue_rows)
     total_expenses = find_named_amount(operations, TOTAL_EXPENSE_RE) or sum_rows(expense_rows)
-    surplus = find_named_amount(operations, SURPLUS_RE)
+    surplus_adjustments = parse_surplus_adjustments(operations)
+    surplus = find_named_amount(operations, FINAL_SURPLUS_RE, last=True)
+    if surplus is None and not surplus_adjustments:
+        surplus = find_named_amount(operations, BEFORE_OTHER_RE, last=True)
 
     cash = find_named_amount(
         position,
@@ -425,12 +646,46 @@ def parse_page_texts(page_texts, source_url=None, fiscal_year=None):
         "debt": debt,
         "sourceRevenueRows": revenue_source_rows,
         "sourceExpenseRows": expense_source_rows,
+        "surplusAdjustments": surplus_adjustments,
         "sourceUrl": source_url,
         "fiscalYear": fiscal_year,
-        "parser": "capital_text_v1",
+        "parser": "capital_text_v2",
     }
     summary.update(validate_summary(summary))
+    summary["extractionCompleteness"] = (
+        "complete" if summary.get("publishable") else "partial"
+    )
     return summary
+
+
+def table_page_texts(pdf):
+    pages = []
+    for page in pdf.pages:
+        header_text = page.extract_text(x_tolerance=1, y_tolerance=3) or ""
+        header = "\n".join(header_text.splitlines()[:10])
+        rows = []
+        for table in page.extract_tables() or []:
+            for row in table or []:
+                cells = [clean_text(cell) for cell in row or []]
+                cells = [cell for cell in cells if cell]
+                if cells:
+                    rows.append(" ".join(cells))
+        if rows:
+            pages.append(header + "\n" + "\n".join(rows))
+    return pages
+
+
+def summary_score(summary):
+    score = 0
+    if summary.get("publishable"):
+        score += 100
+    for key in ("totalRevenue", "totalExpenses", "annualSurplusDeficit"):
+        if parse_money(summary.get(key)) is not None:
+            score += 10
+    score += min(10, len(summary.get("revenueBreakdown") or []))
+    score += min(10, len(summary.get("expenseBreakdown") or []))
+    score -= len(summary.get("warnings") or []) * 2
+    return score
 
 
 def parse_pdf_bytes(pdf_bytes, source_url=None, fiscal_year=None):
@@ -446,7 +701,19 @@ def parse_pdf_bytes(pdf_bytes, source_url=None, fiscal_year=None):
             page.extract_text(x_tolerance=1, y_tolerance=3) or ""
             for page in pdf.pages
         ]
-    return parse_page_texts(page_texts, source_url, fiscal_year)
+        primary = parse_page_texts(page_texts, source_url, fiscal_year)
+        if primary.get("publishable") or primary.get("parseStatus") == "not_applicable":
+            return primary
+        reconstructed = table_page_texts(pdf)
+    if reconstructed:
+        fallback = parse_page_texts(reconstructed, source_url, fiscal_year)
+        fallback["parser"] = "capital_table_v2"
+        if summary_score(fallback) > summary_score(primary):
+            fallback.setdefault("warnings", []).append(
+                "Primary text extraction was replaced by table reconstruction"
+            )
+            return fallback
+    return primary
 
 
 def response_output_text(payload):
@@ -557,6 +824,145 @@ def save_summary(capital_data, band, filing, summary):
     band_record.setdefault("years", {})[filing["year"]] = summary
 
 
+def is_verified_summary(summary):
+    if not summary:
+        return False
+    return bool(
+        summary.get("verified")
+        or summary.get("manualVerified")
+        or summary.get("manual_override")
+        or str(summary.get("parser", "")).startswith("manual")
+    )
+
+
+def source_inventory(data):
+    records = []
+    seen = set()
+    for band in data.get("bands", []):
+        for filing in band.get("filings", []):
+            if (
+                not filing.get("posted")
+                or not filing.get("href")
+                or not is_audited_statement(filing)
+            ):
+                continue
+            key = (str(band.get("id")), str(filing.get("year")))
+            if key in seen:
+                continue
+            seen.add(key)
+            records.append(
+                {
+                    "bandId": str(band.get("id")),
+                    "band": band.get("name"),
+                    "fiscalYear": filing.get("year"),
+                    "sourceUrl": filing.get("href"),
+                }
+            )
+    return records
+
+
+def coverage_snapshot(data, capital_data):
+    sources = source_inventory(data)
+    counts = {
+        "postedSources": len(sources),
+        "parsed": 0,
+        "partial": 0,
+        "failed": 0,
+        "notApplicable": 0,
+        "missing": 0,
+    }
+    unresolved = []
+    for source in sources:
+        summary = (
+            capital_data.get("bands", {})
+            .get(source["bandId"], {})
+            .get("years", {})
+            .get(source["fiscalYear"])
+        )
+        if not summary:
+            counts["missing"] += 1
+            unresolved.append({**source, "status": "missing", "reasons": ["Not attempted"]})
+            continue
+        status = summary.get("parseStatus")
+        if status == "parsed" and summary.get("publishable") is not False:
+            counts["parsed"] += 1
+        elif status == "not_applicable":
+            counts["notApplicable"] += 1
+            unresolved.append(
+                {
+                    **source,
+                    "status": "not_applicable",
+                    "reasons": summary.get("warnings") or [],
+                }
+            )
+        elif any(
+            summary.get(key) not in (None, [], {})
+            for key in ("totalRevenue", "totalExpenses", "revenueBreakdown", "expenseBreakdown")
+        ):
+            counts["partial"] += 1
+            unresolved.append(
+                {
+                    **source,
+                    "status": "partial",
+                    "reasons": summary.get("warnings") or [],
+                }
+            )
+        else:
+            counts["failed"] += 1
+            unresolved.append(
+                {
+                    **source,
+                    "status": status or "failed",
+                    "reasons": summary.get("warnings") or ["Extraction failed"],
+                }
+            )
+    denominator = max(1, counts["postedSources"] - counts["notApplicable"])
+    counts["coveragePercent"] = round(counts["parsed"] / denominator * 100, 2)
+    return counts, unresolved
+
+
+def extraction_records(capital_data):
+    records = {
+        "successful": [],
+        "partial": [],
+        "failed": [],
+        "notApplicable": [],
+    }
+    for band_id, band in capital_data.get("bands", {}).items():
+        for fiscal_year, summary in band.get("years", {}).items():
+            record = {
+                "bandId": band_id,
+                "band": band.get("name"),
+                "fiscalYear": fiscal_year,
+                "status": summary.get("parseStatus"),
+                "completeness": summary.get("extractionCompleteness"),
+                "confidence": summary.get("confidence"),
+                "parser": summary.get("parser"),
+                "sourceUrl": summary.get("sourceUrl"),
+                "reasons": summary.get("warnings") or [],
+            }
+            if (
+                summary.get("parseStatus") == "parsed"
+                and summary.get("publishable") is not False
+            ):
+                records["successful"].append(record)
+            elif summary.get("parseStatus") == "not_applicable":
+                records["notApplicable"].append(record)
+            elif any(
+                summary.get(key) not in (None, [], {})
+                for key in (
+                    "totalRevenue",
+                    "totalExpenses",
+                    "revenueBreakdown",
+                    "expenseBreakdown",
+                )
+            ):
+                records["partial"].append(record)
+            else:
+                records["failed"].append(record)
+    return records
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--data", default="data.json")
@@ -566,12 +972,15 @@ def main():
     parser.add_argument("--limit", type=int, default=10)
     parser.add_argument("--use-openai", action="store_true")
     parser.add_argument("--force", action="store_true")
+    parser.add_argument("--report", default="capital-extraction-report.json")
     args = parser.parse_args()
 
     data = json.loads(Path(args.data).read_text(encoding="utf-8"))
     output_path = Path(args.output)
     capital_data = load_capital_data(output_path)
+    before_coverage, _ = coverage_snapshot(data, capital_data)
     candidates = []
+    attempts = []
     for band in data.get("bands", []):
         if args.band and band.get("name") not in args.band:
             continue
@@ -586,9 +995,20 @@ def main():
                 .get("years", {})
                 .get(filing.get("year"))
             )
+            if is_verified_summary(existing):
+                attempts.append(
+                    {
+                        "bandId": str(band.get("id")),
+                        "band": band.get("name"),
+                        "fiscalYear": filing.get("year"),
+                        "status": "preserved_verified",
+                        "reasons": ["Verified data is never overwritten"],
+                    }
+                )
+                continue
             if existing and existing.get("parseStatus") == "parsed" and not args.force:
                 continue
-            candidates.append((band, filing))
+            candidates.append((band, filing, existing))
 
     candidates.sort(
         key=lambda item: (str(item[1].get("year", "")), item[0].get("name", "")),
@@ -599,7 +1019,7 @@ def main():
 
     parsed = 0
     reviewed = 0
-    for index, (band, filing) in enumerate(candidates, start=1):
+    for index, (band, filing, existing) in enumerate(candidates, start=1):
         print(f"[{index}/{len(candidates)}] {band['name']} {filing['year']}")
         try:
             pdf_bytes = fetch_pdf(filing["href"])
@@ -608,7 +1028,28 @@ def main():
                 ai_summary = extract_with_openai(pdf_bytes, filing["href"], filing["year"])
                 if ai_summary and ai_summary.get("publishable"):
                     summary = ai_summary
-            save_summary(capital_data, band, filing, summary)
+            preserved = bool(
+                existing
+                and existing.get("publishable")
+                and not summary.get("publishable")
+            )
+            if not preserved:
+                save_summary(capital_data, band, filing, summary)
+            attempts.append(
+                {
+                    "bandId": str(band.get("id")),
+                    "band": band.get("name"),
+                    "fiscalYear": filing.get("year"),
+                    "status": "preserved_existing" if preserved else summary.get("parseStatus"),
+                    "completeness": summary.get("extractionCompleteness"),
+                    "parser": summary.get("parser"),
+                    "reasons": (
+                        ["New extraction was less complete; existing publishable data preserved"]
+                        if preserved
+                        else summary.get("warnings") or []
+                    ),
+                }
+            )
             if summary.get("publishable"):
                 parsed += 1
                 print(
@@ -620,18 +1061,28 @@ def main():
                 print("  manual review:", "; ".join(summary.get("warnings") or []))
         except Exception as exc:
             reviewed += 1
-            save_summary(
-                capital_data,
-                band,
-                filing,
+            error_summary = {
+                "fiscalYear": filing["year"],
+                "sourceUrl": filing["href"],
+                "parseStatus": "error",
+                "confidence": "low",
+                "warnings": [f"Capital parse failed: {type(exc).__name__}: {exc}"],
+                "publishable": False,
+                "extractionCompleteness": "failed",
+                "parser": "capital_text_v2",
+            }
+            if not (existing and existing.get("publishable")):
+                save_summary(capital_data, band, filing, error_summary)
+            attempts.append(
                 {
-                    "fiscalYear": filing["year"],
-                    "sourceUrl": filing["href"],
-                    "parseStatus": "error",
-                    "confidence": "low",
-                    "warnings": [f"Capital parse failed: {type(exc).__name__}: {exc}"],
-                    "publishable": False,
-                },
+                    "bandId": str(band.get("id")),
+                    "band": band.get("name"),
+                    "fiscalYear": filing.get("year"),
+                    "status": "error",
+                    "completeness": "failed",
+                    "parser": "capital_text_v2",
+                    "reasons": error_summary["warnings"],
+                }
             )
             print(f"  error: {exc}")
 
@@ -641,9 +1092,32 @@ def main():
         json.dumps(capital_data, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
+    after_coverage, unresolved = coverage_snapshot(data, capital_data)
+    report = {
+        "generated": now_iso(),
+        "dataFile": str(output_path),
+        "before": before_coverage,
+        "after": after_coverage,
+        "attempted": len(candidates),
+        "attempts": attempts,
+        "records": extraction_records(capital_data),
+        "unresolved": unresolved,
+    }
+    Path(args.report).write_text(
+        json.dumps(report, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
     print(f"capital filings parsed: {parsed}")
     print(f"capital filings needing review: {reviewed}")
     print(f"saved: {output_path}")
+    print(
+        "coverage: "
+        f"{before_coverage['parsed']}/{before_coverage['postedSources']} "
+        f"({before_coverage['coveragePercent']}%) -> "
+        f"{after_coverage['parsed']}/{after_coverage['postedSources']} "
+        f"({after_coverage['coveragePercent']}%)"
+    )
+    print(f"extraction report: {args.report}")
 
 
 if __name__ == "__main__":
