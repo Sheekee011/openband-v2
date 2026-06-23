@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "generated": "2026-06-23",
+  "description": "Registered community member counts for OpenBand profiles. Add counts only when verified against a public source such as the ISC First Nation Profile registered population page.",
+  "recordShape": {
+    "registeredMembers": "number",
+    "sourceName": "string",
+    "sourceUrl": "string",
+    "sourceYear": "string",
+    "lastChecked": "YYYY-MM-DD",
+    "notes": "string"
+  },
+  "bands": {}
+}
