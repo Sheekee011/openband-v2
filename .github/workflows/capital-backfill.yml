@@ -56,17 +56,18 @@ jobs:
           USE_OPENAI: ${{ inputs.use_openai }}
         run: |
           set -euo pipefail
-          ARGS=(--limit "$CAPITAL_LIMIT")
           IFS=',' read -ra YEARS <<< "$CAPITAL_YEARS"
-          for YEAR in "${YEARS[@]}"; do
-            ARGS+=(--year "$YEAR")
-          done
+          COMMON_ARGS=(--limit "$CAPITAL_LIMIT" --report capital-extraction-report.json)
           if [ "$USE_OPENAI" = "true" ]; then
-            ARGS+=(--use-openai)
+            COMMON_ARGS+=(--use-openai)
           fi
-          python tools/capital_parser.py \
-            --report capital-extraction-report.json \
-            "${ARGS[@]}"
+          for YEAR in "${YEARS[@]}"; do
+            YEAR="$(echo "$YEAR" | xargs)"
+            [ -z "$YEAR" ] && continue
+            echo "::group::Community Capital $YEAR"
+            python tools/capital_parser.py "${COMMON_ARGS[@]}" --year "$YEAR"
+            echo "::endgroup::"
+          done
 
       - name: Validate capital data did not regress
         run: |
