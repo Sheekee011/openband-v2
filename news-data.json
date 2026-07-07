@@ -1,0 +1,1637 @@
+{
+  "schemaVersion": 1,
+  "generated": "2026-07-07T00:00:00Z",
+  "scope": "Saskatchewan First Nations public updates",
+  "sourceTypes": [
+    "Official First Nation Website",
+    "Band Announcement",
+    "Public Facebook Page",
+    "Indigenous Organization",
+    "Government Release",
+    "News Outlet",
+    "Government Source"
+  ],
+  "notes": [
+    "OpenBand prioritizes official community sources where possible.",
+    "Use storyKey to group duplicate coverage of the same development.",
+    "Public Facebook posts can be included when the source is an official public community page and the post has a stable public URL.",
+    "communitySources lists every Saskatchewan First Nation tracked by OpenBand so source discovery can expand without creating unverified article cards."
+  ],
+  "articles": [
+    {
+      "id": "ahtahkakoop-2025-election-date",
+      "storyKey": "ahtahkakoop-2025-election",
+      "title": "Ahtahkakoop Cree Nation posts 2025 election date and notice",
+      "communityName": "Ahtahkakoop Cree Nation",
+      "communityAliases": [
+        "Ahtahkakoop"
+      ],
+      "provinceTerritory": "SK",
+      "category": "Elections",
+      "sourceType": "Official First Nation Website",
+      "sourceName": "Ahtahkakoop Cree Nation",
+      "publishedAt": "2025-05-15",
+      "url": "https://www.ahtahkakoop.com/",
+      "summary": "Ahtahkakoop Cree Nation posted election information for one Chief and twelve Councillors. The official notice listed election day as June 17, 2025, at the Ahtahkakoop Cree Nation Band Hall, with mail-in ballot and advance poll details available through the community site.",
+      "tags": [
+        "election",
+        "governance",
+        "official-source"
+      ],
+      "bandId": 406
+    },
+    {
+      "id": "ahtahkakoop-2025-hunting-trip",
+      "storyKey": "ahtahkakoop-2025-traditional-hunting-trip",
+      "title": "Ahtahkakoop lists Traditional Hunting Trip notice",
+      "communityName": "Ahtahkakoop Cree Nation",
+      "communityAliases": [
+        "Ahtahkakoop"
+      ],
+      "provinceTerritory": "SK",
+      "category": "Culture & Language",
+      "sourceType": "Official First Nation Website",
+      "sourceName": "Ahtahkakoop Cree Nation",
+      "publishedAt": "2025-09-19",
+      "url": "https://www.ahtahkakoop.com/",
+      "summary": "Ahtahkakoop Cree Nation's official News & Alerts area listed a Traditional Hunting Trip scheduled for September 19 to 24, 2025. The item is included as an official community update rather than a traditional news article.",
+      "tags": [
+        "culture",
+        "community-event",
+        "official-source"
+      ],
+      "bandId": 406
+    },
+    {
+      "id": "ahtahkakoop-2025-truth-reconciliation-day",
+      "storyKey": "ahtahkakoop-2025-truth-reconciliation-day",
+      "title": "Ahtahkakoop lists National Truth and Reconciliation Day notice",
+      "communityName": "Ahtahkakoop Cree Nation",
+      "communityAliases": [
+        "Ahtahkakoop"
+      ],
+      "provinceTerritory": "SK",
+      "category": "Community Events",
+      "sourceType": "Official First Nation Website",
+      "sourceName": "Ahtahkakoop Cree Nation",
+      "publishedAt": "2025-09-30",
+      "url": "https://www.ahtahkakoop.com/",
+      "summary": "The official Ahtahkakoop Cree Nation website listed a National Truth and Reconciliation Day notice for September 30, 2025. OpenBand records it as a community update with the original source attached.",
+      "tags": [
+        "community-event",
+        "truth-and-reconciliation",
+        "official-source"
+      ],
+      "bandId": 406
+    },
+    {
+      "id": "muskoday-2025-gov-canada-presentation",
+      "storyKey": "muskoday-2025-government-canada-presentation",
+      "title": "Muskoday lists Government of Canada presentation at MFN Band Office",
+      "communityName": "Muskoday First Nation",
+      "communityAliases": [
+        "Muskoday"
+      ],
+      "provinceTerritory": "SK",
+      "category": "Governance",
+      "sourceType": "Official First Nation Website",
+      "sourceName": "Muskoday First Nation",
+      "publishedAt": "2025-05-08",
+      "url": "https://muskodayfn.ca/",
+      "summary": "Muskoday First Nation's official events page listed a Government of Canada presentation at the MFN Band Office on May 8, 2025. The record is included as an official public community notice.",
+      "tags": [
+        "governance",
+        "community-meeting",
+        "official-source"
+      ],
+      "bandId": 371
+    },
+    {
+      "id": "muskoday-2025-information-meeting",
+      "storyKey": "muskoday-2025-information-meeting",
+      "title": "Muskoday posts community information meeting for members",
+      "communityName": "Muskoday First Nation",
+      "communityAliases": [
+        "Muskoday"
+      ],
+      "provinceTerritory": "SK",
+      "category": "Community Events",
+      "sourceType": "Official First Nation Website",
+      "sourceName": "Muskoday First Nation",
+      "publishedAt": "2025-03-13",
+      "url": "https://muskodayfn.ca/",
+      "summary": "The Muskoday First Nation events page listed an MFN Information Meeting at Muskoday Band Hall on March 13, 2025. The posting noted supper would be provided and linked to the community information meeting poster.",
+      "tags": [
+        "community-meeting",
+        "official-source"
+      ],
+      "bandId": 371
+    },
+    {
+      "id": "muskoday-2025-community-information-session",
+      "storyKey": "muskoday-2025-community-information-session",
+      "title": "Muskoday lists community information session",
+      "communityName": "Muskoday First Nation",
+      "communityAliases": [
+        "Muskoday"
+      ],
+      "provinceTerritory": "SK",
+      "category": "Community Events",
+      "sourceType": "Official First Nation Website",
+      "sourceName": "Muskoday First Nation",
+      "publishedAt": "2025-02-13",
+      "url": "https://muskodayfn.ca/",
+      "summary": "Muskoday First Nation's official events page listed a community information session at Muskoday Band Hall on February 13, 2025. The notice stated that all Band members were invited to attend.",
+      "tags": [
+        "community-meeting",
+        "official-source"
+      ],
+      "bandId": 371
+    },
+    {
+      "id": "treaty-six-2026-crown-separatism-concerns",
+      "storyKey": "treaty-six-2026-crown-separatism-concerns",
+      "title": "Treaty Six leaders raise treaty concerns over Alberta separatism",
+      "communityName": "Treaty Six First Nations",
+      "communityAliases": [
+        "Confederacy of Treaty Six First Nations",
+        "Treaty 6"
+      ],
+      "provinceTerritory": "SK",
+      "category": "Treaties",
+      "sourceType": "News Outlet",
+      "sourceName": "The Guardian",
+      "publishedAt": "2026-03-13",
+      "url": "https://www.theguardian.com/uk-news/2026/mar/13/king-charles-alberta-separatism-canada-first-nations",
+      "summary": "The Guardian reported that Treaty Six leaders from Alberta and Saskatchewan met King Charles and raised concerns about treaty obligations in relation to Alberta separatism. OpenBand includes this because the reported development directly involves Treaty Six territories, including Saskatchewan.",
+      "tags": [
+        "treaties",
+        "governance",
+        "news-outlet"
+      ]
+    },
+    {
+      "id": "muskeg-lake-2026-deed-explainer",
+      "storyKey": "muskeg-lake-2026-deed-discussions",
+      "title": "Muskeg Lake explains early Downtown Event and Entertainment District discussions",
+      "bandId": 375,
+      "communityName": "Muskeg Lake Cree Nation",
+      "communityAliases": [
+        "Muskeg Lake"
+      ],
+      "provinceTerritory": "SK",
+      "category": "Business & Economic Development",
+      "sourceType": "Official First Nation Website",
+      "sourceName": "Muskeg Lake Cree Nation",
+      "publishedAt": "2026-06-29",
+      "url": "https://muskeglake.com/deed-what-muskeg-lake-citizens-should-know/",
+      "summary": "Muskeg Lake Cree Nation posted a citizen explainer about early relationship-building and exploratory discussions with the City of Saskatoon on the proposed Downtown Event and Entertainment District. The update states that no final deal, financial commitment, ownership arrangement, or partnership agreement has been approved.",
+      "tags": [
+        "economic-development",
+        "urban-reserve",
+        "official-source"
+      ],
+      "alternateSources": [
+        {
+          "title": "Muskeg Lake Cree Nation Statement on Downtown Event and Entertainment District Discussions",
+          "sourceName": "Muskeg Lake Cree Nation",
+          "sourceType": "Official First Nation Website",
+          "publishedAt": "2026-06-17",
+          "url": "https://muskeglake.com/muskeg-lake-cree-nation-statement-on-downtown-event-and-entertainment-district-discussions/"
+        }
+      ]
+    },
+    {
+      "id": "muskeg-lake-2026-election-citizenship-code-vote",
+      "storyKey": "muskeg-lake-2026-election-citizenship-code-vote",
+      "title": "Muskeg Lake posts ratification vote notice for election and citizenship codes",
+      "bandId": 375,
+      "communityName": "Muskeg Lake Cree Nation",
+      "communityAliases": [
+        "Muskeg Lake"
+      ],
+      "provinceTerritory": "SK",
+      "category": "Governance",
+      "sourceType": "Official First Nation Website",
+      "sourceName": "Muskeg Lake Cree Nation",
+      "publishedAt": "2026-06-05",
+      "url": "https://muskeglake.com/notice-of-ratification-vote-election-code-and-citizenship-code/",
+      "summary": "Muskeg Lake Cree Nation posted a ratification vote notice for members to consider an Election Code and Citizenship Code. The notice frames the vote as part of the Nation’s governance and self-determination work.",
+      "tags": [
+        "governance",
+        "ratification",
+        "official-source"
+      ]
+    },
+    {
+      "id": "onion-lake-2026-active-claims-briefing",
+      "storyKey": "onion-lake-2026-active-claims-briefing",
+      "title": "Onion Lake posts leadership briefing on active Treaty-related claims",
+      "bandId": 344,
+      "communityName": "Onion Lake Cree Nation",
+      "communityAliases": [
+        "Onion Lake"
+      ],
+      "provinceTerritory": "SK",
+      "category": "Treaties",
+      "sourceType": "Official First Nation Website",
+      "sourceName": "Onion Lake Cree Nation",
+      "publishedAt": "2026-05-21",
+      "url": "https://onionlake.ca/okimaw-pete-chief-leadership-briefing-active-claims/",
+      "summary": "Onion Lake Cree Nation posted an Okimâw Pete Chief leadership briefing on active claims connected to Treaty obligations and historical commitments. The update covers Haylands, Treaty agricultural benefits, Treaty annuity discussions, and ongoing negotiations with the Crown.",
+      "tags": [
+        "treaties",
+        "claims",
+        "official-source"
+      ]
+    },
+    {
+      "id": "whitecap-2025-community-consultative-group",
+      "storyKey": "whitecap-2025-community-consultative-group",
+      "title": "Whitecap opens applications for Community Consultative Group",
+      "bandId": 372,
+      "communityName": "Whitecap Dakota First Nation",
+      "communityAliases": [
+        "Whitecap Dakota Nation",
+        "Whitecap"
+      ],
+      "provinceTerritory": "SK",
+      "category": "Justice",
+      "sourceType": "Official First Nation Website",
+      "sourceName": "Whitecap Dakota Nation",
+      "publishedAt": "2025-12-05",
+      "url": "https://www.whitecapdakota.com/news/posts/call-for-applications-community-consultative-group-ccg/",
+      "summary": "Whitecap Dakota Nation posted a call for applications to establish a Community Consultative Group tied to its Community Tripartite Agreement with Canada and Saskatchewan on policing provisions. The group is intended to support community safety, well-being, and relationship-building with local policing partners.",
+      "tags": [
+        "community-safety",
+        "governance",
+        "official-source"
+      ]
+    },
+    {
+      "id": "whitecap-2025-jordans-principle-update",
+      "storyKey": "whitecap-2025-jordans-principle-update",
+      "title": "Whitecap posts update on Jordan’s Principle application changes",
+      "bandId": 372,
+      "communityName": "Whitecap Dakota First Nation",
+      "communityAliases": [
+        "Whitecap Dakota Nation",
+        "Whitecap"
+      ],
+      "provinceTerritory": "SK",
+      "category": "Healthcare",
+      "sourceType": "Official First Nation Website",
+      "sourceName": "Whitecap Dakota Nation",
+      "publishedAt": "2025-02-11",
+      "url": "https://www.whitecapdakota.com/news/posts/changes-to-jordan-s-principle/",
+      "summary": "Whitecap Dakota Nation posted an update noting changes to Jordan’s Principle application guidelines as of February 10, 2025. The item is included as a public community services update.",
+      "tags": [
+        "healthcare",
+        "children",
+        "official-source"
+      ]
+    },
+    {
+      "id": "cowessess-2026-tle-agm",
+      "storyKey": "cowessess-2026-tle-agm",
+      "title": "Cowessess posts Treaty Land Entitlement annual general meeting notice",
+      "bandId": 361,
+      "communityName": "Cowessess First Nation",
+      "communityAliases": [
+        "Cowessess"
+      ],
+      "provinceTerritory": "SK",
+      "category": "Land Claims",
+      "sourceType": "Official First Nation Website",
+      "sourceName": "Cowessess First Nation",
+      "publishedAt": "2026-06-26",
+      "url": "https://cowessessfn.com/",
+      "summary": "Cowessess First Nation listed a Treaty Land Entitlement annual general meeting notice on its official news feed. The public update points members to a July 22, 2026 meeting connected to TLE governance and reporting.",
+      "tags": [
+        "land-claims",
+        "governance",
+        "official-source"
+      ]
+    },
+    {
+      "id": "cowessess-2026-annual-general-meeting",
+      "storyKey": "cowessess-2026-annual-general-meeting",
+      "title": "Cowessess posts annual general meeting notice",
+      "bandId": 361,
+      "communityName": "Cowessess First Nation",
+      "communityAliases": [
+        "Cowessess"
+      ],
+      "provinceTerritory": "SK",
+      "category": "Governance",
+      "sourceType": "Official First Nation Website",
+      "sourceName": "Cowessess First Nation",
+      "publishedAt": "2026-06-25",
+      "url": "https://cowessessfn.com/",
+      "summary": "Cowessess First Nation posted an annual general meeting notice through its official news feed. The item directs members to a July 29, 2026 public governance meeting.",
+      "tags": [
+        "governance",
+        "official-source"
+      ]
+    },
+    {
+      "id": "cowessess-2026-adult-12-intake-session",
+      "storyKey": "cowessess-2026-adult-12-intake-session",
+      "title": "Cowessess lists Adult 12 intake session with Southeast College",
+      "bandId": 361,
+      "communityName": "Cowessess First Nation",
+      "communityAliases": [
+        "Cowessess"
+      ],
+      "provinceTerritory": "SK",
+      "category": "Education",
+      "sourceType": "Official First Nation Website",
+      "sourceName": "Cowessess First Nation",
+      "publishedAt": "2026-07-06",
+      "url": "https://cowessessfn.com/",
+      "summary": "Cowessess First Nation listed a Southeast College Adult 12 intake session dated July 9, 2026. The notice is included as an education and training update from the official community site.",
+      "tags": [
+        "education",
+        "training",
+        "official-source"
+      ]
+    },
+    {
+      "id": "cote-2025-agricultural-benefits-claim",
+      "storyKey": "cote-2025-agricultural-benefits-claim",
+      "title": "Cote posts Agricultural Benefits Claim settlement information",
+      "bandId": 366,
+      "communityName": "Cote First Nation",
+      "communityAliases": [
+        "Cote"
+      ],
+      "provinceTerritory": "SK",
+      "category": "Treaties",
+      "sourceType": "Official First Nation Website",
+      "sourceName": "Cote First Nation",
+      "publishedAt": "2025-09-29",
+      "url": "https://cotefirstnation.ca/elementor-8066/",
+      "summary": "Cote First Nation posted information for members on the Agricultural Benefits Claim settlement, including an information session, ratification vote, electronic voting dates, and public document access.",
+      "tags": [
+        "treaties",
+        "claims",
+        "ratification",
+        "official-source"
+      ]
+    },
+    {
+      "id": "cote-2025-transportation-services-survey",
+      "storyKey": "cote-2025-transportation-services-survey",
+      "title": "Cote asks members for input on transportation services",
+      "bandId": 366,
+      "communityName": "Cote First Nation",
+      "communityAliases": [
+        "Cote"
+      ],
+      "provinceTerritory": "SK",
+      "category": "Infrastructure",
+      "sourceType": "Official First Nation Website",
+      "sourceName": "Cote First Nation",
+      "publishedAt": "2025-03-19",
+      "url": "https://cotefirstnation.ca/",
+      "summary": "Cote First Nation listed a Transportation Services Survey asking members for input. The item connects to the Nation’s public transportation service and community infrastructure planning.",
+      "tags": [
+        "transportation",
+        "infrastructure",
+        "official-source"
+      ]
+    },
+    {
+      "id": "cote-2025-public-transportation-service",
+      "storyKey": "cote-2025-public-transportation-service",
+      "title": "Cote lists public transportation service update",
+      "bandId": 366,
+      "communityName": "Cote First Nation",
+      "communityAliases": [
+        "Cote"
+      ],
+      "provinceTerritory": "SK",
+      "category": "Infrastructure",
+      "sourceType": "Official First Nation Website",
+      "sourceName": "Cote First Nation",
+      "publishedAt": "2025-01-24",
+      "url": "https://cotefirstnation.ca/",
+      "summary": "Cote First Nation listed a public transportation service update on its official site. OpenBand includes it as a community infrastructure and accessibility update.",
+      "tags": [
+        "transportation",
+        "infrastructure",
+        "official-source"
+      ]
+    },
+    {
+      "id": "flying-dust-2025-year-in-review",
+      "storyKey": "flying-dust-2025-year-in-review",
+      "title": "Flying Dust publishes 2025 year-in-review with infrastructure and housing updates",
+      "bandId": 395,
+      "communityName": "Flying Dust First Nation",
+      "communityAliases": [
+        "Flying Dust"
+      ],
+      "provinceTerritory": "SK",
+      "category": "Infrastructure",
+      "sourceType": "Official First Nation Website",
+      "sourceName": "Flying Dust First Nation",
+      "publishedAt": "2025-04-14",
+      "url": "https://www.flyingdust.net/uploads/1/4/5/8/145877777/a_year_in_review_2025.pdf",
+      "summary": "Flying Dust First Nation’s year-in-review lists major community development work including water treatment plant and lift station construction, new housing including a Tiny Home project, development of railway lands, improved Gladue Lake cultural grounds, and a meat shop at the market garden.",
+      "tags": [
+        "infrastructure",
+        "housing",
+        "economic-development",
+        "official-source"
+      ]
+    },
+    {
+      "id": "flying-dust-2025-water-treatment-capital-projects",
+      "storyKey": "flying-dust-2025-water-treatment-capital-projects",
+      "title": "Flying Dust reports water treatment plant and lift station capital projects",
+      "bandId": 395,
+      "communityName": "Flying Dust First Nation",
+      "communityAliases": [
+        "Flying Dust"
+      ],
+      "provinceTerritory": "SK",
+      "category": "Infrastructure",
+      "sourceType": "Official First Nation Website",
+      "sourceName": "Flying Dust First Nation",
+      "publishedAt": "2025-04-14",
+      "url": "https://www.flyingdust.net/uploads/1/4/5/8/145877777/a_year_in_review_2025.pdf",
+      "summary": "Flying Dust’s capital project update reports construction work on a water treatment plant, raw and treated water mains, lift station replacements, valves and hydrants, and regional solid waste planning. The PDF states the water treatment plant was scheduled for completion by the end of the 2025 calendar year.",
+      "tags": [
+        "water",
+        "infrastructure",
+        "capital-projects",
+        "official-source"
+      ]
+    },
+    {
+      "id": "mistawasis-2025-post-secondary-scholarships",
+      "storyKey": "mistawasis-2025-post-secondary-scholarships",
+      "title": "Mistawasis posts 2024-2025 post-secondary scholarship application notice",
+      "bandId": 374,
+      "communityName": "Mistawasis Nehiyawak",
+      "communityAliases": [
+        "Mistawasis Nêhiyawak",
+        "Mistawasis"
+      ],
+      "provinceTerritory": "SK",
+      "category": "Education",
+      "sourceType": "Official First Nation Website",
+      "sourceName": "Mistawasis Nêhiyawak",
+      "publishedAt": "2025-05-31",
+      "url": "https://mistawasis.ca/",
+      "summary": "Mistawasis Nêhiyawak posted a 2024-2025 scholarship notice for post-secondary students, with applications open to all Mistawasis Nêhiyawak post-secondary students and a May 31, 2025 deadline.",
+      "tags": [
+        "education",
+        "scholarships",
+        "official-source"
+      ]
+    },
+    {
+      "id": "muscowpetung-2026-elder-utility-supplement",
+      "storyKey": "muscowpetung-2026-elder-utility-supplement",
+      "title": "Muscowpetung lists Elder utility supplement through housing resources",
+      "bandId": 381,
+      "communityName": "Muscowpetung First Nation",
+      "communityAliases": [
+        "Muscowpetung Saulteaux Nation",
+        "Muscowpetung"
+      ],
+      "provinceTerritory": "SK",
+      "category": "Housing",
+      "sourceType": "Official First Nation Website",
+      "sourceName": "Muscowpetung Saulteaux Nation",
+      "publishedAt": "2026-01-01",
+      "url": "https://muscowpetung.com/",
+      "summary": "Muscowpetung Saulteaux Nation’s official site states leadership approved a  Elder utility supplement for registered band members over age sixty-five. OpenBand records it as a housing and member-support update from the community website.",
+      "tags": [
+        "housing",
+        "elders",
+        "official-source"
+      ]
+    },
+    {
+      "id": "muscowpetung-2026-business-development-source",
+      "storyKey": "muscowpetung-2026-business-development-source",
+      "title": "Muscowpetung highlights business development division as community resource",
+      "bandId": 381,
+      "communityName": "Muscowpetung First Nation",
+      "communityAliases": [
+        "Muscowpetung Saulteaux Nation",
+        "Muscowpetung"
+      ],
+      "provinceTerritory": "SK",
+      "category": "Business & Economic Development",
+      "sourceType": "Official First Nation Website",
+      "sourceName": "Muscowpetung Saulteaux Nation",
+      "publishedAt": "2026-01-01",
+      "url": "https://muscowpetung.com/",
+      "summary": "Muscowpetung Saulteaux Nation’s official website points members to its business development division and community projects area. The record is included as a source-tracking item for future economic development updates.",
+      "tags": [
+        "economic-development",
+        "official-source"
+      ]
+    }
+  ],
+  "communitySources": [
+    {
+      "bandId": 406,
+      "communityName": "Ahtahkakoop Cree Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 6",
+      "monitoringStatus": "official-source-found",
+      "sources": [
+        {
+          "type": "Official First Nation Website",
+          "name": "Ahtahkakoop Cree Nation",
+          "url": "https://www.ahtahkakoop.com/",
+          "status": "verified"
+        },
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=406&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 369,
+      "communityName": "Beardy's and Okemasis' Cree Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 6",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=369&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 404,
+      "communityName": "Big River First Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 6",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=404&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 403,
+      "communityName": "Birch Narrows Dene Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 10",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=403&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 359,
+      "communityName": "Black Lake Denesuline First Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 8",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=359&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 398,
+      "communityName": "Buffalo River Dene Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 10",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=398&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 394,
+      "communityName": "Canoe Lake Cree First Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 10",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=394&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 378,
+      "communityName": "Carry the Kettle Nakoda Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 4",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=378&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 401,
+      "communityName": "Clearwater River Dene Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 10",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=401&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 366,
+      "communityName": "Cote First Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 4",
+      "monitoringStatus": "official-source-found",
+      "sources": [
+        {
+          "type": "Official First Nation Website",
+          "name": "Cote First Nation",
+          "url": "https://cotefirstnation.ca/",
+          "status": "verified"
+        },
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=366&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 361,
+      "communityName": "Cowessess First Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 4",
+      "monitoringStatus": "official-source-found",
+      "sources": [
+        {
+          "type": "Official First Nation Website",
+          "name": "Cowessess First Nation",
+          "url": "https://cowessessfn.com/",
+          "status": "verified"
+        },
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=361&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 407,
+      "communityName": "Cree Nation of Chitek Lake",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 6",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=407&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 350,
+      "communityName": "Cumberland House Cree Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 5",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=350&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 389,
+      "communityName": "Day Star First Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 4",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=389&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 400,
+      "communityName": "English River Dene Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 10",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=400&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 390,
+      "communityName": "Fishing Lake First Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 4",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=390&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 395,
+      "communityName": "Flying Dust First Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 6",
+      "monitoringStatus": "official-source-found",
+      "sources": [
+        {
+          "type": "Official First Nation Website",
+          "name": "Flying Dust First Nation",
+          "url": "https://www.flyingdust.net/",
+          "status": "verified"
+        },
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=395&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 351,
+      "communityName": "Fond du Lac Denesuline First Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 8",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=351&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 391,
+      "communityName": "George Gordon First Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 4",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=391&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 352,
+      "communityName": "Hatchet Lake Denesuline",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 10",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=352&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 370,
+      "communityName": "James Smith Cree Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 6",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=370&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 362,
+      "communityName": "Kahkewistahaw First Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 4",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=362&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 393,
+      "communityName": "Kawacatoose First Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 4",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=393&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 367,
+      "communityName": "Keeseekoose First Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 4",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=367&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 377,
+      "communityName": "Kinistin Saulteaux Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 4",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=377&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 353,
+      "communityName": "Lac La Ronge Indian Band",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 6",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=353&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 379,
+      "communityName": "Little Black Bear First Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 4",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=379&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 340,
+      "communityName": "Little Pine First Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 6",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=340&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 341,
+      "communityName": "Lucky Man Cree Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 6",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=341&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 396,
+      "communityName": "Makwa Sahgaiehcan First Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 6",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=396&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 397,
+      "communityName": "Ministikwan Lake Cree Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 6",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=397&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 374,
+      "communityName": "Mistawasis Nehiyawak",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 6",
+      "monitoringStatus": "official-source-found",
+      "sources": [
+        {
+          "type": "Official First Nation Website",
+          "name": "Mistawasis Nehiyawak",
+          "url": "https://mistawasis.ca/",
+          "status": "verified"
+        },
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=374&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 354,
+      "communityName": "Montreal Lake Cree Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 6",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=354&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 342,
+      "communityName": "Moosomin First Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 6",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=342&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 343,
+      "communityName": "Mosquito, Grizzly Bear's Head, Lean Man",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 6",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=343&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 381,
+      "communityName": "Muscowpetung First Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 4",
+      "monitoringStatus": "official-source-found",
+      "sources": [
+        {
+          "type": "Official First Nation Website",
+          "name": "Muscowpetung First Nation",
+          "url": "https://muscowpetung.com/",
+          "status": "verified"
+        },
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=381&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 375,
+      "communityName": "Muskeg Lake Cree Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 6",
+      "monitoringStatus": "official-source-found",
+      "sources": [
+        {
+          "type": "Official First Nation Website",
+          "name": "Muskeg Lake Cree Nation",
+          "url": "https://muskeglake.com/",
+          "status": "verified"
+        },
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=375&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 371,
+      "communityName": "Muskoday First Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 6",
+      "monitoringStatus": "official-source-found",
+      "sources": [
+        {
+          "type": "Official First Nation Website",
+          "name": "Muskoday First Nation",
+          "url": "https://muskodayfn.ca/",
+          "status": "verified"
+        },
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=371&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 392,
+      "communityName": "Muskowekwan First Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 4",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=392&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 380,
+      "communityName": "Nekaneet Cree Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 4",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=380&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 408,
+      "communityName": "Ocean Man First Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 4",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=408&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 363,
+      "communityName": "Ochapowace First Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 4",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=363&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 382,
+      "communityName": "Okanese First Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 4",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=382&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 373,
+      "communityName": "One Arrow First Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 6",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=373&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 344,
+      "communityName": "Onion Lake Cree Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 6",
+      "monitoringStatus": "official-source-found",
+      "sources": [
+        {
+          "type": "Official First Nation Website",
+          "name": "Onion Lake Cree Nation",
+          "url": "https://onionlake.ca/",
+          "status": "verified"
+        },
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=344&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 383,
+      "communityName": "Pasqua First Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 4",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=383&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 384,
+      "communityName": "Peepeekisis Cree Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 4",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=384&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 405,
+      "communityName": "Pelican Lake First Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 6",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=405&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 355,
+      "communityName": "Peter Ballantyne Cree Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 6",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=355&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 409,
+      "communityName": "Pheasant Rump Nakota Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 4",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=409&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 385,
+      "communityName": "Piapot First Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 4",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=385&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 345,
+      "communityName": "Poundmaker Cree Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 6",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=345&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 356,
+      "communityName": "Red Earth Cree Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 6",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=356&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 346,
+      "communityName": "Red Pheasant Cree Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 6",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=346&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 364,
+      "communityName": "Sakimay First Nations",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 4",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=364&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 347,
+      "communityName": "Saulteaux First Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 6",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=347&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 357,
+      "communityName": "Shoal Lake Cree Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 6",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=357&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 386,
+      "communityName": "Standing Buffalo Dakota Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 4",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=386&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 387,
+      "communityName": "Star Blanket Cree Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 4",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=387&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 360,
+      "communityName": "Sturgeon Lake First Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 6",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=360&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 348,
+      "communityName": "Sweetgrass First Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 6",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=348&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 368,
+      "communityName": "The Key First Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 4",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=368&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 349,
+      "communityName": "Thunderchild First Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 6",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=349&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 358,
+      "communityName": "Wahpeton Dakota Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 4",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=358&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 402,
+      "communityName": "Waterhen Lake First Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 6",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=402&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 365,
+      "communityName": "White Bear First Nations",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 4",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=365&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 372,
+      "communityName": "Whitecap Dakota First Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 4",
+      "monitoringStatus": "official-source-found",
+      "sources": [
+        {
+          "type": "Official First Nation Website",
+          "name": "Whitecap Dakota First Nation",
+          "url": "https://www.whitecapdakota.com/",
+          "status": "verified"
+        },
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=372&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 388,
+      "communityName": "Wood Mountain Lakota First Nation",
+      "provinceTerritory": "SK",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=388&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    },
+    {
+      "bandId": 376,
+      "communityName": "Yellow Quill First Nation",
+      "provinceTerritory": "SK",
+      "treaty": "Treaty 4",
+      "monitoringStatus": "source-research-needed",
+      "sources": [
+        {
+          "type": "Government Source",
+          "name": "Indigenous Services Canada FNFTA filings",
+          "url": "https://fnp-ppn.aadnc-aandc.gc.ca/fnp/Main/Search/FederalFundingMain.aspx?BAND_NUMBER=376&lang=eng",
+          "status": "baseline"
+        }
+      ]
+    }
+  ]
+}
