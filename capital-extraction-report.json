@@ -1,14 +1,14 @@
 {
-  "generated": "2026-06-23T19:28:14.787889Z",
+  "generated": "2026-07-07T07:22:26.899445Z",
   "dataFile": "capital-data.json",
   "before": {
     "postedSources": 700,
-    "parsed": 395,
-    "partial": 90,
-    "failed": 117,
-    "notApplicable": 32,
-    "missing": 66,
-    "coveragePercent": 59.13
+    "parsed": 405,
+    "partial": 98,
+    "failed": 164,
+    "notApplicable": 33,
+    "missing": 0,
+    "coveragePercent": 60.72
   },
   "after": {
     "postedSources": 700,
@@ -19,7 +19,7 @@
     "missing": 0,
     "coveragePercent": 60.72
   },
-  "attempted": 66,
+  "attempted": 56,
   "attempts": [
     {
       "bandId": "376",
@@ -44,15 +44,6 @@
       ]
     },
     {
-      "bandId": "365",
-      "band": "White Bear First Nations",
-      "fiscalYear": "2013-2014",
-      "status": "parsed",
-      "completeness": "complete",
-      "parser": "capital_text_v2",
-      "reasons": []
-    },
-    {
       "bandId": "402",
       "band": "Waterhen Lake First Nation",
       "fiscalYear": "2013-2014",
@@ -62,15 +53,6 @@
       "reasons": [
         "No clear statement of operations found"
       ]
-    },
-    {
-      "bandId": "358",
-      "band": "Wahpeton Dakota Nation",
-      "fiscalYear": "2013-2014",
-      "status": "parsed",
-      "completeness": "complete",
-      "parser": "capital_text_v2",
-      "reasons": []
     },
     {
       "bandId": "349",
@@ -161,15 +143,6 @@
       ]
     },
     {
-      "bandId": "364",
-      "band": "Sakimay First Nations",
-      "fiscalYear": "2013-2014",
-      "status": "parsed",
-      "completeness": "complete",
-      "parser": "capital_text_v2",
-      "reasons": []
-    },
-    {
       "bandId": "346",
       "band": "Red Pheasant Cree Nation",
       "fiscalYear": "2013-2014",
@@ -212,15 +185,6 @@
       "reasons": [
         "Source document is a remuneration schedule, not an audited financial statement"
       ]
-    },
-    {
-      "bandId": "409",
-      "band": "Pheasant Rump Nakota Nation",
-      "fiscalYear": "2013-2014",
-      "status": "parsed",
-      "completeness": "complete",
-      "parser": "capital_text_v2",
-      "reasons": []
     },
     {
       "bandId": "355",
@@ -344,15 +308,6 @@
       ]
     },
     {
-      "bandId": "381",
-      "band": "Muscowpetung First Nation",
-      "fiscalYear": "2013-2014",
-      "status": "parsed",
-      "completeness": "complete",
-      "parser": "capital_text_v2",
-      "reasons": []
-    },
-    {
       "bandId": "343",
       "band": "Mosquito, Grizzly Bear's Head, Lean Man",
       "fiscalYear": "2013-2014",
@@ -452,17 +407,6 @@
       ]
     },
     {
-      "bandId": "353",
-      "band": "Lac La Ronge Indian Band",
-      "fiscalYear": "2013-2014",
-      "status": "parsed",
-      "completeness": "complete",
-      "parser": "capital_text_v2",
-      "reasons": [
-        "Annual surplus includes separately reported adjustments"
-      ]
-    },
-    {
       "bandId": "377",
       "band": "Kinistin Saulteaux Nation",
       "fiscalYear": "2013-2014",
@@ -505,15 +449,6 @@
       "reasons": [
         "No clear statement of operations found"
       ]
-    },
-    {
-      "bandId": "370",
-      "band": "James Smith Cree Nation",
-      "fiscalYear": "2013-2014",
-      "status": "parsed",
-      "completeness": "complete",
-      "parser": "capital_text_v2",
-      "reasons": []
     },
     {
       "bandId": "352",
@@ -582,15 +517,6 @@
       ]
     },
     {
-      "bandId": "389",
-      "band": "Day Star First Nation",
-      "fiscalYear": "2013-2014",
-      "status": "parsed",
-      "completeness": "complete",
-      "parser": "capital_text_v2",
-      "reasons": []
-    },
-    {
       "bandId": "350",
       "band": "Cumberland House Cree Nation",
       "fiscalYear": "2013-2014",
@@ -646,15 +572,6 @@
       ]
     },
     {
-      "bandId": "378",
-      "band": "Carry the Kettle Nakoda Nation",
-      "fiscalYear": "2013-2014",
-      "status": "parsed",
-      "completeness": "complete",
-      "parser": "capital_text_v2",
-      "reasons": []
-    },
-    {
       "bandId": "394",
       "band": "Canoe Lake Cree First Nation",
       "fiscalYear": "2013-2014",
@@ -696,17 +613,6 @@
       "parser": "capital_text_v2",
       "reasons": [
         "No clear statement of operations found"
-      ]
-    },
-    {
-      "bandId": "404",
-      "band": "Big River First Nation",
-      "fiscalYear": "2013-2014",
-      "status": "parsed",
-      "completeness": "complete",
-      "parser": "capital_text_v2",
-      "reasons": [
-        "Annual surplus or deficit was not extracted"
       ]
     },
     {

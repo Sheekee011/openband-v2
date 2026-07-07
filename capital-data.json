@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-06-23T19:28:14.708924Z",
+  "generated": "2026-07-07T07:22:26.782579Z",
   "description": "Parsed audited financial statement summaries for the OpenBand Community Capital Tracker.",
   "recordShape": {
     "bands": {
