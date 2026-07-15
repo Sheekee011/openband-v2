@@ -29,6 +29,8 @@ from tools import parser_quality  # noqa: E402
 
 scraper.urllib.request.urlopen = _patched_urlopen
 
+_openai_blocked_reason = None
+
 
 def _json_from_model_text(text):
     text = (text or "").strip()
@@ -57,11 +59,19 @@ def _openai_file_part(pdf_bytes, pdf_url=None):
 
 
 def _extract_with_openai_vision_fixed(pdf_bytes, pdf_url=None):
+    global _openai_blocked_reason
+
     api_key = os.getenv("OPENAI_API_KEY")
     if not api_key:
         return {
             "parse_status": "skipped_openai_no_key",
             "warnings": ["OPENAI_API_KEY not set"],
+            "people": [],
+        }
+    if _openai_blocked_reason:
+        return {
+            "parse_status": "error_openai_quota",
+            "warnings": [_openai_blocked_reason],
             "people": [],
         }
 
@@ -134,8 +144,16 @@ def _extract_with_openai_vision_fixed(pdf_bytes, pdf_url=None):
         }
     except urllib.error.HTTPError as exc:
         body = exc.read().decode("utf-8", errors="replace")[:1200]
+        quota_error = exc.code == 429 and (
+            "insufficient_quota" in body.lower()
+            or "exceeded your current quota" in body.lower()
+        )
+        if quota_error:
+            _openai_blocked_reason = (
+                "OpenAI API quota is unavailable; remaining AI fallbacks were skipped"
+            )
         return {
-            "parse_status": "error_openai_http",
+            "parse_status": "error_openai_quota" if quota_error else "error_openai_http",
             "warnings": [f"OpenAI HTTP {exc.code}: {body}"],
             "people": [],
         }

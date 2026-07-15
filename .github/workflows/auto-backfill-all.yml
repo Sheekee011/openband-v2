@@ -7,7 +7,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: openband-v2-scraper
+  group: openband-v2-data-writers
   cancel-in-progress: false
 
 jobs:

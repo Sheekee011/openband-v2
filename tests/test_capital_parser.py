@@ -1,11 +1,41 @@
 import unittest
+import io
 import json
+import urllib.error
 from pathlib import Path
+from unittest import mock
 
 from tools import capital_parser
 
 
 class CapitalParserTests(unittest.TestCase):
+    def test_openai_quota_error_stops_repeated_fallback_calls(self):
+        quota_error = urllib.error.HTTPError(
+            "https://api.openai.com/v1/responses",
+            429,
+            "quota",
+            {},
+            io.BytesIO(b'{"error":{"code":"insufficient_quota"}}'),
+        )
+        capital_parser._openai_blocked_reason = None
+        try:
+            with mock.patch.dict("os.environ", {"OPENAI_API_KEY": "test-key"}):
+                with mock.patch.object(
+                    capital_parser.urllib.request,
+                    "urlopen",
+                    side_effect=quota_error,
+                ) as first_request:
+                    result = capital_parser.extract_with_openai(b"pdf", "source", "2024-2025")
+                self.assertEqual(result["parseStatus"], "error_openai_quota")
+                self.assertEqual(first_request.call_count, 1)
+
+                with mock.patch.object(capital_parser.urllib.request, "urlopen") as skipped_request:
+                    result = capital_parser.extract_with_openai(b"pdf", "source", "2024-2025")
+                self.assertEqual(result["parseStatus"], "error_openai_quota")
+                skipped_request.assert_not_called()
+        finally:
+            capital_parser._openai_blocked_reason = None
+
     def test_budget_actual_prior_year_layout(self):
         pages = [
             """

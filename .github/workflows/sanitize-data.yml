@@ -14,8 +14,8 @@ permissions:
   contents: write
 
 concurrency:
-  group: openband-v2-sanitizer
-  cancel-in-progress: true
+  group: openband-v2-data-writers
+  cancel-in-progress: false
 
 jobs:
   sanitize:

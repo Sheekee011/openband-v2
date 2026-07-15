@@ -22,6 +22,9 @@ except ImportError:  # pragma: no cover
     pdfplumber = None
 
 
+_openai_blocked_reason = None
+
+
 MONEY_RE = re.compile(r"\(?\$?\s*-?\d[\d,]*(?:\.\d+)?\)?")
 YEAR_RE = re.compile(r"\b20\d{2}\b")
 OPERATIONS_RE = re.compile(
@@ -728,9 +731,17 @@ def response_output_text(payload):
 
 
 def extract_with_openai(pdf_bytes, source_url, fiscal_year):
+    global _openai_blocked_reason
+
     api_key = os.getenv("OPENAI_API_KEY")
     if not api_key:
         return None
+    if _openai_blocked_reason:
+        return {
+            "parseStatus": "error_openai_quota",
+            "confidence": "low",
+            "warnings": [_openai_blocked_reason],
+        }
     prompt = (
         "Extract a conservative summary from this First Nation audited financial statement. "
         "Use the actual current-year column, not budget or prior-year values. Return JSON only "
@@ -777,6 +788,21 @@ def extract_with_openai(pdf_bytes, source_url, fiscal_year):
         summary["parser"] = "capital_openai_v1"
         summary.update(validate_summary(summary))
         return summary
+    except urllib.error.HTTPError as exc:
+        body = exc.read().decode("utf-8", errors="replace")[:1200]
+        quota_error = exc.code == 429 and (
+            "insufficient_quota" in body.lower()
+            or "exceeded your current quota" in body.lower()
+        )
+        if quota_error:
+            _openai_blocked_reason = (
+                "OpenAI API quota is unavailable; remaining AI fallbacks were skipped"
+            )
+        return {
+            "parseStatus": "error_openai_quota" if quota_error else "error_openai",
+            "confidence": "low",
+            "warnings": [f"OpenAI capital extraction failed (HTTP {exc.code}): {body}"],
+        }
     except Exception as exc:
         return {
             "parseStatus": "error_openai",

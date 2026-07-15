@@ -27,6 +27,7 @@ PUBLIC_STATUS_MAP = {
     "error": "pending_review",
     "error_openai": "pending_ai_review",
     "error_openai_empty": "pending_ai_review",
+    "error_openai_quota": "pending_ai_setup",
     "error_pdf_download": "source_download_failed",
     "no_pdf_url": "source_unavailable",
     "no_rows": "pending_review",

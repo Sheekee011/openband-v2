@@ -12,8 +12,8 @@ permissions:
   contents: write
 
 concurrency:
-  group: openband-v2-scraper
-  cancel-in-progress: true
+  group: openband-v2-data-writers
+  cancel-in-progress: false
 
 jobs:
   retry-pending:
@@ -45,6 +45,13 @@ jobs:
             exit 1
           fi
           echo "OPENAI_API_KEY is available to this workflow."
+
+      - name: Confirm OpenAI API access and quota
+        continue-on-error: true
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_PREFLIGHT_MODEL: gpt-4.1-mini
+        run: python tools/check_openai_access.py
 
       - name: Retry all pending year groups
         env:

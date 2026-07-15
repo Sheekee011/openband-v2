@@ -6,6 +6,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: openband-v2-data-writers
+  cancel-in-progress: false
+
 jobs:
   restore:
     runs-on: ubuntu-latest
