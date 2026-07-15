@@ -30,6 +30,7 @@ The public website focuses on Saskatchewan FNFTA Chief and Council remuneration 
 - `tools/sanitize_data.py` - removes obvious non-person rows and repairs broken totals
 - `tools/audit_data.py` - checks coverage and pending parser work
 - `tools/capital_parser.py` - extracts validated audited-statement summaries into `capital-data.json`
+- `tools/member_count_scraper.py` - updates registered population counts from official ISC First Nation Profiles
 
 ## Community Capital data
 
@@ -64,6 +65,7 @@ documents, unresolved filings, parser method, and extraction warnings.
 - **Retry pending remuneration parsing**: retries all year groups and requires `OPENAI_API_KEY` so hard PDFs can use the AI fallback.
 - **Sanitize OpenBand data**: cleans parsed rows and refreshes the audit.
 - **Audit OpenBand data**: manual/PR health check for missing expected Saskatchewan First Nations and pending posted filings.
+- **Update registered population counts**: monthly or manual refresh of sourced ISC registered population totals.
 - **Restore working site from openband**: emergency restore from the original working repo.
 
 ## GitHub Pages

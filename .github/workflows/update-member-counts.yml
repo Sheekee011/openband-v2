@@ -1,0 +1,62 @@
+name: Update registered population counts
+
+on:
+  workflow_dispatch:
+    inputs:
+      only_missing:
+        description: "Skip communities that already have a sourced count"
+        type: boolean
+        required: true
+        default: false
+  schedule:
+    - cron: "23 10 15 * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: openband-v2-data-writers
+  cancel-in-progress: false
+
+jobs:
+  update-members:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run member-count parser tests
+        run: python -m unittest tests/test_member_count_scraper.py -v
+
+      - name: Fetch ISC registered population counts
+        run: |
+          EXTRA_ARGS=()
+          if [ "${{ inputs.only_missing || 'false' }}" = "true" ]; then
+            EXTRA_ARGS+=(--only-missing)
+          fi
+          python tools/member_count_scraper.py "${EXTRA_ARGS[@]}"
+
+      - name: Validate coverage
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data = json.loads(Path("member-counts.json").read_text(encoding="utf-8"))
+          available = data.get("coverage", {}).get("countsAvailable", 0)
+          tracked = data.get("coverage", {}).get("trackedBands", 0)
+          print(f"registered population coverage: {available}/{tracked}")
+          if tracked < 60 or available < 50:
+              raise SystemExit("Refusing to commit unexpectedly low member-count coverage")
+          PY
+
+      - name: Commit sourced member counts
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update ISC registered population counts"
+          file_pattern: member-counts.json
