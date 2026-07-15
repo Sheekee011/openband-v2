@@ -16,7 +16,11 @@ The public website focuses on Saskatchewan FNFTA Chief and Council remuneration 
 
 ## What Is In This Repo
 
-- `index.html` - the public website
+- `index.html` - homepage and shared static application shell
+- `assets/openband.css` / `assets/openband.js` - cacheable shared site assets
+- `first-nations/*/index.html` - generated permanent community profile routes
+- `browse/index.html` / `news/index.html` - permanent Browse and News pages
+- `tools/build_site.py` - generates profile pages, metadata, `sitemap.xml`, and `robots.txt`
 - `data.json` - generated filing and remuneration data used by the website
 - `audit-results.txt` - latest coverage and parser-health report
 - `scraper.py` - restored core scraper
@@ -65,6 +69,17 @@ documents, unresolved filings, parser method, and extraction warnings.
 ## GitHub Pages
 
 Use Settings -> Pages -> Deploy from branch -> `main` / `/root`.
+
+After changing `data.json`, `news-data.json`, or the shared site shell, regenerate
+the static routes before publishing:
+
+```bash
+python tools/build_site.py
+python -m unittest tests/test_site_routes.py -v
+```
+
+The scraper workflows and **Build static OpenBand routes** workflow run this
+step automatically for GitHub-hosted updates.
 
 ## Secrets
 

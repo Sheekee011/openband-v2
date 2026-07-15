@@ -1,0 +1,45 @@
+name: Build static OpenBand routes
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - index.html
+      - assets/**
+      - data.json
+      - news-data.json
+      - tools/build_site.py
+      - tests/test_site_routes.py
+
+permissions:
+  contents: write
+
+concurrency:
+  group: openband-v2-site-build
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Generate permanent pages
+        run: python tools/build_site.py
+
+      - name: Run site route tests
+        run: python -m unittest tests/test_site_routes.py -v
+
+      - name: Commit generated routes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Build permanent OpenBand profile routes"
+          file_pattern: first-nations browse news sitemap.xml robots.txt .nojekyll
