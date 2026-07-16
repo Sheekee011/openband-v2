@@ -15,7 +15,7 @@ const NEWS_CATEGORIES=['Governance','Elections','Financial','Infrastructure','Ho
 
 function raw(p,k){for(const a of aliases[k]||[k]){if(p&&p[a]!=null&&p[a]!=='')return p[a]}return null}
 function parseMoney(v){if(v==null||v==='')return 0;if(typeof v==='number')return Number.isFinite(v)?v:0;const s=String(v).trim();if(!s||s==='-'||s==='—'||/n\/?a/i.test(s))return 0;const neg=/^\(.+\)$/.test(s);const n=Number(s.replace(/[^0-9.\-]/g,''));return Number.isFinite(n)?(neg?-Math.abs(n):n):0}
-function formatMoney(v){return '$'+Math.round(parseMoney(v)).toLocaleString('en-CA')}
+function formatMoney(v){const n=Math.round(parseMoney(v));return`${n<0?'−':''}$${Math.abs(n).toLocaleString('en-CA')}`}
 function money(v){return parseMoney(v)>0?formatMoney(v):'&mdash;'}
 function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
 function escapeRegex(s){return String(s||'').replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}
